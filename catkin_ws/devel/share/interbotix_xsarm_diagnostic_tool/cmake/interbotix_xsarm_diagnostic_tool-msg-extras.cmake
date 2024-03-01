@@ -1,0 +1,2 @@
+set(interbotix_xsarm_diagnostic_tool_MESSAGE_FILES "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg/JointTemps.msg")
+set(interbotix_xsarm_diagnostic_tool_SERVICE_FILES "")

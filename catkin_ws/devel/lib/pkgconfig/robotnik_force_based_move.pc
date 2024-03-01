@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/devel
+
+Name: robotnik_force_based_move
+Description: Description of robotnik_force_based_move
+Version: 0.5.1
+Cflags: -I/home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_force_based_move/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime

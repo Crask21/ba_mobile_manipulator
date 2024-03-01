@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/install
+
+Name: robotnik_pad_plugins
+Description: Description of robotnik_pad_plugins
+Version: 0.10.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrobotnik_pad_plugins
+Requires: roscpp pluginlib robotnik_pad robotnik_pad_msgs

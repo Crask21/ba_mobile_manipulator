@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/devel
+
+Name: robotnik_elevator_component
+Description: Description of robotnik_elevator_component
+Version: 1.0.0
+Cflags: -I/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_component/include
+Libs: -L${prefix}/lib -lrobotnik_elevator_component
+Requires: 

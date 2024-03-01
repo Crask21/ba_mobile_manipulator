@@ -1,0 +1,11 @@
+(cl:defpackage interbotix_xs_sdk-msg
+  (:use )
+  (:export
+   "<JOINTGROUPCOMMAND>"
+   "JOINTGROUPCOMMAND"
+   "<JOINTSINGLECOMMAND>"
+   "JOINTSINGLECOMMAND"
+   "<JOINTTRAJECTORYCOMMAND>"
+   "JOINTTRAJECTORYCOMMAND"
+  ))
+

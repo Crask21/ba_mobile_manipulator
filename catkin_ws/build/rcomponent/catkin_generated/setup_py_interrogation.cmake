@@ -1,0 +1,7 @@
+set(rcomponent_SETUP_PY_SETUP_MODULE "distutils.core")
+set(rcomponent_SETUP_PY_VERSION "1.2.0")
+set(rcomponent_SETUP_PY_SCRIPTS "")
+set(rcomponent_SETUP_PY_PACKAGES "rcomponent")
+set(rcomponent_SETUP_PY_PACKAGE_DIRS "src/rcomponent")
+set(rcomponent_SETUP_PY_MODULES "")
+set(rcomponent_SETUP_PY_MODULE_DIRS "")

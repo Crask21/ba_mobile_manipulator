@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/devel
+
+Name: robotnik_pad_msgs
+Description: Description of robotnik_pad_msgs
+Version: 0.10.0
+Cflags: -I/home/markus/ros_stuff/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs

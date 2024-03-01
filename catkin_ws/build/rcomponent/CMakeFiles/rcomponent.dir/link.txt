@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,librcomponent.so -o /home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o 

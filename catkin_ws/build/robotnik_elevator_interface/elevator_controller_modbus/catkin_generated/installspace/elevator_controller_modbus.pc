@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/install
+
+Name: elevator_controller_modbus
+Description: Description of elevator_controller_modbus
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp self_test diagnostic_updater std_srvs robotnik_msgs robotnik_elevator_component robotnik_elevator_interface_msgs rcomponent

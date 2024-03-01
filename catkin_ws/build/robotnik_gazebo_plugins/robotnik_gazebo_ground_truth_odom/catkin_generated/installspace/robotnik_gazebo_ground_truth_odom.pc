@@ -1,0 +1,8 @@
+prefix=/home/markus/ros_stuff/catkin_ws/install
+
+Name: robotnik_gazebo_ground_truth_odom
+Description: Description of robotnik_gazebo_ground_truth_odom
+Version: 2.5.19
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lrobotnik_gazebo_ground_truth_odom
+Requires: message_runtime gazebo_msgs roscpp rospy nodelet angles std_srvs geometry_msgs sensor_msgs nav_msgs urdf tf tf2_ros dynamic_reconfigure rosgraph_msgs trajectory_msgs image_transport rosconsole camera_info_manager std_msgs
