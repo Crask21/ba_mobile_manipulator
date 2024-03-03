@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/summit_xl_common/robotnik_msgs/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/summit_xl_common/robotnik_msgs/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ robotnik_msgs_genpy: summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gen
 
 # fast build rule for target.
 robotnik_msgs_genpy/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genpy.dir/build
 .PHONY : robotnik_msgs_genpy/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ robotnik_msgs_generate_messages_py: summit_xl_common/robotnik_msgs/CMakeFiles/ro
 
 # fast build rule for target.
 robotnik_msgs_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_py.dir/build
 .PHONY : robotnik_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ robotnik_msgs_gennodejs: summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs
 
 # fast build rule for target.
 robotnik_msgs_gennodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gennodejs.dir/build
 .PHONY : robotnik_msgs_gennodejs/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ robotnik_msgs_generate_messages_nodejs: summit_xl_common/robotnik_msgs/CMakeFile
 
 # fast build rule for target.
 robotnik_msgs_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_nodejs.dir/build
 .PHONY : robotnik_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ robotnik_msgs_generate_messages_eus: summit_xl_common/robotnik_msgs/CMakeFiles/r
 
 # fast build rule for target.
 robotnik_msgs_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_eus.dir/build
 .PHONY : robotnik_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _robotnik_msgs_generate_messages_check_deps_LoggerQuery: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_LoggerQuery/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LoggerQuery.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_LoggerQuery/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _robotnik_msgs_generate_messages_check_deps_SetCurrent: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetCurrent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetCurrent.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetCurrent/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ _robotnik_msgs_generate_messages_check_deps_SetByte: summit_xl_common/robotnik_m
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetByte/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetByte.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetByte/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _robotnik_msgs_generate_messages_check_deps_GetPOI: summit_xl_common/robotnik_ms
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_GetPOI/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPOI.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_GetPOI/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _robotnik_msgs_generate_messages_check_deps_SetMotorMode: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetMotorMode/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorMode.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetMotorMode/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _robotnik_msgs_generate_messages_check_deps_SetMotorPID: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetMotorPID/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorPID.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetMotorPID/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _robotnik_msgs_generate_messages_check_deps_InsertTask: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_InsertTask/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InsertTask.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_InsertTask/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput: summit_xl_com
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetNamedDigitalOutput/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ _robotnik_msgs_generate_messages_check_deps_QueryAlarms: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_QueryAlarms/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarms.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_QueryAlarms/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ _robotnik_msgs_generate_messages_check_deps_ResetFromSubState: summit_xl_common/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ResetFromSubState/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ResetFromSubState.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ResetFromSubState/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ _robotnik_msgs_generate_messages_check_deps_SetLaserMode: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetLaserMode/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetLaserMode.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetLaserMode/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ _robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose: summit_xl_c
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_CartesianEuler_pose/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ robotnik_msgs_generate_messages_cpp: summit_xl_common/robotnik_msgs/CMakeFiles/r
 
 # fast build rule for target.
 robotnik_msgs_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_cpp.dir/build
 .PHONY : robotnik_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ _robotnik_msgs_generate_messages_check_deps_GetBool: summit_xl_common/robotnik_m
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_GetBool/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetBool.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_GetBool/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _robotnik_msgs_generate_messages_check_deps_get_modbus_register: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_get_modbus_register/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_modbus_register.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_get_modbus_register/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ _robotnik_msgs_generate_messages_check_deps_set_named_digital_output: summit_xl_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_named_digital_output/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_named_digital_output.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_named_digital_output/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ _robotnik_msgs_generate_messages_check_deps_set_modbus_register: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_modbus_register/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_modbus_register/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ _robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit: summit_xl_c
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_modbus_register_bit/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ _robotnik_msgs_generate_messages_check_deps_get_alarms: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_get_alarms/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_alarms.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_get_alarms/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevator: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevator/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevator.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevator/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ robotnik_msgs_gencpp: summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_ge
 
 # fast build rule for target.
 robotnik_msgs_gencpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_gencpp.dir/build
 .PHONY : robotnik_msgs_gencpp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ _robotnik_msgs_generate_messages_check_deps_SetMotorStatus: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetMotorStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetMotorStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetMotorStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ _robotnik_msgs_generate_messages_check_deps_axis_record: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_axis_record/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_axis_record.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_axis_record/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ _robotnik_msgs_generate_messages_check_deps_set_odometry: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_odometry/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_odometry.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_odometry/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ _robotnik_msgs_generate_messages_check_deps_set_digital_output: summit_xl_common
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_digital_output/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_digital_output.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_digital_output/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ robotnik_msgs_geneus: summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_ge
 
 # fast build rule for target.
 robotnik_msgs_geneus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_geneus.dir/build
 .PHONY : robotnik_msgs_geneus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ _robotnik_msgs_generate_messages_check_deps_get_mode: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_get_mode/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_mode.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_get_mode/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ _robotnik_msgs_generate_messages_check_deps_set_analog_output: summit_xl_common/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_analog_output/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_analog_output.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_analog_output/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorResult: summit_xl_common/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorResult/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorResult.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorResult/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorGoal: summit_xl_common/ro
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorGoal/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorGoal.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorGoal/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback: summit_xl
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorActionFeedback/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult: summit_xl_c
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorActionResult/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ _robotnik_msgs_generate_messages_check_deps_GetPTZ: summit_xl_common/robotnik_ms
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_GetPTZ/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetPTZ.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_GetPTZ/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ _robotnik_msgs_generate_messages_check_deps_enable_disable: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_enable_disable/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_enable_disable.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_enable_disable/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal: summit_xl_com
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorActionGoal/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ _robotnik_msgs_generate_messages_check_deps_SetTransform: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetTransform/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetTransform.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetTransform/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ _robotnik_msgs_generate_messages_check_deps_RecordStatus: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_RecordStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RecordStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_RecordStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray: summit_xl_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorReferenceValueArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorReferenceValue: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorReferenceValue/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorReferenceValue.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorReferenceValue/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ _robotnik_msgs_generate_messages_check_deps_InverterStatus: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_InverterStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_InverterStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_InverterStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ _robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_RobotnikMotorsStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential: summit_xl_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorsStatusDifferential/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset: summit_xl_common
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorHeadingOffset/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ _robotnik_msgs_generate_messages_check_deps_SetInt16: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetInt16/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetInt16.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetInt16/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ _robotnik_msgs_generate_messages_check_deps_set_ptz: summit_xl_common/robotnik_m
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_ptz/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_ptz.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_ptz/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped: summit
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatusStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ _robotnik_msgs_generate_messages_check_deps_Record: summit_xl_common/robotnik_ms
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Record/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Record.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Record/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ _robotnik_msgs_generate_messages_check_deps_ArmStatus: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ArmStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ArmStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ArmStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ _robotnik_msgs_generate_messages_check_deps_State: summit_xl_common/robotnik_msg
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_State/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_State.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_State/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ _robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus: summit_xl_common
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SafetyModuleStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorAction: summit_xl_common/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorAction/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorAction.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorAction/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ _robotnik_msgs_generate_messages_check_deps_PresenceSensorArray: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_PresenceSensorArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensorArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_PresenceSensorArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorStatus: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ robotnik_msgs_genlisp: summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_g
 
 # fast build rule for target.
 robotnik_msgs_genlisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_genlisp.dir/build
 .PHONY : robotnik_msgs_genlisp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorsStatus: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorsStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorsStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorsStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ _robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_WatchdogStatusArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ _robotnik_msgs_generate_messages_check_deps_named_inputs_outputs: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_named_inputs_outputs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_inputs_outputs.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_named_inputs_outputs/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ _robotnik_msgs_generate_messages_check_deps_StringStamped: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_StringStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_StringStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ geometry_msgs_generate_messages_eus: summit_xl_common/robotnik_msgs/CMakeFiles/g
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ _robotnik_msgs_generate_messages_check_deps_Alarms: summit_xl_common/robotnik_ms
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Alarms/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Alarms.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Alarms/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ geometry_msgs_generate_messages_lisp: summit_xl_common/robotnik_msgs/CMakeFiles/
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ _robotnik_msgs_generate_messages_check_deps_Interfaces: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Interfaces/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Interfaces.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Interfaces/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus: summit_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/rule
 
 # Convenience name for target.
@@ -1199,12 +1199,12 @@ _robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Cartesian_Euler_pose/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ _robotnik_msgs_generate_messages_check_deps_BatteryStatus: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_BatteryStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_BatteryStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/rule
 
 # Convenience name for target.
@@ -1229,12 +1229,12 @@ _robotnik_msgs_generate_messages_check_deps_QueryAlarm: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_QueryAlarm/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_QueryAlarm.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_QueryAlarm/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/rule
 
 # Convenience name for target.
@@ -1244,12 +1244,12 @@ _robotnik_msgs_generate_messages_check_deps_set_float_value: summit_xl_common/ro
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_float_value/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_float_value.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_float_value/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/rule
 
 # Convenience name for target.
@@ -1259,12 +1259,12 @@ _robotnik_msgs_generate_messages_check_deps_PresenceSensor: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_PresenceSensor/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PresenceSensor.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_PresenceSensor/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/rule
 
 # Convenience name for target.
@@ -1274,12 +1274,12 @@ _robotnik_msgs_generate_messages_check_deps_SetString: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetString/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetString.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetString/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1289,12 +1289,12 @@ geometry_msgs_generate_messages_py: summit_xl_common/robotnik_msgs/CMakeFiles/ge
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/rule
 
 # Convenience name for target.
@@ -1304,12 +1304,12 @@ _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus: summit_xl_com
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_OdomCalibrationStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/rule
 
 # Convenience name for target.
@@ -1319,12 +1319,12 @@ _robotnik_msgs_generate_messages_check_deps_Axis: summit_xl_common/robotnik_msgs
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Axis/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Axis.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Axis/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/rule
 
 # Convenience name for target.
@@ -1334,12 +1334,12 @@ _robotnik_msgs_generate_messages_check_deps_SetEncoderTurns: summit_xl_common/ro
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetEncoderTurns/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetEncoderTurns.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetEncoderTurns/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/rule
 
 # Convenience name for target.
@@ -1349,12 +1349,12 @@ _robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback: summit_xl_commo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetElevatorFeedback/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1364,12 +1364,12 @@ geometry_msgs_generate_messages_cpp: summit_xl_common/robotnik_msgs/CMakeFiles/g
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/rule
 
 # Convenience name for target.
@@ -1379,12 +1379,12 @@ _robotnik_msgs_generate_messages_check_deps_home: summit_xl_common/robotnik_msgs
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_home/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_home.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_home/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1394,12 +1394,12 @@ geometry_msgs_generate_messages_nodejs: summit_xl_common/robotnik_msgs/CMakeFile
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/rule
 
 # Convenience name for target.
@@ -1409,12 +1409,12 @@ _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/rule
 
 # Convenience name for target.
@@ -1424,12 +1424,12 @@ _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped: summit_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_BatteryDockingStatusStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -1439,12 +1439,12 @@ robotnik_msgs_generate_messages: summit_xl_common/robotnik_msgs/CMakeFiles/robot
 
 # fast build rule for target.
 robotnik_msgs_generate_messages/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages.dir/build
 .PHONY : robotnik_msgs_generate_messages/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/rule
 
 # Convenience name for target.
@@ -1454,12 +1454,12 @@ _robotnik_msgs_generate_messages_check_deps_encoders: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_encoders/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_encoders.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_encoders/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/rule
 
 # Convenience name for target.
@@ -1469,12 +1469,12 @@ _robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_BatteryStatusStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/rule
 
 # Convenience name for target.
@@ -1484,12 +1484,12 @@ _robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped: summit_xl_comm
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_PantiltStatusStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/rule
 
 # Convenience name for target.
@@ -1499,12 +1499,12 @@ _robotnik_msgs_generate_messages_check_deps_inputs_outputs: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_inputs_outputs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_inputs_outputs.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_inputs_outputs/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/rule
 
 # Convenience name for target.
@@ -1514,12 +1514,12 @@ _robotnik_msgs_generate_messages_check_deps_ElevatorAction: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ElevatorAction/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorAction.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ElevatorAction/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1529,12 +1529,12 @@ robotnik_msgs_generate_messages_lisp: summit_xl_common/robotnik_msgs/CMakeFiles/
 
 # fast build rule for target.
 robotnik_msgs_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/robotnik_msgs_generate_messages_lisp.dir/build
 .PHONY : robotnik_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/rule
 
 # Convenience name for target.
@@ -1544,12 +1544,12 @@ _robotnik_msgs_generate_messages_check_deps_Data: summit_xl_common/robotnik_msgs
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Data/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Data.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Data/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/rule
 
 # Convenience name for target.
@@ -1559,12 +1559,12 @@ _robotnik_msgs_generate_messages_check_deps_named_input_output: summit_xl_common
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_named_input_output/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_named_input_output.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_named_input_output/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/rule
 
 # Convenience name for target.
@@ -1574,12 +1574,12 @@ _robotnik_msgs_generate_messages_check_deps_get_digital_input: summit_xl_common/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_get_digital_input/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_get_digital_input.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_get_digital_input/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/rule
 
 # Convenience name for target.
@@ -1589,12 +1589,12 @@ _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped: 
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_OdomManualCalibrationStatusStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/rule
 
 # Convenience name for target.
@@ -1604,12 +1604,12 @@ _robotnik_msgs_generate_messages_check_deps_ptz: summit_xl_common/robotnik_msgs/
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ptz/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ptz.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ptz/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/rule
 
 # Convenience name for target.
@@ -1619,12 +1619,12 @@ _robotnik_msgs_generate_messages_check_deps_SubState: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SubState/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SubState.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SubState/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/rule
 
 # Convenience name for target.
@@ -1634,12 +1634,12 @@ _robotnik_msgs_generate_messages_check_deps_AlarmSensor: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_AlarmSensor/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_AlarmSensor.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_AlarmSensor/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/rule
 
 # Convenience name for target.
@@ -1649,12 +1649,12 @@ _robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset: summit_xl_co
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_GetMotorsHeadingOffset/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/rule
 
 # Convenience name for target.
@@ -1664,12 +1664,12 @@ _robotnik_msgs_generate_messages_check_deps_SetBuzzer: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_SetBuzzer/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_SetBuzzer.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_SetBuzzer/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/rule
 
 # Convenience name for target.
@@ -1679,12 +1679,12 @@ _robotnik_msgs_generate_messages_check_deps_ElevatorStatus: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ElevatorStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ElevatorStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ElevatorStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/rule
 
 # Convenience name for target.
@@ -1694,12 +1694,12 @@ _robotnik_msgs_generate_messages_check_deps_set_height: summit_xl_common/robotni
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_height/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_height.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_height/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/rule
 
 # Convenience name for target.
@@ -1709,12 +1709,12 @@ _robotnik_msgs_generate_messages_check_deps_PantiltStatus: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_PantiltStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_PantiltStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_PantiltStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/rule
 
 # Convenience name for target.
@@ -1724,12 +1724,12 @@ _robotnik_msgs_generate_messages_check_deps_alarmmonitor: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_alarmmonitor/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmmonitor.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_alarmmonitor/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/rule
 
 # Convenience name for target.
@@ -1739,12 +1739,12 @@ _robotnik_msgs_generate_messages_check_deps_ReturnMessage: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ReturnMessage/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ReturnMessage.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ReturnMessage/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/rule
 
 # Convenience name for target.
@@ -1754,12 +1754,12 @@ _robotnik_msgs_generate_messages_check_deps_ack_alarm: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_ack_alarm/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_ack_alarm.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_ack_alarm/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/rule
 
 # Convenience name for target.
@@ -1769,12 +1769,12 @@ _robotnik_msgs_generate_messages_check_deps_alarmsmonitor: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_alarmsmonitor/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_alarmsmonitor.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_alarmsmonitor/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/rule
 
 # Convenience name for target.
@@ -1784,12 +1784,12 @@ _robotnik_msgs_generate_messages_check_deps_set_mode: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_set_mode/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_set_mode.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_set_mode/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/rule
 
 # Convenience name for target.
@@ -1799,12 +1799,12 @@ _robotnik_msgs_generate_messages_check_deps_Register: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Register/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Register.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Register/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/rule
 
 # Convenience name for target.
@@ -1814,12 +1814,12 @@ _robotnik_msgs_generate_messages_check_deps_StringArray: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_StringArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_StringArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_StringArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/rule
 
 # Convenience name for target.
@@ -1829,12 +1829,12 @@ _robotnik_msgs_generate_messages_check_deps_Registers: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Registers/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Registers.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Registers/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/rule
 
 # Convenience name for target.
@@ -1844,12 +1844,12 @@ _robotnik_msgs_generate_messages_check_deps_LaserMode: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_LaserMode/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserMode.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_LaserMode/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/rule
 
 # Convenience name for target.
@@ -1859,12 +1859,12 @@ _robotnik_msgs_generate_messages_check_deps_BoolArray: summit_xl_common/robotnik
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_BoolArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_BoolArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_BoolArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/rule
 
 # Convenience name for target.
@@ -1874,12 +1874,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorPID: summit_xl_common/robotnik_
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorPID/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorPID.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorPID/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/rule
 
 # Convenience name for target.
@@ -1889,12 +1889,12 @@ _robotnik_msgs_generate_messages_check_deps_LaserStatus: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_LaserStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_LaserStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_LaserStatus/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/rule
 
 # Convenience name for target.
@@ -1904,12 +1904,12 @@ _robotnik_msgs_generate_messages_check_deps_MotorCurrent: summit_xl_common/robot
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_MotorCurrent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_MotorCurrent.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_MotorCurrent/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/rule
 
 # Convenience name for target.
@@ -1919,12 +1919,12 @@ _robotnik_msgs_generate_messages_check_deps_Logger: summit_xl_common/robotnik_ms
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Logger/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Logger.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Logger/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/rule
 
 # Convenience name for target.
@@ -1934,12 +1934,12 @@ _robotnik_msgs_generate_messages_check_deps_Pose2DArray: summit_xl_common/robotn
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Pose2DArray/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DArray.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Pose2DArray/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/rule
 
 # Convenience name for target.
@@ -1949,12 +1949,12 @@ _robotnik_msgs_generate_messages_check_deps_Pose2DStamped: summit_xl_common/robo
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_Pose2DStamped/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_Pose2DStamped.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_Pose2DStamped/fast
 
 # Convenience name for target.
 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/rule
 .PHONY : summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/rule
 
 # Convenience name for target.
@@ -1964,7 +1964,7 @@ _robotnik_msgs_generate_messages_check_deps_WatchdogStatus: summit_xl_common/rob
 
 # fast build rule for target.
 _robotnik_msgs_generate_messages_check_deps_WatchdogStatus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/build.make summit_xl_common/robotnik_msgs/CMakeFiles/_robotnik_msgs_generate_messages_check_deps_WatchdogStatus.dir/build
 .PHONY : _robotnik_msgs_generate_messages_check_deps_WatchdogStatus/fast
 
 # Help Target
@@ -2111,6 +2111,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

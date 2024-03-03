@@ -1,4 +1,4 @@
-prefix=/home/markus/ros_stuff/catkin_ws/devel
+prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
 
 Name: summit_xl_sim_bringup
 Description: Description of summit_xl_sim_bringup

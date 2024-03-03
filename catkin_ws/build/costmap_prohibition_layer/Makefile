@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/costmap_prohibition_layer/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/costmap_prohibition_layer/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ costmap_prohibition_layer_generate_messages_cpp: costmap_prohibition_layer/CMake
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_cpp.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages_cpp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ costmap_prohibition_layer_generate_messages_eus: costmap_prohibition_layer/CMake
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_eus.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages_eus/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ costmap_prohibition_layer: costmap_prohibition_layer/CMakeFiles/costmap_prohibit
 
 # fast build rule for target.
 costmap_prohibition_layer/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build
 .PHONY : costmap_prohibition_layer/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints: cos
 
 # fast build rule for target.
 _costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints.dir/build
 .PHONY : _costmap_prohibition_layer_generate_messages_check_deps_SetProhibitedPoints/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ costmap_2d_generate_messages_py: costmap_prohibition_layer/CMakeFiles/costmap_2d
 
 # fast build rule for target.
 costmap_2d_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_py.dir/build
 .PHONY : costmap_2d_generate_messages_py/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ costmap_prohibition_layer_generate_messages: costmap_prohibition_layer/CMakeFile
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ costmap_prohibition_layer_gencpp: costmap_prohibition_layer/CMakeFiles/costmap_p
 
 # fast build rule for target.
 costmap_prohibition_layer_gencpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencpp.dir/build
 .PHONY : costmap_prohibition_layer_gencpp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ _costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints: c
 
 # fast build rule for target.
 _costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints.dir/build
 .PHONY : _costmap_prohibition_layer_generate_messages_check_deps_ClearProhibitedPoints/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ costmap_2d_gencfg: costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/ru
 
 # fast build rule for target.
 costmap_2d_gencfg/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_gencfg.dir/build
 .PHONY : costmap_2d_gencfg/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints: cos
 
 # fast build rule for target.
 _costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints.dir/build
 .PHONY : _costmap_prohibition_layer_generate_messages_check_deps_AddProhibitedPoints/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ costmap_2d_generate_messages_nodejs: costmap_prohibition_layer/CMakeFiles/costma
 
 # fast build rule for target.
 costmap_2d_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
 .PHONY : costmap_2d_generate_messages_nodejs/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ costmap_2d_generate_messages_eus: costmap_prohibition_layer/CMakeFiles/costmap_2
 
 # fast build rule for target.
 costmap_2d_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
 .PHONY : costmap_2d_generate_messages_eus/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ costmap_2d_generate_messages_lisp: costmap_prohibition_layer/CMakeFiles/costmap_
 
 # fast build rule for target.
 costmap_2d_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
 .PHONY : costmap_2d_generate_messages_lisp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ costmap_2d_generate_messages_cpp: costmap_prohibition_layer/CMakeFiles/costmap_2
 
 # fast build rule for target.
 costmap_2d_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
 .PHONY : costmap_2d_generate_messages_cpp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ costmap_prohibition_layer_geneus: costmap_prohibition_layer/CMakeFiles/costmap_p
 
 # fast build rule for target.
 costmap_prohibition_layer_geneus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_geneus.dir/build
 .PHONY : costmap_prohibition_layer_geneus/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ costmap_prohibition_layer_generate_messages_lisp: costmap_prohibition_layer/CMak
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_lisp.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages_lisp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ costmap_prohibition_layer_genlisp: costmap_prohibition_layer/CMakeFiles/costmap_
 
 # fast build rule for target.
 costmap_prohibition_layer_genlisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genlisp.dir/build
 .PHONY : costmap_prohibition_layer_genlisp/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ costmap_prohibition_layer_generate_messages_nodejs: costmap_prohibition_layer/CM
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages_nodejs/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ costmap_prohibition_layer_gennodejs: costmap_prohibition_layer/CMakeFiles/costma
 
 # fast build rule for target.
 costmap_prohibition_layer_gennodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gennodejs.dir/build
 .PHONY : costmap_prohibition_layer_gennodejs/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ costmap_prohibition_layer_generate_messages_py: costmap_prohibition_layer/CMakeF
 
 # fast build rule for target.
 costmap_prohibition_layer_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_generate_messages_py.dir/build
 .PHONY : costmap_prohibition_layer_generate_messages_py/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ costmap_prohibition_layer_genpy: costmap_prohibition_layer/CMakeFiles/costmap_pr
 
 # fast build rule for target.
 costmap_prohibition_layer_genpy/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_genpy.dir/build
 .PHONY : costmap_prohibition_layer_genpy/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ _costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints: cos
 
 # fast build rule for target.
 _costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/build.make costmap_prohibition_layer/CMakeFiles/_costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints.dir/build
 .PHONY : _costmap_prohibition_layer_generate_messages_check_deps_GetProhibitedPoints/fast
 
 # Convenience name for target.
 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/rule
 .PHONY : costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/rule
 
 # Convenience name for target.
@@ -509,7 +509,7 @@ costmap_prohibition_layer_gencfg: costmap_prohibition_layer/CMakeFiles/costmap_p
 
 # fast build rule for target.
 costmap_prohibition_layer_gencfg/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer_gencfg.dir/build
 .PHONY : costmap_prohibition_layer_gencfg/fast
 
 src/costmap_prohibition_layer.o: src/costmap_prohibition_layer.cpp.o
@@ -518,7 +518,7 @@ src/costmap_prohibition_layer.o: src/costmap_prohibition_layer.cpp.o
 
 # target to build an object file
 src/costmap_prohibition_layer.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.o
 .PHONY : src/costmap_prohibition_layer.cpp.o
 
 src/costmap_prohibition_layer.i: src/costmap_prohibition_layer.cpp.i
@@ -527,7 +527,7 @@ src/costmap_prohibition_layer.i: src/costmap_prohibition_layer.cpp.i
 
 # target to preprocess a source file
 src/costmap_prohibition_layer.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.i
 .PHONY : src/costmap_prohibition_layer.cpp.i
 
 src/costmap_prohibition_layer.s: src/costmap_prohibition_layer.cpp.s
@@ -536,7 +536,7 @@ src/costmap_prohibition_layer.s: src/costmap_prohibition_layer.cpp.s
 
 # target to generate assembly for a file
 src/costmap_prohibition_layer.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/build.make costmap_prohibition_layer/CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.s
 .PHONY : src/costmap_prohibition_layer.cpp.s
 
 # Help Target
@@ -589,6 +589,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Utility rule file for diagnostic_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build: diagnostic
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/diagnostic_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/diagnostic_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/clean
 
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/rcomponent /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/rcomponent /home/markus/ros_stuff/catkin_ws/build/rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/depend
 

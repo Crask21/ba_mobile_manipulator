@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so"
   "CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o"
 )
 

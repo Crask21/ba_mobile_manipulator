@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/Errors.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/Errors.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/FrankaState.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/FrankaState.h
 string
 -
 vector
@@ -44,7 +44,7 @@ franka_msgs/Errors.h
 franka_msgs/Errors.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_control/include/franka_control/franka_state_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_control/include/franka_control/franka_state_controller.h
 cstdint
 -
 memory
@@ -68,7 +68,7 @@ sensor_msgs/JointState.h
 tf2_msgs/TFMessage.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_control/src/franka_state_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_control/src/franka_state_controller.cpp
 franka_control/franka_state_controller.h
 -
 cmath
@@ -96,7 +96,7 @@ tf/tf.h
 tf/transform_datatypes.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
 array
 -
 franka_hw/franka_state_interface.h
@@ -104,7 +104,7 @@ franka_hw/franka_state_interface.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
 string
 -
 franka/robot_state.h
@@ -112,7 +112,7 @@ franka/robot_state.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/trigger_rate.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/trigger_rate.h
 ros/time.h
 -
 
@@ -224,6 +224,30 @@ hardware_interface/robot_hw.h
 hardware_interface/hardware_interface.h
 -
 ros/ros.h
+-
+
+/opt/ros/noetic/include/franka/duration.h
+chrono
+-
+cstdint
+-
+ratio
+-
+
+/opt/ros/noetic/include/franka/errors.h
+array
+-
+ostream
+-
+
+/opt/ros/noetic/include/franka/robot_state.h
+array
+-
+ostream
+-
+franka/duration.h
+-
+franka/errors.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

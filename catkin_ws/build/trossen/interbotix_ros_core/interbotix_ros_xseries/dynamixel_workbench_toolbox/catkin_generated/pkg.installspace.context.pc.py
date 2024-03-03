@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;dynamixel_sdk".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-ldynamixel_workbench_toolbox".split(';') if "-ldynamixel_workbench_toolbox" != "" else []
 PROJECT_NAME = "dynamixel_workbench_toolbox"
-PROJECT_SPACE_DIR = "/home/markus/ros_stuff/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install"
 PROJECT_VERSION = "2.2.0"

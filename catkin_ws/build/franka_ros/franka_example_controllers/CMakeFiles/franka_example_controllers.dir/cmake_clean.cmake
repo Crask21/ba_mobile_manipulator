@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_example_controllers.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_example_controllers.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_example_controllers.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_example_controllers.so"
   "CMakeFiles/franka_example_controllers.dir/src/cartesian_impedance_example_controller.cpp.o"
   "CMakeFiles/franka_example_controllers.dir/src/cartesian_pose_example_controller.cpp.o"
   "CMakeFiles/franka_example_controllers.dir/src/cartesian_velocity_example_controller.cpp.o"

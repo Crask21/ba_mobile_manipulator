@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libinterbotix_xs_sdk.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libinterbotix_xs_sdk.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libinterbotix_xs_sdk.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libinterbotix_xs_sdk.so"
   "CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.o"
 )
 

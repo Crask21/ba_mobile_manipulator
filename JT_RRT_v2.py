@@ -22,7 +22,7 @@ class JT_RRT:
         self.start_node = node(torch.tensor(start), None, self.goaldistance(start, self.x_goal))
         self.max_iter = max_iter
         self.distance_threshold = distance_threshold
-        self.goal_bias = goal_bias
+        self.goal_bias = goal_bias # Probability of extending towards the goal
         self.step_size = step_size
         self.joint_limits = joint_limits
         self.nodes = [self.start_node]

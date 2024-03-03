@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include rcomponent/CMakeFiles/rcomponent.dir/depend.make
@@ -58,17 +58,17 @@ include rcomponent/CMakeFiles/rcomponent.dir/progress.make
 include rcomponent/CMakeFiles/rcomponent.dir/flags.make
 
 rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o: rcomponent/CMakeFiles/rcomponent.dir/flags.make
-rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o: /home/markus/ros_stuff/catkin_ws/src/rcomponent/src/rcomponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/rcomponent/src/rcomponent.cpp
+rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/rcomponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/rcomponent.cpp
 
 rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/rcomponent/src/rcomponent.cpp > CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/rcomponent.cpp > CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i
 
 rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/rcomponent/src/rcomponent.cpp -o CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/rcomponent.cpp -o CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s
 
 # Object files for target rcomponent
 rcomponent_OBJECTS = \
@@ -77,22 +77,22 @@ rcomponent_OBJECTS = \
 # External object files for target rcomponent
 rcomponent_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so"
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rcomponent.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so: rcomponent/CMakeFiles/rcomponent.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rcomponent.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rcomponent/CMakeFiles/rcomponent.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so
+rcomponent/CMakeFiles/rcomponent.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so
 
 .PHONY : rcomponent/CMakeFiles/rcomponent.dir/build
 
 rcomponent/CMakeFiles/rcomponent.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/rcomponent.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/rcomponent.dir/cmake_clean.cmake
 .PHONY : rcomponent/CMakeFiles/rcomponent.dir/clean
 
 rcomponent/CMakeFiles/rcomponent.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/rcomponent /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/rcomponent /home/markus/ros_stuff/catkin_ws/build/rcomponent/CMakeFiles/rcomponent.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent/CMakeFiles/rcomponent.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rcomponent/CMakeFiles/rcomponent.dir/depend
 

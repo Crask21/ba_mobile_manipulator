@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Utility rule file for interbotix_xsarm_joy_generate_messages.
 
@@ -63,10 +63,10 @@ trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xs
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/build
 
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/cmake_clean.cmake
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/clean
 
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/CMakeFiles/interbotix_xsarm_joy_generate_messages.dir/depend
 

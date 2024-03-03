@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Utility rule file for interbotix_xsarm_diagnostic_tool_generate_messages_py.
 
 # Include the progress variables for this target.
 include trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/progress.make
 
-trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
-trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py
+trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
+trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py
 
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py: /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg/JointTemps.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG interbotix_xsarm_diagnostic_tool/JointTemps"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && ../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg/JointTemps.msg -Iinterbotix_xsarm_diagnostic_tool:/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p interbotix_xsarm_diagnostic_tool -o /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg/JointTemps.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG interbotix_xsarm_diagnostic_tool/JointTemps"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && ../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg/JointTemps.msg -Iinterbotix_xsarm_diagnostic_tool:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p interbotix_xsarm_diagnostic_tool -o /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py: /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for interbotix_xsarm_diagnostic_tool"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && ../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg --initpy
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for interbotix_xsarm_diagnostic_tool"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && ../../../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg --initpy
 
 interbotix_xsarm_diagnostic_tool_generate_messages_py: trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py
-interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
-interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py
+interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/_JointTemps.py
+interbotix_xsarm_diagnostic_tool_generate_messages_py: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/interbotix_xsarm_diagnostic_tool/msg/__init__.py
 interbotix_xsarm_diagnostic_tool_generate_messages_py: trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build.make
 
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_py
@@ -80,10 +80,10 @@ trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xs
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build
 
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/clean
 
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/depend
 

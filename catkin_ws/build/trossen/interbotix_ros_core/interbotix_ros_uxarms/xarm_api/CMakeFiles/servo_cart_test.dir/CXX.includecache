@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ClearErr.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ClearErr.h
 ros/service_traits.h
 -
 xarm_msgs/ClearErrRequest.h
@@ -14,7 +14,7 @@ xarm_msgs/ClearErrRequest.h
 xarm_msgs/ClearErrResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ClearErrRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ClearErrRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ClearErrResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ClearErrResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ConfigToolModbus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ConfigToolModbus.h
 ros/service_traits.h
 -
 xarm_msgs/ConfigToolModbusRequest.h
@@ -54,7 +54,7 @@ xarm_msgs/ConfigToolModbusRequest.h
 xarm_msgs/ConfigToolModbusResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ConfigToolModbusRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ConfigToolModbusRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/ConfigToolModbusResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/ConfigToolModbusResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetAnalogIO.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetAnalogIO.h
 ros/service_traits.h
 -
 xarm_msgs/GetAnalogIORequest.h
@@ -94,7 +94,7 @@ xarm_msgs/GetAnalogIORequest.h
 xarm_msgs/GetAnalogIOResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetAnalogIORequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetAnalogIORequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetAnalogIOResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetAnalogIOResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIO.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIO.h
 ros/service_traits.h
 -
 xarm_msgs/GetControllerDigitalIORequest.h
@@ -134,7 +134,7 @@ xarm_msgs/GetControllerDigitalIORequest.h
 xarm_msgs/GetControllerDigitalIOResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIORequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIORequest.h
 string
 -
 vector
@@ -150,7 +150,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIOResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetControllerDigitalIOResponse.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetDigitalIO.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetDigitalIO.h
 ros/service_traits.h
 -
 xarm_msgs/GetDigitalIORequest.h
@@ -174,7 +174,7 @@ xarm_msgs/GetDigitalIORequest.h
 xarm_msgs/GetDigitalIOResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetDigitalIORequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetDigitalIORequest.h
 string
 -
 vector
@@ -190,7 +190,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetDigitalIOResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetDigitalIOResponse.h
 string
 -
 vector
@@ -206,7 +206,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetErr.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetErr.h
 ros/service_traits.h
 -
 xarm_msgs/GetErrRequest.h
@@ -214,7 +214,7 @@ xarm_msgs/GetErrRequest.h
 xarm_msgs/GetErrResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetErrRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetErrRequest.h
 string
 -
 vector
@@ -230,7 +230,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GetErrResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GetErrResponse.h
 string
 -
 vector
@@ -246,7 +246,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperConfig.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperConfig.h
 ros/service_traits.h
 -
 xarm_msgs/GripperConfigRequest.h
@@ -254,7 +254,7 @@ xarm_msgs/GripperConfigRequest.h
 xarm_msgs/GripperConfigResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperConfigRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperConfigRequest.h
 string
 -
 vector
@@ -270,7 +270,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperConfigResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperConfigResponse.h
 string
 -
 vector
@@ -286,7 +286,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperMove.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperMove.h
 ros/service_traits.h
 -
 xarm_msgs/GripperMoveRequest.h
@@ -294,7 +294,7 @@ xarm_msgs/GripperMoveRequest.h
 xarm_msgs/GripperMoveResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperMoveRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperMoveRequest.h
 string
 -
 vector
@@ -310,7 +310,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperMoveResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperMoveResponse.h
 string
 -
 vector
@@ -326,7 +326,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperState.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperState.h
 ros/service_traits.h
 -
 xarm_msgs/GripperStateRequest.h
@@ -334,7 +334,7 @@ xarm_msgs/GripperStateRequest.h
 xarm_msgs/GripperStateResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperStateRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperStateRequest.h
 string
 -
 vector
@@ -350,7 +350,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/GripperStateResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/GripperStateResponse.h
 string
 -
 vector
@@ -366,7 +366,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/IOState.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/IOState.h
 string
 -
 vector
@@ -382,7 +382,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/Move.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/Move.h
 ros/service_traits.h
 -
 xarm_msgs/MoveRequest.h
@@ -390,7 +390,7 @@ xarm_msgs/MoveRequest.h
 xarm_msgs/MoveResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/MoveRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/MoveRequest.h
 string
 -
 vector
@@ -406,7 +406,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/MoveResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/MoveResponse.h
 string
 -
 vector
@@ -422,7 +422,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/RobotMsg.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/RobotMsg.h
 string
 -
 vector
@@ -438,7 +438,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetAxis.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetAxis.h
 ros/service_traits.h
 -
 xarm_msgs/SetAxisRequest.h
@@ -446,7 +446,7 @@ xarm_msgs/SetAxisRequest.h
 xarm_msgs/SetAxisResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetAxisRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetAxisRequest.h
 string
 -
 vector
@@ -462,7 +462,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetAxisResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetAxisResponse.h
 string
 -
 vector
@@ -478,7 +478,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetDigitalIO.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetDigitalIO.h
 ros/service_traits.h
 -
 xarm_msgs/SetDigitalIORequest.h
@@ -486,7 +486,7 @@ xarm_msgs/SetDigitalIORequest.h
 xarm_msgs/SetDigitalIOResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetDigitalIORequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetDigitalIORequest.h
 string
 -
 vector
@@ -502,7 +502,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetDigitalIOResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetDigitalIOResponse.h
 string
 -
 vector
@@ -518,7 +518,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetInt16.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetInt16.h
 ros/service_traits.h
 -
 xarm_msgs/SetInt16Request.h
@@ -526,7 +526,7 @@ xarm_msgs/SetInt16Request.h
 xarm_msgs/SetInt16Response.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetInt16Request.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetInt16Request.h
 string
 -
 vector
@@ -542,7 +542,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetInt16Response.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetInt16Response.h
 string
 -
 vector
@@ -558,7 +558,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetLoad.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetLoad.h
 ros/service_traits.h
 -
 xarm_msgs/SetLoadRequest.h
@@ -566,7 +566,7 @@ xarm_msgs/SetLoadRequest.h
 xarm_msgs/SetLoadResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetLoadRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetLoadRequest.h
 string
 -
 vector
@@ -582,7 +582,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetLoadResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetLoadResponse.h
 string
 -
 vector
@@ -598,7 +598,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetToolModbus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetToolModbus.h
 ros/service_traits.h
 -
 xarm_msgs/SetToolModbusRequest.h
@@ -606,7 +606,7 @@ xarm_msgs/SetToolModbusRequest.h
 xarm_msgs/SetToolModbusResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetToolModbusRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetToolModbusRequest.h
 string
 -
 vector
@@ -622,7 +622,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/SetToolModbusResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/SetToolModbusResponse.h
 string
 -
 vector
@@ -638,7 +638,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/TCPOffset.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/TCPOffset.h
 ros/service_traits.h
 -
 xarm_msgs/TCPOffsetRequest.h
@@ -646,7 +646,7 @@ xarm_msgs/TCPOffsetRequest.h
 xarm_msgs/TCPOffsetResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/TCPOffsetRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/TCPOffsetRequest.h
 string
 -
 vector
@@ -662,7 +662,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs/TCPOffsetResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs/TCPOffsetResponse.h
 string
 -
 vector
@@ -678,67 +678,67 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/common/data_type.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/common/data_type.h
 stdio.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/common/queue_memcpy.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/common/queue_memcpy.h
 pthread.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/connect.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/connect.h
 xarm/instruction/uxbus_cmd_ser.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/instruction/uxbus_cmd_ser.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/instruction/uxbus_cmd_ser.h
 xarm/instruction/uxbus_cmd_tcp.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/instruction/uxbus_cmd_tcp.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/instruction/uxbus_cmd_tcp.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd.h
 mutex
 -
 xarm/common/data_type.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/common/data_type.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/common/data_type.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd_ser.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd_ser.h
 xarm/instruction/uxbus_cmd.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/instruction/uxbus_cmd.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/instruction/uxbus_cmd.h
 xarm/port/serial.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/port/serial.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/port/serial.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd_tcp.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/uxbus_cmd_tcp.h
 xarm/instruction/uxbus_cmd.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/instruction/uxbus_cmd.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/instruction/uxbus_cmd.h
 xarm/port/socket.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/port/socket.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/instruction/xarm/port/socket.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/linux/thread.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/linux/thread.h
 pthread.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/serial.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/serial.h
 pthread.h
 -
 xarm/common/data_type.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/data_type.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/data_type.h
 xarm/common/queue_memcpy.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/queue_memcpy.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/queue_memcpy.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/socket.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/socket.h
 pthread.h
 -
 xarm/common/data_type.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/data_type.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/data_type.h
 xarm/common/queue_memcpy.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/queue_memcpy.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/port/xarm/common/queue_memcpy.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/report_data.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/report_data.h
 xarm/common/data_type.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/common/data_type.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/xarm/common/data_type.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm_driver.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm_driver.h
 ros/ros.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/ros/ros.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/ros/ros.h
 std_msgs/Float32.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/std_msgs/Float32.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/std_msgs/Float32.h
 xarm_msgs/SetInt16.h
 -
 xarm_msgs/TCPOffset.h
@@ -782,13 +782,13 @@ xarm/common/data_type.h
 xarm/linux/thread.h
 -
 xarm/connect.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/connect.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/connect.h
 xarm/report_data.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/report_data.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/include/xarm/report_data.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/test/servo_cartesian_test.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/test/servo_cartesian_test.cpp
 ros/ros.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/test/ros/ros.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/test/ros/ros.h
 xarm_driver.h
 -
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules
+# Install script for directory: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/safe_execute_install.cmake")
+  include("/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modules.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modules.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_common_modules/cmake" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modulesConfig.cmake"
-    "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modulesConfig-version.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modulesConfig.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/catkin_generated/installspace/interbotix_common_modulesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_common_modules" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_common_modules" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules/package.xml")
 endif()
 

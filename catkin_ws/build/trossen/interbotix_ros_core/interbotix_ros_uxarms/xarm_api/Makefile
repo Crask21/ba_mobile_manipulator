@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ xarm_api: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/
 
 # fast build rule for target.
 xarm_api/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build
 .PHONY : xarm_api/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ xarm_ros_client: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMak
 
 # fast build rule for target.
 xarm_ros_client/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build
 .PHONY : xarm_ros_client/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ servo_cart_test: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMak
 
 # fast build rule for target.
 servo_cart_test/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build
 .PHONY : servo_cart_test/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ example1_report_norm_node: trossen/interbotix_ros_core/interbotix_ros_uxarms/xar
 
 # fast build rule for target.
 example1_report_norm_node/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build
 .PHONY : example1_report_norm_node/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ xarm_driver_node: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMa
 
 # fast build rule for target.
 xarm_driver_node/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build
 .PHONY : xarm_driver_node/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ move_test: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles
 
 # fast build rule for target.
 move_test/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build
 .PHONY : move_test/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/rule
 
 # Convenience name for target.
@@ -269,7 +269,7 @@ test_tool_modbus: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMa
 
 # fast build rule for target.
 test_tool_modbus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build
 .PHONY : test_tool_modbus/fast
 
 src/xarm/common/crc16.o: src/xarm/common/crc16.cc.o
@@ -278,7 +278,7 @@ src/xarm/common/crc16.o: src/xarm/common/crc16.cc.o
 
 # target to build an object file
 src/xarm/common/crc16.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.o
 .PHONY : src/xarm/common/crc16.cc.o
 
 src/xarm/common/crc16.i: src/xarm/common/crc16.cc.i
@@ -287,7 +287,7 @@ src/xarm/common/crc16.i: src/xarm/common/crc16.cc.i
 
 # target to preprocess a source file
 src/xarm/common/crc16.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.i
 .PHONY : src/xarm/common/crc16.cc.i
 
 src/xarm/common/crc16.s: src/xarm/common/crc16.cc.s
@@ -296,7 +296,7 @@ src/xarm/common/crc16.s: src/xarm/common/crc16.cc.s
 
 # target to generate assembly for a file
 src/xarm/common/crc16.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.s
 .PHONY : src/xarm/common/crc16.cc.s
 
 src/xarm/common/queue_memcpy.o: src/xarm/common/queue_memcpy.cc.o
@@ -305,7 +305,7 @@ src/xarm/common/queue_memcpy.o: src/xarm/common/queue_memcpy.cc.o
 
 # target to build an object file
 src/xarm/common/queue_memcpy.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.o
 .PHONY : src/xarm/common/queue_memcpy.cc.o
 
 src/xarm/common/queue_memcpy.i: src/xarm/common/queue_memcpy.cc.i
@@ -314,7 +314,7 @@ src/xarm/common/queue_memcpy.i: src/xarm/common/queue_memcpy.cc.i
 
 # target to preprocess a source file
 src/xarm/common/queue_memcpy.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.i
 .PHONY : src/xarm/common/queue_memcpy.cc.i
 
 src/xarm/common/queue_memcpy.s: src/xarm/common/queue_memcpy.cc.s
@@ -323,7 +323,7 @@ src/xarm/common/queue_memcpy.s: src/xarm/common/queue_memcpy.cc.s
 
 # target to generate assembly for a file
 src/xarm/common/queue_memcpy.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.s
 .PHONY : src/xarm/common/queue_memcpy.cc.s
 
 src/xarm/connect.o: src/xarm/connect.cc.o
@@ -332,7 +332,7 @@ src/xarm/connect.o: src/xarm/connect.cc.o
 
 # target to build an object file
 src/xarm/connect.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.o
 .PHONY : src/xarm/connect.cc.o
 
 src/xarm/connect.i: src/xarm/connect.cc.i
@@ -341,7 +341,7 @@ src/xarm/connect.i: src/xarm/connect.cc.i
 
 # target to preprocess a source file
 src/xarm/connect.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.i
 .PHONY : src/xarm/connect.cc.i
 
 src/xarm/connect.s: src/xarm/connect.cc.s
@@ -350,7 +350,7 @@ src/xarm/connect.s: src/xarm/connect.cc.s
 
 # target to generate assembly for a file
 src/xarm/connect.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/connect.cc.s
 .PHONY : src/xarm/connect.cc.s
 
 src/xarm/debug/debug_print.o: src/xarm/debug/debug_print.cc.o
@@ -359,7 +359,7 @@ src/xarm/debug/debug_print.o: src/xarm/debug/debug_print.cc.o
 
 # target to build an object file
 src/xarm/debug/debug_print.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.o
 .PHONY : src/xarm/debug/debug_print.cc.o
 
 src/xarm/debug/debug_print.i: src/xarm/debug/debug_print.cc.i
@@ -368,7 +368,7 @@ src/xarm/debug/debug_print.i: src/xarm/debug/debug_print.cc.i
 
 # target to preprocess a source file
 src/xarm/debug/debug_print.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.i
 .PHONY : src/xarm/debug/debug_print.cc.i
 
 src/xarm/debug/debug_print.s: src/xarm/debug/debug_print.cc.s
@@ -377,7 +377,7 @@ src/xarm/debug/debug_print.s: src/xarm/debug/debug_print.cc.s
 
 # target to generate assembly for a file
 src/xarm/debug/debug_print.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/debug/debug_print.cc.s
 .PHONY : src/xarm/debug/debug_print.cc.s
 
 src/xarm/instruction/uxbus_cmd.o: src/xarm/instruction/uxbus_cmd.cc.o
@@ -386,7 +386,7 @@ src/xarm/instruction/uxbus_cmd.o: src/xarm/instruction/uxbus_cmd.cc.o
 
 # target to build an object file
 src/xarm/instruction/uxbus_cmd.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.o
 .PHONY : src/xarm/instruction/uxbus_cmd.cc.o
 
 src/xarm/instruction/uxbus_cmd.i: src/xarm/instruction/uxbus_cmd.cc.i
@@ -395,7 +395,7 @@ src/xarm/instruction/uxbus_cmd.i: src/xarm/instruction/uxbus_cmd.cc.i
 
 # target to preprocess a source file
 src/xarm/instruction/uxbus_cmd.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.i
 .PHONY : src/xarm/instruction/uxbus_cmd.cc.i
 
 src/xarm/instruction/uxbus_cmd.s: src/xarm/instruction/uxbus_cmd.cc.s
@@ -404,7 +404,7 @@ src/xarm/instruction/uxbus_cmd.s: src/xarm/instruction/uxbus_cmd.cc.s
 
 # target to generate assembly for a file
 src/xarm/instruction/uxbus_cmd.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd.cc.s
 .PHONY : src/xarm/instruction/uxbus_cmd.cc.s
 
 src/xarm/instruction/uxbus_cmd_ser.o: src/xarm/instruction/uxbus_cmd_ser.cc.o
@@ -413,7 +413,7 @@ src/xarm/instruction/uxbus_cmd_ser.o: src/xarm/instruction/uxbus_cmd_ser.cc.o
 
 # target to build an object file
 src/xarm/instruction/uxbus_cmd_ser.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.o
 .PHONY : src/xarm/instruction/uxbus_cmd_ser.cc.o
 
 src/xarm/instruction/uxbus_cmd_ser.i: src/xarm/instruction/uxbus_cmd_ser.cc.i
@@ -422,7 +422,7 @@ src/xarm/instruction/uxbus_cmd_ser.i: src/xarm/instruction/uxbus_cmd_ser.cc.i
 
 # target to preprocess a source file
 src/xarm/instruction/uxbus_cmd_ser.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.i
 .PHONY : src/xarm/instruction/uxbus_cmd_ser.cc.i
 
 src/xarm/instruction/uxbus_cmd_ser.s: src/xarm/instruction/uxbus_cmd_ser.cc.s
@@ -431,7 +431,7 @@ src/xarm/instruction/uxbus_cmd_ser.s: src/xarm/instruction/uxbus_cmd_ser.cc.s
 
 # target to generate assembly for a file
 src/xarm/instruction/uxbus_cmd_ser.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_ser.cc.s
 .PHONY : src/xarm/instruction/uxbus_cmd_ser.cc.s
 
 src/xarm/instruction/uxbus_cmd_tcp.o: src/xarm/instruction/uxbus_cmd_tcp.cc.o
@@ -440,7 +440,7 @@ src/xarm/instruction/uxbus_cmd_tcp.o: src/xarm/instruction/uxbus_cmd_tcp.cc.o
 
 # target to build an object file
 src/xarm/instruction/uxbus_cmd_tcp.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.o
 .PHONY : src/xarm/instruction/uxbus_cmd_tcp.cc.o
 
 src/xarm/instruction/uxbus_cmd_tcp.i: src/xarm/instruction/uxbus_cmd_tcp.cc.i
@@ -449,7 +449,7 @@ src/xarm/instruction/uxbus_cmd_tcp.i: src/xarm/instruction/uxbus_cmd_tcp.cc.i
 
 # target to preprocess a source file
 src/xarm/instruction/uxbus_cmd_tcp.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.i
 .PHONY : src/xarm/instruction/uxbus_cmd_tcp.cc.i
 
 src/xarm/instruction/uxbus_cmd_tcp.s: src/xarm/instruction/uxbus_cmd_tcp.cc.s
@@ -458,7 +458,7 @@ src/xarm/instruction/uxbus_cmd_tcp.s: src/xarm/instruction/uxbus_cmd_tcp.cc.s
 
 # target to generate assembly for a file
 src/xarm/instruction/uxbus_cmd_tcp.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/instruction/uxbus_cmd_tcp.cc.s
 .PHONY : src/xarm/instruction/uxbus_cmd_tcp.cc.s
 
 src/xarm/linux/network.o: src/xarm/linux/network.cc.o
@@ -467,7 +467,7 @@ src/xarm/linux/network.o: src/xarm/linux/network.cc.o
 
 # target to build an object file
 src/xarm/linux/network.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.o
 .PHONY : src/xarm/linux/network.cc.o
 
 src/xarm/linux/network.i: src/xarm/linux/network.cc.i
@@ -476,7 +476,7 @@ src/xarm/linux/network.i: src/xarm/linux/network.cc.i
 
 # target to preprocess a source file
 src/xarm/linux/network.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.i
 .PHONY : src/xarm/linux/network.cc.i
 
 src/xarm/linux/network.s: src/xarm/linux/network.cc.s
@@ -485,7 +485,7 @@ src/xarm/linux/network.s: src/xarm/linux/network.cc.s
 
 # target to generate assembly for a file
 src/xarm/linux/network.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/network.cc.s
 .PHONY : src/xarm/linux/network.cc.s
 
 src/xarm/linux/thread.o: src/xarm/linux/thread.cc.o
@@ -494,7 +494,7 @@ src/xarm/linux/thread.o: src/xarm/linux/thread.cc.o
 
 # target to build an object file
 src/xarm/linux/thread.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.o
 .PHONY : src/xarm/linux/thread.cc.o
 
 src/xarm/linux/thread.i: src/xarm/linux/thread.cc.i
@@ -503,7 +503,7 @@ src/xarm/linux/thread.i: src/xarm/linux/thread.cc.i
 
 # target to preprocess a source file
 src/xarm/linux/thread.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.i
 .PHONY : src/xarm/linux/thread.cc.i
 
 src/xarm/linux/thread.s: src/xarm/linux/thread.cc.s
@@ -512,7 +512,7 @@ src/xarm/linux/thread.s: src/xarm/linux/thread.cc.s
 
 # target to generate assembly for a file
 src/xarm/linux/thread.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/linux/thread.cc.s
 .PHONY : src/xarm/linux/thread.cc.s
 
 src/xarm/port/serial.o: src/xarm/port/serial.cc.o
@@ -521,7 +521,7 @@ src/xarm/port/serial.o: src/xarm/port/serial.cc.o
 
 # target to build an object file
 src/xarm/port/serial.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.o
 .PHONY : src/xarm/port/serial.cc.o
 
 src/xarm/port/serial.i: src/xarm/port/serial.cc.i
@@ -530,7 +530,7 @@ src/xarm/port/serial.i: src/xarm/port/serial.cc.i
 
 # target to preprocess a source file
 src/xarm/port/serial.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.i
 .PHONY : src/xarm/port/serial.cc.i
 
 src/xarm/port/serial.s: src/xarm/port/serial.cc.s
@@ -539,7 +539,7 @@ src/xarm/port/serial.s: src/xarm/port/serial.cc.s
 
 # target to generate assembly for a file
 src/xarm/port/serial.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/serial.cc.s
 .PHONY : src/xarm/port/serial.cc.s
 
 src/xarm/port/socket.o: src/xarm/port/socket.cc.o
@@ -548,7 +548,7 @@ src/xarm/port/socket.o: src/xarm/port/socket.cc.o
 
 # target to build an object file
 src/xarm/port/socket.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.o
 .PHONY : src/xarm/port/socket.cc.o
 
 src/xarm/port/socket.i: src/xarm/port/socket.cc.i
@@ -557,7 +557,7 @@ src/xarm/port/socket.i: src/xarm/port/socket.cc.i
 
 # target to preprocess a source file
 src/xarm/port/socket.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.i
 .PHONY : src/xarm/port/socket.cc.i
 
 src/xarm/port/socket.s: src/xarm/port/socket.cc.s
@@ -566,7 +566,7 @@ src/xarm/port/socket.s: src/xarm/port/socket.cc.s
 
 # target to generate assembly for a file
 src/xarm/port/socket.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/port/socket.cc.s
 .PHONY : src/xarm/port/socket.cc.s
 
 src/xarm/report_data.o: src/xarm/report_data.cc.o
@@ -575,7 +575,7 @@ src/xarm/report_data.o: src/xarm/report_data.cc.o
 
 # target to build an object file
 src/xarm/report_data.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.o
 .PHONY : src/xarm/report_data.cc.o
 
 src/xarm/report_data.i: src/xarm/report_data.cc.i
@@ -584,7 +584,7 @@ src/xarm/report_data.i: src/xarm/report_data.cc.i
 
 # target to preprocess a source file
 src/xarm/report_data.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.i
 .PHONY : src/xarm/report_data.cc.i
 
 src/xarm/report_data.s: src/xarm/report_data.cc.s
@@ -593,7 +593,7 @@ src/xarm/report_data.s: src/xarm/report_data.cc.s
 
 # target to generate assembly for a file
 src/xarm/report_data.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_api.dir/src/xarm/report_data.cc.s
 .PHONY : src/xarm/report_data.cc.s
 
 src/xarm_driver.o: src/xarm_driver.cpp.o
@@ -602,7 +602,7 @@ src/xarm_driver.o: src/xarm_driver.cpp.o
 
 # target to build an object file
 src/xarm_driver.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.o
 .PHONY : src/xarm_driver.cpp.o
 
 src/xarm_driver.i: src/xarm_driver.cpp.i
@@ -611,7 +611,7 @@ src/xarm_driver.i: src/xarm_driver.cpp.i
 
 # target to preprocess a source file
 src/xarm_driver.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.i
 .PHONY : src/xarm_driver.cpp.i
 
 src/xarm_driver.s: src/xarm_driver.cpp.s
@@ -620,7 +620,7 @@ src/xarm_driver.s: src/xarm_driver.cpp.s
 
 # target to generate assembly for a file
 src/xarm_driver.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver.cpp.s
 .PHONY : src/xarm_driver.cpp.s
 
 src/xarm_driver_node.o: src/xarm_driver_node.cpp.o
@@ -629,7 +629,7 @@ src/xarm_driver_node.o: src/xarm_driver_node.cpp.o
 
 # target to build an object file
 src/xarm_driver_node.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.o
 .PHONY : src/xarm_driver_node.cpp.o
 
 src/xarm_driver_node.i: src/xarm_driver_node.cpp.i
@@ -638,7 +638,7 @@ src/xarm_driver_node.i: src/xarm_driver_node.cpp.i
 
 # target to preprocess a source file
 src/xarm_driver_node.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.i
 .PHONY : src/xarm_driver_node.cpp.i
 
 src/xarm_driver_node.s: src/xarm_driver_node.cpp.s
@@ -647,7 +647,7 @@ src/xarm_driver_node.s: src/xarm_driver_node.cpp.s
 
 # target to generate assembly for a file
 src/xarm_driver_node.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.s
 .PHONY : src/xarm_driver_node.cpp.s
 
 src/xarm_ros_client.o: src/xarm_ros_client.cpp.o
@@ -656,7 +656,7 @@ src/xarm_ros_client.o: src/xarm_ros_client.cpp.o
 
 # target to build an object file
 src/xarm_ros_client.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o
 .PHONY : src/xarm_ros_client.cpp.o
 
 src/xarm_ros_client.i: src/xarm_ros_client.cpp.i
@@ -665,7 +665,7 @@ src/xarm_ros_client.i: src/xarm_ros_client.cpp.i
 
 # target to preprocess a source file
 src/xarm_ros_client.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i
 .PHONY : src/xarm_ros_client.cpp.i
 
 src/xarm_ros_client.s: src/xarm_ros_client.cpp.s
@@ -674,7 +674,7 @@ src/xarm_ros_client.s: src/xarm_ros_client.cpp.s
 
 # target to generate assembly for a file
 src/xarm_ros_client.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s
 .PHONY : src/xarm_ros_client.cpp.s
 
 test/example1_report_norm.o: test/example1_report_norm.cc.o
@@ -683,7 +683,7 @@ test/example1_report_norm.o: test/example1_report_norm.cc.o
 
 # target to build an object file
 test/example1_report_norm.cc.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.o
 .PHONY : test/example1_report_norm.cc.o
 
 test/example1_report_norm.i: test/example1_report_norm.cc.i
@@ -692,7 +692,7 @@ test/example1_report_norm.i: test/example1_report_norm.cc.i
 
 # target to preprocess a source file
 test/example1_report_norm.cc.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.i
 .PHONY : test/example1_report_norm.cc.i
 
 test/example1_report_norm.s: test/example1_report_norm.cc.s
@@ -701,7 +701,7 @@ test/example1_report_norm.s: test/example1_report_norm.cc.s
 
 # target to generate assembly for a file
 test/example1_report_norm.cc.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/example1_report_norm_node.dir/test/example1_report_norm.cc.s
 .PHONY : test/example1_report_norm.cc.s
 
 test/move_test.o: test/move_test.cpp.o
@@ -710,7 +710,7 @@ test/move_test.o: test/move_test.cpp.o
 
 # target to build an object file
 test/move_test.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.o
 .PHONY : test/move_test.cpp.o
 
 test/move_test.i: test/move_test.cpp.i
@@ -719,7 +719,7 @@ test/move_test.i: test/move_test.cpp.i
 
 # target to preprocess a source file
 test/move_test.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.i
 .PHONY : test/move_test.cpp.i
 
 test/move_test.s: test/move_test.cpp.s
@@ -728,7 +728,7 @@ test/move_test.s: test/move_test.cpp.s
 
 # target to generate assembly for a file
 test/move_test.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/move_test.dir/test/move_test.cpp.s
 .PHONY : test/move_test.cpp.s
 
 test/servo_cartesian_test.o: test/servo_cartesian_test.cpp.o
@@ -737,7 +737,7 @@ test/servo_cartesian_test.o: test/servo_cartesian_test.cpp.o
 
 # target to build an object file
 test/servo_cartesian_test.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.o
 .PHONY : test/servo_cartesian_test.cpp.o
 
 test/servo_cartesian_test.i: test/servo_cartesian_test.cpp.i
@@ -746,7 +746,7 @@ test/servo_cartesian_test.i: test/servo_cartesian_test.cpp.i
 
 # target to preprocess a source file
 test/servo_cartesian_test.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.i
 .PHONY : test/servo_cartesian_test.cpp.i
 
 test/servo_cartesian_test.s: test/servo_cartesian_test.cpp.s
@@ -755,7 +755,7 @@ test/servo_cartesian_test.s: test/servo_cartesian_test.cpp.s
 
 # target to generate assembly for a file
 test/servo_cartesian_test.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/servo_cart_test.dir/test/servo_cartesian_test.cpp.s
 .PHONY : test/servo_cartesian_test.cpp.s
 
 test/test_tool_modbus.o: test/test_tool_modbus.cpp.o
@@ -764,7 +764,7 @@ test/test_tool_modbus.o: test/test_tool_modbus.cpp.o
 
 # target to build an object file
 test/test_tool_modbus.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.o
 .PHONY : test/test_tool_modbus.cpp.o
 
 test/test_tool_modbus.i: test/test_tool_modbus.cpp.i
@@ -773,7 +773,7 @@ test/test_tool_modbus.i: test/test_tool_modbus.cpp.i
 
 # target to preprocess a source file
 test/test_tool_modbus.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.i
 .PHONY : test/test_tool_modbus.cpp.i
 
 test/test_tool_modbus.s: test/test_tool_modbus.cpp.s
@@ -782,7 +782,7 @@ test/test_tool_modbus.s: test/test_tool_modbus.cpp.s
 
 # target to generate assembly for a file
 test/test_tool_modbus.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.s
 .PHONY : test/test_tool_modbus.cpp.s
 
 # Help Target
@@ -873,6 +873,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

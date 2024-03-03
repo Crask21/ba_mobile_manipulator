@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointSingleCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointSingleCommand.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointTrajectoryCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointTrajectoryCommand.h
 string
 -
 vector
@@ -56,7 +56,7 @@ ros/message_operations.h
 trajectory_msgs/JointTrajectory.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/MotorGains.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/MotorGains.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/MotorGainsRequest.h
@@ -64,7 +64,7 @@ interbotix_xs_sdk/MotorGainsRequest.h
 interbotix_xs_sdk/MotorGainsResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/MotorGainsRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/MotorGainsRequest.h
 string
 -
 vector
@@ -80,7 +80,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/MotorGainsResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/MotorGainsResponse.h
 string
 -
 vector
@@ -96,7 +96,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModes.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModes.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/OperatingModesRequest.h
@@ -104,7 +104,7 @@ interbotix_xs_sdk/OperatingModesRequest.h
 interbotix_xs_sdk/OperatingModesResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModesRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModesRequest.h
 string
 -
 vector
@@ -120,7 +120,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModesResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/OperatingModesResponse.h
 string
 -
 vector
@@ -136,7 +136,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/Reboot.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/Reboot.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/RebootRequest.h
@@ -144,7 +144,7 @@ interbotix_xs_sdk/RebootRequest.h
 interbotix_xs_sdk/RebootResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RebootRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RebootRequest.h
 string
 -
 vector
@@ -160,7 +160,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RebootResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RebootResponse.h
 string
 -
 vector
@@ -176,7 +176,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValues.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValues.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/RegisterValuesRequest.h
@@ -184,7 +184,7 @@ interbotix_xs_sdk/RegisterValuesRequest.h
 interbotix_xs_sdk/RegisterValuesResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValuesRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValuesRequest.h
 string
 -
 vector
@@ -200,7 +200,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValuesResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RegisterValuesResponse.h
 string
 -
 vector
@@ -216,7 +216,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/RobotInfoRequest.h
@@ -224,7 +224,7 @@ interbotix_xs_sdk/RobotInfoRequest.h
 interbotix_xs_sdk/RobotInfoResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
 string
 -
 vector
@@ -240,7 +240,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
 string
 -
 vector
@@ -256,7 +256,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnable.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnable.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/TorqueEnableRequest.h
@@ -264,7 +264,7 @@ interbotix_xs_sdk/TorqueEnableRequest.h
 interbotix_xs_sdk/TorqueEnableResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnableRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnableRequest.h
 string
 -
 vector
@@ -280,7 +280,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnableResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/TorqueEnableResponse.h
 string
 -
 vector
@@ -296,37 +296,37 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
 dynamixel_tool.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
 Arduino.h
 -
 DynamixelSDK.h
 -
 unistd.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/unistd.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/unistd.h
 dynamixel_sdk/dynamixel_sdk.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_sdk/dynamixel_sdk.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_sdk/dynamixel_sdk.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
 stdint.h
 -
 stddef.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_tool.h
 string.h
 -
 stdio.h
 -
 dynamixel_item.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_item.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h
 dynamixel_driver.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_driver.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/xs_sdk_obj.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/xs_sdk_obj.h
 ros/ros.h
 -
 urdf/model.h
@@ -344,31 +344,31 @@ trajectory_msgs/JointTrajectoryPoint.h
 dynamixel_workbench_toolbox/dynamixel_workbench.h
 -
 interbotix_xs_sdk/Reboot.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/Reboot.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/Reboot.h
 interbotix_xs_sdk/RobotInfo.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/RobotInfo.h
 interbotix_xs_sdk/MotorGains.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/MotorGains.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/MotorGains.h
 interbotix_xs_sdk/TorqueEnable.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/TorqueEnable.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/TorqueEnable.h
 interbotix_xs_sdk/OperatingModes.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/OperatingModes.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/OperatingModes.h
 interbotix_xs_sdk/RegisterValues.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/RegisterValues.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/RegisterValues.h
 interbotix_xs_sdk/JointGroupCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointGroupCommand.h
 interbotix_xs_sdk/JointSingleCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointSingleCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointSingleCommand.h
 interbotix_xs_sdk/JointTrajectoryCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointTrajectoryCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/interbotix_xs_sdk/interbotix_xs_sdk/JointTrajectoryCommand.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/xs_sdk.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/xs_sdk.cpp
 interbotix_xs_sdk/xs_sdk_obj.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/interbotix_xs_sdk/xs_sdk_obj.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/interbotix_xs_sdk/xs_sdk_obj.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/xs_sdk_obj.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/xs_sdk_obj.cpp
 interbotix_xs_sdk/xs_sdk_obj.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/interbotix_xs_sdk/xs_sdk_obj.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/src/interbotix_xs_sdk/xs_sdk_obj.h
 
 /opt/ros/noetic/include/dynamixel_sdk/dynamixel_sdk.h
 group_bulk_read.h

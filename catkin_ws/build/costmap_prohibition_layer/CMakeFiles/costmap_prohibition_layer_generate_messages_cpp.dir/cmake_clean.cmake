@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/include/costmap_prohibition_layer/AddProhibitedPoints.h"
-  "/home/markus/ros_stuff/catkin_ws/devel/include/costmap_prohibition_layer/ClearProhibitedPoints.h"
-  "/home/markus/ros_stuff/catkin_ws/devel/include/costmap_prohibition_layer/GetProhibitedPoints.h"
-  "/home/markus/ros_stuff/catkin_ws/devel/include/costmap_prohibition_layer/SetProhibitedPoints.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/costmap_prohibition_layer/AddProhibitedPoints.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/costmap_prohibition_layer/ClearProhibitedPoints.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/costmap_prohibition_layer/GetProhibitedPoints.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/costmap_prohibition_layer/SetProhibitedPoints.h"
   "CMakeFiles/costmap_prohibition_layer_generate_messages_cpp"
 )
 

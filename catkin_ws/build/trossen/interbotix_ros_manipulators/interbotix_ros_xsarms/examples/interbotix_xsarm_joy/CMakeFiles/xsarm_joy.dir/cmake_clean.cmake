@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/interbotix_xsarm_joy/xsarm_joy"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/interbotix_xsarm_joy/xsarm_joy.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/interbotix_xsarm_joy/xsarm_joy"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/interbotix_xsarm_joy/xsarm_joy.pdb"
   "CMakeFiles/xsarm_joy.dir/src/xsarm_joy.cpp.o"
 )
 

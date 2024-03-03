@@ -67,14 +67,14 @@ set(costmap_prohibition_layer_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(costmap_prohibition_layer_SOURCE_PREFIX /home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer)
-  set(costmap_prohibition_layer_DEVEL_PREFIX /home/markus/ros_stuff/catkin_ws/devel)
+  set(costmap_prohibition_layer_SOURCE_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer)
+  set(costmap_prohibition_layer_DEVEL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel)
   set(costmap_prohibition_layer_INSTALL_PREFIX "")
   set(costmap_prohibition_layer_PREFIX ${costmap_prohibition_layer_DEVEL_PREFIX})
 else()
   set(costmap_prohibition_layer_SOURCE_PREFIX "")
   set(costmap_prohibition_layer_DEVEL_PREFIX "")
-  set(costmap_prohibition_layer_INSTALL_PREFIX /home/markus/ros_stuff/catkin_ws/install)
+  set(costmap_prohibition_layer_INSTALL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install)
   set(costmap_prohibition_layer_PREFIX ${costmap_prohibition_layer_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(costmap_prohibition_layer_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/markus/ros_stuff/catkin_ws/devel/include;/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/include " STREQUAL " ")
+if(NOT "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/include " STREQUAL " ")
   set(costmap_prohibition_layer_INCLUDE_DIRS "")
-  set(_include_dirs "/home/markus/ros_stuff/catkin_ws/devel/include;/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/include")
+  set(_include_dirs "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/markus/ros_stuff/catkin_ws/devel/include;/home/markus/ros_stuff/ca
         message(FATAL_ERROR "Project 'costmap_prohibition_layer' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'costmap_prohibition_layer' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'costmap_prohibition_layer' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/${idir}'.  ${_report}")
     endif()
     _list_append_unique(costmap_prohibition_layer_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/markus/ros_stuff/catkin_ws/devel/lib;/home/markus/ros_stuff/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

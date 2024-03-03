@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/State.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/State.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/include/rcomponent/rcomponent.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/include/rcomponent/rcomponent.h
 ros/ros.h
 -
 pthread.h
@@ -48,27 +48,27 @@ rcomponent/topic_health_monitor.h
 sstream
 -
 
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/include/rcomponent/rcomponent_log_macros.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/include/rcomponent/rcomponent_log_macros.h
 
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/include/rcomponent/topic_health_monitor.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/include/rcomponent/topic_health_monitor.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/simple_diagnostics_component.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/simple_diagnostics_component.cpp
 rcomponent/rcomponent.h
 -
 std_srvs/Empty.h
 -
 diagnostic_msgs/DiagnosticStatus.h
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/diagnostic_msgs/DiagnosticStatus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/diagnostic_msgs/DiagnosticStatus.h
 diagnostic_updater/diagnostic_updater.h
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/diagnostic_updater/diagnostic_updater.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/diagnostic_updater/diagnostic_updater.h
 diagnostic_updater/update_functions.h
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/diagnostic_updater/update_functions.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/diagnostic_updater/update_functions.h
 diagnostic_updater/DiagnosticStatusWrapper.h
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/diagnostic_updater/DiagnosticStatusWrapper.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/diagnostic_updater/DiagnosticStatusWrapper.h
 diagnostic_updater/publisher.h
-/home/markus/ros_stuff/catkin_ws/src/rcomponent/src/diagnostic_updater/publisher.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent/src/diagnostic_updater/publisher.h
 
 /opt/ros/noetic/include/diagnostic_msgs/DiagnosticArray.h
 string

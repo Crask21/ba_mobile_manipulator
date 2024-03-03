@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_control/franka_control_node"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_control/franka_control_node.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_control/franka_control_node"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_control/franka_control_node.pdb"
   "CMakeFiles/franka_control_node.dir/src/franka_control_node.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so"
   "CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o"
 )
 

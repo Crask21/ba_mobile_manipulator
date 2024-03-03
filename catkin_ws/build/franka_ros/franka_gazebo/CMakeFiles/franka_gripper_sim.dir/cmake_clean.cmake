@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_gripper_sim.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_gripper_sim.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_gripper_sim.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_gripper_sim.so"
   "CMakeFiles/franka_gripper_sim.dir/src/franka_gripper_sim.cpp.o"
 )
 

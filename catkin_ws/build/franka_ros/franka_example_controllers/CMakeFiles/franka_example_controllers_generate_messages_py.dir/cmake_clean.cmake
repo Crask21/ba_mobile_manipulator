@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/franka_example_controllers/msg/_JointTorqueComparison.py"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/franka_example_controllers/msg/__init__.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/franka_example_controllers/msg/_JointTorqueComparison.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/franka_example_controllers/msg/__init__.py"
   "CMakeFiles/franka_example_controllers_generate_messages_py"
 )
 

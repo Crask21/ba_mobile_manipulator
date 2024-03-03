@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ xs_sdk: trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMa
 
 # fast build rule for target.
 xs_sdk/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build
 .PHONY : xs_sdk/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ interbotix_xs_sdk_genpy: trossen/interbotix_ros_core/interbotix_ros_xseries/inte
 
 # fast build rule for target.
 interbotix_xs_sdk_genpy/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genpy.dir/build
 .PHONY : interbotix_xs_sdk_genpy/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ interbotix_xs_sdk_gennodejs: trossen/interbotix_ros_core/interbotix_ros_xseries/
 
 # fast build rule for target.
 interbotix_xs_sdk_gennodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gennodejs.dir/build
 .PHONY : interbotix_xs_sdk_gennodejs/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ interbotix_xs_sdk_generate_messages_nodejs: trossen/interbotix_ros_core/interbot
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_nodejs.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages_nodejs/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ interbotix_xs_sdk_genlisp: trossen/interbotix_ros_core/interbotix_ros_xseries/in
 
 # fast build rule for target.
 interbotix_xs_sdk_genlisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/build
 .PHONY : interbotix_xs_sdk_genlisp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ interbotix_xs_sdk_generate_messages_lisp: trossen/interbotix_ros_core/interbotix
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_lisp.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages_lisp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ interbotix_xs_sdk_geneus: trossen/interbotix_ros_core/interbotix_ros_xseries/int
 
 # fast build rule for target.
 interbotix_xs_sdk_geneus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_geneus.dir/build
 .PHONY : interbotix_xs_sdk_geneus/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand: trossen/inter
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_JointGroupCommand/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand: trossen/inte
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_JointSingleCommand/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ interbotix_xs_sdk_generate_messages: trossen/interbotix_ros_core/interbotix_ros_
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand: trossen/
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_JointTrajectoryCommand/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_Reboot: trossen/interbotix_ros_c
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_Reboot/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_Reboot.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_Reboot/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_OperatingModes: trossen/interbot
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_OperatingModes/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_OperatingModes.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_OperatingModes/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_RobotInfo: trossen/interbotix_ro
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_RobotInfo/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RobotInfo.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_RobotInfo/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ interbotix_xs_sdk_generate_messages_py: trossen/interbotix_ros_core/interbotix_r
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_py.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages_py/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_RegisterValues: trossen/interbot
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_RegisterValues/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_RegisterValues.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_RegisterValues/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ interbotix_xs_sdk_generate_messages_eus: trossen/interbotix_ros_core/interbotix_
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_eus.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages_eus/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ interbotix_xs_sdk: trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix
 
 # fast build rule for target.
 interbotix_xs_sdk/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build
 .PHONY : interbotix_xs_sdk/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_MotorGains: trossen/interbotix_r
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_MotorGains/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_MotorGains.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_MotorGains/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable: trossen/interbotix
 
 # fast build rule for target.
 _interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/_interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable.dir/build
 .PHONY : _interbotix_xs_sdk_generate_messages_check_deps_TorqueEnable/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ interbotix_xs_sdk_generate_messages_cpp: trossen/interbotix_ros_core/interbotix_
 
 # fast build rule for target.
 interbotix_xs_sdk_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_generate_messages_cpp.dir/build
 .PHONY : interbotix_xs_sdk_generate_messages_cpp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/rule
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/rule
 
 # Convenience name for target.
@@ -494,7 +494,7 @@ interbotix_xs_sdk_gencpp: trossen/interbotix_ros_core/interbotix_ros_xseries/int
 
 # fast build rule for target.
 interbotix_xs_sdk_gencpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_gencpp.dir/build
 .PHONY : interbotix_xs_sdk_gencpp/fast
 
 src/xs_sdk.o: src/xs_sdk.cpp.o
@@ -503,7 +503,7 @@ src/xs_sdk.o: src/xs_sdk.cpp.o
 
 # target to build an object file
 src/xs_sdk.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o
 .PHONY : src/xs_sdk.cpp.o
 
 src/xs_sdk.i: src/xs_sdk.cpp.i
@@ -512,7 +512,7 @@ src/xs_sdk.i: src/xs_sdk.cpp.i
 
 # target to preprocess a source file
 src/xs_sdk.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i
 .PHONY : src/xs_sdk.cpp.i
 
 src/xs_sdk.s: src/xs_sdk.cpp.s
@@ -521,7 +521,7 @@ src/xs_sdk.s: src/xs_sdk.cpp.s
 
 # target to generate assembly for a file
 src/xs_sdk.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s
 .PHONY : src/xs_sdk.cpp.s
 
 src/xs_sdk_obj.o: src/xs_sdk_obj.cpp.o
@@ -530,8 +530,8 @@ src/xs_sdk_obj.o: src/xs_sdk_obj.cpp.o
 
 # target to build an object file
 src/xs_sdk_obj.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.o
 .PHONY : src/xs_sdk_obj.cpp.o
 
 src/xs_sdk_obj.i: src/xs_sdk_obj.cpp.i
@@ -540,8 +540,8 @@ src/xs_sdk_obj.i: src/xs_sdk_obj.cpp.i
 
 # target to preprocess a source file
 src/xs_sdk_obj.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.i
 .PHONY : src/xs_sdk_obj.cpp.i
 
 src/xs_sdk_obj.s: src/xs_sdk_obj.cpp.s
@@ -550,8 +550,8 @@ src/xs_sdk_obj.s: src/xs_sdk_obj.cpp.s
 
 # target to generate assembly for a file
 src/xs_sdk_obj.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/build.make trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk.dir/src/xs_sdk_obj.cpp.s
 .PHONY : src/xs_sdk_obj.cpp.s
 
 # Help Target
@@ -606,6 +606,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

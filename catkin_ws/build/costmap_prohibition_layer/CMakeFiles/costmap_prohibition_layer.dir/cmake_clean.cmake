@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libcostmap_prohibition_layer.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libcostmap_prohibition_layer.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libcostmap_prohibition_layer.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libcostmap_prohibition_layer.so"
   "CMakeFiles/costmap_prohibition_layer.dir/src/costmap_prohibition_layer.cpp.o"
 )
 

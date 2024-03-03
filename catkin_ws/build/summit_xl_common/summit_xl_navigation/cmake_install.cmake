@@ -1,8 +1,8 @@
-# Install script for directory: /home/markus/ros_stuff/catkin_ws/src/summit_xl_common/summit_xl_navigation
+# Install script for directory: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/summit_xl_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,24 +38,24 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/summit_xl_navigation/cmake" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigationConfig.cmake"
-    "/home/markus/ros_stuff/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigationConfig-version.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigationConfig.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/summit_xl_common/summit_xl_navigation/catkin_generated/installspace/summit_xl_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/summit_xl_navigation" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/summit_xl_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/summit_xl_navigation" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/summit_xl_navigation/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/summit_xl_navigation" TYPE DIRECTORY FILES
-    "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/summit_xl_navigation/launch"
-    "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/summit_xl_navigation/config"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/summit_xl_navigation/launch"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/summit_xl_navigation/config"
     )
 endif()
 

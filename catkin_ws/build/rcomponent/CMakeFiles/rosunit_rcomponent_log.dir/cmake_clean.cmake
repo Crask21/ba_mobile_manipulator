@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/rcomponent/rosunit_rcomponent_log"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/rcomponent/rosunit_rcomponent_log.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/rcomponent/rosunit_rcomponent_log"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/rcomponent/rosunit_rcomponent_log.pdb"
   "CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.o"
 )
 

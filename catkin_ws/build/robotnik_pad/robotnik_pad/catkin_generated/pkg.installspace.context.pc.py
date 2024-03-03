@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "roscpp;rcomponent;robotnik_msgs;sensor_msgs;geometry_msgs;ackermann_msgs;pluginlib".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "robotnik_pad"
-PROJECT_SPACE_DIR = "/home/markus/ros_stuff/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install"
 PROJECT_VERSION = "0.11.0"

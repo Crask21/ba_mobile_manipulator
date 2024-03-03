@@ -67,14 +67,14 @@ set(dynamixel_workbench_toolbox_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(dynamixel_workbench_toolbox_SOURCE_PREFIX /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox)
-  set(dynamixel_workbench_toolbox_DEVEL_PREFIX /home/markus/ros_stuff/catkin_ws/devel)
+  set(dynamixel_workbench_toolbox_SOURCE_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox)
+  set(dynamixel_workbench_toolbox_DEVEL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel)
   set(dynamixel_workbench_toolbox_INSTALL_PREFIX "")
   set(dynamixel_workbench_toolbox_PREFIX ${dynamixel_workbench_toolbox_DEVEL_PREFIX})
 else()
   set(dynamixel_workbench_toolbox_SOURCE_PREFIX "")
   set(dynamixel_workbench_toolbox_DEVEL_PREFIX "")
-  set(dynamixel_workbench_toolbox_INSTALL_PREFIX /home/markus/ros_stuff/catkin_ws/install)
+  set(dynamixel_workbench_toolbox_INSTALL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install)
   set(dynamixel_workbench_toolbox_PREFIX ${dynamixel_workbench_toolbox_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dynamixel_workbench_toolbox_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include " STREQUAL " ")
+if(NOT "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include " STREQUAL " ")
   set(dynamixel_workbench_toolbox_INCLUDE_DIRS "")
-  set(_include_dirs "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include")
+  set(_include_dirs "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include")
   if(NOT "https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/dynamixel_workbench_toolbox " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbo
         message(FATAL_ERROR "Project 'dynamixel_workbench_toolbox' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'dynamixel_workbench_toolbox' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'dynamixel_workbench_toolbox' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/${idir}'.  ${_report}")
     endif()
     _list_append_unique(dynamixel_workbench_toolbox_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/markus/ros_stuff/catkin_ws/devel/lib;/home/markus/ros_stuff/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

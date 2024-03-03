@@ -67,14 +67,14 @@ set(summit_xl_j2n6s200_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(summit_xl_j2n6s200_moveit_config_SOURCE_PREFIX /home/markus/ros_stuff/catkin_ws/src/summit_xl_common/moveit/summit_xl_j2n6s200_moveit_config)
-  set(summit_xl_j2n6s200_moveit_config_DEVEL_PREFIX /home/markus/ros_stuff/catkin_ws/devel)
+  set(summit_xl_j2n6s200_moveit_config_SOURCE_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/moveit/summit_xl_j2n6s200_moveit_config)
+  set(summit_xl_j2n6s200_moveit_config_DEVEL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel)
   set(summit_xl_j2n6s200_moveit_config_INSTALL_PREFIX "")
   set(summit_xl_j2n6s200_moveit_config_PREFIX ${summit_xl_j2n6s200_moveit_config_DEVEL_PREFIX})
 else()
   set(summit_xl_j2n6s200_moveit_config_SOURCE_PREFIX "")
   set(summit_xl_j2n6s200_moveit_config_DEVEL_PREFIX "")
-  set(summit_xl_j2n6s200_moveit_config_INSTALL_PREFIX /home/markus/ros_stuff/catkin_ws/install)
+  set(summit_xl_j2n6s200_moveit_config_INSTALL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install)
   set(summit_xl_j2n6s200_moveit_config_PREFIX ${summit_xl_j2n6s200_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/markus/ros_stuff/catkin_ws/install/lib;/home/markus/ros_stuff/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

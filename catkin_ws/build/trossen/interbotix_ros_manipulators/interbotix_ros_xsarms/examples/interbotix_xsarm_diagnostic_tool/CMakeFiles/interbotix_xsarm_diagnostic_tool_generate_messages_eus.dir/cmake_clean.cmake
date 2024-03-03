@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_diagnostic_tool/manifest.l"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_diagnostic_tool/msg/JointTemps.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_diagnostic_tool/manifest.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_diagnostic_tool/msg/JointTemps.l"
   "CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus"
 )
 

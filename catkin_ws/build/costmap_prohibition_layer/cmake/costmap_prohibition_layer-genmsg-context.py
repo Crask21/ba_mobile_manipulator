@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv;/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv;/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv;/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+services_str = "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
 pkg_name = "costmap_prohibition_layer"
 dependencies_str = "std_msgs;geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_description
+# Install script for directory: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description/cmake" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_descriptionConfig.cmake"
-    "/home/markus/ros_stuff/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_descriptionConfig-version.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_descriptionConfig.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/franka_ros/franka_description/catkin_generated/installspace/franka_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_description/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_description/meshes")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_description/robots")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_description" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_description/robots")
 endif()
 

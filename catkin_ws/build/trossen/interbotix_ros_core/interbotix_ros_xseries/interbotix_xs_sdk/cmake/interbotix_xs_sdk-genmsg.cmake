@@ -2,7 +2,7 @@
 
 message(STATUS "interbotix_xs_sdk: 3 messages, 6 services")
 
-set(MSG_I_FLAGS "-Iinterbotix_xs_sdk:/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iinterbotix_xs_sdk:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,49 +17,49 @@ add_custom_target(interbotix_xs_sdk_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" "trajectory_msgs/JointTrajectory:std_msgs/Header:trajectory_msgs/JointTrajectoryPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "interbotix_xs_sdk" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" ""
 )
 
 #
@@ -69,57 +69,57 @@ add_custom_target(_interbotix_xs_sdk_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 
 ### Generating Services
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_cpp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/interbotix_xs_sdk
@@ -137,23 +137,23 @@ add_custom_target(interbotix_xs_sdk_generate_messages_cpp
 add_dependencies(interbotix_xs_sdk_generate_messages interbotix_xs_sdk_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_cpp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -166,57 +166,57 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interbotix_xs_sdk_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 
 ### Generating Services
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_eus(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/interbotix_xs_sdk
@@ -234,23 +234,23 @@ add_custom_target(interbotix_xs_sdk_generate_messages_eus
 add_dependencies(interbotix_xs_sdk_generate_messages interbotix_xs_sdk_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_eus _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -263,57 +263,57 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interbotix_xs_sdk_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 
 ### Generating Services
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_lisp(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/interbotix_xs_sdk
@@ -331,23 +331,23 @@ add_custom_target(interbotix_xs_sdk_generate_messages_lisp
 add_dependencies(interbotix_xs_sdk_generate_messages interbotix_xs_sdk_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_lisp _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -360,57 +360,57 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interbotix_xs_sdk_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 
 ### Generating Services
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_nodejs(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/interbotix_xs_sdk
@@ -428,23 +428,23 @@ add_custom_target(interbotix_xs_sdk_generate_messages_nodejs
 add_dependencies(interbotix_xs_sdk_generate_messages interbotix_xs_sdk_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_nodejs _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -457,57 +457,57 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS interbotix_xs_sdk_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_msg_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  "/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/noetic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 
 ### Generating Services
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
 )
 _generate_srv_py(interbotix_xs_sdk
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/interbotix_xs_sdk
@@ -525,23 +525,23 @@ add_custom_target(interbotix_xs_sdk_generate_messages_py
 add_dependencies(interbotix_xs_sdk_generate_messages interbotix_xs_sdk_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointGroupCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointSingleCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/msg/JointTrajectoryCommand.msg" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/Reboot.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RobotInfo.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/MotorGains.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/TorqueEnable.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/OperatingModes.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/srv/RegisterValues.srv" NAME_WE)
 add_dependencies(interbotix_xs_sdk_generate_messages_py _interbotix_xs_sdk_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

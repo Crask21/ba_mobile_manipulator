@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/include/summit_xl_pad/enable_disable_pad.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/summit_xl_pad/enable_disable_pad.h"
   "CMakeFiles/summit_xl_pad_generate_messages_cpp"
 )
 

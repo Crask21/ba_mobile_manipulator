@@ -1,8 +1,8 @@
-prefix=/home/markus/ros_stuff/catkin_ws/devel
+prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
 
 Name: franka_msgs
 Description: Description of franka_msgs
 Version: 0.10.1
-Cflags: -I/home/markus/ros_stuff/catkin_ws/devel/include
+Cflags: -I/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime std_msgs sensor_msgs actionlib_msgs

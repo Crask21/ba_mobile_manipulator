@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/summit_xl_pad/srv/__init__.py"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/summit_xl_pad/srv/_enable_disable_pad.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/summit_xl_pad/srv/__init__.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/summit_xl_pad/srv/_enable_disable_pad.py"
   "CMakeFiles/summit_xl_pad_generate_messages_py"
 )
 

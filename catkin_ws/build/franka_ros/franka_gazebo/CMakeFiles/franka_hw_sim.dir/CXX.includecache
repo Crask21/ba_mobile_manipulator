@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryAction.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ franka_msgs/ErrorRecoveryActionResult.h
 franka_msgs/ErrorRecoveryActionFeedback.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionFeedback.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 franka_msgs/ErrorRecoveryFeedback.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionGoal.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 franka_msgs/ErrorRecoveryGoal.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionResult.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 franka_msgs/ErrorRecoveryResult.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryFeedback.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryGoal.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/ErrorRecoveryResult.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/ErrorRecoveryResult.h
 string
 -
 vector
@@ -142,7 +142,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetCartesianImpedance.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetCartesianImpedance.h
 ros/service_traits.h
 -
 franka_msgs/SetCartesianImpedanceRequest.h
@@ -150,7 +150,7 @@ franka_msgs/SetCartesianImpedanceRequest.h
 franka_msgs/SetCartesianImpedanceResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetCartesianImpedanceRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetCartesianImpedanceRequest.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetCartesianImpedanceResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetCartesianImpedanceResponse.h
 string
 -
 vector
@@ -182,7 +182,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetEEFrame.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetEEFrame.h
 ros/service_traits.h
 -
 franka_msgs/SetEEFrameRequest.h
@@ -190,7 +190,7 @@ franka_msgs/SetEEFrameRequest.h
 franka_msgs/SetEEFrameResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetEEFrameRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetEEFrameRequest.h
 string
 -
 vector
@@ -206,7 +206,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetEEFrameResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetEEFrameResponse.h
 string
 -
 vector
@@ -222,7 +222,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehavior.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehavior.h
 ros/service_traits.h
 -
 franka_msgs/SetForceTorqueCollisionBehaviorRequest.h
@@ -230,7 +230,7 @@ franka_msgs/SetForceTorqueCollisionBehaviorRequest.h
 franka_msgs/SetForceTorqueCollisionBehaviorResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehaviorRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehaviorRequest.h
 string
 -
 vector
@@ -246,7 +246,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehaviorResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetForceTorqueCollisionBehaviorResponse.h
 string
 -
 vector
@@ -262,7 +262,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehavior.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehavior.h
 ros/service_traits.h
 -
 franka_msgs/SetFullCollisionBehaviorRequest.h
@@ -270,7 +270,7 @@ franka_msgs/SetFullCollisionBehaviorRequest.h
 franka_msgs/SetFullCollisionBehaviorResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehaviorRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehaviorRequest.h
 string
 -
 vector
@@ -286,7 +286,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehaviorResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetFullCollisionBehaviorResponse.h
 string
 -
 vector
@@ -302,7 +302,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetJointImpedance.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetJointImpedance.h
 ros/service_traits.h
 -
 franka_msgs/SetJointImpedanceRequest.h
@@ -310,7 +310,7 @@ franka_msgs/SetJointImpedanceRequest.h
 franka_msgs/SetJointImpedanceResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetJointImpedanceRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetJointImpedanceRequest.h
 string
 -
 vector
@@ -326,7 +326,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetJointImpedanceResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetJointImpedanceResponse.h
 string
 -
 vector
@@ -342,7 +342,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetKFrame.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetKFrame.h
 ros/service_traits.h
 -
 franka_msgs/SetKFrameRequest.h
@@ -350,7 +350,7 @@ franka_msgs/SetKFrameRequest.h
 franka_msgs/SetKFrameResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetKFrameRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetKFrameRequest.h
 string
 -
 vector
@@ -366,7 +366,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetKFrameResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetKFrameResponse.h
 string
 -
 vector
@@ -382,7 +382,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetLoad.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetLoad.h
 ros/service_traits.h
 -
 franka_msgs/SetLoadRequest.h
@@ -390,7 +390,7 @@ franka_msgs/SetLoadRequest.h
 franka_msgs/SetLoadResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetLoadRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetLoadRequest.h
 string
 -
 vector
@@ -406,7 +406,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_msgs/SetLoadResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_msgs/SetLoadResponse.h
 string
 -
 vector
@@ -422,7 +422,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/pseudo_inversion.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/pseudo_inversion.h
 Eigen/Core
 -
 Eigen/LU
@@ -430,7 +430,7 @@ Eigen/LU
 Eigen/SVD
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/controller_verifier.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/controller_verifier.h
 franka_gazebo/joint.h
 -
 hardware_interface/controller_info.h
@@ -442,7 +442,7 @@ hardware_interface/internal/hardware_resource_manager.h
 boost/optional.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/franka_hw_sim.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/franka_hw_sim.h
 actionlib/server/simple_action_server.h
 -
 franka/robot_state.h
@@ -496,7 +496,7 @@ mutex
 string
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/joint.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/joint.h
 angles/angles.h
 -
 control_toolbox/pid.h
@@ -514,7 +514,7 @@ boost/optional.hpp
 gazebo/physics/Joint.hh
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/model_kdl.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/model_kdl.h
 franka/robot_state.h
 -
 franka_hw/model_base.h
@@ -534,7 +534,7 @@ memory
 string
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/statemachine.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/include/franka_gazebo/statemachine.h
 franka/robot_state.h
 -
 franka_gazebo/joint.h
@@ -550,11 +550,11 @@ memory
 string
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/src/controller_verifier.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/src/controller_verifier.cpp
 franka_gazebo/controller_verifier.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/src/franka_hw_sim.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/src/franka_hw_sim.cpp
 angles/angles.h
 -
 controller_manager_msgs/ListControllers.h
@@ -604,7 +604,7 @@ sstream
 string
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/src/joint.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/src/joint.cpp
 franka_gazebo/joint.h
 -
 urdf/model.h
@@ -612,7 +612,7 @@ urdf/model.h
 gazebo/physics/Link.hh
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_gazebo/src/model_kdl.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_gazebo/src/model_kdl.cpp
 franka_gazebo/model_kdl.h
 -
 eigen_conversions/eigen_kdl.h
@@ -638,13 +638,13 @@ kdl/tree.hpp
 kdl_parser/kdl_parser.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/control_mode.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/control_mode.h
 ostream
 -
 type_traits
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
 array
 -
 franka_hw/franka_state_interface.h
@@ -652,7 +652,7 @@ franka_hw/franka_state_interface.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_hw.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_hw.h
 array
 -
 atomic
@@ -702,7 +702,7 @@ franka_hw/model_base.h
 franka_hw/resource_helpers.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_model_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_model_interface.h
 array
 -
 string
@@ -718,7 +718,7 @@ franka_hw/model_base.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
 string
 -
 franka/robot_state.h
@@ -726,7 +726,7 @@ franka/robot_state.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model.h
 array
 -
 franka/model.h
@@ -734,13 +734,13 @@ franka/model.h
 franka_hw/model_base.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model_base.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model_base.h
 franka/model.h
 -
 franka/robot_state.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/resource_helpers.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/resource_helpers.h
 list
 -
 map
@@ -754,7 +754,7 @@ hardware_interface/controller_info.h
 franka_hw/control_mode.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/services.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/services.h
 mutex
 -
 vector
@@ -1522,6 +1522,102 @@ Eigen/Core
 Eigen/Geometry
 -
 kdl/frames.hpp
+-
+
+/opt/ros/noetic/include/franka/command_types.h
+array
+-
+cstdint
+-
+
+/opt/ros/noetic/include/franka/control_types.h
+array
+-
+cmath
+-
+initializer_list
+-
+
+/opt/ros/noetic/include/franka/duration.h
+chrono
+-
+cstdint
+-
+ratio
+-
+
+/opt/ros/noetic/include/franka/errors.h
+array
+-
+ostream
+-
+
+/opt/ros/noetic/include/franka/exception.h
+stdexcept
+-
+string
+-
+franka/log.h
+-
+
+/opt/ros/noetic/include/franka/log.h
+vector
+-
+franka/control_types.h
+-
+franka/robot_state.h
+-
+
+/opt/ros/noetic/include/franka/lowpass_filter.h
+array
+-
+cmath
+-
+
+/opt/ros/noetic/include/franka/model.h
+array
+-
+memory
+-
+franka/robot.h
+-
+franka/robot_state.h
+-
+
+/opt/ros/noetic/include/franka/rate_limiting.h
+array
+-
+limits
+-
+
+/opt/ros/noetic/include/franka/robot.h
+functional
+-
+memory
+-
+mutex
+-
+string
+-
+franka/command_types.h
+-
+franka/control_types.h
+-
+franka/duration.h
+-
+franka/lowpass_filter.h
+-
+franka/robot_state.h
+-
+
+/opt/ros/noetic/include/franka/robot_state.h
+array
+-
+ostream
+-
+franka/duration.h
+-
+franka/errors.h
 -
 
 /opt/ros/noetic/include/gazebo_ros_control/robot_hw_sim.h

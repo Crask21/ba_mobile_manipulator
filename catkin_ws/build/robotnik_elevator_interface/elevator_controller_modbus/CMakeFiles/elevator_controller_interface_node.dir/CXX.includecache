@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/inputs_outputs.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/inputs_outputs.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_output.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_output.h
 ros/service_traits.h
 -
 robotnik_msgs/set_digital_outputRequest.h
@@ -30,7 +30,7 @@ robotnik_msgs/set_digital_outputRequest.h
 robotnik_msgs/set_digital_outputResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_outputRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_outputRequest.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_outputResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_outputResponse.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
 assert.h
 -
 boost/format.hpp
@@ -70,27 +70,27 @@ boost/format.hpp
 iostream
 -
 modbus/modbus.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/modbus/modbus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/modbus/modbus.h
 stdio.h
 -
 typeinfo
 -
 ros/time.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/ros/time.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/ros/time.h
 self_test/self_test.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/self_test/self_test.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/self_test/self_test.h
 diagnostic_msgs/DiagnosticStatus.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_msgs/DiagnosticStatus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_msgs/DiagnosticStatus.h
 diagnostic_updater/diagnostic_updater.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/diagnostic_updater.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/diagnostic_updater.h
 diagnostic_updater/update_functions.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/update_functions.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/update_functions.h
 diagnostic_updater/DiagnosticStatusWrapper.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/DiagnosticStatusWrapper.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/diagnostic_updater/DiagnosticStatusWrapper.h
 std_srvs/Empty.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/std_srvs/Empty.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/std_srvs/Empty.h
 std_msgs/Bool.h
-/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/std_msgs/Bool.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/std_msgs/Bool.h
 robotnik_msgs/inputs_outputs.h
 -
 robotnik_msgs/set_digital_output.h

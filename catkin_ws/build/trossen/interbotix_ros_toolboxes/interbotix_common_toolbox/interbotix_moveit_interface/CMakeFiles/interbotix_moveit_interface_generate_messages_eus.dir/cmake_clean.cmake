@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_moveit_interface/manifest.l"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_moveit_interface/srv/MoveItPlan.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_moveit_interface/manifest.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_moveit_interface/srv/MoveItPlan.l"
   "CMakeFiles/interbotix_moveit_interface_generate_messages_eus"
 )
 

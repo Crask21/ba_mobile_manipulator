@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_hw_sim.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_hw_sim.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_hw_sim.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_hw_sim.so"
   "CMakeFiles/franka_hw_sim.dir/src/controller_verifier.cpp.o"
   "CMakeFiles/franka_hw_sim.dir/src/franka_hw_sim.cpp.o"
   "CMakeFiles/franka_hw_sim.dir/src/joint.cpp.o"

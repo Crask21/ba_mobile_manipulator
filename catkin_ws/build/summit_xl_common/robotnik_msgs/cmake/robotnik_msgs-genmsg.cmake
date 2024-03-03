@@ -2,7 +2,7 @@
 
 message(STATUS "robotnik_msgs: 63 messages, 41 services")
 
-set(MSG_I_FLAGS "-Irobotnik_msgs:/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg;-Irobotnik_msgs:/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irobotnik_msgs:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg;-Irobotnik_msgs:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,524 +17,524 @@ add_custom_target(robotnik_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" "robotnik_msgs/Data"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" "robotnik_msgs/Data"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" "robotnik_msgs/AlarmSensor"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" "robotnik_msgs/AlarmSensor"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" "robotnik_msgs/MotorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" "robotnik_msgs/MotorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" "robotnik_msgs/BatteryStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" "robotnik_msgs/BatteryStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" "robotnik_msgs/OdomCalibrationStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" "robotnik_msgs/OdomCalibrationStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" "geometry_msgs/Quaternion:robotnik_msgs/OdomManualCalibrationStatus:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" "robotnik_msgs/OdomManualCalibrationStatus:std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" "robotnik_msgs/MotorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" "robotnik_msgs/MotorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" "robotnik_msgs/MotorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" "robotnik_msgs/MotorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" "robotnik_msgs/PantiltStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" "robotnik_msgs/PantiltStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" "robotnik_msgs/alarmmonitor"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" "robotnik_msgs/alarmmonitor"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" "robotnik_msgs/named_input_output"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" "robotnik_msgs/named_input_output"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" "robotnik_msgs/Register"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" "robotnik_msgs/Register"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" "robotnik_msgs/LaserStatus:robotnik_msgs/LaserMode"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" "robotnik_msgs/LaserStatus:robotnik_msgs/LaserMode"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" "robotnik_msgs/BatteryDockingStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" "robotnik_msgs/BatteryDockingStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" "geometry_msgs/Pose2D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" "geometry_msgs/Pose2D"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" "std_msgs/Header:geometry_msgs/Pose2D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" "geometry_msgs/Pose2D:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" "geometry_msgs/Quaternion:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" "geometry_msgs/Quaternion:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point:robotnik_msgs/PresenceSensor"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" "std_msgs/Header:geometry_msgs/Pose:geometry_msgs/Quaternion:robotnik_msgs/PresenceSensor:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" "robotnik_msgs/WatchdogStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" "robotnik_msgs/WatchdogStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" "robotnik_msgs/MotorReferenceValue"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" "robotnik_msgs/MotorReferenceValue"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" "robotnik_msgs/SetElevatorActionFeedback:robotnik_msgs/SetElevatorResult:robotnik_msgs/ElevatorAction:std_msgs/Header:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/SetElevatorActionGoal:robotnik_msgs/SetElevatorActionResult:robotnik_msgs/SetElevatorFeedback:robotnik_msgs/SetElevatorGoal:robotnik_msgs/ElevatorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" "robotnik_msgs/SetElevatorActionFeedback:std_msgs/Header:robotnik_msgs/ElevatorStatus:robotnik_msgs/SetElevatorFeedback:robotnik_msgs/SetElevatorGoal:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/SetElevatorActionGoal:robotnik_msgs/SetElevatorResult:robotnik_msgs/ElevatorAction:robotnik_msgs/SetElevatorActionResult"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" "robotnik_msgs/ElevatorAction:std_msgs/Header:actionlib_msgs/GoalID:robotnik_msgs/SetElevatorGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" "robotnik_msgs/SetElevatorGoal:actionlib_msgs/GoalID:robotnik_msgs/ElevatorAction:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" "robotnik_msgs/SetElevatorResult:std_msgs/Header:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/ElevatorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" "std_msgs/Header:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/ElevatorStatus:robotnik_msgs/SetElevatorResult"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" "std_msgs/Header:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/SetElevatorFeedback:robotnik_msgs/ElevatorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" "std_msgs/Header:robotnik_msgs/SetElevatorFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:robotnik_msgs/ElevatorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" "robotnik_msgs/ElevatorAction"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" "robotnik_msgs/ElevatorAction"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" "robotnik_msgs/ElevatorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" "robotnik_msgs/ElevatorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" "robotnik_msgs/ElevatorStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" "robotnik_msgs/ElevatorStatus"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" "std_msgs/String"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" "std_msgs/String"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" "robotnik_msgs/ElevatorAction"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" "robotnik_msgs/ElevatorAction"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" "robotnik_msgs/alarmmonitor:robotnik_msgs/alarmsmonitor"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" "robotnik_msgs/alarmsmonitor:robotnik_msgs/alarmmonitor"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" "robotnik_msgs/QueryAlarm"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" "robotnik_msgs/QueryAlarm"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" "robotnik_msgs/MotorPID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" "robotnik_msgs/MotorPID"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" "robotnik_msgs/MotorHeadingOffset"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" "robotnik_msgs/MotorHeadingOffset"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" "robotnik_msgs/MotorHeadingOffset:std_msgs/Empty"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" "robotnik_msgs/MotorHeadingOffset:std_msgs/Empty"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" "geometry_msgs/Pose2D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" "geometry_msgs/Pose2D"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" "robotnik_msgs/ReturnMessage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" "robotnik_msgs/ReturnMessage"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" "std_msgs/Int16:robotnik_msgs/ReturnMessage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" "std_msgs/Int16:robotnik_msgs/ReturnMessage"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" "robotnik_msgs/MotorCurrent"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" "robotnik_msgs/MotorCurrent"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" "geometry_msgs/Quaternion:geometry_msgs/Transform:geometry_msgs/Vector3:robotnik_msgs/ReturnMessage"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" "geometry_msgs/Vector3:geometry_msgs/Transform:geometry_msgs/Quaternion:robotnik_msgs/ReturnMessage"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" "robotnik_msgs/Logger"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" "robotnik_msgs/Logger"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" ""
 )
 
 #
@@ -544,627 +544,627 @@ add_custom_target(_robotnik_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_cpp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_cpp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_msgs
@@ -1182,213 +1182,213 @@ add_custom_target(robotnik_msgs_generate_messages_cpp
 add_dependencies(robotnik_msgs_generate_messages robotnik_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_cpp _robotnik_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1401,627 +1401,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_msgs_generate_messages_cpp
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_eus(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_eus(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_msgs
@@ -2039,213 +2039,213 @@ add_custom_target(robotnik_msgs_generate_messages_eus
 add_dependencies(robotnik_msgs_generate_messages robotnik_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_eus _robotnik_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -2258,627 +2258,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_msgs_generate_messages_eus
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_lisp(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_lisp(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_msgs
@@ -2896,213 +2896,213 @@ add_custom_target(robotnik_msgs_generate_messages_lisp
 add_dependencies(robotnik_msgs_generate_messages robotnik_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_lisp _robotnik_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -3115,627 +3115,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_msgs_generate_messages_lis
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_nodejs(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_nodejs(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_msgs
@@ -3753,213 +3753,213 @@ add_custom_target(robotnik_msgs_generate_messages_nodejs
 add_dependencies(robotnik_msgs_generate_messages robotnik_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_nodejs _robotnik_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -3972,627 +3972,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_msgs_generate_messages_nod
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_msg_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_msg_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 
 ### Generating Services
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/String.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
-  "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Empty.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Int16.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
-)
-_generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv"
   "${MSG_I_FLAGS}"
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
 )
 _generate_srv_py(robotnik_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv"
+  "${MSG_I_FLAGS}"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
+)
+_generate_srv_py(robotnik_msgs
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_msgs
@@ -4610,213 +4610,213 @@ add_custom_target(robotnik_msgs_generate_messages_py
 add_dependencies(robotnik_msgs_generate_messages robotnik_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/encoders.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ptz.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Data.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Interfaces.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Axis.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/AlarmSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Alarms.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/State.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ArmStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/OdomManualCalibrationStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorHeadingOffset.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorsStatusDifferential.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/InverterStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RobotnikMotorsStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ElevatorStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PantiltStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Cartesian_Euler_pose.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/alarmsmonitor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_inputs_outputs.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/named_input_output.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Register.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Registers.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserMode.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/LaserStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Logger.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SafetyModuleStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/SubState.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/QueryAlarm.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BatteryDockingStatusStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/BoolArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorPID.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorCurrent.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/Pose2DStamped.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/ReturnMessage.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensor.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/PresenceSensorArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/WatchdogStatusArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValue.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/MotorReferenceValueArray.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/msg/RecordStatus.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorAction.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorActionFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorGoal.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorResult.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/robotnik_msgs/msg/SetElevatorFeedback.msg" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_digital_input.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_analog_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_ptz.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_mode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_odometry.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_height.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/enable_disable.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/home.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/axis_record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_float_value.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorStatus.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetElevator.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_alarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ack_alarm.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_modbus_register_bit.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/get_modbus_register.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetBool.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_CartesianEuler_pose.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/set_named_digital_output.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetLaserMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/ResetFromSubState.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/QueryAlarms.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetNamedDigitalOutput.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/InsertTask.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorPID.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetMotorMode.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetBuzzer.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetEncoderTurns.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetMotorsHeadingOffset.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPOI.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/GetPTZ.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetByte.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetCurrent.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/LoggerQuery.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/robotnik_msgs/srv/Record.srv" NAME_WE)
 add_dependencies(robotnik_msgs_generate_messages_py _robotnik_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

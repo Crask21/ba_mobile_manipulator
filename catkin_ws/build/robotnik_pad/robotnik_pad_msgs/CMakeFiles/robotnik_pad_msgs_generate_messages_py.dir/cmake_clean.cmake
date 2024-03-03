@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/robotnik_pad_msgs/msg/_MovementStatus.py"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/robotnik_pad_msgs/msg/__init__.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/robotnik_pad_msgs/msg/_MovementStatus.py"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/robotnik_pad_msgs/msg/__init__.py"
   "CMakeFiles/robotnik_pad_msgs_generate_messages_py"
 )
 

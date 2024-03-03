@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/depend.make
@@ -58,17 +58,17 @@ include robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevat
 include robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/flags.make
 
 robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/flags.make
-robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o: /home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
+robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp
 
 robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp > CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp > CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.i
 
 robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp -o CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus/src/elevator_controller_interface_node.cpp -o CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.s
 
 # Object files for target elevator_controller_interface_node
 elevator_controller_interface_node_OBJECTS = \
@@ -77,59 +77,59 @@ elevator_controller_interface_node_OBJECTS = \
 # External object files for target elevator_controller_interface_node
 elevator_controller_interface_node_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libdiagnostic_updater.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_elevator_component.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librostime.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librostime.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elevator_controller_interface_node.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/src/elevator_controller_interface_node.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libdiagnostic_updater.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_elevator_component.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librostime.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/librostime.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node: robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elevator_controller_interface_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node
+robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/elevator_controller_interface_node
 
 .PHONY : robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/build
 
 robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && $(CMAKE_COMMAND) -P CMakeFiles/elevator_controller_interface_node.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus && $(CMAKE_COMMAND) -P CMakeFiles/elevator_controller_interface_node.dir/cmake_clean.cmake
 .PHONY : robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/clean
 
 robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/elevator_controller_modbus /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : robotnik_elevator_interface/elevator_controller_modbus/CMakeFiles/elevator_controller_interface_node.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/depend.make
@@ -58,17 +58,17 @@ include trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xa
 include trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/flags.make
 
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/flags.make
-trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o: /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp
+trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp
 
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp > CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp > CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.i
 
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp -o CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/src/xarm_ros_client.cpp -o CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.s
 
 # Object files for target xarm_ros_client
 xarm_ros_client_OBJECTS = \
@@ -77,22 +77,22 @@ xarm_ros_client_OBJECTS = \
 # External object files for target xarm_ros_client
 xarm_ros_client_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so"
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xarm_ros_client.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so: trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xarm_ros_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so
+trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so
 
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/build
 
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && $(CMAKE_COMMAND) -P CMakeFiles/xarm_ros_client.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api && $(CMAKE_COMMAND) -P CMakeFiles/xarm_ros_client.dir/cmake_clean.cmake
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/clean
 
 trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_api/CMakeFiles/xarm_ros_client.dir/depend
 

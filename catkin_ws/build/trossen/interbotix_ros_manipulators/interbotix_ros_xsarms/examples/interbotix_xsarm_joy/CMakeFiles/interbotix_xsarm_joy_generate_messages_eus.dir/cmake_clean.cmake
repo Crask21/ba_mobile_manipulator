@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_joy/manifest.l"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_joy/msg/ArmJoy.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_joy/manifest.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/interbotix_xsarm_joy/msg/ArmJoy.l"
   "CMakeFiles/interbotix_xsarm_joy_generate_messages_eus"
 )
 

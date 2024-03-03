@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/ElevatorAction.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/ElevatorAction.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/ReturnMessage.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/ReturnMessage.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetElevator.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetElevator.h
 ros/service_traits.h
 -
 robotnik_msgs/SetElevatorRequest.h
@@ -46,7 +46,7 @@ robotnik_msgs/SetElevatorRequest.h
 robotnik_msgs/SetElevatorResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetElevatorRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetElevatorRequest.h
 string
 -
 vector
@@ -64,7 +64,7 @@ ros/message_operations.h
 robotnik_msgs/ElevatorAction.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetElevatorResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetElevatorResponse.h
 string
 -
 vector
@@ -80,7 +80,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetString.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetString.h
 ros/service_traits.h
 -
 robotnik_msgs/SetStringRequest.h
@@ -88,7 +88,7 @@ robotnik_msgs/SetStringRequest.h
 robotnik_msgs/SetStringResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetStringRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetStringRequest.h
 string
 -
 vector
@@ -104,7 +104,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/SetStringResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/SetStringResponse.h
 string
 -
 vector
@@ -122,7 +122,7 @@ ros/message_operations.h
 robotnik_msgs/ReturnMessage.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/ptz.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/ptz.h
 string
 -
 vector
@@ -138,7 +138,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_pad_msgs/MovementStatus.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_pad_msgs/MovementStatus.h
 string
 -
 vector
@@ -154,9 +154,9 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/include/robotnik_pad/button.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/include/robotnik_pad/button.h
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/include/robotnik_pad/generic_pad_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/include/robotnik_pad/generic_pad_plugin.h
 robotnik_pad/button.h
 -
 ros/ros.h
@@ -166,7 +166,7 @@ boost/scoped_ptr.hpp
 vector
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/ackermann_movement_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/ackermann_movement_plugin.h
 ackermann_msgs/AckermannDrive.h
 -
 robotnik_pad/generic_pad_plugin.h
@@ -174,19 +174,19 @@ robotnik_pad/generic_pad_plugin.h
 robotnik_pad_msgs/MovementStatus.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/blkarc_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/blkarc_plugin.h
 std_srvs/Trigger.h
 -
 robotnik_pad/generic_pad_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/elevator_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/elevator_plugin.h
 robotnik_msgs/SetElevator.h
 -
 robotnik_pad/generic_pad_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/movement_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/movement_plugin.h
 geometry_msgs/Twist.h
 -
 robotnik_pad/generic_pad_plugin.h
@@ -194,7 +194,7 @@ robotnik_pad/generic_pad_plugin.h
 robotnik_pad_msgs/MovementStatus.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/poi_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/poi_plugin.h
 robotnik_msgs/SetString.h
 -
 std_srvs/Trigger.h
@@ -202,7 +202,7 @@ std_srvs/Trigger.h
 robotnik_pad/generic_pad_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/ptz_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/ptz_plugin.h
 robotnik_msgs/ptz.h
 -
 robotnik_pad/generic_pad_plugin.h
@@ -210,7 +210,7 @@ robotnik_pad/generic_pad_plugin.h
 robotnik_pad/button.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/safety_movement_plugin.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/include/robotnik_pad_plugins/safety_movement_plugin.h
 geometry_msgs/Twist.h
 -
 robotnik_pad/generic_pad_plugin.h
@@ -218,31 +218,31 @@ robotnik_pad/generic_pad_plugin.h
 robotnik_pad_msgs/MovementStatus.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/ackermann_movement_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/ackermann_movement_plugin.cpp
 robotnik_pad_plugins/ackermann_movement_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/blkarc_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/blkarc_plugin.cpp
 robotnik_pad_plugins/blkarc_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/elevator_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/elevator_plugin.cpp
 robotnik_pad_plugins/elevator_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/movement_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/movement_plugin.cpp
 robotnik_pad_plugins/movement_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/poi_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/poi_plugin.cpp
 robotnik_pad_plugins/poi_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/ptz_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/ptz_plugin.cpp
 robotnik_pad_plugins/ptz_plugin.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/safety_movement_plugin.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad_plugins/src/safety_movement_plugin.cpp
 robotnik_pad_plugins/safety_movement_plugin.h
 -
 

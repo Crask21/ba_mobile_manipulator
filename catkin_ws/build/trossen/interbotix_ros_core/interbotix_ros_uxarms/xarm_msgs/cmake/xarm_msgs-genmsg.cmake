@@ -2,7 +2,7 @@
 
 message(STATUS "xarm_msgs: 2 messages, 16 services")
 
-set(MSG_I_FLAGS "-Ixarm_msgs:/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ixarm_msgs:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,94 +17,94 @@ add_custom_target(xarm_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" ""
 )
 
 #
@@ -114,13 +114,13 @@ add_custom_target(_xarm_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_msg_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
@@ -128,97 +128,97 @@ _generate_msg_cpp(xarm_msgs
 
 ### Generating Services
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_cpp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_msgs
@@ -236,41 +236,41 @@ add_custom_target(xarm_msgs_generate_messages_cpp
 add_dependencies(xarm_msgs_generate_messages xarm_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_cpp _xarm_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -283,13 +283,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_msg_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
@@ -297,97 +297,97 @@ _generate_msg_eus(xarm_msgs
 
 ### Generating Services
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_eus(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_msgs
@@ -405,41 +405,41 @@ add_custom_target(xarm_msgs_generate_messages_eus
 add_dependencies(xarm_msgs_generate_messages xarm_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_eus _xarm_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -452,13 +452,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_msg_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
@@ -466,97 +466,97 @@ _generate_msg_lisp(xarm_msgs
 
 ### Generating Services
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_lisp(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_msgs
@@ -574,41 +574,41 @@ add_custom_target(xarm_msgs_generate_messages_lisp
 add_dependencies(xarm_msgs_generate_messages xarm_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_lisp _xarm_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -621,13 +621,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_msgs_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_msg_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
@@ -635,97 +635,97 @@ _generate_msg_nodejs(xarm_msgs
 
 ### Generating Services
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_nodejs(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_msgs
@@ -743,41 +743,41 @@ add_custom_target(xarm_msgs_generate_messages_nodejs
 add_dependencies(xarm_msgs_generate_messages xarm_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_nodejs _xarm_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -790,13 +790,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_msgs_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_msg_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
@@ -804,97 +804,97 @@ _generate_msg_py(xarm_msgs
 
 ### Generating Services
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
 )
 _generate_srv_py(xarm_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_msgs
@@ -912,41 +912,41 @@ add_custom_target(xarm_msgs_generate_messages_py
 add_dependencies(xarm_msgs_generate_messages xarm_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv" NAME_WE)
 add_dependencies(xarm_msgs_generate_messages_py _xarm_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

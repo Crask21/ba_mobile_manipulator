@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_example_controllers/JointTorqueComparison.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_example_controllers/JointTorqueComparison.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_example_controllers/compliance_paramConfig.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_example_controllers/compliance_paramConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -40,7 +40,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_example_controllers/desired_mass_paramConfig.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_example_controllers/desired_mass_paramConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -58,7 +58,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_example_controllers/dual_arm_compliance_paramConfig.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_example_controllers/dual_arm_compliance_paramConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -76,7 +76,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/franka_example_controllers/teleop_paramConfig.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/franka_example_controllers/teleop_paramConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -94,7 +94,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_impedance_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_impedance_example_controller.h
 memory
 -
 mutex
@@ -126,7 +126,7 @@ franka_hw/franka_model_interface.h
 franka_hw/franka_state_interface.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_pose_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_pose_example_controller.h
 array
 -
 memory
@@ -146,7 +146,7 @@ ros/time.h
 franka_hw/franka_cartesian_command_interface.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_velocity_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_velocity_example_controller.h
 memory
 -
 string
@@ -164,7 +164,7 @@ ros/node_handle.h
 ros/time.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/dual_arm_cartesian_impedance_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/dual_arm_cartesian_impedance_example_controller.h
 memory
 -
 string
@@ -198,7 +198,7 @@ franka_hw/franka_state_interface.h
 franka_hw/trigger_rate.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/elbow_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/elbow_example_controller.h
 array
 -
 memory
@@ -218,7 +218,7 @@ ros/time.h
 franka_hw/franka_cartesian_command_interface.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/force_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/force_example_controller.h
 memory
 -
 string
@@ -246,7 +246,7 @@ Eigen/Core
 franka_example_controllers/desired_mass_paramConfig.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_impedance_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_impedance_example_controller.h
 memory
 -
 string
@@ -274,7 +274,7 @@ franka_hw/franka_model_interface.h
 franka_hw/trigger_rate.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_position_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_position_example_controller.h
 array
 -
 string
@@ -292,7 +292,7 @@ ros/node_handle.h
 ros/time.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_velocity_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_velocity_example_controller.h
 string
 -
 vector
@@ -310,13 +310,13 @@ ros/node_handle.h
 ros/time.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_wall.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/joint_wall.h
 array
 -
 memory
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/model_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/model_example_controller.h
 memory
 -
 string
@@ -336,7 +336,7 @@ franka_hw/franka_state_interface.h
 franka_hw/trigger_rate.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/pseudo_inversion.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/pseudo_inversion.h
 Eigen/Core
 -
 Eigen/LU
@@ -344,7 +344,7 @@ Eigen/LU
 Eigen/SVD
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/teleop_joint_pd_example_controller.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/include/franka_example_controllers/teleop_joint_pd_example_controller.h
 franka_example_controllers/joint_wall.h
 -
 franka_example_controllers/teleop_paramConfig.h
@@ -382,7 +382,7 @@ mutex
 vector
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_impedance_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_impedance_example_controller.cpp
 franka_example_controllers/cartesian_impedance_example_controller.h
 -
 cmath
@@ -400,7 +400,7 @@ ros/ros.h
 franka_example_controllers/pseudo_inversion.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp
 franka_example_controllers/cartesian_pose_example_controller.h
 -
 cmath
@@ -422,7 +422,7 @@ pluginlib/class_list_macros.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_velocity_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/cartesian_velocity_example_controller.cpp
 franka_example_controllers/cartesian_velocity_example_controller.h
 -
 array
@@ -444,7 +444,7 @@ pluginlib/class_list_macros.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/dual_arm_cartesian_impedance_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/dual_arm_cartesian_impedance_example_controller.cpp
 franka_example_controllers/dual_arm_cartesian_impedance_example_controller.h
 -
 cmath
@@ -476,7 +476,7 @@ tf/transform_listener.h
 tf_conversions/tf_eigen.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/elbow_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/elbow_example_controller.cpp
 franka_example_controllers/elbow_example_controller.h
 -
 cmath
@@ -498,7 +498,7 @@ pluginlib/class_list_macros.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/force_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/force_example_controller.cpp
 franka_example_controllers/force_example_controller.h
 -
 cmath
@@ -514,7 +514,7 @@ ros/ros.h
 franka/robot_state.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_impedance_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_impedance_example_controller.cpp
 franka_example_controllers/joint_impedance_example_controller.h
 -
 cmath
@@ -530,7 +530,7 @@ ros/ros.h
 franka/robot_state.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_position_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_position_example_controller.cpp
 franka_example_controllers/joint_position_example_controller.h
 -
 cmath
@@ -546,7 +546,7 @@ pluginlib/class_list_macros.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_velocity_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_velocity_example_controller.cpp
 franka_example_controllers/joint_velocity_example_controller.h
 -
 cmath
@@ -562,7 +562,7 @@ pluginlib/class_list_macros.h
 ros/ros.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_wall.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/joint_wall.cpp
 franka_example_controllers/joint_wall.h
 -
 ros/ros.h
@@ -574,7 +574,7 @@ iostream
 sstream
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/model_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/model_example_controller.cpp
 franka_example_controllers/model_example_controller.h
 -
 algorithm
@@ -600,7 +600,7 @@ franka_hw/franka_model_interface.h
 franka_hw/franka_state_interface.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_example_controllers/src/teleop_joint_pd_example_controller.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_example_controllers/src/teleop_joint_pd_example_controller.cpp
 franka_example_controllers/joint_wall.h
 -
 franka_example_controllers/teleop_joint_pd_example_controller.h
@@ -628,7 +628,7 @@ string
 vector
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_cartesian_command_interface.h
 array
 -
 franka_hw/franka_state_interface.h
@@ -636,7 +636,7 @@ franka_hw/franka_state_interface.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_model_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_model_interface.h
 array
 -
 string
@@ -652,7 +652,7 @@ franka_hw/model_base.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/franka_state_interface.h
 string
 -
 franka/robot_state.h
@@ -660,7 +660,7 @@ franka/robot_state.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model.h
 array
 -
 franka/model.h
@@ -668,13 +668,13 @@ franka/model.h
 franka_hw/model_base.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model_base.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/model_base.h
 franka/model.h
 -
 franka/robot_state.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/trigger_rate.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/franka_ros/franka_hw/include/franka_hw/trigger_rate.h
 ros/time.h
 -
 
@@ -1232,6 +1232,80 @@ geometry_msgs/Wrench.h
 Eigen/Core
 -
 Eigen/Geometry
+-
+
+/opt/ros/noetic/include/franka/command_types.h
+array
+-
+cstdint
+-
+
+/opt/ros/noetic/include/franka/control_types.h
+array
+-
+cmath
+-
+initializer_list
+-
+
+/opt/ros/noetic/include/franka/duration.h
+chrono
+-
+cstdint
+-
+ratio
+-
+
+/opt/ros/noetic/include/franka/errors.h
+array
+-
+ostream
+-
+
+/opt/ros/noetic/include/franka/lowpass_filter.h
+array
+-
+cmath
+-
+
+/opt/ros/noetic/include/franka/model.h
+array
+-
+memory
+-
+franka/robot.h
+-
+franka/robot_state.h
+-
+
+/opt/ros/noetic/include/franka/robot.h
+functional
+-
+memory
+-
+mutex
+-
+string
+-
+franka/command_types.h
+-
+franka/control_types.h
+-
+franka/duration.h
+-
+franka/lowpass_filter.h
+-
+franka/robot_state.h
+-
+
+/opt/ros/noetic/include/franka/robot_state.h
+array
+-
+ostream
+-
+franka/duration.h
+-
+franka/errors.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h

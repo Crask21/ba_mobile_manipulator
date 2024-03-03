@@ -17,24 +17,24 @@ add_custom_target(costmap_prohibition_layer_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_custom_target(_costmap_prohibition_layer_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_custom_target(_costmap_prohibition_layer_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_custom_target(_costmap_prohibition_layer_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_custom_target(_costmap_prohibition_layer_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "costmap_prohibition_layer" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" "geometry_msgs/Point32:geometry_msgs/Polygon"
 )
 
 #
@@ -46,25 +46,25 @@ add_custom_target(_costmap_prohibition_layer_generate_messages_check_deps_${_fil
 
 ### Generating Services
 _generate_srv_cpp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_cpp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_cpp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_cpp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/costmap_prohibition_layer
@@ -82,13 +82,13 @@ add_custom_target(costmap_prohibition_layer_generate_messages_cpp
 add_dependencies(costmap_prohibition_layer_generate_messages costmap_prohibition_layer_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_cpp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_cpp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_cpp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_cpp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -103,25 +103,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_prohibition_layer_generate_
 
 ### Generating Services
 _generate_srv_eus(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_eus(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_eus(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_eus(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_prohibition_layer
@@ -139,13 +139,13 @@ add_custom_target(costmap_prohibition_layer_generate_messages_eus
 add_dependencies(costmap_prohibition_layer_generate_messages costmap_prohibition_layer_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_eus _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_eus _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_eus _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_eus _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -160,25 +160,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_prohibition_layer_generate_
 
 ### Generating Services
 _generate_srv_lisp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_lisp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_lisp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_lisp(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/costmap_prohibition_layer
@@ -196,13 +196,13 @@ add_custom_target(costmap_prohibition_layer_generate_messages_lisp
 add_dependencies(costmap_prohibition_layer_generate_messages costmap_prohibition_layer_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_lisp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_lisp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_lisp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_lisp _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -217,25 +217,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_prohibition_layer_generate_
 
 ### Generating Services
 _generate_srv_nodejs(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_nodejs(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_nodejs(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_nodejs(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/costmap_prohibition_layer
@@ -253,13 +253,13 @@ add_custom_target(costmap_prohibition_layer_generate_messages_nodejs
 add_dependencies(costmap_prohibition_layer_generate_messages costmap_prohibition_layer_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_nodejs _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_nodejs _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_nodejs _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_nodejs _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -274,25 +274,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_prohibition_layer_generate_
 
 ### Generating Services
 _generate_srv_py(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_py(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_py(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/costmap_prohibition_layer
 )
 _generate_srv_py(costmap_prohibition_layer
-  "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Polygon.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/costmap_prohibition_layer
@@ -310,13 +310,13 @@ add_custom_target(costmap_prohibition_layer_generate_messages_py
 add_dependencies(costmap_prohibition_layer_generate_messages costmap_prohibition_layer_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/ClearProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_py _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/GetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_py _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/SetProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_py _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/costmap_prohibition_layer/srv/AddProhibitedPoints.srv" NAME_WE)
 add_dependencies(costmap_prohibition_layer_generate_messages_py _costmap_prohibition_layer_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

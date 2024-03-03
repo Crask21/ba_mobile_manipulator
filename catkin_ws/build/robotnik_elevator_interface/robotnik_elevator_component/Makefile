@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/rule
 .PHONY : robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ robotnik_fake_elevator_node: robotnik_elevator_interface/robotnik_elevator_compo
 
 # fast build rule for target.
 robotnik_fake_elevator_node/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build
 .PHONY : robotnik_fake_elevator_node/fast
 
 # Convenience name for target.
 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/rule
 .PHONY : robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ robotnik_elevator_component: robotnik_elevator_interface/robotnik_elevator_compo
 
 # fast build rule for target.
 robotnik_elevator_component/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build
 .PHONY : robotnik_elevator_component/fast
 
 src/robotnik_elevator_component.o: src/robotnik_elevator_component.cpp.o
@@ -203,7 +203,7 @@ src/robotnik_elevator_component.o: src/robotnik_elevator_component.cpp.o
 
 # target to build an object file
 src/robotnik_elevator_component.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.o
 .PHONY : src/robotnik_elevator_component.cpp.o
 
 src/robotnik_elevator_component.i: src/robotnik_elevator_component.cpp.i
@@ -212,7 +212,7 @@ src/robotnik_elevator_component.i: src/robotnik_elevator_component.cpp.i
 
 # target to preprocess a source file
 src/robotnik_elevator_component.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.i
 .PHONY : src/robotnik_elevator_component.cpp.i
 
 src/robotnik_elevator_component.s: src/robotnik_elevator_component.cpp.s
@@ -221,7 +221,7 @@ src/robotnik_elevator_component.s: src/robotnik_elevator_component.cpp.s
 
 # target to generate assembly for a file
 src/robotnik_elevator_component.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_elevator_component.dir/src/robotnik_elevator_component.cpp.s
 .PHONY : src/robotnik_elevator_component.cpp.s
 
 src/robotnik_fake_elevator_node.o: src/robotnik_fake_elevator_node.cpp.o
@@ -230,7 +230,7 @@ src/robotnik_fake_elevator_node.o: src/robotnik_fake_elevator_node.cpp.o
 
 # target to build an object file
 src/robotnik_fake_elevator_node.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.o
 .PHONY : src/robotnik_fake_elevator_node.cpp.o
 
 src/robotnik_fake_elevator_node.i: src/robotnik_fake_elevator_node.cpp.i
@@ -239,7 +239,7 @@ src/robotnik_fake_elevator_node.i: src/robotnik_fake_elevator_node.cpp.i
 
 # target to preprocess a source file
 src/robotnik_fake_elevator_node.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.i
 .PHONY : src/robotnik_fake_elevator_node.cpp.i
 
 src/robotnik_fake_elevator_node.s: src/robotnik_fake_elevator_node.cpp.s
@@ -248,7 +248,7 @@ src/robotnik_fake_elevator_node.s: src/robotnik_fake_elevator_node.cpp.s
 
 # target to generate assembly for a file
 src/robotnik_fake_elevator_node.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/build.make robotnik_elevator_interface/robotnik_elevator_component/CMakeFiles/robotnik_fake_elevator_node.dir/src/robotnik_fake_elevator_node.cpp.s
 .PHONY : src/robotnik_fake_elevator_node.cpp.s
 
 # Help Target
@@ -283,6 +283,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

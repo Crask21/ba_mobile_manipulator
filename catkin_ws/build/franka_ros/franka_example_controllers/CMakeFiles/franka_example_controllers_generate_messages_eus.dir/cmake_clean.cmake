@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/franka_example_controllers/manifest.l"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/franka_example_controllers/msg/JointTorqueComparison.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/franka_example_controllers/manifest.l"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/franka_example_controllers/msg/JointTorqueComparison.l"
   "CMakeFiles/franka_example_controllers_generate_messages_eus"
 )
 

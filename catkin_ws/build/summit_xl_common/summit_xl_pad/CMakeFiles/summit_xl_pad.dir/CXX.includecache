@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/home.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/home.h
 ros/service_traits.h
 -
 robotnik_msgs/homeRequest.h
@@ -14,7 +14,7 @@ robotnik_msgs/homeRequest.h
 robotnik_msgs/homeResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/homeRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/homeRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/homeResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/homeResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/ptz.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/ptz.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_output.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_output.h
 ros/service_traits.h
 -
 robotnik_msgs/set_digital_outputRequest.h
@@ -70,7 +70,7 @@ robotnik_msgs/set_digital_outputRequest.h
 robotnik_msgs/set_digital_outputResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_outputRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_outputRequest.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_digital_outputResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_digital_outputResponse.h
 string
 -
 vector
@@ -102,7 +102,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_mode.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_mode.h
 ros/service_traits.h
 -
 robotnik_msgs/set_modeRequest.h
@@ -110,7 +110,7 @@ robotnik_msgs/set_modeRequest.h
 robotnik_msgs/set_modeResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_modeRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_modeRequest.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/robotnik_msgs/set_modeResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/robotnik_msgs/set_modeResponse.h
 string
 -
 vector
@@ -142,7 +142,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/summit_xl_common/summit_xl_pad/src/summit_xl_pad.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/summit_xl_common/summit_xl_pad/src/summit_xl_pad.cpp
 ros/ros.h
 -
 sensor_msgs/Joy.h

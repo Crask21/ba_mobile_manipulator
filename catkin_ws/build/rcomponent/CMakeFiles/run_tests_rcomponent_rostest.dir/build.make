@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Utility rule file for run_tests_rcomponent_rostest.
 
@@ -63,10 +63,10 @@ rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build: run_tests_rcompone
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build
 
 rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_rcomponent_rostest.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_rcomponent_rostest.dir/cmake_clean.cmake
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/clean
 
 rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/rcomponent /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/rcomponent /home/markus/ros_stuff/catkin_ws/build/rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/depend
 

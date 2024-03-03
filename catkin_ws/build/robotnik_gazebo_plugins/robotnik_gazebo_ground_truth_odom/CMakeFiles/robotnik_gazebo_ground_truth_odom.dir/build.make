@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/depend.make
@@ -58,17 +58,17 @@ include robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/rob
 include robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/flags.make
 
 robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/flags.make
-robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o: /home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp
+robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp
 
 robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp > CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp > CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.i
 
 robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp -o CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/src/robotnik_gazebo_ground_truth_odom.cpp -o CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.s
 
 # Object files for target robotnik_gazebo_ground_truth_odom
 robotnik_gazebo_ground_truth_odom_OBJECTS = \
@@ -77,170 +77,170 @@ robotnik_gazebo_ground_truth_odom_OBJECTS = \
 # External object files for target robotnik_gazebo_ground_truth_odom
 robotnik_gazebo_ground_truth_odom_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.8.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.14.2
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libnodeletlib.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libbondcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/liburdf.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_bridge.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libactionlib.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf2.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcv_bridge.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libpolled_camera.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libimage_transport.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libclass_loader.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroslib.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librospack.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libdiagnostic_updater.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcamera_info_manager.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcamera_calibration_parsers.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroscpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librostime.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.9.2
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libccd.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libfcl.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libassimp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.6.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.10.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.1
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.2
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/src/robotnik_gazebo_ground_truth_odom.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.8.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.14.2
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libnodeletlib.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libbondcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/liburdf.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_bridge.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf2_ros.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libactionlib.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libtf2.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcv_bridge.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libpolled_camera.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libimage_transport.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libmessage_filters.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libclass_loader.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroslib.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librospack.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libdiagnostic_updater.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcamera_info_manager.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcamera_calibration_parsers.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroscpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/librostime.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libblas.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libblas.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/liblapack.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.9.2
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libccd.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/x86_64-linux-gnu/libfcl.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libassimp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/liboctomap.so.1.9.8
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /opt/ros/noetic/lib/liboctomath.so.1.9.8
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.6.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.10.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.1
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.2
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so: robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so
+robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_gazebo_ground_truth_odom.so
 
 .PHONY : robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/build
 
 robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && $(CMAKE_COMMAND) -P CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom && $(CMAKE_COMMAND) -P CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/cmake_clean.cmake
 .PHONY : robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/clean
 
 robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom /home/markus/ros_stuff/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : robotnik_gazebo_plugins/robotnik_gazebo_ground_truth_odom/CMakeFiles/robotnik_gazebo_ground_truth_odom.dir/depend
 

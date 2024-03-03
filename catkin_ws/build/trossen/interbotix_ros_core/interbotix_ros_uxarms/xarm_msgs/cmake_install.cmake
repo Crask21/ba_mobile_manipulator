@@ -1,8 +1,8 @@
-# Install script for directory: /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs
+# Install script for directory: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,76 +39,76 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/msg" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/RobotMsg.msg"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/msg/IOState.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/srv" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
-    "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/Move.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetAxis.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetInt16.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/TCPOffset.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetDigitalIO.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetDigitalIO.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetAnalogIO.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ClearErr.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetErr.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperConfig.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperMove.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GripperState.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetLoad.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/SetToolModbus.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/ConfigToolModbus.srv"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/srv/GetControllerDigitalIO.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/cmake" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/cmake" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/devel/include/xarm_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/devel/share/roseus/ros/xarm_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/roseus/ros/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/devel/share/common-lisp/ros/xarm_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/common-lisp/ros/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/xarm_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/xarm_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/markus/ros_stuff/catkin_ws/devel/lib/python3/dist-packages/xarm_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/python3/dist-packages/xarm_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/cmake" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/cmake" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs/cmake" TYPE FILE FILES
-    "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgsConfig.cmake"
-    "/home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgsConfig-version.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgsConfig.cmake"
+    "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/catkin_generated/installspace/xarm_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs" TYPE FILE FILES "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_msgs" TYPE FILE FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_uxarms/xarm_msgs/package.xml")
 endif()
 

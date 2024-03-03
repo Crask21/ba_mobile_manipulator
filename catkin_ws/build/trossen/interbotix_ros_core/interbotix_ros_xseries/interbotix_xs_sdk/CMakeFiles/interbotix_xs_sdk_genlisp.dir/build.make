@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Utility rule file for interbotix_xs_sdk_genlisp.
 
@@ -63,10 +63,10 @@ trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/build
 
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xs_sdk_genlisp.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xs_sdk_genlisp.dir/cmake_clean.cmake
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/clean
 
 trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trossen/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/CMakeFiles/interbotix_xs_sdk_genlisp.dir/depend
 

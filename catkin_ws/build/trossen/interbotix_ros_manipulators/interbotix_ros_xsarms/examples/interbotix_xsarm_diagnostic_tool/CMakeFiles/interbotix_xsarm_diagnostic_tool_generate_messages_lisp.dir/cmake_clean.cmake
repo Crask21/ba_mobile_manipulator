@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/common-lisp/ros/interbotix_xsarm_diagnostic_tool/msg/JointTemps.lisp"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/common-lisp/ros/interbotix_xsarm_diagnostic_tool/msg/JointTemps.lisp"
   "CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp"
 )
 

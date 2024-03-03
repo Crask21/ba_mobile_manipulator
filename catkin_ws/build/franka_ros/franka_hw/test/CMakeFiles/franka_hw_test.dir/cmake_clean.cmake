@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_hw/franka_hw_test"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_hw/franka_hw_test.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_hw/franka_hw_test"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_hw/franka_hw_test.pdb"
   "CMakeFiles/franka_hw_test.dir/franka_combinable_hw_controller_switching_test.cpp.o"
   "CMakeFiles/franka_hw_test.dir/franka_hw_controller_switching_test.cpp.o"
   "CMakeFiles/franka_hw_test.dir/franka_hw_interfaces_test.cpp.o"

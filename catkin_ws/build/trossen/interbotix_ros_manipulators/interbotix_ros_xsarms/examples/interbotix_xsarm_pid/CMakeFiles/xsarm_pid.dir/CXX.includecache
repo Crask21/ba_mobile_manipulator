@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/RobotInfoRequest.h
@@ -30,7 +30,7 @@ interbotix_xs_sdk/RobotInfoRequest.h
 interbotix_xs_sdk/RobotInfoResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/include/interbotix_xsarm_pid/pid.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/include/interbotix_xsarm_pid/pid.h
 vector
 -
 cstdlib
@@ -70,21 +70,21 @@ cstdlib
 cstdint
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/pid.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/pid.cpp
 interbotix_xsarm_pid/pid.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xsarm_pid/pid.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xsarm_pid/pid.h
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/xsarm_pid.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/xsarm_pid.cpp
 ros/ros.h
 -
 unordered_map
 -
 interbotix_xsarm_pid/pid.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xsarm_pid/pid.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xsarm_pid/pid.h
 interbotix_xs_sdk/RobotInfo.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xs_sdk/RobotInfo.h
 interbotix_xs_sdk/JointGroupCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/src/interbotix_xs_sdk/JointGroupCommand.h
 sensor_msgs/JointState.h
 -
 

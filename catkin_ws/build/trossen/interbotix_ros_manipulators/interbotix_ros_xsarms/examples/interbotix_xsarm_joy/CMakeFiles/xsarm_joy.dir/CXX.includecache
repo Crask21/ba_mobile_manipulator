@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xsarm_joy/ArmJoy.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xsarm_joy/ArmJoy.h
 string
 -
 vector
@@ -22,13 +22,13 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/src/xsarm_joy.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/src/xsarm_joy.cpp
 ros/ros.h
 -
 sensor_msgs/Joy.h
 -
 interbotix_xsarm_joy/ArmJoy.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/src/interbotix_xsarm_joy/ArmJoy.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_joy/src/interbotix_xsarm_joy/ArmJoy.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

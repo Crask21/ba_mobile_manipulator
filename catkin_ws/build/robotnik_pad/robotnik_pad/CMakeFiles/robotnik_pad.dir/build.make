@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/depend.make
@@ -58,17 +58,17 @@ include robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/progress.make
 include robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/flags.make
 
 robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/flags.make
-robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o: /home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp
+robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp
 
 robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp > CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp > CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.i
 
 robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp -o CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad/src/robotnik_pad.cpp -o CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.s
 
 # Object files for target robotnik_pad
 robotnik_pad_OBJECTS = \
@@ -77,48 +77,48 @@ robotnik_pad_OBJECTS = \
 # External object files for target robotnik_pad
 robotnik_pad_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroscpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /home/markus/ros_stuff/catkin_ws/devel/lib/librcomponent.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libclass_loader.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librostime.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroslib.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librospack.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so"
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotnik_pad.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/src/robotnik_pad.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroscpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librcomponent.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libclass_loader.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librostime.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/libroslib.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /opt/ros/noetic/lib/librospack.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so: robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robotnik_pad.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/librobotnik_pad.so
+robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/librobotnik_pad.so
 
 .PHONY : robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/build
 
 robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad && $(CMAKE_COMMAND) -P CMakeFiles/robotnik_pad.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad && $(CMAKE_COMMAND) -P CMakeFiles/robotnik_pad.dir/cmake_clean.cmake
 .PHONY : robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/clean
 
 robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/robotnik_pad/robotnik_pad /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_pad/robotnik_pad /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : robotnik_pad/robotnik_pad/CMakeFiles/robotnik_pad.dir/depend
 

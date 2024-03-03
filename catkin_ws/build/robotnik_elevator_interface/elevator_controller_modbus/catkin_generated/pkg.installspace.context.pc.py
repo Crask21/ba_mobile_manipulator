@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;self_test;diagnostic_updater;std_srvs;robotnik_msgs;robotnik_elevator_component;robotnik_elevator_interface_msgs;rcomponent".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "elevator_controller_modbus"
-PROJECT_SPACE_DIR = "/home/markus/ros_stuff/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install"
 PROJECT_VERSION = "0.0.1"

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_api.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_api.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_api.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_api.so"
   "CMakeFiles/xarm_api.dir/src/xarm/common/crc16.cc.o"
   "CMakeFiles/xarm_api.dir/src/xarm/common/queue_memcpy.cc.o"
   "CMakeFiles/xarm_api.dir/src/xarm/connect.cc.o"

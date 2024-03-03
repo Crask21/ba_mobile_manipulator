@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so"
   "CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
   "CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
   "CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"

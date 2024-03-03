@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/depend.make
@@ -58,108 +58,108 @@ include kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/progress.make
 include kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp > CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp > CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_api.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp > CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp > CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_arm.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp > CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp > CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_comm.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_tool_pose_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_angles_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp > CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_fingers_action.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp > CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp > CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_ros_types.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.s
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/flags.make
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o: /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o -c /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o -c /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.i"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp > CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp > CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.i
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.s"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver/src/kinova_joint_trajectory_controller.cpp -o CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.s
 
 # Object files for target kinova_driver
 kinova_driver_OBJECTS = \
@@ -175,53 +175,53 @@ kinova_driver_OBJECTS = \
 # External object files for target kinova_driver
 kinova_driver_EXTERNAL_OBJECTS =
 
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/build.make
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libinteractive_markers.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf2_ros.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libactionlib.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libmessage_filters.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libroscpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf2.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librostime.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library /home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so"
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinova_driver.dir/link.txt --verbose=$(VERBOSE)
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_api.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_arm.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_comm.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_tool_pose_action.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_angles_action.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_fingers_action.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_ros_types.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/src/kinova_joint_trajectory_controller.cpp.o
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/build.make
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libinteractive_markers.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf2_ros.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libactionlib.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libmessage_filters.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libroscpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libtf2.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/librostime.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so: kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so"
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kinova_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/build: /home/markus/ros_stuff/catkin_ws/devel/lib/libkinova_driver.so
+kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/build: /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libkinova_driver.so
 
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/build
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/clean:
-	cd /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/kinova_driver.dir/cmake_clean.cmake
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver && $(CMAKE_COMMAND) -P CMakeFiles/kinova_driver.dir/cmake_clean.cmake
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/clean
 
 kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/catkin_ws/src /home/markus/ros_stuff/catkin_ws/src/kinova-ros/kinova_driver /home/markus/ros_stuff/catkin_ws/build /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver /home/markus/ros_stuff/catkin_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/kinova-ros/kinova_driver /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : kinova-ros/kinova_driver/CMakeFiles/kinova_driver.dir/depend
 

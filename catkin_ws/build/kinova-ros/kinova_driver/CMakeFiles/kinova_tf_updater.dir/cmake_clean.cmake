@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/kinova_driver/kinova_tf_updater"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/kinova_driver/kinova_tf_updater.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/kinova_driver/kinova_tf_updater"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/kinova_driver/kinova_tf_updater.pdb"
   "CMakeFiles/kinova_tf_updater.dir/src/kinova_arm_kinematics.cpp.o"
   "CMakeFiles/kinova_tf_updater.dir/src/kinova_ros_types.cpp.o"
   "CMakeFiles/kinova_tf_updater.dir/src/nodes/kinova_tf_updater.cpp.o"

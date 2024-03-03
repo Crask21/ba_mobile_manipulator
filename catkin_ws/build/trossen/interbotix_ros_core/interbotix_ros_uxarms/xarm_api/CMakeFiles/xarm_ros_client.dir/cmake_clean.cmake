@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libxarm_ros_client.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libxarm_ros_client.so"
   "CMakeFiles/xarm_ros_client.dir/src/xarm_ros_client.cpp.o"
 )
 

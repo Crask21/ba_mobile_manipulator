@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_gazebo/franka_gripper_sim_test_with_object"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_gazebo/franka_gripper_sim_test_with_object.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_gazebo/franka_gripper_sim_test_with_object"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_gazebo/franka_gripper_sim_test_with_object.pdb"
   "CMakeFiles/franka_gripper_sim_test_with_object.dir/franka_gripper_sim_test_with_object.cpp.o"
   "CMakeFiles/franka_gripper_sim_test_with_object.dir/gripper_sim_test_setup.cpp.o"
 )

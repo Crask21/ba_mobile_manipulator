@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_state_controller.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_state_controller.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_state_controller.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_state_controller.so"
   "CMakeFiles/franka_state_controller.dir/src/franka_state_controller.cpp.o"
 )
 

@@ -2,7 +2,7 @@
 
 message(STATUS "robotnik_elevator_interface_msgs: 1 messages, 3 services")
 
-set(MSG_I_FLAGS "-Irobotnik_elevator_interface_msgs:/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irobotnik_elevator_interface_msgs:/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,24 +17,24 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_custom_target(_robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_custom_target(_robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_custom_target(_robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" ""
 )
 
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_custom_target(_robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robotnik_elevator_interface_msgs" "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" ""
 )
 
 #
@@ -44,7 +44,7 @@ add_custom_target(_robotnik_elevator_interface_msgs_generate_messages_check_deps
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -52,19 +52,19 @@ _generate_msg_cpp(robotnik_elevator_interface_msgs
 
 ### Generating Services
 _generate_srv_cpp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_cpp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_cpp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -82,13 +82,13 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages_cpp
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages robotnik_elevator_interface_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_cpp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_cpp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_cpp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_cpp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,7 +101,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_elevator_interface_msgs_ge
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -109,19 +109,19 @@ _generate_msg_eus(robotnik_elevator_interface_msgs
 
 ### Generating Services
 _generate_srv_eus(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_eus(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_eus(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -139,13 +139,13 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages_eus
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages robotnik_elevator_interface_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_eus _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_eus _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_eus _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_eus _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -158,7 +158,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_elevator_interface_msgs_ge
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -166,19 +166,19 @@ _generate_msg_lisp(robotnik_elevator_interface_msgs
 
 ### Generating Services
 _generate_srv_lisp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_lisp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_lisp(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -196,13 +196,13 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages_lisp
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages robotnik_elevator_interface_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_lisp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_lisp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_lisp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_lisp _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -215,7 +215,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_elevator_interface_msgs_ge
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -223,19 +223,19 @@ _generate_msg_nodejs(robotnik_elevator_interface_msgs
 
 ### Generating Services
 _generate_srv_nodejs(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_nodejs(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_nodejs(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -253,13 +253,13 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages_nodejs
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages robotnik_elevator_interface_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_nodejs _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_nodejs _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_nodejs _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_nodejs _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -272,7 +272,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robotnik_elevator_interface_msgs_ge
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -280,19 +280,19 @@ _generate_msg_py(robotnik_elevator_interface_msgs
 
 ### Generating Services
 _generate_srv_py(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_py(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_elevator_interface_msgs
 )
 _generate_srv_py(robotnik_elevator_interface_msgs
-  "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robotnik_elevator_interface_msgs
@@ -310,13 +310,13 @@ add_custom_target(robotnik_elevator_interface_msgs_generate_messages_py
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages robotnik_elevator_interface_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/msg/ElevatorState.msg" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_py _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetElevatorControl.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_py _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/GoToFloor.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_py _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/markus/ros_stuff/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
+get_filename_component(_filename "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_elevator_interface/robotnik_elevator_interface_msgs/srv/SetDoorState.srv" NAME_WE)
 add_dependencies(robotnik_elevator_interface_msgs_generate_messages_py _robotnik_elevator_interface_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

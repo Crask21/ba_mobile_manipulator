@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/AddProhibitedPoints.js"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/ClearProhibitedPoints.js"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/GetProhibitedPoints.js"
-  "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/SetProhibitedPoints.js"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/AddProhibitedPoints.js"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/ClearProhibitedPoints.js"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/GetProhibitedPoints.js"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/costmap_prohibition_layer/srv/SetProhibitedPoints.js"
   "CMakeFiles/costmap_prohibition_layer_generate_messages_nodejs"
 )
 

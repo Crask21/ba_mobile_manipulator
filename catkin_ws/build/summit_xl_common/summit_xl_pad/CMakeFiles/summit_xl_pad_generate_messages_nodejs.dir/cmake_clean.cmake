@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/share/gennodejs/ros/summit_xl_pad/srv/enable_disable_pad.js"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/share/gennodejs/ros/summit_xl_pad/srv/enable_disable_pad.js"
   "CMakeFiles/summit_xl_pad_generate_messages_nodejs"
 )
 

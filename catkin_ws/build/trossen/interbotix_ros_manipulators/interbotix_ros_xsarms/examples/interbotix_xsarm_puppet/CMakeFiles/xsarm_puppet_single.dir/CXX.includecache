@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointGroupCommand.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/JointSingleCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/JointSingleCommand.h
 string
 -
 vector
@@ -38,7 +38,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfo.h
 ros/service_traits.h
 -
 interbotix_xs_sdk/RobotInfoRequest.h
@@ -46,7 +46,7 @@ interbotix_xs_sdk/RobotInfoRequest.h
 interbotix_xs_sdk/RobotInfoResponse.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoRequest.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xs_sdk/RobotInfoResponse.h
 string
 -
 vector
@@ -78,17 +78,17 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/xsarm_puppet_single.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/xsarm_puppet_single.cpp
 ros/ros.h
 -
 sensor_msgs/JointState.h
 -
 interbotix_xs_sdk/JointGroupCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/JointGroupCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/JointGroupCommand.h
 interbotix_xs_sdk/JointSingleCommand.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/JointSingleCommand.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/JointSingleCommand.h
 interbotix_xs_sdk/RobotInfo.h
-/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/RobotInfo.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_puppet/src/interbotix_xs_sdk/RobotInfo.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

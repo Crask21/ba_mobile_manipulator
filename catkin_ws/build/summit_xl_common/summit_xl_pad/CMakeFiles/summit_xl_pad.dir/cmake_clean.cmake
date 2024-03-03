@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/summit_xl_pad/summit_xl_pad"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/summit_xl_pad/summit_xl_pad.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/summit_xl_pad/summit_xl_pad"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/summit_xl_pad/summit_xl_pad.pdb"
   "CMakeFiles/summit_xl_pad.dir/src/summit_xl_pad.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libdynamixel_workbench_toolbox.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libdynamixel_workbench_toolbox.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libdynamixel_workbench_toolbox.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libdynamixel_workbench_toolbox.so"
   "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o"
   "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o"
   "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o"

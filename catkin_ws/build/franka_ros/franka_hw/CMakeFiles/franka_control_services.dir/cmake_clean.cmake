@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_control_services.pdb"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/libfranka_control_services.so"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_control_services.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/libfranka_control_services.so"
   "CMakeFiles/franka_control_services.dir/src/services.cpp.o"
 )
 

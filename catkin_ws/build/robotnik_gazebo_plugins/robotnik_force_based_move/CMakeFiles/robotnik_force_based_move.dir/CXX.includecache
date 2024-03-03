@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_force_based_move/include/robotnik_force_based_move/robotnik_force_based_move.h
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_force_based_move/include/robotnik_force_based_move/robotnik_force_based_move.h
 boost/bind.hpp
 -
 boost/thread.hpp
@@ -36,7 +36,7 @@ tf/transform_broadcaster.h
 tf/transform_listener.h
 -
 
-/home/markus/ros_stuff/catkin_ws/src/robotnik_gazebo_plugins/robotnik_force_based_move/src/robotnik_force_based_move.cpp
+/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/robotnik_gazebo_plugins/robotnik_force_based_move/src/robotnik_force_based_move.cpp
 robotnik_force_based_move/robotnik_force_based_move.h
 -
 

@@ -67,14 +67,14 @@ set(interbotix_xs_ros_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(interbotix_xs_ros_control_SOURCE_PREFIX /home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control)
-  set(interbotix_xs_ros_control_DEVEL_PREFIX /home/markus/ros_stuff/catkin_ws/devel)
+  set(interbotix_xs_ros_control_SOURCE_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control)
+  set(interbotix_xs_ros_control_DEVEL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel)
   set(interbotix_xs_ros_control_INSTALL_PREFIX "")
   set(interbotix_xs_ros_control_PREFIX ${interbotix_xs_ros_control_DEVEL_PREFIX})
 else()
   set(interbotix_xs_ros_control_SOURCE_PREFIX "")
   set(interbotix_xs_ros_control_DEVEL_PREFIX "")
-  set(interbotix_xs_ros_control_INSTALL_PREFIX /home/markus/ros_stuff/catkin_ws/install)
+  set(interbotix_xs_ros_control_INSTALL_PREFIX /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install)
   set(interbotix_xs_ros_control_PREFIX ${interbotix_xs_ros_control_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(interbotix_xs_ros_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/include " STREQUAL " ")
+if(NOT "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/include " STREQUAL " ")
   set(interbotix_xs_ros_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/include")
+  set(_include_dirs "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/in
         message(FATAL_ERROR "Project 'interbotix_xs_ros_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'interbotix_xs_ros_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'interbotix_xs_ros_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(interbotix_xs_ros_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/markus/ros_stuff/catkin_ws/devel/lib;/home/markus/ros_stuff/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

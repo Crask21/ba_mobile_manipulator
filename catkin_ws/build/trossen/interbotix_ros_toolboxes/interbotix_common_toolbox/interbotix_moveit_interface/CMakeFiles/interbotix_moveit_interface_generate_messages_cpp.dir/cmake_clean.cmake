@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_moveit_interface/MoveItPlan.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_moveit_interface/MoveItPlan.h"
   "CMakeFiles/interbotix_moveit_interface_generate_messages_cpp"
 )
 

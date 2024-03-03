@@ -1,2 +1,2 @@
 set(interbotix_moveit_interface_MESSAGE_FILES "")
-set(interbotix_moveit_interface_SERVICE_FILES "/home/markus/ros_stuff/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_moveit_interface/srv/MoveItPlan.srv")
+set(interbotix_moveit_interface_SERVICE_FILES "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_moveit_interface/srv/MoveItPlan.srv")

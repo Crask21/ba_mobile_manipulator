@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/robotnik_pad/robotnik_pad_plugins/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/robotnik_pad/robotnik_pad_plugins/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/rule
 .PHONY : robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ robotnik_pad_pluginlib: robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pa
 
 # fast build rule for target.
 robotnik_pad_pluginlib/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build
 .PHONY : robotnik_pad_pluginlib/fast
 
 # Convenience name for target.
 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/rule
 .PHONY : robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ robotnik_pad_plugins: robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_
 
 # fast build rule for target.
 robotnik_pad_plugins/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build
 .PHONY : robotnik_pad_plugins/fast
 
 src/ackermann_movement_plugin.o: src/ackermann_movement_plugin.cpp.o
@@ -203,7 +203,7 @@ src/ackermann_movement_plugin.o: src/ackermann_movement_plugin.cpp.o
 
 # target to build an object file
 src/ackermann_movement_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.o
 .PHONY : src/ackermann_movement_plugin.cpp.o
 
 src/ackermann_movement_plugin.i: src/ackermann_movement_plugin.cpp.i
@@ -212,7 +212,7 @@ src/ackermann_movement_plugin.i: src/ackermann_movement_plugin.cpp.i
 
 # target to preprocess a source file
 src/ackermann_movement_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.i
 .PHONY : src/ackermann_movement_plugin.cpp.i
 
 src/ackermann_movement_plugin.s: src/ackermann_movement_plugin.cpp.s
@@ -221,7 +221,7 @@ src/ackermann_movement_plugin.s: src/ackermann_movement_plugin.cpp.s
 
 # target to generate assembly for a file
 src/ackermann_movement_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ackermann_movement_plugin.cpp.s
 .PHONY : src/ackermann_movement_plugin.cpp.s
 
 src/blkarc_plugin.o: src/blkarc_plugin.cpp.o
@@ -230,7 +230,7 @@ src/blkarc_plugin.o: src/blkarc_plugin.cpp.o
 
 # target to build an object file
 src/blkarc_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.o
 .PHONY : src/blkarc_plugin.cpp.o
 
 src/blkarc_plugin.i: src/blkarc_plugin.cpp.i
@@ -239,7 +239,7 @@ src/blkarc_plugin.i: src/blkarc_plugin.cpp.i
 
 # target to preprocess a source file
 src/blkarc_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.i
 .PHONY : src/blkarc_plugin.cpp.i
 
 src/blkarc_plugin.s: src/blkarc_plugin.cpp.s
@@ -248,7 +248,7 @@ src/blkarc_plugin.s: src/blkarc_plugin.cpp.s
 
 # target to generate assembly for a file
 src/blkarc_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/blkarc_plugin.cpp.s
 .PHONY : src/blkarc_plugin.cpp.s
 
 src/elevator_plugin.o: src/elevator_plugin.cpp.o
@@ -257,7 +257,7 @@ src/elevator_plugin.o: src/elevator_plugin.cpp.o
 
 # target to build an object file
 src/elevator_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.o
 .PHONY : src/elevator_plugin.cpp.o
 
 src/elevator_plugin.i: src/elevator_plugin.cpp.i
@@ -266,7 +266,7 @@ src/elevator_plugin.i: src/elevator_plugin.cpp.i
 
 # target to preprocess a source file
 src/elevator_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.i
 .PHONY : src/elevator_plugin.cpp.i
 
 src/elevator_plugin.s: src/elevator_plugin.cpp.s
@@ -275,7 +275,7 @@ src/elevator_plugin.s: src/elevator_plugin.cpp.s
 
 # target to generate assembly for a file
 src/elevator_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/elevator_plugin.cpp.s
 .PHONY : src/elevator_plugin.cpp.s
 
 src/generic_pad_plugins.o: src/generic_pad_plugins.cpp.o
@@ -284,7 +284,7 @@ src/generic_pad_plugins.o: src/generic_pad_plugins.cpp.o
 
 # target to build an object file
 src/generic_pad_plugins.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.o
 .PHONY : src/generic_pad_plugins.cpp.o
 
 src/generic_pad_plugins.i: src/generic_pad_plugins.cpp.i
@@ -293,7 +293,7 @@ src/generic_pad_plugins.i: src/generic_pad_plugins.cpp.i
 
 # target to preprocess a source file
 src/generic_pad_plugins.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.i
 .PHONY : src/generic_pad_plugins.cpp.i
 
 src/generic_pad_plugins.s: src/generic_pad_plugins.cpp.s
@@ -302,7 +302,7 @@ src/generic_pad_plugins.s: src/generic_pad_plugins.cpp.s
 
 # target to generate assembly for a file
 src/generic_pad_plugins.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_pluginlib.dir/src/generic_pad_plugins.cpp.s
 .PHONY : src/generic_pad_plugins.cpp.s
 
 src/movement_plugin.o: src/movement_plugin.cpp.o
@@ -311,7 +311,7 @@ src/movement_plugin.o: src/movement_plugin.cpp.o
 
 # target to build an object file
 src/movement_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.o
 .PHONY : src/movement_plugin.cpp.o
 
 src/movement_plugin.i: src/movement_plugin.cpp.i
@@ -320,7 +320,7 @@ src/movement_plugin.i: src/movement_plugin.cpp.i
 
 # target to preprocess a source file
 src/movement_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.i
 .PHONY : src/movement_plugin.cpp.i
 
 src/movement_plugin.s: src/movement_plugin.cpp.s
@@ -329,7 +329,7 @@ src/movement_plugin.s: src/movement_plugin.cpp.s
 
 # target to generate assembly for a file
 src/movement_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/movement_plugin.cpp.s
 .PHONY : src/movement_plugin.cpp.s
 
 src/poi_plugin.o: src/poi_plugin.cpp.o
@@ -338,7 +338,7 @@ src/poi_plugin.o: src/poi_plugin.cpp.o
 
 # target to build an object file
 src/poi_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.o
 .PHONY : src/poi_plugin.cpp.o
 
 src/poi_plugin.i: src/poi_plugin.cpp.i
@@ -347,7 +347,7 @@ src/poi_plugin.i: src/poi_plugin.cpp.i
 
 # target to preprocess a source file
 src/poi_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.i
 .PHONY : src/poi_plugin.cpp.i
 
 src/poi_plugin.s: src/poi_plugin.cpp.s
@@ -356,7 +356,7 @@ src/poi_plugin.s: src/poi_plugin.cpp.s
 
 # target to generate assembly for a file
 src/poi_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/poi_plugin.cpp.s
 .PHONY : src/poi_plugin.cpp.s
 
 src/ptz_plugin.o: src/ptz_plugin.cpp.o
@@ -365,7 +365,7 @@ src/ptz_plugin.o: src/ptz_plugin.cpp.o
 
 # target to build an object file
 src/ptz_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.o
 .PHONY : src/ptz_plugin.cpp.o
 
 src/ptz_plugin.i: src/ptz_plugin.cpp.i
@@ -374,7 +374,7 @@ src/ptz_plugin.i: src/ptz_plugin.cpp.i
 
 # target to preprocess a source file
 src/ptz_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.i
 .PHONY : src/ptz_plugin.cpp.i
 
 src/ptz_plugin.s: src/ptz_plugin.cpp.s
@@ -383,7 +383,7 @@ src/ptz_plugin.s: src/ptz_plugin.cpp.s
 
 # target to generate assembly for a file
 src/ptz_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/ptz_plugin.cpp.s
 .PHONY : src/ptz_plugin.cpp.s
 
 src/safety_movement_plugin.o: src/safety_movement_plugin.cpp.o
@@ -392,7 +392,7 @@ src/safety_movement_plugin.o: src/safety_movement_plugin.cpp.o
 
 # target to build an object file
 src/safety_movement_plugin.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.o
 .PHONY : src/safety_movement_plugin.cpp.o
 
 src/safety_movement_plugin.i: src/safety_movement_plugin.cpp.i
@@ -401,7 +401,7 @@ src/safety_movement_plugin.i: src/safety_movement_plugin.cpp.i
 
 # target to preprocess a source file
 src/safety_movement_plugin.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.i
 .PHONY : src/safety_movement_plugin.cpp.i
 
 src/safety_movement_plugin.s: src/safety_movement_plugin.cpp.s
@@ -410,7 +410,7 @@ src/safety_movement_plugin.s: src/safety_movement_plugin.cpp.s
 
 # target to generate assembly for a file
 src/safety_movement_plugin.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/build.make robotnik_pad/robotnik_pad_plugins/CMakeFiles/robotnik_pad_plugins.dir/src/safety_movement_plugin.cpp.s
 .PHONY : src/safety_movement_plugin.cpp.s
 
 # Help Target
@@ -463,6 +463,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-prefix=/home/markus/ros_stuff/catkin_ws/devel
+prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
 
 Name: j2s7s300_moveit_config
 Description: Description of j2s7s300_moveit_config

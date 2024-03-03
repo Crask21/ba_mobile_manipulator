@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_example_controllers/teleop_gripper_node"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/franka_example_controllers/teleop_gripper_node.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_example_controllers/teleop_gripper_node"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/franka_example_controllers/teleop_gripper_node.pdb"
   "CMakeFiles/teleop_gripper_node.dir/src/teleop_gripper_node.cpp.o"
 )
 

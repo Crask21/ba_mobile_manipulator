@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_: trossen/interb
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_xacro_generated_to_devel_space_/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ interbotix_xsarm_diagnostic_tool_generate_messages: trossen/interbotix_ros_manip
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ interbotix_xsarm_diagnostic_tool_genlisp: trossen/interbotix_ros_manipulators/in
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_genlisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genlisp.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_genlisp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps: tross
 
 # fast build rule for target.
 _interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/_interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps.dir/build
 .PHONY : _interbotix_xsarm_diagnostic_tool_generate_messages_check_deps_JointTemps/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ interbotix_xsarm_diagnostic_tool_generate_messages_eus: trossen/interbotix_ros_m
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_eus.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_eus/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ interbotix_xsarm_diagnostic_tool_gencpp: trossen/interbotix_ros_manipulators/int
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_gencpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gencpp.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_gencpp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ interbotix_xsarm_diagnostic_tool_generate_messages_cpp: trossen/interbotix_ros_m
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_cpp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ interbotix_xsarm_diagnostic_tool_generate_messages_nodejs: trossen/interbotix_ro
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_nodejs.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_nodejs/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ interbotix_xsarm_diagnostic_tool_geneus: trossen/interbotix_ros_manipulators/int
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_geneus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_geneus.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_geneus/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ interbotix_xsarm_diagnostic_tool_generate_messages_lisp: trossen/interbotix_ros_
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_lisp.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_lisp/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ xsarm_diagnostic_tool: trossen/interbotix_ros_manipulators/interbotix_ros_xsarms
 
 # fast build rule for target.
 xsarm_diagnostic_tool/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build
 .PHONY : xsarm_diagnostic_tool/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ interbotix_xsarm_diagnostic_tool_gennodejs: trossen/interbotix_ros_manipulators/
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_gennodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_gennodejs.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_gennodejs/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ interbotix_xsarm_diagnostic_tool_genpy: trossen/interbotix_ros_manipulators/inte
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_genpy/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_genpy.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_genpy/fast
 
 # Convenience name for target.
 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/rule
 .PHONY : trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -374,7 +374,7 @@ interbotix_xsarm_diagnostic_tool_generate_messages_py: trossen/interbotix_ros_ma
 
 # fast build rule for target.
 interbotix_xsarm_diagnostic_tool_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_py.dir/build
 .PHONY : interbotix_xsarm_diagnostic_tool_generate_messages_py/fast
 
 src/xsarm_diagnostic_tool.o: src/xsarm_diagnostic_tool.cpp.o
@@ -383,7 +383,7 @@ src/xsarm_diagnostic_tool.o: src/xsarm_diagnostic_tool.cpp.o
 
 # target to build an object file
 src/xsarm_diagnostic_tool.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.o
 .PHONY : src/xsarm_diagnostic_tool.cpp.o
 
 src/xsarm_diagnostic_tool.i: src/xsarm_diagnostic_tool.cpp.i
@@ -392,7 +392,7 @@ src/xsarm_diagnostic_tool.i: src/xsarm_diagnostic_tool.cpp.i
 
 # target to preprocess a source file
 src/xsarm_diagnostic_tool.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.i
 .PHONY : src/xsarm_diagnostic_tool.cpp.i
 
 src/xsarm_diagnostic_tool.s: src/xsarm_diagnostic_tool.cpp.s
@@ -401,7 +401,7 @@ src/xsarm_diagnostic_tool.s: src/xsarm_diagnostic_tool.cpp.s
 
 # target to generate assembly for a file
 src/xsarm_diagnostic_tool.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/build.make trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_diagnostic_tool/CMakeFiles/xsarm_diagnostic_tool.dir/src/xsarm_diagnostic_tool.cpp.s
 .PHONY : src/xsarm_diagnostic_tool.cpp.s
 
 # Help Target
@@ -445,6 +445,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

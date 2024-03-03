@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/rcomponent/test_namespace"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/rcomponent/test_namespace.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/rcomponent/test_namespace"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/rcomponent/test_namespace.pdb"
   "CMakeFiles/test_namespace.dir/test/test_namespace.cpp.o"
 )
 

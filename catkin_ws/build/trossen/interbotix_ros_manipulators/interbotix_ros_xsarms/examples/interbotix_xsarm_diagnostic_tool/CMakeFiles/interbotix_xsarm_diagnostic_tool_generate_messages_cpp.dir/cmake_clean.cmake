@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/include/interbotix_xsarm_diagnostic_tool/JointTemps.h"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include/interbotix_xsarm_diagnostic_tool/JointTemps.h"
   "CMakeFiles/interbotix_xsarm_diagnostic_tool_generate_messages_cpp"
 )
 

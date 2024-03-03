@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/ros_stuff/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/ros_stuff/catkin_ws/build
+CMAKE_BINARY_DIR = /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/catkin_ws/build/rcomponent/CMakeFiles/progress.marks
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/catkin_ws/build/CMakeFiles 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/rcomponent/CMakeFiles/progress.marks
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/clean
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/preinstall
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rcomponent_simple.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_simple.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_simple.dir/rule
 .PHONY : rcomponent/CMakeFiles/rcomponent_simple.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ rcomponent_simple: rcomponent/CMakeFiles/rcomponent_simple.dir/rule
 
 # fast build rule for target.
 rcomponent_simple/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/build
 .PHONY : rcomponent_simple/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ diagnostic_msgs_generate_messages_nodejs: rcomponent/CMakeFiles/diagnostic_msgs_
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rcomponent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent.dir/rule
 .PHONY : rcomponent/CMakeFiles/rcomponent.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ rcomponent: rcomponent/CMakeFiles/rcomponent.dir/rule
 
 # fast build rule for target.
 rcomponent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/build
 .PHONY : rcomponent/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ diagnostic_msgs_generate_messages_py: rcomponent/CMakeFiles/diagnostic_msgs_gene
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ diagnostic_msgs_generate_messages_lisp: rcomponent/CMakeFiles/diagnostic_msgs_ge
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/rule
 .PHONY : rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ rosunit_rcomponent_log: rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/rule
 
 # fast build rule for target.
 rosunit_rcomponent_log/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build
 .PHONY : rosunit_rcomponent_log/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 .PHONY : rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ std_srvs_generate_messages_nodejs: rcomponent/CMakeFiles/std_srvs_generate_messa
 
 # fast build rule for target.
 std_srvs_generate_messages_nodejs/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rcomponent_server.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_server.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_server.dir/rule
 .PHONY : rcomponent/CMakeFiles/rcomponent_server.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ rcomponent_server: rcomponent/CMakeFiles/rcomponent_server.dir/rule
 
 # fast build rule for target.
 rcomponent_server/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/build
 .PHONY : rcomponent_server/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 .PHONY : rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ std_srvs_generate_messages_eus: rcomponent/CMakeFiles/std_srvs_generate_messages
 
 # fast build rule for target.
 std_srvs_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 .PHONY : std_srvs_generate_messages_eus/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ diagnostic_msgs_generate_messages_eus: rcomponent/CMakeFiles/diagnostic_msgs_gen
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_eus/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
 .PHONY : diagnostic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/rule
 .PHONY : rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ clean_test_results_rcomponent: rcomponent/CMakeFiles/clean_test_results_rcompone
 
 # fast build rule for target.
 clean_test_results_rcomponent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/build.make rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/build.make rcomponent/CMakeFiles/clean_test_results_rcomponent.dir/build
 .PHONY : clean_test_results_rcomponent/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/test_namespace.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/test_namespace.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/test_namespace.dir/rule
 .PHONY : rcomponent/CMakeFiles/test_namespace.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ test_namespace: rcomponent/CMakeFiles/test_namespace.dir/rule
 
 # fast build rule for target.
 test_namespace/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/build
 .PHONY : test_namespace/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 .PHONY : rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ std_srvs_generate_messages_lisp: rcomponent/CMakeFiles/std_srvs_generate_message
 
 # fast build rule for target.
 std_srvs_generate_messages_lisp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 .PHONY : rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ diagnostic_msgs_generate_messages_cpp: rcomponent/CMakeFiles/diagnostic_msgs_gen
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make rcomponent/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 .PHONY : rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ std_srvs_generate_messages_cpp: rcomponent/CMakeFiles/std_srvs_generate_messages
 
 # fast build rule for target.
 std_srvs_generate_messages_cpp/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/_run_tests_rcomponent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent.dir/rule
 .PHONY : rcomponent/CMakeFiles/_run_tests_rcomponent.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ _run_tests_rcomponent: rcomponent/CMakeFiles/_run_tests_rcomponent.dir/rule
 
 # fast build rule for target.
 _run_tests_rcomponent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent.dir/build
 .PHONY : _run_tests_rcomponent/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rcomponent_simple_async.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_simple_async.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_simple_async.dir/rule
 .PHONY : rcomponent/CMakeFiles/rcomponent_simple_async.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ rcomponent_simple_async: rcomponent/CMakeFiles/rcomponent_simple_async.dir/rule
 
 # fast build rule for target.
 rcomponent_simple_async/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/build
 .PHONY : rcomponent_simple_async/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/rcomponent_diagnostic.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_diagnostic.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/rcomponent_diagnostic.dir/rule
 .PHONY : rcomponent/CMakeFiles/rcomponent_diagnostic.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ rcomponent_diagnostic: rcomponent/CMakeFiles/rcomponent_diagnostic.dir/rule
 
 # fast build rule for target.
 rcomponent_diagnostic/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build
 .PHONY : rcomponent_diagnostic/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/rule
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ run_tests_rcomponent_rostest: rcomponent/CMakeFiles/run_tests_rcomponent_rostest
 
 # fast build rule for target.
 run_tests_rcomponent_rostest/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent_rostest.dir/build
 .PHONY : run_tests_rcomponent_rostest/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/rule
 .PHONY : rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _run_tests_rcomponent_rostest: rcomponent/CMakeFiles/_run_tests_rcomponent_roste
 
 # fast build rule for target.
 _run_tests_rcomponent_rostest/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent_rostest.dir/build
 .PHONY : _run_tests_rcomponent_rostest/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 .PHONY : rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ std_srvs_generate_messages_py: rcomponent/CMakeFiles/std_srvs_generate_messages_
 
 # fast build rule for target.
 std_srvs_generate_messages_py/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/build.make rcomponent/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/run_tests_rcomponent.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent.dir/rule
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ run_tests_rcomponent: rcomponent/CMakeFiles/run_tests_rcomponent.dir/rule
 
 # fast build rule for target.
 run_tests_rcomponent/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent.dir/build
 .PHONY : run_tests_rcomponent/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
 .PHONY : rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ _run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test: rcomponent/CMake
 
 # fast build rule for target.
 _run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build.make rcomponent/CMakeFiles/_run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build
 .PHONY : _run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test/fast
 
 # Convenience name for target.
 rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
 .PHONY : rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/rule
 
 # Convenience name for target.
@@ -524,7 +524,7 @@ run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test: rcomponent/CMakeF
 
 # fast build rule for target.
 run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test/fast:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build.make rcomponent/CMakeFiles/run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test.dir/build
 .PHONY : run_tests_rcomponent_rostest_test_rosunit_rcomponent_log.test/fast
 
 src/rcomponent.o: src/rcomponent.cpp.o
@@ -533,7 +533,7 @@ src/rcomponent.o: src/rcomponent.cpp.o
 
 # target to build an object file
 src/rcomponent.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.o
 .PHONY : src/rcomponent.cpp.o
 
 src/rcomponent.i: src/rcomponent.cpp.i
@@ -542,7 +542,7 @@ src/rcomponent.i: src/rcomponent.cpp.i
 
 # target to preprocess a source file
 src/rcomponent.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.i
 .PHONY : src/rcomponent.cpp.i
 
 src/rcomponent.s: src/rcomponent.cpp.s
@@ -551,7 +551,7 @@ src/rcomponent.s: src/rcomponent.cpp.s
 
 # target to generate assembly for a file
 src/rcomponent.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent.dir/build.make rcomponent/CMakeFiles/rcomponent.dir/src/rcomponent.cpp.s
 .PHONY : src/rcomponent.cpp.s
 
 src/simple_component.o: src/simple_component.cpp.o
@@ -560,7 +560,7 @@ src/simple_component.o: src/simple_component.cpp.o
 
 # target to build an object file
 src/simple_component.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.o
 .PHONY : src/simple_component.cpp.o
 
 src/simple_component.i: src/simple_component.cpp.i
@@ -569,7 +569,7 @@ src/simple_component.i: src/simple_component.cpp.i
 
 # target to preprocess a source file
 src/simple_component.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.i
 .PHONY : src/simple_component.cpp.i
 
 src/simple_component.s: src/simple_component.cpp.s
@@ -578,7 +578,7 @@ src/simple_component.s: src/simple_component.cpp.s
 
 # target to generate assembly for a file
 src/simple_component.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple.dir/build.make rcomponent/CMakeFiles/rcomponent_simple.dir/src/simple_component.cpp.s
 .PHONY : src/simple_component.cpp.s
 
 src/simple_component_async.o: src/simple_component_async.cpp.o
@@ -587,7 +587,7 @@ src/simple_component_async.o: src/simple_component_async.cpp.o
 
 # target to build an object file
 src/simple_component_async.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.o
 .PHONY : src/simple_component_async.cpp.o
 
 src/simple_component_async.i: src/simple_component_async.cpp.i
@@ -596,7 +596,7 @@ src/simple_component_async.i: src/simple_component_async.cpp.i
 
 # target to preprocess a source file
 src/simple_component_async.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.i
 .PHONY : src/simple_component_async.cpp.i
 
 src/simple_component_async.s: src/simple_component_async.cpp.s
@@ -605,7 +605,7 @@ src/simple_component_async.s: src/simple_component_async.cpp.s
 
 # target to generate assembly for a file
 src/simple_component_async.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_simple_async.dir/build.make rcomponent/CMakeFiles/rcomponent_simple_async.dir/src/simple_component_async.cpp.s
 .PHONY : src/simple_component_async.cpp.s
 
 src/simple_diagnostics_component.o: src/simple_diagnostics_component.cpp.o
@@ -614,7 +614,7 @@ src/simple_diagnostics_component.o: src/simple_diagnostics_component.cpp.o
 
 # target to build an object file
 src/simple_diagnostics_component.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.o
 .PHONY : src/simple_diagnostics_component.cpp.o
 
 src/simple_diagnostics_component.i: src/simple_diagnostics_component.cpp.i
@@ -623,7 +623,7 @@ src/simple_diagnostics_component.i: src/simple_diagnostics_component.cpp.i
 
 # target to preprocess a source file
 src/simple_diagnostics_component.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.i
 .PHONY : src/simple_diagnostics_component.cpp.i
 
 src/simple_diagnostics_component.s: src/simple_diagnostics_component.cpp.s
@@ -632,7 +632,7 @@ src/simple_diagnostics_component.s: src/simple_diagnostics_component.cpp.s
 
 # target to generate assembly for a file
 src/simple_diagnostics_component.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_diagnostic.dir/build.make rcomponent/CMakeFiles/rcomponent_diagnostic.dir/src/simple_diagnostics_component.cpp.s
 .PHONY : src/simple_diagnostics_component.cpp.s
 
 src/simple_service_component.o: src/simple_service_component.cpp.o
@@ -641,7 +641,7 @@ src/simple_service_component.o: src/simple_service_component.cpp.o
 
 # target to build an object file
 src/simple_service_component.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.o
 .PHONY : src/simple_service_component.cpp.o
 
 src/simple_service_component.i: src/simple_service_component.cpp.i
@@ -650,7 +650,7 @@ src/simple_service_component.i: src/simple_service_component.cpp.i
 
 # target to preprocess a source file
 src/simple_service_component.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.i
 .PHONY : src/simple_service_component.cpp.i
 
 src/simple_service_component.s: src/simple_service_component.cpp.s
@@ -659,7 +659,7 @@ src/simple_service_component.s: src/simple_service_component.cpp.s
 
 # target to generate assembly for a file
 src/simple_service_component.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rcomponent_server.dir/build.make rcomponent/CMakeFiles/rcomponent_server.dir/src/simple_service_component.cpp.s
 .PHONY : src/simple_service_component.cpp.s
 
 test/rosunit_rcomponent_log.o: test/rosunit_rcomponent_log.cpp.o
@@ -668,7 +668,7 @@ test/rosunit_rcomponent_log.o: test/rosunit_rcomponent_log.cpp.o
 
 # target to build an object file
 test/rosunit_rcomponent_log.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.o
 .PHONY : test/rosunit_rcomponent_log.cpp.o
 
 test/rosunit_rcomponent_log.i: test/rosunit_rcomponent_log.cpp.i
@@ -677,7 +677,7 @@ test/rosunit_rcomponent_log.i: test/rosunit_rcomponent_log.cpp.i
 
 # target to preprocess a source file
 test/rosunit_rcomponent_log.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.i
 .PHONY : test/rosunit_rcomponent_log.cpp.i
 
 test/rosunit_rcomponent_log.s: test/rosunit_rcomponent_log.cpp.s
@@ -686,7 +686,7 @@ test/rosunit_rcomponent_log.s: test/rosunit_rcomponent_log.cpp.s
 
 # target to generate assembly for a file
 test/rosunit_rcomponent_log.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/build.make rcomponent/CMakeFiles/rosunit_rcomponent_log.dir/test/rosunit_rcomponent_log.cpp.s
 .PHONY : test/rosunit_rcomponent_log.cpp.s
 
 test/test_namespace.o: test/test_namespace.cpp.o
@@ -695,7 +695,7 @@ test/test_namespace.o: test/test_namespace.cpp.o
 
 # target to build an object file
 test/test_namespace.cpp.o:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.o
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.o
 .PHONY : test/test_namespace.cpp.o
 
 test/test_namespace.i: test/test_namespace.cpp.i
@@ -704,7 +704,7 @@ test/test_namespace.i: test/test_namespace.cpp.i
 
 # target to preprocess a source file
 test/test_namespace.cpp.i:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.i
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.i
 .PHONY : test/test_namespace.cpp.i
 
 test/test_namespace.s: test/test_namespace.cpp.s
@@ -713,7 +713,7 @@ test/test_namespace.s: test/test_namespace.cpp.s
 
 # target to generate assembly for a file
 test/test_namespace.cpp.s:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.s
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(MAKE) -f rcomponent/CMakeFiles/test_namespace.dir/build.make rcomponent/CMakeFiles/test_namespace.dir/test/test_namespace.cpp.s
 .PHONY : test/test_namespace.cpp.s
 
 # Help Target
@@ -785,6 +785,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/markus/ros_stuff/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

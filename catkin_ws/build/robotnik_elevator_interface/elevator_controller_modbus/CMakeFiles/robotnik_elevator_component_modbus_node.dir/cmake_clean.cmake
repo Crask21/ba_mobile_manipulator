@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/robotnik_elevator_component_modbus_node"
-  "/home/markus/ros_stuff/catkin_ws/devel/lib/elevator_controller_modbus/robotnik_elevator_component_modbus_node.pdb"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/robotnik_elevator_component_modbus_node"
+  "/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/lib/elevator_controller_modbus/robotnik_elevator_component_modbus_node.pdb"
   "CMakeFiles/robotnik_elevator_component_modbus_node.dir/src/robotnik_elevator_component_modbus_node.cpp.o"
 )
 
