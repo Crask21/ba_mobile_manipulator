@@ -126,7 +126,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=
+CATKIN_WHITELIST_PACKAGES:STRING=our_amazing_code
 
 //Path to a file.
 CCD_INCLUDE_DIRS:PATH=/usr/include
@@ -1522,7 +1522,7 @@ kinova_msgs_SOURCE_DIR:STATIC=/home/markus/ros_stuff/ba_mobile_manipulator/catki
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/librosconsole_bridge.so
+lib:FILEPATH=/opt/ros/noetic/lib/librostime.so
 
 //Value Computed by CMake
 m1n6s300_ikfast_BINARY_DIR:STATIC=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/m1n6s300_ikfast
@@ -1607,6 +1607,12 @@ onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
 
 //The directory containing a CMake configuration file for orocos_kdl.
 orocos_kdl_DIR:PATH=/usr/share/orocos_kdl/cmake
+
+//Value Computed by CMake
+our_amazing_code_BINARY_DIR:STATIC=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/build/our_amazing_code
+
+//Value Computed by CMake
+our_amazing_code_SOURCE_DIR:STATIC=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/our_amazing_code
 
 //Path to a library.
 pkgcfg_lib_BULLET_BulletCollision:FILEPATH=/usr/lib/x86_64-linux-gnu/libBulletCollision.so
@@ -2316,7 +2322,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=80
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
