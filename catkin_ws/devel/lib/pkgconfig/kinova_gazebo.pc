@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
-
-Name: kinova_gazebo
-Description: Description of kinova_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

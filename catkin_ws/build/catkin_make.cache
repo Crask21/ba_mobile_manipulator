@@ -1,2 +1,0 @@
-our_amazing_code
--DCATKIN_DEVEL_PREFIX=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=our_amazing_code -G Unix Makefiles

@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
-
-Name: interbotix_xsarm_control
-Description: Description of interbotix_xsarm_control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: interbotix_xs_sdk interbotix_xs_modules interbotix_xsarm_descriptions

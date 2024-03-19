@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
-
-Name: interbotix_xsarm_pid
-Description: Description of interbotix_xsarm_pid
-Version: 0.0.0
-Cflags: -I/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/src/trossen/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/include
-Libs: -L${prefix}/lib 
-Requires: interbotix_xsarm_control roscpp sensor_msgs

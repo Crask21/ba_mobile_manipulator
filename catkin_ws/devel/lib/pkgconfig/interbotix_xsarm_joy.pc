@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
-
-Name: interbotix_xsarm_joy
-Description: Description of interbotix_xsarm_joy
-Version: 0.0.0
-Cflags: -I/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: interbotix_xsarm_control joy message_runtime roscpp rospy sensor_msgs std_msgs

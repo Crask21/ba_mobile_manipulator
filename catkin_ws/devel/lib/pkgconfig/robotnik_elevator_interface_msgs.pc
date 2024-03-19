@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel
-
-Name: robotnik_elevator_interface_msgs
-Description: Description of robotnik_elevator_interface_msgs
-Version: 1.0.0
-Cflags: -I/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: actionlib_msgs message_runtime std_msgs

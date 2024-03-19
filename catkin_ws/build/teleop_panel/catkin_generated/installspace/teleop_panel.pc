@@ -1,8 +1,0 @@
-prefix=/home/markus/ros_stuff/ba_mobile_manipulator/catkin_ws/install
-
-Name: teleop_panel
-Description: Description of teleop_panel
-Version: 0.10.4
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
