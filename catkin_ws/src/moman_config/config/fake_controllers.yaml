@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - panda _joint1
+      - panda _joint2
+      - panda _joint3
+      - panda _joint4
+      - panda _joint5
+      - panda _joint6
+      - panda _joint7
+initial:  # Define initial robot poses per group
+  - group: arm
+    pose: start

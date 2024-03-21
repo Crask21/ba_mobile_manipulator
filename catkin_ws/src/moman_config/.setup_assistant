@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: summit_xl_description
+    relative_path: robots/mo_man_panda.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/summit_xl.srdf
+  CONFIG:
+    author_name: markus Simonsen
+    author_email: markus.k.simonsen@gmail.com
+    generated_timestamp: 1710877263

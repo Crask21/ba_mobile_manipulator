@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
+    <include file="$(find franka_control)/launch/franka_control.launch" />
+
     <include file="$(find our_amazing_code)/launch/spawn_urdf.launch">
         <arg name="x" value="0.0" />
         <arg name="y" value="0.0" />

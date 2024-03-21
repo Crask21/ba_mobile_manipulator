@@ -1,0 +1,46 @@
+arm_position_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - panda _joint1
+    - panda _joint2
+    - panda _joint3
+    - panda _joint4
+    - panda _joint5
+    - panda _joint6
+    - panda _joint7
+  gains:
+    panda _joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda _joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

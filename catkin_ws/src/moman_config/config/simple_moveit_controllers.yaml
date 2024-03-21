@@ -1,0 +1,13 @@
+controller_list:
+  - name: arm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - panda _joint1
+      - panda _joint2
+      - panda _joint3
+      - panda _joint4
+      - panda _joint5
+      - panda _joint6
+      - panda _joint7
