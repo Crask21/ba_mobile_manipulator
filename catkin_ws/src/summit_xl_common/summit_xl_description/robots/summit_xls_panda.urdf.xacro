@@ -188,6 +188,7 @@
 			<axis xyz="0 0 0" />
 		</joint> -->
 
+
 		<!-- <xacro:vx300s base_parent="$(arg prefix)arm_base_link" prefix="$(arg prefix)arm_" /> -->
 		<xacro:franka_robot arm_id="$(arg prefix)"
 			joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"

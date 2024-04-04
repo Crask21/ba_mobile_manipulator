@@ -24,16 +24,17 @@
     </xacro:if>
 
     <!-- Define additional Gazebo tags -->
-    <xacro:if value="${gazebo}">
+    <!-- <xacro:if value="${gazebo}"> -->
+    <xacro:if value="false">
 
 
       <!-- PERHAPS COMMENT THIS OUT IT MIGHT BE DUPLICATING THE ROBOT GIVING THE FOLLOWING ERROR -->
       <!-- Warning [Model.cc:216] Non-unique name[koala_joint7] detected 2 times in XML children of
       model with name[robot_b]. -->
 
-      <xacro:if value="${parent != ''}">
-        <!-- Gazebo requires a joint to a link called "world" for statically mounted robots -->
-        <xacro:if value="${parent == 'world'}">
+      <!-- <xacro:if value="${parent != ''}"> -->
+      <!-- Gazebo requires a joint to a link called "world" for statically mounted robots -->
+      <!-- <xacro:if value="${parent == 'world'}">
           <link name="${parent}" />
         </xacro:if>
         <joint name="${parent}_joint" type="fixed">
@@ -41,7 +42,7 @@
           <parent link="${parent}" />
           <child link="${arm_id}_link0" />
         </joint>
-      </xacro:if>
+      </xacro:if> -->
 
       <xacro:gazebo-joint joint="${arm_id}_joint1"
         transmission="hardware_interface/PositionJointInterface" />
