@@ -1,0 +1,13 @@
+controller_list:
+  - name: arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - summit_xl__joint1
+      - summit_xl__joint2
+      - summit_xl__joint3
+      - summit_xl__joint4
+      - summit_xl__joint5
+      - summit_xl__joint6
+      - summit_xl__joint7
