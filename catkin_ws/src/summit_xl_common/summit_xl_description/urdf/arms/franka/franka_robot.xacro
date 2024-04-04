@@ -25,7 +25,7 @@
 
     <!-- Define additional Gazebo tags -->
     <!-- <xacro:if value="${gazebo}"> -->
-    <xacro:if value="false">
+    <xacro:if value="${gazebo}">
 
 
       <!-- PERHAPS COMMENT THIS OUT IT MIGHT BE DUPLICATING THE ROBOT GIVING THE FOLLOWING ERROR -->
