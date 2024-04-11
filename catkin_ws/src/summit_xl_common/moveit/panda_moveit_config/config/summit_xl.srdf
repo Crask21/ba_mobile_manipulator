@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="summit_xl">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="arm">
+        <joint name="summit_xl__joint1"/>
+        <joint name="summit_xl__joint2"/>
+        <joint name="summit_xl__joint3"/>
+        <joint name="summit_xl__joint4"/>
+        <joint name="summit_xl__joint5"/>
+        <joint name="summit_xl__joint6"/>
+        <joint name="summit_xl__joint7"/>
+    </group>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="robot_arm_base_joint" type="fixed" parent_frame="summit_xl_base_link" child_link="summit_xl__link0"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link0_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link1" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link1_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link2" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link2_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link3" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link3_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link4" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link1" reason="Default"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link1_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link2" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link2_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link3" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link3_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_base_link" reason="Default"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link0_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link1_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link2" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link2_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link3" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link3_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link4" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link2" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link2_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link3" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link3_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link4" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_base_link" reason="Default"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link1_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl__link2_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl__link3" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl__link3_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl__link4" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl__link3" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl__link3_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl__link4" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl__link4_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link2_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link3_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link4" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link4_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link5" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link5_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link6" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link6_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link7" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl__link7_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl__link4" reason="Default"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl__link4_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl__link6" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl__link6_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link3_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link4_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link5" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link5_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link6" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link6_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link7" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl__link7_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link5" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link5_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link6" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link6_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link7" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl__link7_sc" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link4_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl__link5_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl__link6" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl__link6_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl__link7" reason="Default"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl__link7_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl__link6_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl__link7_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link5_sc" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl__link6_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl__link7" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl__link7_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl__link7" reason="Default"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl__link7_sc" reason="Default"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link6_sc" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link7" link2="summit_xl__link7_sc" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl__link7" link2="summit_xl_back_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link7" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl__link7" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_back_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_left_wheel_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_base_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_front_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_back_right_wheel_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_base_link" link2="summit_xl_front_laser_base_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_base_link" link2="summit_xl_front_left_wheel_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_base_link" link2="summit_xl_front_rgbd_camera_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_base_link" link2="summit_xl_front_right_wheel_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_base_link" link2="summit_xl_rear_laser_base_link" reason="Adjacent"/>
+    <disable_collisions link1="summit_xl_front_laser_base_link" link2="summit_xl_front_left_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_laser_base_link" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_laser_base_link" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_laser_base_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_left_wheel_link" link2="summit_xl_front_rgbd_camera_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_left_wheel_link" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_left_wheel_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_rgbd_camera_link" link2="summit_xl_front_right_wheel_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_rgbd_camera_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+    <disable_collisions link1="summit_xl_front_right_wheel_link" link2="summit_xl_rear_laser_base_link" reason="Never"/>
+</robot>

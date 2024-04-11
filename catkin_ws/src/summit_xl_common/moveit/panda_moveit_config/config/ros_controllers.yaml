@@ -1,0 +1,46 @@
+arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - summit_xl__joint1
+    - summit_xl__joint2
+    - summit_xl__joint3
+    - summit_xl__joint4
+    - summit_xl__joint5
+    - summit_xl__joint6
+    - summit_xl__joint7
+  gains:
+    summit_xl__joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    summit_xl__joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
