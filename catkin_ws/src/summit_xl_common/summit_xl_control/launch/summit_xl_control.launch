@@ -36,10 +36,10 @@
 
 
   <!-- load the robotnik_base_control ros controllers -->
-  <node unless="$(arg ros_planar_move_plugin)" name="controller_spawner"
+  <node name="controller_spawner"
     pkg="controller_manager" type="spawner" respawn="false" output="screen"
     args="
-        robotnik_base_control
+        
         joint_read_state_controller
         panda/joint1_position_controller
         panda/joint2_position_controller
