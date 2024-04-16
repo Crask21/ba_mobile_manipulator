@@ -71,7 +71,7 @@
 	<xacro:property name="arm_offset_yaw" value="0.0" />
 
 	<!-- Name for this robot -->
-	<xacro:arg name="arm_id" default="heyo" />
+	<xacro:arg name="arm_id" default="panda" />
 
 	<!-- Should a franka_gripper be mounted at the flange?" -->
 	<xacro:arg name="hand" default="false" />
@@ -102,6 +102,7 @@
 	<xacro:arg name="ros_planar_move_plugin" default="false" />
 	<xacro:arg name="ros_planar_move_plugin_force_based" default="false" />
 	<xacro:arg name="gpu" default="false" />
+	<xacro:arg name="arm_id" default="panda" />
 
 
 	<xacro:macro name="summit_xl" params="prefix publish_bf hq">
@@ -190,7 +191,7 @@
 
 
 		<!-- <xacro:vx300s base_parent="$(arg prefix)arm_base_link" prefix="$(arg prefix)arm_" /> -->
-		<xacro:franka_robot arm_id="$(arg prefix)"
+		<xacro:franka_robot arm_id="$(arg arm_id)"
 			joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"
 			hand="$(arg hand)"
 			tcp_xyz="$(arg tcp_xyz)"
@@ -210,7 +211,7 @@
 
 	</xacro:macro>
 
-	<xacro:ros_control />
+	<!-- <xacro:ros_control /> -->
 
 	<xacro:if value="$(arg ros_planar_move_plugin)">
 		<xacro:omni_steering prefix="$(arg prefix)" publish_tf="true"
