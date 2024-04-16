@@ -12,6 +12,9 @@
   <xacro:macro name="franka_arm"
     params="arm_id:='panda' description_pkg:='franka_description' connected_to:='' xyz:='0 0 0' rpy:='0 0 0' gazebo:=false safety_distance:=0 joint_limits">
     <xacro:unless value="${not connected_to}">
+      <!-- <xacro:if value="${connected_to=='world'}">
+        <link name="${connected_to}" />
+      </xacro:if> -->
       <joint name="${arm_id}_joint_${connected_to}" type="fixed">
         <parent link="${connected_to}" />
         <child link="${arm_id}_link0" />
