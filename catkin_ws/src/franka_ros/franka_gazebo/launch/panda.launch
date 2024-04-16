@@ -10,9 +10,6 @@
 
   <!-- Robot Customization -->
   <arg name="arm_id" default="panda" doc="Name of the robot to spawn" />
-  <arg name="use_gripper" default="false" doc="Should a franka hand be mounted on the flange?" />
-  <arg name="controller" default=" "
-    doc="Which example controller should be started? (One of {cartesian_impedance,model,force,joint_position,joint_velocity}_example_controller)" />
   <arg name="x" default="0" doc="How far forward to place the base of the robot in [m]?" />
   <arg name="y" default="0" doc="How far leftwards to place the base of the robot in [m]?" />
   <arg name="z" default="0" doc="How far upwards to place the base of the robot in [m]?" />
@@ -35,9 +32,7 @@
                 -J $(arg arm_id)_finger_joint1 0.001
                 -J $(arg arm_id)_finger_joint2 0.001"
   />
-  <arg name="interactive_marker"
-    default="$(eval arg('controller') == 'cartesian_impedance_example_controller')"
-    doc="Should the interactive marker node be started?" />
+
 
   <include file="$(find franka_gazebo)/launch/robot.launch">
     <arg name="gazebo" value="$(arg gazebo)" />
@@ -48,8 +43,6 @@
 
     <arg name="robot" value="panda" />
     <arg name="arm_id" value="$(arg arm_id)" />
-    <arg name="use_gripper" value="$(arg use_gripper)" />
-    <arg name="controller" value="$(arg controller)" />
     <arg name="x" value="$(arg x)" />
     <arg name="y" value="$(arg y)" />
     <arg name="z" value="$(arg z)" />
@@ -59,8 +52,6 @@
 
     <arg name="xacro_args" value="$(arg xacro_args)" />
     <arg name="initial_joint_positions" value="$(arg initial_joint_positions)" />
-    <arg name="interactive_marker" value="$(arg interactive_marker)" />
-
   </include>
 
 </launch>
