@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /RobotModel A1
       Splitter Ratio: 0.6015037298202515
     Tree Height: 475
   - Class: rviz/Selection
@@ -24,7 +25,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: Front LaserScan A
   - Class: teleop_panel/Teleop
     CmdVelTopic: /cmd_vel
     EStopTopic: /robot/robotnik_base_control/emergency_stop
@@ -244,7 +245,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
       Name: RobotModel A
-      Robot Description: robot_description
+      Robot Description: robot/robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -485,6 +486,10 @@ Visualization Manager:
           Value: true
         panda_link8:
           Value: true
+        robot_back_left_wheel_link:
+          Value: true
+        robot_back_right_wheel_link:
+          Value: true
         robot_base_chapa:
           Value: true
         robot_base_docking_contact:
@@ -505,6 +510,8 @@ Visualization Manager:
           Value: true
         robot_front_laser_link:
           Value: true
+        robot_front_left_wheel_link:
+          Value: true
         robot_front_rgbd_camera_depth_frame:
           Value: true
         robot_front_rgbd_camera_depth_optical_frame:
@@ -514,6 +521,8 @@ Visualization Manager:
         robot_front_rgbd_camera_rgb_frame:
           Value: true
         robot_front_rgbd_camera_rgb_optical_frame:
+          Value: true
+        robot_front_right_wheel_link:
           Value: true
         robot_imu_link:
           Value: true
@@ -562,6 +571,10 @@ Visualization Manager:
                                   {}
                                 panda_link8:
                                   {}
+                robot_back_left_wheel_link:
+                  {}
+                robot_back_right_wheel_link:
+                  {}
                 robot_base_chapa:
                   {}
                 robot_base_docking_contact:
@@ -577,6 +590,8 @@ Visualization Manager:
                 robot_front_laser_base_link:
                   robot_front_laser_link:
                     {}
+                robot_front_left_wheel_link:
+                  {}
                 robot_front_rgbd_camera_link:
                   robot_front_rgbd_camera_depth_frame:
                     robot_front_rgbd_camera_depth_optical_frame:
@@ -584,6 +599,8 @@ Visualization Manager:
                   robot_front_rgbd_camera_rgb_frame:
                     robot_front_rgbd_camera_rgb_optical_frame:
                       {}
+                robot_front_right_wheel_link:
+                  {}
                 robot_imu_link:
                   {}
                 robot_rear_laser_base_link:

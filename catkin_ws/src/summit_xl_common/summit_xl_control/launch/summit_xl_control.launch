@@ -41,15 +41,17 @@
     args="
         
         joint_read_state_controller
-        panda/joint1_position_controller
-        panda/joint2_position_controller
-        panda/joint3_position_controller
-        panda/joint4_position_controller
-        panda/joint5_position_controller
-        panda/joint6_position_controller
-        panda/joint7_position_controller
+        panda/traj_controller
        ">
   </node>
+
+  <!-- panda/joint1_position_controller
+  panda/joint2_position_controller
+  panda/joint3_position_controller
+  panda/joint4_position_controller
+  panda/joint5_position_controller
+  panda/joint6_position_controller
+  panda/joint7_position_controller -->
 
 
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">
