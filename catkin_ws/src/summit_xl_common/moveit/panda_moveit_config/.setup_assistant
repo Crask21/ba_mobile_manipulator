@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/summit_xl.srdf
   CONFIG:
-    author_name: Markus SImonsen
+    author_name: Markus Simonsen
     author_email: markus.k.simonsen@gmail.com
-    generated_timestamp: 1711032105
+    generated_timestamp: 1713528996

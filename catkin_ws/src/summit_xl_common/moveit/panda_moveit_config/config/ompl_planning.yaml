@@ -193,5 +193,5 @@ arm:
     - AITstar
     - ABITstar
     - BITstar
-  projection_evaluator: joints(summit_xl__joint1,summit_xl__joint2)
+  projection_evaluator: joints(panda_joint1,panda_joint2)
   longest_valid_segment_fraction: 0.005

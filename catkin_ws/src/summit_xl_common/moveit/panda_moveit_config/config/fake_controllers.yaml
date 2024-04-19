@@ -2,15 +2,13 @@ controller_list:
   - name: fake_arm_controller
     type: $(arg fake_execution_type)
     joints:
-      - summit_xl__joint1
-      - summit_xl__joint2
-      - summit_xl__joint3
-      - summit_xl__joint4
-      - summit_xl__joint5
-      - summit_xl__joint6
-      - summit_xl__joint7
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
 initial:  # Define initial robot poses per group
-#  - group: arm
-#    pose: home
-
-  []
+  - group: arm
+    pose: start

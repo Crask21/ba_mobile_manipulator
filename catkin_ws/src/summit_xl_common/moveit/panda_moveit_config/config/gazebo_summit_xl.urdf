@@ -65,14 +65,7 @@
   -->
     <!-- Includes -->
     <!-- Includes -->
-    <gazebo>
-        <plugin filename="libgazebo_ros_control.so" name="ros_control">
-            <robotParam>robot_description</robotParam>
-            <controlPeriod>0.001</controlPeriod>
-            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-            <legacyModeNS>true</legacyModeNS>
-        </plugin>
-    </gazebo>
+    <!-- <xacro:ros_control /> -->
     <!-- *************** -->
     <!-- Robots Elements -->
     <!-- *************** -->
@@ -231,7 +224,8 @@
         <collision>
             <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
             <geometry>
-                <!--sphere radius="${omni_wheel_radius}" /-->
+                <!--sphere
+          radius="${omni_wheel_radius}" /-->
                 <!--
           <xacro:if value="${reflect}">
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_1.dae" />
@@ -250,7 +244,8 @@
             <inertia ixx="0.0303095" ixy="0" ixz="0" iyy="0.05241925" iyz="0" izz="0.0303095" />
         </inertial>
     </link>
-    <!-- Transmission is important to link the joints and the controller (see summit_xl_control/config/summit_xl_control.yaml)-->
+    <!-- Transmission is important to link the joints and the controller (see
+    summit_xl_control/config/summit_xl_control.yaml)-->
     <transmission name="summit_xl_front_right_wheel_joint_trans">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="summit_xl_front_right_wheel_joint">
@@ -290,7 +285,8 @@
         <collision>
             <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
             <geometry>
-                <!--sphere radius="${omni_wheel_radius}" /-->
+                <!--sphere
+          radius="${omni_wheel_radius}" /-->
                 <!--
           <xacro:if value="${reflect}">
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_1.dae" />
@@ -309,7 +305,8 @@
             <inertia ixx="0.0303095" ixy="0" ixz="0" iyy="0.05241925" iyz="0" izz="0.0303095" />
         </inertial>
     </link>
-    <!-- Transmission is important to link the joints and the controller (see summit_xl_control/config/summit_xl_control.yaml)-->
+    <!-- Transmission is important to link the joints and the controller (see
+    summit_xl_control/config/summit_xl_control.yaml)-->
     <transmission name="summit_xl_front_left_wheel_joint_trans">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="summit_xl_front_left_wheel_joint">
@@ -349,7 +346,8 @@
         <collision>
             <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
             <geometry>
-                <!--sphere radius="${omni_wheel_radius}" /-->
+                <!--sphere
+          radius="${omni_wheel_radius}" /-->
                 <!--
           <xacro:if value="${reflect}">
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_1.dae" />
@@ -368,7 +366,8 @@
             <inertia ixx="0.0303095" ixy="0" ixz="0" iyy="0.05241925" iyz="0" izz="0.0303095" />
         </inertial>
     </link>
-    <!-- Transmission is important to link the joints and the controller (see summit_xl_control/config/summit_xl_control.yaml)-->
+    <!-- Transmission is important to link the joints and the controller (see
+    summit_xl_control/config/summit_xl_control.yaml)-->
     <transmission name="summit_xl_back_left_wheel_joint_trans">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="summit_xl_back_left_wheel_joint">
@@ -408,7 +407,8 @@
         <collision>
             <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
             <geometry>
-                <!--sphere radius="${omni_wheel_radius}" /-->
+                <!--sphere
+          radius="${omni_wheel_radius}" /-->
                 <!--
           <xacro:if value="${reflect}">
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_1.dae" />
@@ -427,7 +427,8 @@
             <inertia ixx="0.0303095" ixy="0" ixz="0" iyy="0.05241925" iyz="0" izz="0.0303095" />
         </inertial>
     </link>
-    <!-- Transmission is important to link the joints and the controller (see summit_xl_control/config/summit_xl_control.yaml)-->
+    <!-- Transmission is important to link the joints and the controller (see
+    summit_xl_control/config/summit_xl_control.yaml)-->
     <transmission name="summit_xl_back_right_wheel_joint_trans">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="summit_xl_back_right_wheel_joint">
@@ -771,13 +772,16 @@
 			<child link="$(arg prefix)arm_base_link" />
 			<axis xyz="0 0 0" />
 		</joint> -->
-    <joint name="summit_xl__joint_summit_xl_base_link" type="fixed">
+    <!-- <xacro:if value="${connected_to=='world'}">
+        <link name="${connected_to}" />
+      </xacro:if> -->
+    <joint name="panda_joint_summit_xl_base_link" type="fixed">
         <parent link="summit_xl_base_link" />
-        <child link="summit_xl__link0" />
+        <child link="panda_link0" />
         <origin rpy="0 0 0" xyz="0.2 -0.15 0.380" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link0">
+    <link name="panda_link0">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link0.dae" />
@@ -789,45 +793,21 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="-0.041018 -0.00014 0.049974" />
+            <mass value="0.629769" />
+            <inertia ixx="0.00315" ixy="8.2904e-07" ixz="0.00015" iyy="0.00388" iyz="8.2299e-06" izz="0.004285" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link0_sc">
-        <collision>
-            <origin rpy="0 1.5707963267948966 0" xyz="-0.075 0 0.06" />
-            <geometry>
-                <cylinder length="0.03" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="-0.06 0 0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="-0.09 0 0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link0_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link0_sc_joint" type="fixed">
+    <joint name="panda_link0_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link0" />
-        <child link="summit_xl__link0_sc" />
+        <parent link="panda_link0" />
+        <child link="panda_link0_sc" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link1">
+    <link name="panda_link1">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link1.dae" />
@@ -839,54 +819,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="0.003875 0.002081 -0.04762" />
+            <mass value="4.970684" />
+            <inertia ixx="0.70337" ixy="-0.000139" ixz="0.006772" iyy="0.70661" iyz="0.019169" izz="0.009117" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link1_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 -0.1915" />
-            <geometry>
-                <cylinder length="0.283" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.05000000000000002" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.33299999999999996" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link1_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link1_sc_joint" type="fixed">
+    <joint name="panda_link1_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link1" />
-        <child link="summit_xl__link1_sc" />
+        <parent link="panda_link1" />
+        <child link="panda_link1_sc" />
     </joint>
-    <joint name="summit_xl__joint1" type="revolute">
+    <joint name="panda_joint1" type="revolute">
         <origin rpy="0 0 0" xyz="0 0 0.333" />
-        <parent link="summit_xl__link0" />
-        <child link="summit_xl__link1" />
+        <parent link="panda_link0" />
+        <child link="panda_link1" />
         <axis xyz="0 0 1" />
         <limit effort="87.0" lower="-2.8973" upper="2.8973" velocity="2.175" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link2">
+    <link name="panda_link2">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link2.dae" />
@@ -898,54 +854,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="-0.003141 -0.02872  0.003495" />
+            <mass value="0.646926" />
+            <inertia ixx="0.007962" ixy="-0.003925" ixz="0.010254" iyy="0.02811" iyz="0.000704" izz="0.025995" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link2_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 0" />
-            <geometry>
-                <cylinder length="0.12" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link2_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link2_sc_joint" type="fixed">
+    <joint name="panda_link2_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link2" />
-        <child link="summit_xl__link2_sc" />
+        <parent link="panda_link2" />
+        <child link="panda_link2_sc" />
     </joint>
-    <joint name="summit_xl__joint2" type="revolute">
+    <joint name="panda_joint2" type="revolute">
         <origin rpy="-1.5707963267948966 0 0" xyz="0 0 0" />
-        <parent link="summit_xl__link1" />
-        <child link="summit_xl__link2" />
+        <parent link="panda_link1" />
+        <child link="panda_link2" />
         <axis xyz="0 0 1" />
         <limit effort="87.0" lower="-1.7628" upper="1.7628" velocity="2.175" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-1.7628" soft_upper_limit="1.7628" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link3">
+    <link name="panda_link3">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link3.dae" />
@@ -957,54 +889,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="2.7518e-02 3.9252e-02 -6.6502e-02" />
+            <mass value="3.228604" />
+            <inertia ixx="0.037242" ixy="-0.004761" ixz="-0.011396" iyy="0.036155" iyz="-0.012805" izz="0.01083" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link3_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 -0.145" />
-            <geometry>
-                <cylinder length="0.15" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.06999999999999999" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.21999999999999997" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link3_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link3_sc_joint" type="fixed">
+    <joint name="panda_link3_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link3" />
-        <child link="summit_xl__link3_sc" />
+        <parent link="panda_link3" />
+        <child link="panda_link3_sc" />
     </joint>
-    <joint name="summit_xl__joint3" type="revolute">
+    <joint name="panda_joint3" type="revolute">
         <origin rpy="1.5707963267948966 0 0" xyz="0 -0.316 0" />
-        <parent link="summit_xl__link2" />
-        <child link="summit_xl__link3" />
+        <parent link="panda_link2" />
+        <child link="panda_link3" />
         <axis xyz="0 0 1" />
         <limit effort="87.0" lower="-2.8973" upper="2.8973" velocity="2.175" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link4">
+    <link name="panda_link4">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link4.dae" />
@@ -1016,54 +924,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="-5.317e-02 1.04419e-01 2.7454e-02" />
+            <mass value="3.587895" />
+            <inertia ixx="0.025853" ixy="0.007796" ixz="-0.001332" iyy="0.019552" iyz="0.008641" izz="0.028323" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link4_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 0" />
-            <geometry>
-                <cylinder length="0.12" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.06" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link4_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link4_sc_joint" type="fixed">
+    <joint name="panda_link4_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link4" />
-        <child link="summit_xl__link4_sc" />
+        <parent link="panda_link4" />
+        <child link="panda_link4_sc" />
     </joint>
-    <joint name="summit_xl__joint4" type="revolute">
+    <joint name="panda_joint4" type="revolute">
         <origin rpy="1.5707963267948966 0 0" xyz="0.0825 0 0" />
-        <parent link="summit_xl__link3" />
-        <child link="summit_xl__link4" />
+        <parent link="panda_link3" />
+        <child link="panda_link4" />
         <axis xyz="0 0 1" />
         <limit effort="87.0" lower="-3.0718" upper="-0.0698" velocity="2.175" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-3.0718" soft_upper_limit="-0.0698" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link5">
+    <link name="panda_link5">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link5.dae" />
@@ -1075,72 +959,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="-1.1953e-02 4.1065e-02 -3.8437e-02" />
+            <mass value="1.225946" />
+            <inertia ixx="0.035549" ixy="-0.002117" ixz="-0.004037" iyy="0.029474" iyz="0.000229" izz="0.008627" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link5_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 -0.26" />
-            <geometry>
-                <cylinder length="0.1" radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.21000000000000002" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.31" />
-            <geometry>
-                <sphere radius="0.09" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin rpy="0 0 0.08" xyz="0 0.08 -0.13" />
-            <geometry>
-                <cylinder length="0.14" radius="0.055" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0.08 -0.06" />
-            <geometry>
-                <sphere radius="0.055" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0.08 -0.2" />
-            <geometry>
-                <sphere radius="0.055" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link5_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link5_sc_joint" type="fixed">
+    <joint name="panda_link5_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link5" />
-        <child link="summit_xl__link5_sc" />
+        <parent link="panda_link5" />
+        <child link="panda_link5_sc" />
     </joint>
-    <joint name="summit_xl__joint5" type="revolute">
+    <joint name="panda_joint5" type="revolute">
         <origin rpy="-1.5707963267948966 0 0" xyz="-0.0825 0.384 0" />
-        <parent link="summit_xl__link4" />
-        <child link="summit_xl__link5" />
+        <parent link="panda_link4" />
+        <child link="panda_link5" />
         <axis xyz="0 0 1" />
         <limit effort="12.0" lower="-2.8973" upper="2.8973" velocity="2.61" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link6">
+    <link name="panda_link6">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link6.dae" />
@@ -1152,54 +994,30 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="6.0149e-02 -1.4117e-02 -1.0517e-02" />
+            <mass value="1.666555" />
+            <inertia ixx="0.001964" ixy="0.000109" ixz="-0.001158" iyy="0.004354" iyz="0.000341" izz="0.005433" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link6_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 -0.03" />
-            <geometry>
-                <cylinder length="0.08" radius="0.08" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 0.010000000000000002" />
-            <geometry>
-                <sphere radius="0.08" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.07" />
-            <geometry>
-                <sphere radius="0.08" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link6_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link6_sc_joint" type="fixed">
+    <joint name="panda_link6_sc_joint" type="fixed">
         <origin rpy="0 0 0" />
-        <parent link="summit_xl__link6" />
-        <child link="summit_xl__link6_sc" />
+        <parent link="panda_link6" />
+        <child link="panda_link6_sc" />
     </joint>
-    <joint name="summit_xl__joint6" type="revolute">
+    <joint name="panda_joint6" type="revolute">
         <origin rpy="1.5707963267948966 0 0" xyz="0 0 0" />
-        <parent link="summit_xl__link5" />
-        <child link="summit_xl__link6" />
+        <parent link="panda_link5" />
+        <child link="panda_link6" />
         <axis xyz="0 0 1" />
         <limit effort="12.0" lower="-0.0175" upper="3.7525" velocity="2.61" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-0.0175" soft_upper_limit="3.7525" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
     <!-- sub-link defining detailed meshes for collision with environment -->
-    <link name="summit_xl__link7">
+    <link name="panda_link7">
         <visual>
             <geometry>
                 <mesh filename="package://franka_description/meshes/visual/link7.dae" />
@@ -1211,151 +1029,158 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+            <origin rpy="0 0 0" xyz="1.0517e-02 -4.252e-03 6.1597e-02" />
+            <mass value="0.735522" />
+            <inertia ixx="0.012516" ixy="-0.000428" ixz="-0.001196" iyy="0.010027" iyz="-0.000741" izz="0.004815" />
         </inertial>
     </link>
     <!-- sub-link defining coarse geometries of real robot's internal self-collision -->
-    <link name="summit_xl__link7_sc">
-        <collision>
-            <origin rpy="0 0 0" xyz="0 0 0.01" />
-            <geometry>
-                <cylinder length="0.14" radius="0.07" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 0.08" />
-            <geometry>
-                <sphere radius="0.07" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0 0 -0.060000000000000005" />
-            <geometry>
-                <sphere radius="0.07" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin rpy="0 1.5707963267948966 0" xyz="0.06 0 0.082" />
-            <geometry>
-                <cylinder length="0.01" radius="0.06" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0.065 0 0.082" />
-            <geometry>
-                <sphere radius="0.06" />
-            </geometry>
-        </collision>
-        <collision>
-            <origin xyz="0.055 0 0.082" />
-            <geometry>
-                <sphere radius="0.06" />
-            </geometry>
-        </collision>
-        <inertial>
-            <mass value="0.1" />
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
-    </link>
+    <link name="panda_link7_sc" />
     <!-- fixed joint between both sub-links -->
-    <joint name="summit_xl__link7_sc_joint" type="fixed">
+    <joint name="panda_link7_sc_joint" type="fixed">
         <origin rpy="0 0 0.7853981633974483" />
-        <parent link="summit_xl__link7" />
-        <child link="summit_xl__link7_sc" />
+        <parent link="panda_link7" />
+        <child link="panda_link7_sc" />
     </joint>
-    <joint name="summit_xl__joint7" type="revolute">
+    <joint name="panda_joint7" type="revolute">
         <origin rpy="1.5707963267948966 0 0" xyz="0.088 0 0" />
-        <parent link="summit_xl__link6" />
-        <child link="summit_xl__link7" />
+        <parent link="panda_link6" />
+        <child link="panda_link7" />
         <axis xyz="0 0 1" />
         <limit effort="12.0" lower="-2.8973" upper="2.8973" velocity="2.61" />
         <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973" />
         <dynamics D="1" K="7000" damping="0.003" friction="0.0" mu_coulomb="0" mu_viscous="16" />
     </joint>
-    <link name="summit_xl__link8" />
-    <joint name="summit_xl__joint8" type="fixed">
+    <link name="panda_link8" />
+    <joint name="panda_joint8" type="fixed">
         <origin rpy="0 0 0" xyz="0 0 0.107" />
-        <parent link="summit_xl__link7" />
-        <child link="summit_xl__link8" />
+        <parent link="panda_link7" />
+        <child link="panda_link8" />
     </joint>
+    <!-- PERHAPS COMMENT THIS OUT IT MIGHT BE DUPLICATING THE ROBOT GIVING THE FOLLOWING ERROR -->
+    <!-- Warning [Model.cc:216] Non-unique name[koala_joint7] detected 2 times in XML children of
+      model with name[robot_b]. -->
+    <!-- <xacro:if value="${parent != ''}"> -->
+    <!-- Gazebo requires a joint to a link called "world" for statically mounted robots -->
+    <!-- <xacro:if value="${parent == 'world'}">
+          <link name="${parent}" />
+        </xacro:if>
+        <joint name="${parent}_joint" type="fixed">
+          <origin xyz="${xyz}" rpy="${rpy}" />
+          <parent link="${parent}" />
+          <child link="${arm_id}_link0" />
+        </joint>
+      </xacro:if> -->
+    <gazebo reference="panda_joint1">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint1_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint2">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint2_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint3">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint3_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint4">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint4_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint5">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint5_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint6">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint6_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo reference="panda_joint7">
+        <!-- Needed for ODE to output external wrenches on joints -->
+        <provideFeedback>true</provideFeedback>
+    </gazebo>
+    <transmission name="panda_joint7_transmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="panda_joint7">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="panda_joint7_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+            <controlPeriod>0.001</controlPeriod>
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        </plugin>
+        <self_collide>true</self_collide>
+    </gazebo>
     <!-- ! temporarily commented out  -->
     <!-- <xacro:sensor_intel_d435 prefix="$(arg prefix)wrist_rgbd_camera"
 			parent="$(arg prefix)arm_gripper_link" use_nominal_extrinsics="true"
 			prefix_topic="robot/wrist_rgbd_camera">
 			<origin xyz="0.0 0.0 0.05" rpy="0 0 0" />
 		</xacro:sensor_intel_d435> -->
-    <transmission name="trans_summit_xl__joint1">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint1">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint1_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint2">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint2">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint2_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint3">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint3">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint3_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint4">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint4">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint4_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint5">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint5">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint5_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint6">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint6">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint6_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-    <transmission name="trans_summit_xl__joint7">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="summit_xl__joint7">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="summit_xl__joint7_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
 </robot>
 
