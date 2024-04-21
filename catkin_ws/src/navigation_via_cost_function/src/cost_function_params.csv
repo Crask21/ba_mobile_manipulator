@@ -1,0 +1,2 @@
+x_step, x_range1, x_range0, y_step, y_range1, y_range0, start_x, start_y, C_start, C_opt_x, C_opt_y, C_opt
+0.05, 1, -1, 0.05, 1, -1, 1, 1, 1.44186, 0.291921, 0.405934, 0.974757

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find navigation_via_cost_function)/launch/moman.launch"/>
+
+    <!-- <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" /> -->
+    <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" />
+    
+    <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" />
+    
+    <node pkg="navigation_via_cost_function" type="navigation.py" name="moman_node" output="screen" />
+</launch>

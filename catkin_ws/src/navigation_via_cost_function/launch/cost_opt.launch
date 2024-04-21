@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" />
+    
+    
+</launch>

@@ -12,6 +12,27 @@
 	<!-- Import summit XL base elements -->
 	<xacro:include filename="$(find summit_xl_description)/urdf/bases/summit_xls_base.urdf.xacro" />
 
+	<!-- Define the joint between world and base_footprint -->
+	<link name="world" />
+	<link name="virtual_link1" />
+	<link name="virtual_link2" />
+	<joint name="odom_x" type="prismatic">
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+		<parent link="world"/>
+		<child link="virtual_link1"/>
+	</joint>
+	<joint name="odom_y" type="prismatic">
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+		<parent link="virtual_link1"/>
+		<child link="virtual_link2"/>
+	</joint>
+	<joint name="odom_r" type="prismatic">
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+		<parent link="virtual_link2"/>
+		<child link="summit_xl_base_footprint"/>
+	</joint>
+	
+
 	<!-- Import summit XL wheels -->
 	<xacro:include filename="$(find summit_xl_description)/urdf/wheels/omni_wheel.urdf.xacro" />
 	<xacro:include filename="$(find summit_xl_description)/urdf/wheels/rubber_wheel.urdf.xacro" />
