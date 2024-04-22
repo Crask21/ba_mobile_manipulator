@@ -37,19 +37,19 @@
 		<arg name="gazebo_world" value="$(arg gazebo_world)"/>
 		<arg name="omni_drive" value="$(arg omni_drive)"/>
 		<arg name="ros_planar_move_plugin" value="$(arg ros_planar_move_plugin)"/>
-		<arg name="ros_planar_move_plugin_force_based" value="$(arg ros_planar_move_plugin_force_based)" />
-		<arg name="launch_advanced_simulation" value="$(arg launch_advanced_simulation)"/>
+		<!-- <arg name="ros_planar_move_plugin_force_based" value="$(arg ros_planar_move_plugin_force_based)" /> -->
+		<!-- <arg name="launch_advanced_simulation" value="$(arg launch_advanced_simulation)"/> -->
 		<arg name="use_gpu_for_simulation" value="$(arg use_gpu_for_simulation)"/>
 		<arg name="default_xacro_package" value="$(arg default_xacro_package)"/>
 		<!-- robot_a args -->
 		<arg name="launch_robot_a" value="$(arg launch_robot_a)"/>
 		<arg name="map_file_a" value="$(arg map_file_a)"/>
-		<arg name="gmapping_robot_a" value="$(arg gmapping_robot_a)"/>
+		<!-- <arg name="gmapping_robot_a" value="$(arg gmapping_robot_a)"/> -->
 		<arg name="move_base_robot_a" value="$(arg move_base_robot_a)"/>
 		<arg name="amcl_and_mapserver_a" value="$(arg amcl_and_mapserver_a)"/>
 		<arg name="xacro_robot_a" value="$(arg xacro_robot_a)"/>
-		<arg name="launch_pad_a" value="$(arg launch_pad_a)"/>
-		<arg name="has_pantilt_camera_a" value="$(arg has_pantilt_camera_a)"/>
+		<!-- <arg name="launch_pad_a" value="$(arg launch_pad_a)"/> -->
+		<!-- <arg name="has_pantilt_camera_a" value="$(arg has_pantilt_camera_a)"/> -->
 		<!-- <arg name="id_robot_a" value="$(arg id_robot_a)"/> -->
 
 
@@ -65,8 +65,8 @@
 		<arg name="parent_link" value="robot_base_link"/>
         <arg name="start_gazebo" value="false"/>
     </include> -->
-	<include file="$(find panda_moveit_config)/launch/demo.launch" >
-		<arg name="parent_link" value="robot_base_link"/>
+	<include file="$(find panda_moveit_config0)/launch/demo.launch" >
+		<!-- <arg name="parent_link" value="robot_base_link"/> -->
     	<arg name="load_robot_description" value="true" />
     	<arg name="moveit_controller_manager" value="fake" />
     </include>

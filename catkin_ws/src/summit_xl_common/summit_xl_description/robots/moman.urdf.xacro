@@ -13,29 +13,30 @@
 	<xacro:include filename="$(find summit_xl_description)/urdf/bases/summit_xls_base.urdf.xacro" />
 
 	<!-- Define the joint between world and base_footprint -->
-	<link name="world" />
+	<link name="odom" />
 	<link name="virtual_link1" />
 	<link name="virtual_link2" />
+
 	<joint name="odom_x" type="prismatic">
 		<origin xyz="0 0 0" rpy="0 0 0"/>
-		<parent link="world"/>
+		<parent link="odom"/>
 		<child link="virtual_link1"/>
         <axis xyz="1 0 0"/>
-        <limit effort="1000" velocity="0.5"/>
+        <limit effort="1000" lower="-10" upper="10" velocity="0.5"/>
 	</joint>
 	<joint name="odom_y" type="prismatic">
 		<origin xyz="0 0 0" rpy="0 0 0"/>
 		<parent link="virtual_link1"/>
 		<child link="virtual_link2"/>
         <axis xyz="0 1 0"/>
-        <limit effort="1000" velocity="0.5"/>
+        <limit effort="1000" lower="-10" upper="10" velocity="0.5"/>
 	</joint>
 	<joint name="odom_r" type="revolute">
 		<origin xyz="0 0 0" rpy="0 0 0"/>
 		<parent link="virtual_link2"/>
 		<child link="summit_xl_base_footprint"/>
         <axis xyz="0 0 1"/>
-        <limit effort="1000" velocity="0.5"/>
+        <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5"/>
 	</joint>
 	
 

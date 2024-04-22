@@ -11,6 +11,7 @@ import moveit_msgs.msg
 import geometry_msgs.msg
 from moveit_commander.conversions import pose_to_list
 from math import pi, tau, dist, fabs, cos, sin
+from navigation_via_cost_function.srv import *
 
 
 
@@ -288,11 +289,81 @@ def realtime_follow(robot_name):
 
     #rospy.loginfo('Published goal position for robot: {}'.format(robot_name))
 
+def log_position_error(robot_name):
+
+
+    # -------------------- Prepare person hand at set position ------------------- #
+    req = set_positionRequest()
+    req.x = -1
+    req.y = -1
+    req.z = 0
+    req.theta = 0
+    person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    person_position_service.call(req)
+    hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+    hand_position = (0.4, -0.2, 1.2)
+    req.x = hand_position[0]
+    req.y = hand_position[1]
+    req.z = hand_position[2]
+    req.theta = -0.2
+    hand_position_service.call(req)
+    publish_goal(robot_name)
+
+
+    input("Wait for keypress")
+
+    # ---------- prepare data logging of hand and end effector position ---------- #
+    log_duration = 10 #seconds
+    rate = rospy.Rate(20)
+    hand_position = []
+    ee_position = []
+
+
+    listener = tf.TransformListener()
+    listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
+    position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+
+    start_time = rospy.Time.now().secs
+    time = rospy.Time.secs
+    while time - start_time < 1:
+        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
+        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+        hand_position.append(position)
+        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
+        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
+        ee_position.append(position)
+        rate.sleep()
+
+    req.x = 0.55
+    hand_position_service.call(req)
+    publish_goal(robot_name)
+
+    while time - start_time < log_duration:
+        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
+        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+        hand_position.append(position)
+        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
+        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
+        ee_position.append(position)
+        rate.sleep()
+
+
+    
+        
+    
+
+    
+
+
+
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         rospy.logerr('Please specify a robot name as an argument')
     else:
         robot_name = sys.argv[1]
-        while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
-            publish_goal(robot_name)
+        #while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
+        #    publish_goal(robot_name)
         #realtime_follow(robot_name)
+        log_position_error(robot_name)
