@@ -1,0 +1,33 @@
+controller_list:
+  - name: fake_base_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - odom_x
+      - odom_y
+      - odom_r
+  - name: fake_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+  - name: fake_whole_body_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - odom_x
+      - odom_y
+      - odom_r
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+initial:  # Define initial robot poses per group
+  - group: whole_body
+    pose: default

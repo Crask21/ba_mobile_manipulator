@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find summit_xl_sim_bringup)/launch/summit_xls_panda.launch"/>
+    
+    <!-- MoveIt options -->
+  <arg name="pipeline" default="ompl" doc="Planning pipeline to use with MoveIt"/>
+
+
+    <!-- <include file= "$(find panda_moveit_config)/launch/demo_gazebo.launch"/> -->
+    <include file="$(find panda_moveit_config)/launch/demo.launch" pass_all_args="true">
+        <!-- robot_description is loaded by gazebo.launch, to enable Gazebo features -->
+        <arg name="load_robot_description" value="false" />
+        <arg name="moveit_controller_manager" value="ros_control" />
+    </include>
+
+
+    <!-- <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" /> -->
+    <!-- <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" /> -->
+    
+    <!-- <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" /> -->
+    
+    <!-- <node pkg="navigation_via_cost_function" type="navigation.py" name="moman_node" output="screen" /> -->
+</launch>
