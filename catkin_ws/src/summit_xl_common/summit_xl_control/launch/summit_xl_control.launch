@@ -52,7 +52,6 @@
   
        ">
   </node>
-
   <!-- panda/odom_x_position_controller -->
   <!-- panda/odom_y_position_controller -->
   <!-- panda/joint1_position_controller

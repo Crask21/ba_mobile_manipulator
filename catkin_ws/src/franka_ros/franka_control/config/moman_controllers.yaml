@@ -14,7 +14,7 @@ robot/panda:
   odom_r_position_controller:
     type: effort_controllers/JointPositionController
     joint: odom_r
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
+    pid: { p: 8000.0, i: 0.01, d: 10.0 }
   joint1_position_controller:
     type: effort_controllers/JointPositionController
     joint: panda_joint1
