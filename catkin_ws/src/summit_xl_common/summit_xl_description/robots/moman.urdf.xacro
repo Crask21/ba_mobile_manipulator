@@ -6,93 +6,8 @@
 	<!-- Imported elements -->
 	<!-- ***************** -->
 
-	<!-- First we import all posible elements defined in the urdf.xacro files. All these elements
-	are defined as macro:xacros -->
-
 	<!-- Import summit XL base elements -->
 	<xacro:include filename="$(find summit_xl_description)/urdf/bases/summit_xls_base.urdf.xacro" />
-
-	<!-- Define the joint between world and base_footprint -->
-	<link name="dummy" />
-	<!-- <link name="odom">
-		<inertial>
-			<mass value="0.01" />
-			<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
-		</inertial>
-	</link>
-	<link name="virtual_link1">
-		<inertial>
-			<mass value="0.01" />
-			<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
-		</inertial>
-	</link> -->
-	<link name="virtual_link2">
-		<inertial>
-			<mass value="0.01" />
-			<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
-		</inertial>
-	</link>
-
-	<joint name="world_base" type="fixed">
-		<parent link="dummy" />
-		<child link="virtual_link2" />
-	</joint>
-
-	<!-- <joint name="odom_x" type="prismatic">
-		<parent link="odom" />
-		<child link="virtual_link1" />
-		<axis xyz="1 0 0" />
-		<limit effort="1000" lower="-10" upper="10" velocity="100" />
-	</joint>
-
-	<transmission name="odom_x_trans">
-
-		<type>transmission_interface/SimpleTransmission</type>
-		<joint name="odom_x">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-		</joint>
-		<actuator name="odom_x_motor">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-			<mechanicalReduction>1</mechanicalReduction>
-		</actuator>
-	</transmission> -->
-
-	<!-- <joint name="odom_y" type="prismatic">
-		<parent link="virtual_link1" />
-		<child link="virtual_link2" />
-		<axis xyz="0 1 0" />
-		<limit effort="1000" lower="-10" upper="10" velocity="100" />
-	</joint>
-	<transmission name="odom_y_trans">
-		<type>transmission_interface/SimpleTransmission</type>
-		<joint name="odom_y">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-		</joint>
-		<actuator name="odom_y_motor">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-			<mechanicalReduction>1</mechanicalReduction>
-		</actuator>
-	</transmission> -->
-	<gazebo reference="odom_r">
-		<!-- Needed for ODE to output external wrenches on joints -->
-		<provideFeedback>true</provideFeedback>
-	</gazebo>
-	<joint name="odom_r" type="revolute">
-		<parent link="virtual_link2" />
-		<child link="summit_xl_base_footprint" />
-		<axis xyz="0 0 1" />
-		<limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" />
-	</joint>
-	<transmission name="odom_r_transmission">
-		<type>transmission_interface/SimpleTransmission</type>
-		<joint name="odom_r">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-		</joint>
-		<actuator name="odom_r_motor">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-			<mechanicalReduction>1</mechanicalReduction>
-		</actuator>
-	</transmission>
 
 
 	<!-- Import summit XL wheels -->
@@ -156,15 +71,6 @@
 	<!-- Name for this robot -->
 	<xacro:arg name="arm_id" default="panda" />
 
-	<!-- Should a franka_gripper be mounted at the flange?" -->
-	<xacro:arg name="hand" default="false" />
-	<!-- Positional offset between $(arm_id)_hand -> $(arm_id)_hand_tcp [m]. Only used when
-	hand:=true -->
-	<xacro:arg name="tcp_xyz" default="0 0 0.1034" />
-	<!-- Rotational offset between $(arm_id)_hand -> $(arm_id)_hand_tcp [rad]. Only used when
-	hand:=true -->
-	<xacro:arg name="tcp_rpy" default="0 0 0" />
-
 	<!-- Is the robot being simulated in gazebo?" -->
 	<xacro:arg name="gazebo" default="true" />
 	<!-- If `gazebo` arg is set, to which frame shall $(arm_id)_link0 be parented. Empty string for
@@ -194,9 +100,6 @@
 		<!-- Robots Elements -->
 		<!-- *************** -->
 
-		<!-- Here we create the robot elements using the xacro:macros imported at the beggining of
-		this file -->
-
 		<!-- Summit XL base -->
 		<xacro:summit_xls_base prefix="$(arg prefix)" publish_bf="true" hq="${hq}" />
 
@@ -219,6 +122,7 @@
 			reflect="false" hq="${hq}">
 			<origin xyz="-${wheel_offset_x} -${wheel_offset_y} ${wheel_offset_z}" rpy="0 0 0" />
 		</xacro:omni_wheel>
+
 		<!-- IMU -->
 		<xacro:sensor_imu prefix="$(arg prefix)imu" parent="$(arg prefix)base_link"
 			topic="imu/data_raw">
@@ -238,19 +142,6 @@
 				rpy="0 ${-PI} ${-1/4*PI}" />
 		</xacro:sensor_sick_s300>
 
-		<!--xacro:sensor_axis_m5013
-		prefix="$(arg prefix)front_ptz_camera" parent="$(arg prefix)base_link">
-			<origin xyz="${front_ptz_camera_offset_x} ${front_ptz_camera_offset_y}
-		${front_ptz_camera_offset_z}" rpy="${-PI/2} 0 0"/>
-		</xacro:sensor_axis_m5013-->
-
-		<!--xacro:sensor_axis_m5013
-		prefix="$(arg prefix)rear_ptz_camera" parent="$(arg prefix)base_link">
-			<origin xyz="${rear_ptz_camera_offset_x} ${rear_ptz_camera_offset_y} ${rear_ptz_camera_offset_z}"
-		rpy="${-PI/2} 0 ${PI}"/>
-		</xacro:sensor_axis_m5013-->
-
-
 		<xacro:sensor_orbbec_astra prefix="$(arg prefix)front_rgbd_camera"
 			parent="$(arg prefix)base_link" prefix_topic="front_rgbd_camera">
 			<origin
@@ -258,27 +149,8 @@
 				rpy="0 0 0" />
 		</xacro:sensor_orbbec_astra>
 
-		<!--xacro:sensor_gps
-		prefix="$(arg prefix)gps" parent="$(arg prefix)base_link">
-			<origin xyz="${gps_offset_x} ${gps_offset_y} ${gps_offset_z}" rpy="0 0 0"/>
-		</xacro:sensor_gps-->
-
-		<!-- Instance ViperX 300s arm -->
-		<!-- <joint name="$(arg prefix)arm_base_joint" type="fixed">
-			<origin xyz="${arm_offset_x} ${arm_offset_y} ${arm_offset_z}"
-				rpy="${arm_offset_roll} ${arm_offset_pitch} ${arm_offset_yaw}" />
-			<parent link="$(arg prefix)base_link" />
-			<child link="$(arg prefix)arm_base_link" />
-			<axis xyz="0 0 0" />
-		</joint> -->
-
-
-		<!-- <xacro:vx300s base_parent="$(arg prefix)arm_base_link" prefix="$(arg prefix)arm_" /> -->
 		<xacro:franka_robot arm_id="$(arg arm_id)"
 			joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"
-			hand="$(arg hand)"
-			tcp_xyz="$(arg tcp_xyz)"
-			tcp_rpy="$(arg tcp_rpy)"
 			gazebo="$(arg gazebo)"
 			parent="$(arg prefix)base_link"
 			xyz="$(arg xyz)"

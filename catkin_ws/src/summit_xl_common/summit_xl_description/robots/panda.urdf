@@ -13,83 +13,36 @@
     <material>Gazebo/Green</material>
   </gazebo>
   <!-- Define the joint between world and base_footprint -->
-  <link name="dummy"/>
-  <!-- <link name="odom">
+  <!-- <link name="dummy" />
+
+	<link name="virtual_link">
 		<inertial>
 			<mass value="0.01" />
 			<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
 		</inertial>
 	</link>
-	<link name="virtual_link1">
-		<inertial>
-			<mass value="0.01" />
-			<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
-		</inertial>
-	</link> -->
-  <link name="virtual_link2">
-    <inertial>
-      <mass value="0.01"/>
-      <inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100"/>
-    </inertial>
-  </link>
-  <joint name="world_base" type="fixed">
-    <parent link="dummy"/>
-    <child link="virtual_link2"/>
-  </joint>
-  <!-- <joint name="odom_x" type="prismatic">
-		<parent link="odom" />
-		<child link="virtual_link1" />
-		<axis xyz="1 0 0" />
-		<limit effort="1000" lower="-10" upper="10" velocity="100" />
+
+	<joint name="world_base" type="fixed">
+		<parent link="dummy" />
+		<child link="virtual_link" />
 	</joint>
 
-	<transmission name="odom_x_trans">
-
+	<joint name="odom_r" type="revolute">
+		<parent link="virtual_link" />
+		<child link="summit_xl_base_footprint" />
+		<axis xyz="0 0 1" />
+		<limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" />
+	</joint>
+	<transmission name="odom_r_transmission">
 		<type>transmission_interface/SimpleTransmission</type>
-		<joint name="odom_x">
+		<joint name="odom_r">
 			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
 		</joint>
-		<actuator name="odom_x_motor">
+		<actuator name="odom_r_motor">
 			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
 			<mechanicalReduction>1</mechanicalReduction>
 		</actuator>
 	</transmission> -->
-  <!-- <joint name="odom_y" type="prismatic">
-		<parent link="virtual_link1" />
-		<child link="virtual_link2" />
-		<axis xyz="0 1 0" />
-		<limit effort="1000" lower="-10" upper="10" velocity="100" />
-	</joint>
-	<transmission name="odom_y_trans">
-		<type>transmission_interface/SimpleTransmission</type>
-		<joint name="odom_y">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-		</joint>
-		<actuator name="odom_y_motor">
-			<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-			<mechanicalReduction>1</mechanicalReduction>
-		</actuator>
-	</transmission> -->
-  <gazebo reference="odom_r">
-    <!-- Needed for ODE to output external wrenches on joints -->
-    <provideFeedback>true</provideFeedback>
-  </gazebo>
-  <joint name="odom_r" type="revolute">
-    <parent link="virtual_link2"/>
-    <child link="summit_xl_base_footprint"/>
-    <axis xyz="0 0 1"/>
-    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5"/>
-  </joint>
-  <transmission name="odom_r_transmission">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="odom_r">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="odom_r_motor">
-      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
   <!-- in kg-->
   <!-- in kg-->
   <!-- source en.wikipedia.org/wiki/List_of_moments_of_inertia-->
@@ -144,8 +97,6 @@
   <!-- *************** -->
   <!-- Robots Elements -->
   <!-- *************** -->
-  <!-- Here we create the robot elements using the xacro:macros imported at the beggining of
-		this file -->
   <link name="summit_xl_base_footprint">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -836,14 +787,6 @@
 		prefix="$(arg prefix)gps" parent="$(arg prefix)base_link">
 			<origin xyz="${gps_offset_x} ${gps_offset_y} ${gps_offset_z}" rpy="0 0 0"/>
 		</xacro:sensor_gps-->
-  <!-- Instance ViperX 300s arm -->
-  <!-- <joint name="$(arg prefix)arm_base_joint" type="fixed">
-			<origin xyz="${arm_offset_x} ${arm_offset_y} ${arm_offset_z}"
-				rpy="${arm_offset_roll} ${arm_offset_pitch} ${arm_offset_yaw}" />
-			<parent link="$(arg prefix)base_link" />
-			<child link="$(arg prefix)arm_base_link" />
-			<axis xyz="0 0 0" />
-		</joint> -->
   <!-- <xacro:if value="${connected_to=='world'}">
         <link name="${connected_to}" />
       </xacro:if> -->
