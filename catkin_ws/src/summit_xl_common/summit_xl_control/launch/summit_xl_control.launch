@@ -39,12 +39,22 @@
   <node name="controller_spawner"
     pkg="controller_manager" type="spawner" respawn="false" output="screen"
     args="
-        
+
+    panda/odom_r_position_controller
+    panda/joint1_position_controller
+    panda/joint2_position_controller
+    panda/joint3_position_controller
+    panda/joint4_position_controller
+    panda/joint5_position_controller
+    panda/joint6_position_controller
+    panda/joint7_position_controller
         joint_read_state_controller
-        panda/traj_controller
+  
        ">
   </node>
 
+  <!-- panda/odom_x_position_controller -->
+  <!-- panda/odom_y_position_controller -->
   <!-- panda/joint1_position_controller
   panda/joint2_position_controller
   panda/joint3_position_controller
@@ -52,6 +62,7 @@
   panda/joint5_position_controller
   panda/joint6_position_controller
   panda/joint7_position_controller -->
+  <!-- panda/whole_body_controller -->
 
 
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">

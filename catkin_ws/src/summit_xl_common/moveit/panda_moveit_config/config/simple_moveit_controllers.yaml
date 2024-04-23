@@ -1,5 +1,5 @@
 controller_list:
-  - name: robot/panda/traj_controller
+  - name: panda/traj_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: True
