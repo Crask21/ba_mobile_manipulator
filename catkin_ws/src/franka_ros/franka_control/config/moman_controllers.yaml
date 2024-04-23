@@ -3,14 +3,14 @@ robot/panda:
     type: joint_state_controller/JointStateController
     publish_rate: 50
 
-  # odom_x_position_controller:
-  #   type: effort_controllers/JointPositionController
-  #   joint: odom_x
-  #   pid: { p: 100.0, i: 0.01, d: 10.0 }
-  # odom_y_position_controller:
-  #   type: effort_controllers/JointPositionController
-  #   joint: odom_y
-  #   pid: { p: 100.0, i: 0.01, d: 10.0 }
+  odom_x_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: odom_x
+    pid: { p: 10000.0, i: 0.01, d: 10.0 }
+  odom_y_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: odom_y
+    pid: { p: 10000.0, i: 0.01, d: 10.0 }
   odom_r_position_controller:
     type: effort_controllers/JointPositionController
     joint: odom_r
@@ -67,9 +67,9 @@ robot/panda:
         max_acceleration: 1.0
         max_jerk: 1.0
     gains:
-      odom_x: { p: 100.0, i: 0.01, d: 10.0 }
-      odom_y: { p: 100.0, i: 0.01, d: 10.0 }
-      odom_r: { p: 100.0, i: 0.01, d: 10.0 }
+      odom_x: { p: 1000000.0, i: 0.01, d: 10.0 }
+      odom_y: { p: 1000000.0, i: 0.01, d: 10.0 }
+      odom_r: { p: 1000000.0, i: 0.01, d: 10.0 }
       panda_joint1: { p: 600.0, i: 0.01, d: 30.0 }
       panda_joint2: { p: 600.0, i: 0.01, d: 30.0 }
       panda_joint3: { p: 600.0, i: 0.01, d: 30.0 }
@@ -79,6 +79,9 @@ robot/panda:
       panda_joint7: { p: 50.0, i: 0.01, d: 5.0 }
 
 gazebo_ros_control/pid_gains:
+  odom_x: { p: 1000000.0, i: 0.01, d: 10.0 }
+  odom_y: { p: 1000000.0, i: 0.01, d: 10.0 }
+  odom_r: { p: 1000000.0, i: 0.01, d: 10.0 }
   panda_joint1: { p: 600.0, i: 0.01, d: 30.0 }
   panda_joint2: { p: 600.0, i: 0.01, d: 30.0 }
   panda_joint3: { p: 600.0, i: 0.01, d: 30.0 }

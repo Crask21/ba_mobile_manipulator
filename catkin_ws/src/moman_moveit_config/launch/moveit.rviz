@@ -39,7 +39,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Acceleration_Scaling_Factor: 0.1
+    - Acceleration_Scaling_Factor: 1
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
       Move Group Namespace: ""
@@ -70,10 +70,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          dummy:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           odom:
             Alpha: 1
             Show Axes: false
@@ -262,6 +258,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
           virtual_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          world:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -311,10 +311,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          dummy:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           odom:
             Alpha: 1
             Show Axes: false
@@ -506,11 +502,15 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-      Velocity_Scaling_Factor: 0.1
+      Velocity_Scaling_Factor: 1
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -535,17 +535,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.75
       Focal Point:
-        X: -0.6197606921195984
-        Y: -0.4912347197532654
-        Z: 0.2806142270565033
+        X: 0.0444028340280056
+        Y: -0.3888898193836212
+        Z: 0.765993058681488
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3000003695487976
+      Pitch: 0.39000022411346436
       Target Frame: odom
-      Yaw: 4.639950275421143
+      Yaw: 5.614951133728027
     Saved: ~
 Window Geometry:
   Displays:

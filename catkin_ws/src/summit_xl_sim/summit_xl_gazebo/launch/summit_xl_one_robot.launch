@@ -20,7 +20,7 @@
     <arg name="omni_drive" default="false" />
     <arg name="ros_planar_move_plugin" default="false" />
     <arg name="use_gpu_for_simulation" default="false" /><!-- use_gpu_for_simulation -->
-    <arg name="launch_moveit" default="false" />
+    <arg name="launch_moveit" default="true" />
 
 
     <!-- GPS default position of Robotnik at Fuente del Jarro-->
