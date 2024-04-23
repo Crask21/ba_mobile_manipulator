@@ -21,6 +21,7 @@
     <arg name="omni_drive" default="false" />
     <arg name="ros_planar_move_plugin" default="false" />
     <arg name="use_gpu_for_simulation" default="false" /><!-- use_gpu_for_simulation -->
+    <arg name="launch_moveit" default="true" />
 
 
     <!-- GPS default position of Robotnik at Fuente del Jarro-->
@@ -125,6 +126,17 @@
             <arg name="local_planner" value="$(arg movebase_local_planner)" />
             <arg if="$(arg omni_drive)" name="differential_robot" value="false" />
             <arg unless="$(arg omni_drive)" name="differential_robot" value="true" />
+        </include>
+
+        <!-- robot_localization nodes, publishes transformation world->odom->base_footprint -->
+        <include if="$(arg launch_robot_ekf_localization)"
+            file="$(find summit_xl_localization)/launch/robot_localization_$(arg robot_ekf_localization_mode).launch">
+            <arg name="prefix" value="$(arg prefix)" />
+        </include>
+
+        <!-- moveit -->
+        <include if="$(arg launch_moveit)"
+            file="$(find moman_moveit_config)/launch/summit_xls_panda_moveit.launch">
         </include>
 
 

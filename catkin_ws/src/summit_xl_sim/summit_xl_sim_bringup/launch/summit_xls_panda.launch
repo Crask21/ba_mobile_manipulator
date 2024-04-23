@@ -10,7 +10,7 @@
 	<!--launch_navigation
 	and launch_navigation_nomap args are exclusive
 	and they are (or not) launched for all robots-->
-	<arg name="launch_rviz" default="true" />
+	<arg name="launch_rviz" default="false" />
 	<arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world" />
 	<arg name="use_gpu_for_simulation" default="$(optenv USE_GPU_FOR_SIMULATION false)" />
 
