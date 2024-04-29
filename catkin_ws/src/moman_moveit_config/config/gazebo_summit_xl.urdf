@@ -24,21 +24,21 @@
         <parent link="odom" />
         <child link="virtual_link1" />
         <axis xyz="1 0 0" />
-        <limit effort="1000" velocity="0.5" />
+        <limit effort="1000" velocity="1" />
     </joint>
     <joint name="odom_y" type="prismatic">
         <origin rpy="0 0 0" xyz="0 0 0" />
         <parent link="virtual_link1" />
         <child link="virtual_link2" />
         <axis xyz="0 1 0" />
-        <limit effort="1000" velocity="0.5" />
+        <limit effort="1000" velocity="1" />
     </joint>
     <joint name="odom_r" type="revolute">
         <origin rpy="0 0 0" xyz="0 0 0" />
         <parent link="virtual_link2" />
         <child link="summit_xl_base_footprint" />
         <axis xyz="0 0 1" />
-        <limit effort="1000" velocity="0.5" />
+        <limit effort="1000" velocity="1" />
     </joint>
     <!-- in kg-->
     <!-- in kg-->

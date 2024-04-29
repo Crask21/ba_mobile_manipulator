@@ -118,6 +118,7 @@ class MoveGroupPythonInterfaceTutorial(object):
     def go_to_pose_goal(self, pose_goal):
 
         self.move_group.set_pose_target(pose_goal)
+        
 
         ## Now, we call the planner to compute the plan and execute it.
         # `go()` returns a boolean indicating whether the planning and execution was successful.

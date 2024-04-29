@@ -1,23 +1,18 @@
 <?xml version="1.0"?>
 <launch>
-    <include file="$(find summit_xl_sim_bringup)/launch/summit_xls_panda.launch"/>
-    
-    <!-- MoveIt options -->
-  <arg name="pipeline" default="ompl" doc="Planning pipeline to use with MoveIt"/>
+    <arg name="demo" default="true"/>
 
 
-    <!-- <include file= "$(find panda_moveit_config)/launch/demo_gazebo.launch"/> -->
-    <include file="$(find panda_moveit_config)/launch/demo.launch" pass_all_args="true">
-        <!-- robot_description is loaded by gazebo.launch, to enable Gazebo features -->
-        <arg name="load_robot_description" value="false" />
-        <arg name="moveit_controller_manager" value="ros_control" />
-    </include>
+    <include file="$(find moman_moveit_config)/launch/demo.launch" if="$(arg demo)"/>
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_robot_map" args="0 0 0 0 0 0 robot_map odom 100" />
+
 
 
     <!-- <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" /> -->
-    <!-- <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" /> -->
+
+    <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" />
     
     <!-- <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" /> -->
     
-    <!-- <node pkg="navigation_via_cost_function" type="navigation.py" name="moman_node" output="screen" /> -->
+    <node pkg="navigation_via_cost_function" type="moman_navigation.py" name="moman_node" output="screen" />
 </launch>
