@@ -9,20 +9,35 @@
 
 
   <xacro:macro name="cylinder_inertia" params="m r h">
+<<<<<<< HEAD
     <inertia  ixx="${m*(3*r*r+h*h)/12}" ixy = "0" ixz = "0"
               iyy="${m*r*r/2}" iyz = "0"
               izz="${m*(3*r*r+h*h)/12}" />
+=======
+    <inertia ixx="${m*(3*r*r+h*h)/12}" ixy="0" ixz="0"
+      iyy="${m*r*r/2}" iyz="0"
+      izz="${m*(3*r*r+h*h)/12}" />
+>>>>>>> combined_moveit
   </xacro:macro>
 
   <xacro:macro name="omni_wheel" params="prefix parent *origin reflect hq">
 
     <joint name="${prefix}_wheel_joint" type="continuous">
+<<<<<<< HEAD
       <parent link="${parent}"/>
       <child link="${prefix}_wheel_link"/>
       <xacro:insert_block name="origin" />
       <axis xyz="0 1 0" rpy="0 0 0" />
       <limit effort="100" velocity="100"/>
       <joint_properties damping="0.0" friction="0.0"/>
+=======
+      <parent link="${parent}" />
+      <child link="${prefix}_wheel_link" />
+      <xacro:insert_block name="origin" />
+      <axis xyz="0 1 0" rpy="0 0 0" />
+      <limit effort="100" velocity="100" />
+      <joint_properties damping="0.0" friction="0.0" />
+>>>>>>> combined_moveit
     </joint>
 
     <link name="${prefix}_wheel_link">
@@ -38,7 +53,11 @@
             <geometry>
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_2.dae" />
             </geometry>
+<<<<<<< HEAD
 		  </xacro:unless>
+=======
+          </xacro:unless>
+>>>>>>> combined_moveit
         </xacro:if>
 
         <xacro:unless value="${hq}">
@@ -49,17 +68,31 @@
         </xacro:unless>
 
         <material name="darkgrey">
+<<<<<<< HEAD
            <color rgba="0.2 0.2 0.2 1"/>
+=======
+          <color rgba="0.2 0.2 0.2 1" />
+>>>>>>> combined_moveit
         </material>
       </visual>
 
       <collision>
+<<<<<<< HEAD
 				<origin xyz="0 0 0" rpy="${PI/2} 0 0" />
         <geometry>
 
           <!--sphere radius="${omni_wheel_radius}" /-->
 
 <!--
+=======
+        <origin xyz="0 0 0" rpy="${PI/2} 0 0" />
+        <geometry>
+
+          <!--sphere
+          radius="${omni_wheel_radius}" /-->
+
+          <!--
+>>>>>>> combined_moveit
           <xacro:if value="${reflect}">
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_1.dae" />
           </xacro:if>
@@ -67,14 +100,20 @@
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_2.dae" />
 					</xacro:unless>
 -->
+<<<<<<< HEAD
 					<cylinder length="${omni_wheel_height}" radius="${omni_wheel_radius}" />
 					<!-- sphere radius="${omni_wheel_radius}"/-->
+=======
+          <cylinder length="${omni_wheel_height}" radius="${omni_wheel_radius}" />
+          <!-- sphere radius="${omni_wheel_radius}"/-->
+>>>>>>> combined_moveit
         </geometry>
       </collision>
 
       <inertial>
         <mass value="${omni_wheel_mass}" />
         <origin xyz="0 0 0" />
+<<<<<<< HEAD
         <xacro:cylinder_inertia  m="${omni_wheel_mass}" r="${omni_wheel_radius}" h="${omni_wheel_height}" />
       </inertial>
     </link>
@@ -87,10 +126,27 @@
       </joint>
       <actuator name="${prefix}_wheel_joint_motor">
          <mechanicalReduction>1</mechanicalReduction>
+=======
+        <xacro:cylinder_inertia m="${omni_wheel_mass}" r="${omni_wheel_radius}"
+          h="${omni_wheel_height}" />
+      </inertial>
+    </link>
+
+    <!-- Transmission is important to link the joints and the controller (see
+    summit_xl_control/config/summit_xl_control.yaml)-->
+    <transmission name="${prefix}_wheel_joint_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${prefix}_wheel_joint">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${prefix}_wheel_joint_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+>>>>>>> combined_moveit
       </actuator>
     </transmission>
 
     <gazebo reference="${prefix}_wheel_link">
+<<<<<<< HEAD
 		<mu1 value="0.0"/>
 		<mu2 value="0.0"/>
 		<kp value="10000000.0" />
@@ -101,3 +157,15 @@
 
   </xacro:macro>
 </robot>
+=======
+      <mu1 value="0.0" />
+      <mu2 value="0.0" />
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <fdir1 value="1 0 0" />
+      <turnGravityOff>false</turnGravityOff>
+    </gazebo>
+
+  </xacro:macro>
+</robot>
+>>>>>>> combined_moveit

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 arm_controller:
   type: effort_controllers/JointTrajectoryController
   joints:
@@ -10,36 +11,74 @@ arm_controller:
     - summit_xl__joint7
   gains:
     summit_xl__joint1:
+=======
+traj_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - panda_joint1
+    - panda_joint2
+    - panda_joint3
+    - panda_joint4
+    - panda_joint5
+    - panda_joint6
+    - panda_joint7
+  gains:
+    panda_joint1:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint2:
+=======
+    panda_joint2:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint3:
+=======
+    panda_joint3:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint4:
+=======
+    panda_joint4:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint5:
+=======
+    panda_joint5:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint6:
+=======
+    panda_joint6:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1
       i_clamp: 1
+<<<<<<< HEAD
     summit_xl__joint7:
+=======
+    panda_joint7:
+>>>>>>> combined_moveit
       p: 100
       d: 1
       i: 1

@@ -6,6 +6,10 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/planning_context.launch
+=======
+>>>>>>> combined_moveit
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro  '$(find summit_xl_description)/robots/summit_xls_panda.urdf.xacro'"/>
 
   <!-- The semantic description that corresponds to the URDF -->
@@ -15,11 +19,33 @@
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find panda_moveit_config)/config/joint_limits.yaml"/>
     <rosparam command="load" file="$(find panda_moveit_config)/config/cartesian_limits.yaml"/>
+<<<<<<< HEAD
+=======
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro  '$(find summit_xl_description)/robots/moman.urdf.xacro'"/>
+
+  <!-- The semantic description that corresponds to the URDF -->
+  <param name="$(arg robot_description)_semantic" textfile="$(find moman_moveit_config)/config/summit_xl.srdf" />
+
+  <!-- Load updated joint limits (override information from URDF) -->
+  <group ns="$(arg robot_description)_planning">
+    <rosparam command="load" file="$(find moman_moveit_config)/config/joint_limits.yaml"/>
+    <rosparam command="load" file="$(find moman_moveit_config)/config/cartesian_limits.yaml"/>
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/planning_context.launch
+=======
+>>>>>>> combined_moveit
   </group>
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="$(arg robot_description)_kinematics">
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/planning_context.launch
     <rosparam command="load" file="$(find panda_moveit_config)/config/kinematics.yaml"/>
+=======
+    <rosparam command="load" file="$(find moman_moveit_config)/config/kinematics.yaml"/>
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/planning_context.launch
+=======
+    <rosparam command="load" file="$(find panda_moveit_config)/config/kinematics.yaml"/>
+>>>>>>> combined_moveit
 
   </group>
 

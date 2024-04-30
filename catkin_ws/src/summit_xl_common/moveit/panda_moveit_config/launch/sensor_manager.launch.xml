@@ -3,7 +3,15 @@
   <!-- This file makes it easy to include the settings for sensor managers -->
 
   <!-- Params for 3D sensors config -->
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/sensor_manager.launch.xml
   <rosparam command="load" file="$(find panda_moveit_config)/config/sensors_3d.yaml" />
+=======
+  <rosparam command="load" file="$(find moman_moveit_config)/config/sensors_3d.yaml" />
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/sensor_manager.launch.xml
+=======
+  <rosparam command="load" file="$(find panda_moveit_config)/config/sensors_3d.yaml" />
+>>>>>>> combined_moveit
 
   <!-- Params for the octomap monitor -->
   <!--  <param name="octomap_frame" type="string" value="some frame in which the robot moves" /> -->

@@ -6,6 +6,12 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/summit_xl.srdf
   CONFIG:
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/.setup_assistant
     author_name: Markus SImonsen
     author_email: markus.k.simonsen@gmail.com
     generated_timestamp: 1711032105
+=======
+    author_name: Markus Simonsen
+    author_email: markus.k.simonsen@gmail.com
+    generated_timestamp: 1713528996
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/.setup_assistant

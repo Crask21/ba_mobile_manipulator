@@ -193,5 +193,9 @@ arm:
     - AITstar
     - ABITstar
     - BITstar
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/ompl_planning.yaml
   projection_evaluator: joints(summit_xl__joint1,summit_xl__joint2)
+=======
+  projection_evaluator: joints(panda_joint1,panda_joint2)
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/ompl_planning.yaml
   longest_valid_segment_fraction: 0.005

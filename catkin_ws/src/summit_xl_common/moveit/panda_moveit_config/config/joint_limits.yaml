@@ -8,37 +8,65 @@ default_acceleration_scaling_factor: 0.1
 # Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
 joint_limits:
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint1:
+=======
+  panda_joint1:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.175
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint2:
+=======
+  panda_joint2:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.175
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint3:
+=======
+  panda_joint3:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.175
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint4:
+=======
+  panda_joint4:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.175
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint5:
+=======
+  panda_joint5:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.61
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint6:
+=======
+  panda_joint6:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.61
     has_acceleration_limits: false
     max_acceleration: 0
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/config/joint_limits.yaml
   summit_xl__joint7:
+=======
+  panda_joint7:
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/config/joint_limits.yaml
     has_velocity_limits: true
     max_velocity: 2.61
     has_acceleration_limits: false

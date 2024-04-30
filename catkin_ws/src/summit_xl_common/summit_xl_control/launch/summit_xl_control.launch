@@ -11,6 +11,7 @@
   <arg name="odom_frame" default="$(arg prefix)odom" />
   <arg name="base_frame" default="$(arg prefix)base_footprint" />
   <arg name="ros_planar_move_plugin" default="false" />
+<<<<<<< HEAD
   <arg name="sim" default="false" />
   <arg name="sim_arm_control" default="false" />
   <arg name="cmd_vel" default="robotnik_base_control/cmd_vel" />
@@ -43,6 +44,21 @@
     <!-- changed this perhaps it works now -->
     <!-- <include file="$(find summit_xl_control)/launch/$(arg arm_manufacturer)_control.launch"> -->
     <!-- <group if="$(arg sim_arm_control)">
+=======
+  <arg name="sim_arm_control" default="false" />
+  <arg name="cmd_vel" default="robotnik_base_control/cmd_vel" />
+  <arg name="odom_broadcast_tf" default="true" />
+
+
+  <!-- Simulation - Load joint controller configurations from YAML file to parameter server -->
+
+  <rosparam file="$(find summit_xl_control)/config/simulation/robot_control.yaml" command="load"
+    subst_value="true" />
+
+  <!-- changed this perhaps it works now -->
+  <!-- <include file="$(find summit_xl_control)/launch/$(arg arm_manufacturer)_control.launch"> -->
+  <!-- <group if="$(arg sim_arm_control)">
+>>>>>>> combined_moveit
       <include file="$(find franka_control)/launch/franka_control_m.launch">
         <arg name="prefix" value="$(arg prefix)" />
         <arg name="arm_prefix" value="$(arg arm_prefix)" />
@@ -51,6 +67,7 @@
       </include>
     </group> -->
 
+<<<<<<< HEAD
     <!-- if it has camera ptz -->
     <group if="$(arg launch_pantilt_camera_controller)">
       <node if="$(arg ros_planar_move_plugin)" name="controller_spawner" pkg="controller_manager"
@@ -94,6 +111,31 @@
 
 
   </group>
+=======
+  <!-- if it has camera ptz -->
+
+
+  <!-- load the robotnik_base_control ros controllers -->
+  <node name="controller_spawner"
+    pkg="controller_manager" type="spawner" respawn="false" output="screen"
+    args="
+        panda/whole_body_controller
+        joint_read_state_controller
+
+       ">
+  </node>
+  <!-- panda/odom_x_position_controller
+  panda/odom_y_position_controller
+  panda/odom_r_position_controller
+  panda/joint1_position_controller
+  panda/joint2_position_controller
+  panda/joint3_position_controller
+  panda/joint4_position_controller
+  panda/joint5_position_controller
+  panda/joint6_position_controller
+  panda/joint7_position_controller -->
+  <!-- panda/whole_body_controller -->
+>>>>>>> combined_moveit
 
 
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">

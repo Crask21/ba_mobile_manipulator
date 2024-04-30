@@ -1,0 +1,29 @@
+<!-- this file will launch the two robots seperately -->
+
+
+<launch>
+    <include file="$(find summit_xl_sim_bringup)/launch/summit_xls_panda.launch" />
+    <!-- <include file="$(find franka_gazebo)/launch/panda.launch" /> -->
+
+    <!-- <arg name="urdf_robot_file"
+        default="$(find summit_xl_description)/robots/panda.urdf" />
+
+    <param name="my_robot_description" command="cat $(arg urdf_robot_file)" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"
+        args="-robot_description my_robot_description">
+    </node> -->
+
+    <!-- <param name="dummy/robot_description"
+        command="$(find xacro)/xacro.py $(find franka_description)/robots/panda/panda.urdf.xacro" /> -->
+
+    <!-- Spawn a robot into Gazebo -->
+    <!-- <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-param dummy/robot_description -urdf -model robot" /> -->
+    <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find franka_description)/robots/panda/panda.urdf" />
+    </include> -->
+    <!-- create a static transform between the two -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="panda_to_summit_xl"
+        args="0.2 -0.15 0.380 0 0 0 robot_base_link panda_link0 100" /> -->
+
+</launch>

@@ -17,5 +17,13 @@
   <param name="start_state_max_bounds_error" value="$(arg start_state_max_bounds_error)" />
   <param name="jiggle_fraction" value="$(arg jiggle_fraction)" />
 
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/chomp_planning_pipeline.launch.xml
   <rosparam command="load" file="$(find panda_moveit_config)/config/chomp_planning.yaml" />
+=======
+  <rosparam command="load" file="$(find moman_moveit_config)/config/chomp_planning.yaml" />
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/chomp_planning_pipeline.launch.xml
+=======
+  <rosparam command="load" file="$(find panda_moveit_config)/config/chomp_planning.yaml" />
+>>>>>>> combined_moveit
 </launch>

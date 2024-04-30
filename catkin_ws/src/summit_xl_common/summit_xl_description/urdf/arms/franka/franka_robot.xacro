@@ -10,6 +10,7 @@
       joint_limits="${joint_limits}" connected_to="${parent}" xyz="${xyz}" rpy="${rpy}" />
 
 
+<<<<<<< HEAD
     <xacro:if value="${hand}">
       <xacro:include filename="$(find franka_description)/robots/common/franka_hand.xacro" />
       <xacro:franka_hand
@@ -23,6 +24,8 @@
       />
     </xacro:if>
 
+=======
+>>>>>>> combined_moveit
     <!-- Define additional Gazebo tags -->
     <!-- <xacro:if value="${gazebo}"> -->
     <xacro:if value="${gazebo}">
@@ -45,6 +48,7 @@
       </xacro:if> -->
 
       <xacro:gazebo-joint joint="${arm_id}_joint1"
+<<<<<<< HEAD
         transmission="hardware_interface/PositionJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint2"
         transmission="hardware_interface/PositionJointInterface" />
@@ -75,6 +79,8 @@
         transmission="hardware_interface/VelocityJointInterface" />
 
       <xacro:gazebo-joint joint="${arm_id}_joint1"
+=======
+>>>>>>> combined_moveit
         transmission="hardware_interface/EffortJointInterface" />
       <xacro:gazebo-joint joint="${arm_id}_joint2"
         transmission="hardware_interface/EffortJointInterface" />
@@ -89,6 +95,7 @@
       <xacro:gazebo-joint joint="${arm_id}_joint7"
         transmission="hardware_interface/EffortJointInterface" />
 
+<<<<<<< HEAD
       <xacro:transmission-franka-state arm_id="${arm_id}" />
       <xacro:transmission-franka-model arm_id="${arm_id}"
         root="${arm_id}_joint1"
@@ -104,11 +111,17 @@
         <xacro:gazebo-friction link="${arm_id}_leftfinger" mu="1.13" />
         <xacro:gazebo-friction link="${arm_id}_rightfinger" mu="1.13" />
       </xacro:if>
+=======
+>>>>>>> combined_moveit
 
       <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
           <controlPeriod>0.001</controlPeriod>
+<<<<<<< HEAD
           <robotSimType>franka_gazebo/FrankaHWSim</robotSimType>
+=======
+          <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+>>>>>>> combined_moveit
         </plugin>
         <self_collide>true</self_collide>
       </gazebo>

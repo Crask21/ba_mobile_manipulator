@@ -6,6 +6,10 @@
 
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/ros_controllers.launch
     output="screen" args="arm_controller "/>
+=======
+    output="screen" args="traj_controller "/>
+>>>>>>> combined_moveit:catkin_ws/src/moman_config/launch/ros_controllers.launch
 
 </launch>

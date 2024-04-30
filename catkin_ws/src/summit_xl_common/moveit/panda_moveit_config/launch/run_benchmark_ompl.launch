@@ -15,7 +15,15 @@
 
   <!-- Start Benchmark Executable -->
   <node name="$(anon moveit_benchmark)" pkg="moveit_ros_benchmarks" type="moveit_run_benchmark" args="$(arg cfg) --benchmark-planners" respawn="false" output="screen">
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/run_benchmark_ompl.launch
     <rosparam command="load" file="$(find panda_moveit_config)/config/ompl_planning.yaml"/>
+=======
+    <rosparam command="load" file="$(find moman_moveit_config)/config/ompl_planning.yaml"/>
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/run_benchmark_ompl.launch
+=======
+    <rosparam command="load" file="$(find panda_moveit_config)/config/ompl_planning.yaml"/>
+>>>>>>> combined_moveit
   </node>
 
 </launch>

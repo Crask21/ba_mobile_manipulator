@@ -1,6 +1,14 @@
 <launch>
   <!-- load OMPL planning pipeline, but add the CHOMP planning adapter. -->
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/ompl-chomp_planning_pipeline.launch.xml
   <include file="$(find panda_moveit_config)/launch/ompl_planning_pipeline.launch.xml">
+=======
+  <include file="$(find moman_moveit_config)/launch/ompl_planning_pipeline.launch.xml">
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/ompl-chomp_planning_pipeline.launch.xml
+=======
+  <include file="$(find panda_moveit_config)/launch/ompl_planning_pipeline.launch.xml">
+>>>>>>> combined_moveit
     <arg name="planning_adapters"
          default="default_planner_request_adapters/LimitMaxCartesianLinkSpeed
                   default_planner_request_adapters/AddTimeParameterization
@@ -13,7 +21,15 @@
   </include>
 
   <!-- load chomp config -->
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/ompl-chomp_planning_pipeline.launch.xml
   <rosparam command="load" file="$(find panda_moveit_config)/config/chomp_planning.yaml" />
+=======
+  <rosparam command="load" file="$(find moman_moveit_config)/config/chomp_planning.yaml" />
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/ompl-chomp_planning_pipeline.launch.xml
+=======
+  <rosparam command="load" file="$(find panda_moveit_config)/config/chomp_planning.yaml" />
+>>>>>>> combined_moveit
 
   <!-- override trajectory_initialization_method: Use OMPL-generated trajectory -->
   <param name="trajectory_initialization_method" value="fillTrajectory"/>

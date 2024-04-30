@@ -6,7 +6,15 @@
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
   <!-- Allow user to specify database location -->
+<<<<<<< HEAD
   <arg name="db_path" default="$(find panda_moveit_config)/default_warehouse_mongo_db" />
+=======
+<<<<<<< HEAD:catkin_ws/src/moman_moveit_config/launch/demo.launch
+  <arg name="db_path" default="$(find moman_moveit_config)/default_warehouse_mongo_db" />
+=======
+  <arg name="db_path" default="$(find panda_moveit_config)/default_warehouse_mongo_db" />
+>>>>>>> combined_moveit:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/demo.launch
+>>>>>>> combined_moveit
 
   <!-- By default, we are not in debug mode -->
   <arg name="debug" default="false" />
@@ -24,7 +32,10 @@
   <arg name="use_rviz" default="true" />
 
   <!-- If needed, broadcast static tf for robot root -->
+<<<<<<< HEAD
   <node pkg="tf2_ros" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 summit_xl_base_link summit_xl__link0" />
+=======
+>>>>>>> combined_moveit
 
   <group if="$(eval arg('moveit_controller_manager') == 'fake')">
     <!-- We do not have a real robot connected, so publish fake joint states via a joint_state_publisher
@@ -55,7 +66,11 @@
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
   <include file="$(dirname)/moveit_rviz.launch" if="$(arg use_rviz)">
+<<<<<<< HEAD
     <arg name="rviz_config" value="$(dirname)/moveit.rviz"/>
+=======
+    <arg name="rviz_config" value="$(dirname)/moveit2.rviz"/>
+>>>>>>> combined_moveit
     <arg name="debug" value="$(arg debug)"/>
   </include>
 

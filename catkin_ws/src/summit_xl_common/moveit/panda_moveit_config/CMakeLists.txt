@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 3.1.3)
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/CMakeLists.txt
 project(panda_moveit_config)
+=======
+project(moman_moveit_config)
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/CMakeLists.txt
+=======
+project(panda_moveit_config)
+>>>>>>> combined_moveit
 
 find_package(catkin REQUIRED)
 

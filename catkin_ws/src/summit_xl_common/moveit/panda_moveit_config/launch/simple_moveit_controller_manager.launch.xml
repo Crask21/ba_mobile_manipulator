@@ -3,6 +3,16 @@
   <param name="moveit_controller_manager" value="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
 
   <!-- Load controller list to the parameter server -->
+<<<<<<< HEAD
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/simple_moveit_controller_manager.launch.xml
   <rosparam file="$(find panda_moveit_config)/config/simple_moveit_controllers.yaml" />
   <rosparam file="$(find panda_moveit_config)/config/ros_controllers.yaml" />
+=======
+  <rosparam file="$(find moman_moveit_config)/config/simple_moveit_controllers.yaml" />
+  <rosparam file="$(find moman_moveit_config)/config/ros_controllers.yaml" />
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/simple_moveit_controller_manager.launch.xml
+=======
+  <rosparam file="$(find panda_moveit_config)/config/simple_moveit_controllers.yaml" />
+  <rosparam file="$(find panda_moveit_config)/config/ros_controllers.yaml" />
+>>>>>>> combined_moveit
 </launch>
