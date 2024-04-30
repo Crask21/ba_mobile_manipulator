@@ -12,6 +12,7 @@ import geometry_msgs.msg
 from moveit_commander.conversions import pose_to_list
 from math import pi, tau, dist, fabs, cos, sin
 from navigation_via_cost_function.srv import *
+from std_msgs.msg import String
 
 
 
@@ -58,6 +59,7 @@ class MoveGroupPythonInterfaceTutorial(object):
 
         ## Instantiate a `RobotCommander`_ object. Provides information such as the robot's
         ## kinematic model and the robot's current joint states
+        rospy.wait_for_message('/robot_description', String)
         robot = moveit_commander.RobotCommander()
 
         ## Instantiate a `PlanningSceneInterface`_ object.  This provides a remote interface

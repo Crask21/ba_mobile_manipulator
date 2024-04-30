@@ -9,7 +9,7 @@ from geometry_msgs.msg import Point
 import geometry_msgs.msg
 from navigation_via_cost_function.srv import *
 import moveit_commander
-
+from std_msgs.msg import String
 
 
 person_position_service = None
@@ -42,17 +42,18 @@ def publish_person_position():
                      person_rotation,
                      rospy.Time.now(),
                      "person",
-                     "robot_map")
+                     "odom")
 
 if __name__ == '__main__':
     global person_position, hand_position
     global person_rotation, hand_rotation
     rospy.init_node('person_broadcaster')
     br = tf.TransformBroadcaster()
+    rospy.wait_for_message('/tf', TFMessage)
     rate = rospy.Rate(50.0)
     
 
-    person_position = (1, -3, 0)
+    person_position = (1, -2.5, 0)
     person_rotation = tf.transformations.quaternion_from_euler(0, 0, 0.1)
     person_child_frame_id = "person"
     person_parent_frame_id = "odom"
@@ -63,7 +64,6 @@ if __name__ == '__main__':
     hand_parent_frame_id = "person"
 
     start_services()
-
     
     rotation_freq = 0.02
     rotation_radius = 0.5
@@ -71,14 +71,13 @@ if __name__ == '__main__':
     moveit_commander.roscpp_initialize(sys.argv)
     person_pose = geometry_msgs.msg.PoseStamped()
     person_pose.header.frame_id = "person"
-    scene = moveit_commander.planning_scene_interface.PlanningSceneInterface()
+    # scene = moveit_commander.planning_scene_interface.PlanningSceneInterface()
     # scene.add_cylinder("person", person_pose,1,0.4)
 
-    
 
     while not rospy.is_shutdown():
         time = rospy.Time.now()
-        hand_position = (0.5+rotation_radius*np.cos(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), -0.2+rotation_radius*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), 1.2+0.3*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq*2))
+        hand_position = (0.7+rotation_radius*np.cos(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), -0.2+rotation_radius*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), 1.2+0.3*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq*2))
         br.sendTransform(person_position,
                          person_rotation,
                          time,

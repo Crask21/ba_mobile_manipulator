@@ -13,6 +13,7 @@ from moveit_commander.conversions import pose_to_list
 from math import pi, tau, dist, fabs, cos, sin
 from navigation_via_cost_function.srv import *
 import time
+from std_msgs.msg import String
 
 
 
@@ -54,17 +55,20 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## BEGIN_SUB_TUTORIAL setup
         ##
         ## First initialize `moveit_commander`_ and a `rospy`_ node:
+        print("============ Starting tutorial setup================")
         moveit_commander.roscpp_initialize(sys.argv)
         #rospy.init_node("move_group_python_interface_tutorial", anonymous=True)
 
         ## Instantiate a `RobotCommander`_ object. Provides information such as the robot's
         ## kinematic model and the robot's current joint states
-        robot = moveit_commander.RobotCommander()
+        print("============ Robot description received================")
+        robot = moveit_commander.RobotCommander(robot_description="robot/robot_description")
 
         ## Instantiate a `PlanningSceneInterface`_ object.  This provides a remote interface
         ## for getting, setting, and updating the robot's internal understanding of the
         ## surrounding world:
-        scene = moveit_commander.PlanningSceneInterface()
+        print("============ Waiting for planning scene================")
+        scene = moveit_commander.PlanningSceneInterface(ns="/robot")
 
         ## Instantiate a `MoveGroupCommander`_ object.  This object is an interface
         ## to a planning group (group of joints).  In this tutorial the group is the primary
@@ -73,7 +77,8 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## arm planning group.
         ## This interface can be used to plan and execute motions:
         group_name = "whole_body"
-        move_group = moveit_commander.MoveGroupCommander(group_name)
+        print("============ Waiting for move group================")
+        move_group = moveit_commander.MoveGroupCommander(group_name, robot_description="robot/robot_description",ns="/robot")
 
         ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
         ## trajectories in Rviz:
@@ -264,18 +269,19 @@ def realtime_follow(robot_name):
     #service_client = rospy.ServiceProxy('/cost_opt', get_position)
 
     # ------------------------------ prepare moveit ------------------------------ #
+    print("Initializing moveit-------------------------------------")
     moveitGroup = MoveGroupPythonInterfaceTutorial()
     listener = tf.TransformListener()
     pose_goal = geometry_msgs.msg.Pose()
+    print("Moveit initialized-------------------------------------")
 
-
-    listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.3)) #Wait for transform to be available
+    listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)) #Wait for transform to be available
     # ----------------------------- Perform movements ---------------------------- #
     while not rospy.is_shutdown():
-
+        print("running --------------------------------------")
         time_ = time.time()
-        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.05))
-        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+        listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.05))
+        position, quaternion = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
         pose_goal.position.x = position[0]
         pose_goal.position.y = position[1]
         pose_goal.position.z = position[2]
@@ -285,7 +291,7 @@ def realtime_follow(robot_name):
         pose_goal.orientation.w = quaternion[3]
         # moveitGroup.go_to_pose_goal(pose_goal)
         (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
-        moveitGroup.move_group.execute(plan, wait=False)
+        moveitGroup.move_group.execute(plan, wait=True)
         print("Time to plan: ", time.time()-time_)
         # rospy.sleep(0.05)
         # if(input("Press Enter to continue")==" "):

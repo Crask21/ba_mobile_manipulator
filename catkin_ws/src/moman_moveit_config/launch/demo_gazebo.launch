@@ -10,7 +10,8 @@
   <arg name="world_pose" default="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" doc="Pose to spawn the robot at"/>
 
   <!-- Launch Gazebo and spawn the robot -->
-  <include file="$(dirname)/gazebo.launch" pass_all_args="true"/>
+  <!-- <include file="$(dirname)/gazebo.launch" pass_all_args="true"/> -->
+  <include file="$(find summit_xl_sim_bringup)/launch/summit_xls_panda.launch" pass_all_args="true"/>
 
   <!-- Launch MoveIt -->
   <include file="$(dirname)/demo.launch" pass_all_args="true">
