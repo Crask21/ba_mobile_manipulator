@@ -1,0 +1,20 @@
+<!-- Re-launch the MoveIt Setup Assistant with this configuration package already loaded -->
+<launch>
+
+  <!-- Debug Info -->
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <!-- Run -->
+  <node pkg="moveit_setup_assistant" type="moveit_setup_assistant" name="moveit_setup_assistant"
+<<<<<<< HEAD:catkin_ws/src/summit_xl_common/moveit/panda_moveit_config/launch/setup_assistant.launch
+        args="--config_pkg=panda_moveit_config"
+=======
+        args="--config_pkg=moman_moveit_config"
+>>>>>>> combined_moveit:catkin_ws/src/moman_moveit_config/launch/setup_assistant.launch
+        launch-prefix="$(arg launch_prefix)"
+        required="true"
+        output="screen" />
+
+</launch>
