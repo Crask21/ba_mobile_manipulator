@@ -64,6 +64,7 @@ find_package(Eigen3 REQUIRED)
    FILES
    get_position.srv
    set_position.srv
+   get_goal_configuration.srv
  )
 
 ## Generate actions in the 'action' folder

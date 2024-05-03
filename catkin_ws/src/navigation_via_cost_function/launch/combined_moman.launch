@@ -25,5 +25,9 @@
     
     <!-- <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" /> -->
     
-    <node pkg="navigation_via_cost_function" type="moman_navigation.py" name="moman_node" output="screen" />
+    <node pkg="navigation_via_cost_function" type="moman_navigation.py" name="moman_node" output="screen">
+        <param name="robot_name" value="summit_xl" />
+        <param name="demo" value="$(arg demo)" />
+        <param name="development" value="true" />
+    </node>
 </launch>

@@ -14,6 +14,8 @@ from math import pi, tau, dist, fabs, cos, sin
 from navigation_via_cost_function.srv import *
 import time
 from std_msgs.msg import String
+import argparse
+
 
 
 
@@ -55,20 +57,25 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## BEGIN_SUB_TUTORIAL setup
         ##
         ## First initialize `moveit_commander`_ and a `rospy`_ node:
-        print("============ Starting tutorial setup================")
         moveit_commander.roscpp_initialize(sys.argv)
         #rospy.init_node("move_group_python_interface_tutorial", anonymous=True)
 
         ## Instantiate a `RobotCommander`_ object. Provides information such as the robot's
         ## kinematic model and the robot's current joint states
-        print("============ Robot description received================")
-        robot = moveit_commander.RobotCommander(robot_description="robot/robot_description")
+        if demo == True:
+            ns = ""
+        else:
+            ns = "/robot"
+        if demo == True:
+            robot_description = "robot_description"
+        else:
+            robot_description = "/robot/robot_description"
 
+        robot = moveit_commander.RobotCommander(robot_description=robot_description)
         ## Instantiate a `PlanningSceneInterface`_ object.  This provides a remote interface
         ## for getting, setting, and updating the robot's internal understanding of the
         ## surrounding world:
-        print("============ Waiting for planning scene================")
-        scene = moveit_commander.PlanningSceneInterface(ns="/robot")
+        scene = moveit_commander.PlanningSceneInterface(ns=ns)
 
         ## Instantiate a `MoveGroupCommander`_ object.  This object is an interface
         ## to a planning group (group of joints).  In this tutorial the group is the primary
@@ -77,8 +84,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## arm planning group.
         ## This interface can be used to plan and execute motions:
         group_name = "whole_body"
-        print("============ Waiting for move group================")
-        move_group = moveit_commander.MoveGroupCommander(group_name, robot_description="robot/robot_description",ns="/robot")
+        move_group = moveit_commander.MoveGroupCommander(group_name, robot_description=robot_description,ns=ns)
 
         ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
         ## trajectories in Rviz:
@@ -141,6 +147,10 @@ class MoveGroupPythonInterfaceTutorial(object):
         # we use the class variable rather than the copied state variable
         current_pose = self.move_group.get_current_pose().pose
         return all_close(pose_goal, current_pose, 0.01)
+
+    def go_to_joint_state(self, joint_goal):
+        self.move_group.go(joint_goal, wait=True)
+        self.move_group.stop()
 
 def feedback_callback(feedback):
     #print(feedback)
@@ -263,6 +273,7 @@ def plan_cartesian_path(self, scale=1):
 def realtime_follow(robot_name):
     # -------------------------- Initialize the ROS node ------------------------- #
     rospy.init_node('navigation')
+    print("Demo: ", demo)
 
     # --------------------------- run cost_opt_service --------------------------- #
     # Create a service client
@@ -355,16 +366,54 @@ def log_position_error(robot_name):
         ee_position.append(position)
         rate.sleep()
 
+def run_once(robot_name):
+    # Initialize the ROS node
+    global demo
+    rospy.init_node('navigation')
+    print("Demo: ", demo)
+
+    input("Press Enter to publish goal for robot: {}".format(robot_name))
+    # --------------------------- run cost_opt_service --------------------------- #
+    print("Running cost_opt_service-------------------------------------")
+    # Create a service client
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    # Wait for the service to be ready
+    service_client.wait_for_service()
+    response = service_client()
+
+    print("response: ", response.q_goal, "\t Type: ", type(response.q_goal))
+
+    # ------------------------------ prepare moveit ------------------------------ #
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+
+    moveitGroup.go_to_joint_state(response.q_goal)
+
+    # ----------------------------- Perform movements
+
+
+#TODO: Clean up the ugly ass parser code that doesn't work:
+parser = argparse.ArgumentParser(description='Run the navigation node')
+parser.add_argument('robot_name', type=str, help='The name of the robot to control')
+parser.add_argument('demo', type=bool, help='Used to run demo.launch instead of gazebo')
+# parser.add_argument('development', type=bool, help='Used for testing purposes')
+args = parser.parse_args()
 
 
 
 
 if __name__ == '__main__':
+    
     if len(sys.argv) < 2:
         rospy.logerr('Please specify a robot name as an argument')
     else:
-        robot_name = sys.argv[1]
+        
+        global demo
+        demo = rospy.get_param('demo', False)
         #while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
         #    publish_goal(robot_name)
-        realtime_follow(robot_name)
+        # realtime_follow(robot_name)
+        if demo == True:
+            run_once(args.robot_name)
+        else:
+            realtime_follow(args.robot_name)
         #log_position_error(robot_name)
