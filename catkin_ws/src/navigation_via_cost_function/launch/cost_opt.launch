@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <launch>
+    <arg name="demo" default="true"/>
+
+    <include file="$(find moman_moveit_config)/launch/demo.launch" if="$(arg demo)"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_world" args="0 0 0 0 0 0 world odom 100" if="$(arg demo)" />
+    
+    <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" />
 
     <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" />
     

@@ -14,7 +14,10 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
   tf
+  moveit_core
 )
+
+find_package(Eigen3 REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -108,8 +111,8 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES navigation_via_cost_function
-#  CATKIN_DEPENDS roscpp rospy
-#  DEPENDS system_lib
+ CATKIN_DEPENDS roscpp rospy moveit_core
+ DEPENDS EIGEN3 #system_lib 
 )
 
 ###########
@@ -121,6 +124,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  SYSTEM ${EIGEN3_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -211,3 +215,15 @@ add_executable(cost_opt_service src/cost_opt_service.cpp)
 add_dependencies(cost_opt_service ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(cost_opt_service ${catkin_EXPORTED_TARGETS})
 target_link_libraries(cost_opt_service ${catkin_LIBRARIES})
+
+add_executable(joint_space_goal_finder src/joint_space_goal_finder.cpp)
+add_dependencies(joint_space_goal_finder ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(joint_space_goal_finder ${catkin_EXPORTED_TARGETS})
+target_link_libraries(joint_space_goal_finder ${catkin_LIBRARIES})
+
+
+
+# add_executable(IK_api_tutorial src/IK_api_tutorial.cpp)
+# add_dependencies(IK_api_tutorial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(IK_api_tutorial ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(IK_api_tutorial ${catkin_LIBRARIES})
