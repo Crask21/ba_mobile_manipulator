@@ -46,7 +46,7 @@ if __name__ == '__main__':
     person_position = (1, -3, 0)
     person_rotation = tf.transformations.quaternion_from_euler(0, 0, 0.1)
     person_child_frame_id = "person"
-    person_parent_frame_id = "robot_map"
+    person_parent_frame_id = "world"
 
     hand_position = (0.5, -0.2, 1.2)
     hand_rotation = tf.transformations.quaternion_from_euler(0, 0, -0.2)

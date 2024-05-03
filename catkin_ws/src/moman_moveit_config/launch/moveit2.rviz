@@ -264,6 +264,10 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Loop Animation: true
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -285,7 +289,7 @@ Visualization Manager:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 1
         Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0.009999999776482582
+        Interactive Marker Size: 0.5
         Joint Violation Color: 255; 0; 255
         Planning Group: whole_body
         Query Goal State: true
@@ -501,6 +505,10 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          world:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
@@ -549,12 +557,6 @@ Visualization Manager:
           Value: false
         panda_link8:
           Value: true
-        person:
-          Value: true
-        person_hand:
-          Value: true
-        robot_map:
-          Value: false
         summit_xl_back_left_wheel_link:
           Value: false
         summit_xl_back_right_wheel_link:
@@ -603,6 +605,8 @@ Visualization Manager:
           Value: false
         virtual_link2:
           Value: false
+        world:
+          Value: true
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
@@ -610,7 +614,7 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        robot_map:
+        world:
           odom:
             virtual_link1:
               virtual_link2:
@@ -677,9 +681,6 @@ Visualization Manager:
                     summit_xl_rear_laser_base_link:
                       summit_xl_rear_laser_link:
                         {}
-          person:
-            person_hand:
-              {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -698,7 +699,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 8.064730644226074
+      Distance: 6.245327472686768
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -706,9 +707,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.75
       Focal Point:
-        X: -0.10000000149011612
-        Y: 0.25
-        Z: 0.30000001192092896
+        X: -0.529161274433136
+        Y: 0.09516912698745728
+        Z: 0.7724614143371582
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -716,7 +717,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.5
       Target Frame: odom
-      Yaw: -0.6232355833053589
+      Yaw: 5.659949779510498
     Saved: ~
 Window Geometry:
   Displays:
@@ -735,4 +736,4 @@ Window Geometry:
     collapsed: false
   Width: 1291
   X: 454
-  Y: 27
+  Y: 0
