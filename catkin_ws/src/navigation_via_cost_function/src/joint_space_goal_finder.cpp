@@ -7,6 +7,7 @@
 #include "amoeba.h"
 #include <vector>
 #include "navigation_via_cost_function/get_position.h"
+#include "navigation_via_cost_function/get_goal_configuration.h"
 #include <fstream>
 #include <string>
 
@@ -91,8 +92,8 @@ Doub CostFunction(const VecDoub &desired)
 }
 
 /* ----------------------------- Service callback ----------------------------- */
-bool optimize(navigation_via_cost_function::get_position::Request &req,
-              navigation_via_cost_function::get_position::Response &res)
+bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req,
+              navigation_via_cost_function::get_goal_configuration::Response &res)
 {
     std::string world_name = "world";
 
@@ -123,10 +124,9 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
         ROS_ERROR("%s", ex.what());
         ros::Duration(1.0).sleep();
     }
-    std::cout << transform.getOrigin().x() << std::endl;
-    std::cout << transform.getOrigin().y() << std::endl;
-    std::cout << transform.getOrigin().z() << std::endl;
-
+    goal[0] = transform.getOrigin().x();
+    goal[1] = transform.getOrigin().y();
+    goal[2] = transform.getOrigin().z();
     tf::Quaternion quat = transform.getRotation();
     tf::Matrix3x3 mat(quat);
     double roll, pitch, yaw;
@@ -147,8 +147,8 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
         ROS_ERROR("%s", ex.what());
         ros::Duration(1.0).sleep();
     }
-    start_[0] = transform.getOrigin().x();
-    start_[1] = transform.getOrigin().y();
+    start[0] = transform.getOrigin().x();
+    start[1] = transform.getOrigin().y();
 
     std::cout << "Person's position: " << OP_pos[0] << " " << OP_pos[1] << " " << OP_pos[2] << std::endl;
     std::cout << "Person's hand position: " << goal[0] << " " << goal[1] << std::endl;
@@ -181,9 +181,11 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
     service_request.ik_request.pose_stamped.pose.orientation.z = goal[5];
 
     /* Call the service */
+    std::cout << "Calling service..." << std::endl;
     service_client.call(service_request, service_response);
-    ROS_INFO_STREAM(
-        "Result: " << ((service_response.error_code.val == service_response.error_code.SUCCESS) ? "True " : "False ")
+    std::cout << "Service called..." << std::endl;
+    //ROS_INFO_STREAM( \
+        "Result: " << ((service_response.error_code.val == service_response.error_code.SUCCESS) ? "True " : "False ")\
                    << service_response.error_code.val);
 
     /* ----------------------- Print optimization results ----------------------- */
@@ -193,19 +195,16 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
     std::cout << "x: " << C_opt[0] << std::endl;
     std::cout << "y: " << C_opt[1] << std::endl;
     std::cout << "theta: " << C_opt[2] << std::endl;
-    std::cout << "panda_link0: " << service_response.solution.joint_state.name[0] << std::endl;
-    std::cout << "panda_link1: " << service_response.solution.joint_state.name[1] << std::endl;
-    std::cout << "panda_link2: " << service_response.solution.joint_state.name[2] << std::endl;
-    std::cout << "panda_link3: " << service_response.solution.joint_state.name[3] << std::endl;
-    std::cout << "panda_link4: " << service_response.solution.joint_state.name[4] << std::endl;
-    std::cout << "panda_link5: " << service_response.solution.joint_state.name[5] << std::endl;
-    std::cout << "panda_link6: " << service_response.solution.joint_state.name[6] << std::endl;
+    std::cout << "panda_joint0: " << service_response.solution.joint_state.position[3] << std::endl;
+    std::cout << "panda_joint1: " << service_response.solution.joint_state.position[4] << std::endl;
+    std::cout << "panda_joint2: " << service_response.solution.joint_state.position[5] << std::endl;
+    std::cout << "panda_joint3: " << service_response.solution.joint_state.position[6] << std::endl;
+    std::cout << "panda_joint4: " << service_response.solution.joint_state.position[7] << std::endl;
+    std::cout << "panda_joint5: " << service_response.solution.joint_state.position[8] << std::endl;
+    std::cout << "panda_joint6: " << service_response.solution.joint_state.position[9] << std::endl;
 
+    res.q_goal = {C_opt[0], C_opt[1], C_opt[2], service_response.solution.joint_state.position[3], service_response.solution.joint_state.position[4], service_response.solution.joint_state.position[5], service_response.solution.joint_state.position[6], service_response.solution.joint_state.position[7], service_response.solution.joint_state.position[8], service_response.solution.joint_state.position[9]};
     /* ----------------------- Return the service response ----------------------- */
-
-    res.x = C_opt[0];
-    res.y = C_opt[1];
-    res.theta = C_opt[2];
 
     return true;
 }
