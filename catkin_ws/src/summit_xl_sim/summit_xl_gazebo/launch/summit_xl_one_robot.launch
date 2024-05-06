@@ -16,7 +16,7 @@
     <arg name="robot_ekf_localization_mode" default="odom" />
     <arg name="map_file" default="empty/empty.yaml" />
     <arg name="movebase_local_planner" default="teb" />
-    <!-- odom, complete (including gps)-->
+    <!-- odom, complete (including gps) -->
     <arg name="omni_drive" default="false" />
     <arg name="ros_planar_move_plugin" default="false" />
     <arg name="use_gpu_for_simulation" default="false" /><!-- use_gpu_for_simulation -->

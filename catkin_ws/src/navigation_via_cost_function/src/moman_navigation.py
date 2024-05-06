@@ -16,7 +16,7 @@ import time
 from std_msgs.msg import String
 import argparse
 
-
+# import copuy
 
 
 def all_close(goal, actual, tolerance):
@@ -48,6 +48,7 @@ def all_close(goal, actual, tolerance):
 
     return True
 
+
 class MoveGroupPythonInterfaceTutorial(object):
     """MoveGroupPythonInterfaceTutorial"""
 
@@ -58,7 +59,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         ##
         ## First initialize `moveit_commander`_ and a `rospy`_ node:
         moveit_commander.roscpp_initialize(sys.argv)
-        #rospy.init_node("move_group_python_interface_tutorial", anonymous=True)
+        # rospy.init_node("move_group_python_interface_tutorial", anonymous=True)
 
         ## Instantiate a `RobotCommander`_ object. Provides information such as the robot's
         ## kinematic model and the robot's current joint states
@@ -84,7 +85,9 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## arm planning group.
         ## This interface can be used to plan and execute motions:
         group_name = "whole_body"
-        move_group = moveit_commander.MoveGroupCommander(group_name, robot_description=robot_description,ns=ns)
+        move_group = moveit_commander.MoveGroupCommander(
+            group_name, robot_description=robot_description, ns=ns
+        )
 
         ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
         ## trajectories in Rviz:
@@ -131,7 +134,6 @@ class MoveGroupPythonInterfaceTutorial(object):
 
         self.move_group.set_pose_target(pose_goal)
 
-
         ## Now, we call the planner to compute the plan and execute it.
         # `go()` returns a boolean indicating whether the planning and execution was successful.
         success = self.move_group.go(wait=True)
@@ -140,7 +142,6 @@ class MoveGroupPythonInterfaceTutorial(object):
         # It is always good to clear your targets after planning with poses.
         # Note: there is no equivalent function for clear_joint_value_targets().
         self.move_group.clear_pose_targets()
-
 
         # For testing:
         # Note that since this section of code will not be included in the tutorials
@@ -152,17 +153,19 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.move_group.go(joint_goal, wait=True)
         self.move_group.stop()
 
+
 def feedback_callback(feedback):
-    #print(feedback)
+    # print(feedback)
     pass
+
 
 def publish_goal(robot_name):
     # Initialize the ROS node
-    rospy.init_node('navigation')
+    rospy.init_node("navigation")
 
     # --------------------------- run cost_opt_service --------------------------- #
     # Create a service client
-    service_client = rospy.ServiceProxy('/cost_opt', get_position)
+    service_client = rospy.ServiceProxy("/cost_opt", get_position)
     # Wait for the service to be ready
     service_client.wait_for_service()
     response = service_client()
@@ -171,10 +174,14 @@ def publish_goal(robot_name):
     moveitGroup = MoveGroupPythonInterfaceTutorial()
 
     listener = tf.TransformListener()
-    listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.1))
-    position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
-    #print("Position and quaternion of person_hand with respect to robot_map")
-    #print(position, quaternion)
+    listener.waitForTransform(
+        "/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.1)
+    )
+    position, quaternion = listener.lookupTransform(
+        "/robot_map", "/person_hand", rospy.Time(0)
+    )
+    # print("Position and quaternion of person_hand with respect to robot_map")
+    # print(position, quaternion)
 
     # listener.waitForTransform("/panda_link0", "/robot_odom", rospy.Time(0), rospy.Duration(4.0))
     # position_base_link0, quaternion_base_link0 = listener.lookupTransform("/panda_link0", "/robot_odom", rospy.Time(0))
@@ -182,12 +189,12 @@ def publish_goal(robot_name):
     # print(position_base_link0, quaternion_base_link0)
 
     # Panda arm offset from summit_base_link = [0.2 -0.15 0.580] (+0.127 for wheel radius)
-    panda_arm_offset = [0.2, 0.15, 0.580+0.127]
+    panda_arm_offset = [0.2, 0.15, 0.580 + 0.127]
     pose_goal = geometry_msgs.msg.Pose()
-    x_temp = position[0] - (response.x + panda_arm_offset[0]*cos(response.theta))
-    y_temp = position[1] - (response.y + panda_arm_offset[1]*sin(response.theta))
-    pose_goal.position.x = x_temp*cos(-response.theta) - y_temp*sin(-response.theta)
-    pose_goal.position.y = x_temp*sin(-response.theta) + y_temp*cos(-response.theta)
+    x_temp = position[0] - (response.x + panda_arm_offset[0] * cos(response.theta))
+    y_temp = position[1] - (response.y + panda_arm_offset[1] * sin(response.theta))
+    pose_goal.position.x = x_temp * cos(-response.theta) - y_temp * sin(-response.theta)
+    pose_goal.position.y = x_temp * sin(-response.theta) + y_temp * cos(-response.theta)
     pose_goal.position.z = position[2] - panda_arm_offset[2]
     orientation = tf.transformations.quaternion_from_euler(pi, 0, 0)
     pose_goal.orientation.x = orientation[0]
@@ -195,15 +202,9 @@ def publish_goal(robot_name):
     pose_goal.orientation.z = orientation[2]
     pose_goal.orientation.w = orientation[3]
 
-    #print("Pose goal: ", pose_goal)
+    # print("Pose goal: ", pose_goal)
 
-
-
-
-
-
-
-    client = actionlib.SimpleActionClient('/robot/move_base', MoveBaseAction)
+    client = actionlib.SimpleActionClient("/robot/move_base", MoveBaseAction)
     # waits until the action server is up and running
     client.wait_for_server()
 
@@ -212,7 +213,7 @@ def publish_goal(robot_name):
     goal.target_pose.header.stamp = rospy.Time.now()
 
     # Set the goal position (example: x=1.0, y=2.0, z=0.0)
-    goal.target_pose.header.frame_id = 'robot_map'
+    goal.target_pose.header.frame_id = "robot_map"
     goal.target_pose.pose.position.x = response.x
     goal.target_pose.pose.position.y = response.y
     quaternion = tf.transformations.quaternion_from_euler(0, 0, response.theta)
@@ -221,63 +222,24 @@ def publish_goal(robot_name):
     goal.target_pose.pose.orientation.z = quaternion[2]
     goal.target_pose.pose.orientation.w = quaternion[3]
 
-
     # Publish the goal
-    #publisher.publish(goal)
+    # publisher.publish(goal)
     # ----------------------------- Perform movements ---------------------------- #
     client.send_goal(goal, feedback_cb=feedback_callback)
     moveitGroup.go_to_pose_goal(pose_goal)
     client.wait_for_result()
 
+    # rospy.loginfo('Published goal position for robot: {}'.format(robot_name))
 
-    #rospy.loginfo('Published goal position for robot: {}'.format(robot_name))
-
-def plan_cartesian_path(self, scale=1):
-        move_group = self.move_group
-
-        ## BEGIN_SUB_TUTORIAL plan_cartesian_path
-        ##
-        ## Cartesian Paths
-        ## ^^^^^^^^^^^^^^^
-        ## You can plan a Cartesian path directly by specifying a list of waypoints
-        ## for the end-effector to go through. If executing  interactively in a
-        ## Python shell, set scale = 1.0.
-        ##
-        waypoints = []
-
-        wpose = move_group.get_current_pose().pose
-        wpose.position.z -= scale * 0.1  # First move up (z)
-        wpose.position.y += scale * 0.2  # and sideways (y)
-        waypoints.append(copy.deepcopy(wpose))
-
-        wpose.position.x += scale * 0.1  # Second move forward/backwards in (x)
-        waypoints.append(copy.deepcopy(wpose))
-
-        wpose.position.y -= scale * 0.1  # Third move sideways (y)
-        waypoints.append(copy.deepcopy(wpose))
-
-        # We want the Cartesian path to be interpolated at a resolution of 1 cm
-        # which is why we will specify 0.01 as the eef_step in Cartesian
-        # translation.  We will disable the jump threshold by setting it to 0.0,
-        # ignoring the check for infeasible jumps in joint space, which is sufficient
-        # for this tutorial.
-        (plan, fraction) = move_group.compute_cartesian_path(
-            waypoints, 0.01, 0.0  # waypoints to follow  # eef_step
-        )  # jump_threshold
-
-        # Note: We are just planning, not asking move_group to actually move the robot yet:
-        return plan, fraction
-
-        ## END_SUB_TUTORIAL
 
 def realtime_follow(robot_name):
     # -------------------------- Initialize the ROS node ------------------------- #
-    rospy.init_node('navigation')
+    rospy.init_node("navigation")
     print("Demo: ", demo)
 
     # --------------------------- run cost_opt_service --------------------------- #
     # Create a service client
-    #service_client = rospy.ServiceProxy('/cost_opt', get_position)
+    # service_client = rospy.ServiceProxy('/cost_opt', get_position)
 
     # ------------------------------ prepare moveit ------------------------------ #
     print("Initializing moveit-------------------------------------")
@@ -286,13 +248,19 @@ def realtime_follow(robot_name):
     pose_goal = geometry_msgs.msg.Pose()
     print("Moveit initialized-------------------------------------")
 
-    listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)) #Wait for transform to be available
+    listener.waitForTransform(
+        "/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)
+    )  # Wait for transform to be available
     # ----------------------------- Perform movements ---------------------------- #
     while not rospy.is_shutdown():
         print("running --------------------------------------")
         time_ = time.time()
-        listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.05))
-        position, quaternion = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
+        listener.waitForTransform(
+            "/world", "/person_hand", rospy.Time(0), rospy.Duration(0.05)
+        )
+        position, quaternion = listener.lookupTransform(
+            "/world", "/person_hand", rospy.Time(0)
+        )
         pose_goal.position.x = position[0]
         pose_goal.position.y = position[1]
         pose_goal.position.z = position[2]
@@ -301,15 +269,17 @@ def realtime_follow(robot_name):
         pose_goal.orientation.z = quaternion[2]
         pose_goal.orientation.w = quaternion[3]
         # moveitGroup.go_to_pose_goal(pose_goal)
-        (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+        (plan, fraction) = moveitGroup.move_group.compute_cartesian_path(
+            [pose_goal], 0.01, 0.0
+        )
         moveitGroup.move_group.execute(plan, wait=True)
-        print("Time to plan: ", time.time()-time_)
+        print("Time to plan: ", time.time() - time_)
         # rospy.sleep(0.05)
         # if(input("Press Enter to continue")==" "):
         #     moveitGroup.move_group.execute(plan, wait=True)
 
-def log_position_error(robot_name):
 
+def log_position_error(robot_name):
 
     # -------------------- Prepare person hand at set position ------------------- #
     req = set_positionRequest()
@@ -317,9 +287,9 @@ def log_position_error(robot_name):
     req.y = -1
     req.z = 0
     req.theta = 0
-    person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    person_position_service = rospy.ServiceProxy("update_person_position", set_position)
     person_position_service.call(req)
-    hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+    hand_position_service = rospy.ServiceProxy("update_hand_position", set_position)
     hand_position = (0.4, -0.2, 1.2)
     req.x = hand_position[0]
     req.y = hand_position[1]
@@ -328,28 +298,38 @@ def log_position_error(robot_name):
     hand_position_service.call(req)
     publish_goal(robot_name)
 
-
     input("Wait for keypress")
 
     # ---------- prepare data logging of hand and end effector position ---------- #
-    log_duration = 10 #seconds
+    log_duration = 10  # seconds
     rate = rospy.Rate(20)
     hand_position = []
     ee_position = []
 
-
     listener = tf.TransformListener()
-    listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-    position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+    listener.waitForTransform(
+        "/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025)
+    )
+    position, quaternion = listener.lookupTransform(
+        "/robot_map", "/person_hand", rospy.Time(0)
+    )
 
     start_time = rospy.Time.now().secs
     time = rospy.Time.secs
     while time - start_time < 1:
-        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+        listener.waitForTransform(
+            "/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025)
+        )
+        position, quaternion = listener.lookupTransform(
+            "/robot_map", "/person_hand", rospy.Time(0)
+        )
         hand_position.append(position)
-        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
+        listener.waitForTransform(
+            "/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025)
+        )
+        position, quaternion = listener.lookupTransform(
+            "/robot_map", "/panda_link8", rospy.Time(0)
+        )
         ee_position.append(position)
         rate.sleep()
 
@@ -358,25 +338,34 @@ def log_position_error(robot_name):
     publish_goal(robot_name)
 
     while time - start_time < log_duration:
-        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
+        listener.waitForTransform(
+            "/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025)
+        )
+        position, quaternion = listener.lookupTransform(
+            "/robot_map", "/person_hand", rospy.Time(0)
+        )
         hand_position.append(position)
-        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
+        listener.waitForTransform(
+            "/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025)
+        )
+        position, quaternion = listener.lookupTransform(
+            "/robot_map", "/panda_link8", rospy.Time(0)
+        )
         ee_position.append(position)
         rate.sleep()
+
 
 def run_once(robot_name):
     # Initialize the ROS node
     global demo
-    rospy.init_node('navigation')
+    rospy.init_node("navigation")
     print("Demo: ", demo)
 
     input("Press Enter to publish goal for robot: {}".format(robot_name))
     # --------------------------- run cost_opt_service --------------------------- #
     print("Running cost_opt_service-------------------------------------")
     # Create a service client
-    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    service_client = rospy.ServiceProxy("/cost_opt", get_goal_configuration)
     # Wait for the service to be ready
     service_client.wait_for_service()
     response = service_client()
@@ -391,29 +380,32 @@ def run_once(robot_name):
     # ----------------------------- Perform movements
 
 
-#TODO: Clean up the ugly ass parser code that doesn't work:
-parser = argparse.ArgumentParser(description='Run the navigation node')
-parser.add_argument('robot_name', type=str, help='The name of the robot to control')
-parser.add_argument('demo', type=bool, help='Used to run demo.launch instead of gazebo')
+# TODO: Clean up the ugly ass parser code that doesn't work:
+parser = argparse.ArgumentParser(description="Run the navigation node")
+parser.add_argument("robot_name", type=str, help="The name of the robot to control")
+parser.add_argument("demo", type=bool, help="Used to run demo.launch instead of gazebo")
 # parser.add_argument('development', type=bool, help='Used for testing purposes')
 args = parser.parse_args()
 
 
+def object_callback(req):
+    print("Object detected: ", req.data)
+    return "Object detected"
 
 
-if __name__ == '__main__':
-    
+if __name__ == "__main__":
+
     if len(sys.argv) < 2:
-        rospy.logerr('Please specify a robot name as an argument')
+        rospy.logerr("Please specify a robot name as an argument")
     else:
-        
+
         global demo
-        demo = rospy.get_param('demo', False)
-        #while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
+        demo = rospy.get_param("demo", False)
+        # while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
         #    publish_goal(robot_name)
         # realtime_follow(robot_name)
         if demo == True:
             run_once(args.robot_name)
         else:
             realtime_follow(args.robot_name)
-        #log_position_error(robot_name)
+        # log_position_error(robot_name)
