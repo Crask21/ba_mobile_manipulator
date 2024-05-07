@@ -15,6 +15,9 @@ from navigation_via_cost_function.srv import *
 import time
 from std_msgs.msg import String
 import argparse
+from gazebo_msgs.srv import *
+import rospkg
+
 
 # import copuy
 
@@ -129,6 +132,13 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.planning_frame = planning_frame
         self.eef_link = eef_link
         self.group_names = group_names
+        self.obst_service_server = rospy.Service(
+            "/add_obstacle", spawn_obstacle, self.spawn_obstacle_callback
+        )
+        self.sdf_service_client = rospy.ServiceProxy(
+            "/gazebo/spawn_sdf_model", SpawnModel
+        )
+        self.rpg = rospkg.RosPack()
 
     def go_to_pose_goal(self, pose_goal):
 
@@ -153,10 +163,40 @@ class MoveGroupPythonInterfaceTutorial(object):
         self.move_group.go(joint_goal, wait=True)
         self.move_group.stop()
 
+    def spawn_obstacle_callback(self, req):
+        # spawn in MoveIt
+        box_pose = geometry_msgs.msg.PoseStamped()
+        box_pose.header.frame_id = "world"
+        box_pose.pose.position.x = req.position.x
+        box_pose.pose.position.y = req.position.y
+        box_pose.pose.position.z = req.position.z + 0.5 * 0.5
+        name = req.object_name
+        self.scene.add_box(name, box_pose, (1.5, 0.8, 0.5))
 
-def feedback_callback(feedback):
-    # print(feedback)
-    pass
+        # spawn in Gazebo
+        sdf_path = (
+            self.rpg.get_path("navigation_via_cost_function") + "/models/table.sdf"
+        )
+        f = open(
+            sdf_path,
+            "r",
+        )
+        sdf = f.read()
+        print(sdf)
+
+        request = SpawnModelRequest()
+        request.model_name = req.object_name
+        request.model_xml = sdf
+        request.initial_pose = geometry_msgs.msg.Pose()
+        request.initial_pose.position.x = req.position.x
+        request.initial_pose.position.y = req.position.y
+        request.initial_pose.position.z = req.position.z - 0.5
+        request.reference_frame = "world"
+        self.sdf_service_client(request)
+
+        res = spawn_obstacleResponse()
+        res.success = True
+        return res
 
 
 def publish_goal(robot_name):
@@ -246,11 +286,40 @@ def realtime_follow(robot_name):
     moveitGroup = MoveGroupPythonInterfaceTutorial()
     listener = tf.TransformListener()
     pose_goal = geometry_msgs.msg.Pose()
-    print("Moveit initialized-------------------------------------")
+    print("Moveit initialized--------------------------------------")
 
     listener.waitForTransform(
         "/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)
     )  # Wait for transform to be available
+    box_pose = geometry_msgs.msg.PoseStamped()
+    box_pose.header.frame_id = "world"
+    box_pose.pose.position.x = 1
+    box_pose.pose.position.y = 1
+    box_pose.pose.position.z = 0.5 * 0.5
+    name = "table0"
+    moveitGroup.scene.add_box(name, box_pose, (1.7, 0.9, 0.7))
+
+    # spawn in Gazebo
+    sdf_path = (
+        moveitGroup.rpg.get_path("navigation_via_cost_function") + "/models/table.sdf"
+    )
+    f = open(
+        sdf_path,
+        "r",
+    )
+    sdf = f.read()
+    print(sdf)
+
+    request = SpawnModelRequest()
+    request.model_name = "table"
+    request.model_xml = sdf
+    request.initial_pose = geometry_msgs.msg.Pose()
+    request.initial_pose.position.x = 1
+    request.initial_pose.position.y = 1
+    request.initial_pose.position.z = -0.5
+    request.reference_frame = "world"
+    moveitGroup.sdf_service_client(request)
+
     # ----------------------------- Perform movements ---------------------------- #
     while not rospy.is_shutdown():
         print("running --------------------------------------")
@@ -268,15 +337,12 @@ def realtime_follow(robot_name):
         pose_goal.orientation.y = quaternion[1]
         pose_goal.orientation.z = quaternion[2]
         pose_goal.orientation.w = quaternion[3]
-        # moveitGroup.go_to_pose_goal(pose_goal)
-        (plan, fraction) = moveitGroup.move_group.compute_cartesian_path(
-            [pose_goal], 0.01, 0.0
-        )
-        moveitGroup.move_group.execute(plan, wait=True)
-        print("Time to plan: ", time.time() - time_)
-        # rospy.sleep(0.05)
-        # if(input("Press Enter to continue")==" "):
-        #     moveitGroup.move_group.execute(plan, wait=True)
+        moveitGroup.go_to_pose_goal(pose_goal)
+        # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path(
+        #    [pose_goal], 0.01, 0.0
+        # )
+        # moveitGroup.move_group.execute(plan, wait=True)
+        # print("Time to plan: ", time.time() - time_)
 
 
 def log_position_error(robot_name):
@@ -386,11 +452,6 @@ parser.add_argument("robot_name", type=str, help="The name of the robot to contr
 parser.add_argument("demo", type=bool, help="Used to run demo.launch instead of gazebo")
 # parser.add_argument('development', type=bool, help='Used for testing purposes')
 args = parser.parse_args()
-
-
-def object_callback(req):
-    print("Object detected: ", req.data)
-    return "Object detected"
 
 
 if __name__ == "__main__":

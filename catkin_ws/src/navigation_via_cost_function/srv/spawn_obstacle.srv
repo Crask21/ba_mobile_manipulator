@@ -1,6 +1,6 @@
 geometry_msgs/Point position
 float64 orientation
-float64 object_id
+string object_name
 # 0: box
 # 1: cylinder
 # 2: sphere

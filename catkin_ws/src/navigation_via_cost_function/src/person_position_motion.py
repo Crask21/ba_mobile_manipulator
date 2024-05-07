@@ -1,4 +1,4 @@
-#!/usr/bin/env python  
+#!/usr/bin/env python
 import rospy
 import numpy as np
 import tf
@@ -15,6 +15,7 @@ from std_msgs.msg import String
 person_position_service = None
 hand_position_service = None
 
+
 def handle_person_position(req):
     global person_position, person_rotation
     person_position = (req.x, req.y, req.z)
@@ -22,6 +23,7 @@ def handle_person_position(req):
     resp = set_positionResponse()
     resp.success = True
     return resp
+
 
 def handle_hand_position(req):
     global hand_position, hand_rotation
@@ -31,27 +33,31 @@ def handle_hand_position(req):
     resp.success = True
     return resp
 
+
 def start_services():
     global person_position_service, hand_position_service
-    person_position_service = rospy.Service('update_person_position', set_position, handle_person_position)
-    hand_position_service = rospy.Service('update_hand_position', set_position, handle_hand_position)
+    person_position_service = rospy.Service(
+        "update_person_position", set_position, handle_person_position
+    )
+    hand_position_service = rospy.Service(
+        "update_hand_position", set_position, handle_hand_position
+    )
+
 
 def publish_person_position():
     global person_position, person_rotation
-    br.sendTransform(person_position,
-                     person_rotation,
-                     rospy.Time.now(),
-                     "person",
-                     "odom")
+    br.sendTransform(
+        person_position, person_rotation, rospy.Time.now(), "person", "odom"
+    )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     global person_position, hand_position
     global person_rotation, hand_rotation
-    rospy.init_node('person_broadcaster')
+    rospy.init_node("person_broadcaster")
     br = tf.TransformBroadcaster()
-    rospy.wait_for_message('/tf', TFMessage)
+    rospy.wait_for_message("/tf", TFMessage)
     rate = rospy.Rate(50.0)
-    
 
     person_position = (1, -2.5, 0)
     person_rotation = tf.transformations.quaternion_from_euler(0, 0, 0.1)
@@ -64,7 +70,7 @@ if __name__ == '__main__':
     hand_parent_frame_id = "person"
 
     start_services()
-    
+
     rotation_freq = 0.02
     rotation_radius = 0.5
 
@@ -74,22 +80,35 @@ if __name__ == '__main__':
     # scene = moveit_commander.planning_scene_interface.PlanningSceneInterface()
     # scene.add_cylinder("person", person_pose,1,0.4)
 
-
     while not rospy.is_shutdown():
         time = rospy.Time.now()
-        hand_position = (0.7+rotation_radius*np.cos(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), -0.2+rotation_radius*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), 1.2+0.3*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq*2))
-        br.sendTransform(person_position,
-                         person_rotation,
-                         time,
-                         person_child_frame_id,
-                         person_parent_frame_id)
-        
-        br.sendTransform(hand_position,
-                         hand_rotation,
-                         time,
-                         hand_child_frame_id,
-                         hand_parent_frame_id)
-        
+        hand_position = (
+            0.7
+            + rotation_radius
+            * np.cos(int(time.__str__()) / np.power(10, 9) * np.pi * 2 * rotation_freq),
+            -0.2
+            + rotation_radius
+            * np.sin(int(time.__str__()) / np.power(10, 9) * np.pi * 2 * rotation_freq),
+            1.2
+            + 0.3
+            * np.sin(
+                int(time.__str__()) / np.power(10, 9) * np.pi * 2 * rotation_freq * 2
+            ),
+        )
+        br.sendTransform(
+            person_position,
+            person_rotation,
+            time,
+            person_child_frame_id,
+            person_parent_frame_id,
+        )
 
+        br.sendTransform(
+            hand_position,
+            hand_rotation,
+            time,
+            hand_child_frame_id,
+            hand_parent_frame_id,
+        )
 
         rate.sleep()

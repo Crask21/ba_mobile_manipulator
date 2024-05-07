@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   tf
   moveit_core
+  geometry_msgs
+  gazebo_msgs
 )
 
 find_package(Eigen3 REQUIRED)
@@ -65,6 +67,7 @@ find_package(Eigen3 REQUIRED)
    get_position.srv
    set_position.srv
    get_goal_configuration.srv
+   spawn_obstacle.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -78,6 +81,7 @@ find_package(Eigen3 REQUIRED)
  generate_messages(
    DEPENDENCIES
    std_msgs  # Or other packages containing msgs
+   geometry_msgs
  )
 
 ################################################
