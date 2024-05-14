@@ -1,9 +1,0 @@
-geometry_msgs/Point position
-float64 orientation
-string object_name
-# 0: box
-# 1: cylinder
-# 2: sphere
-# 3: table
----
-bool success
