@@ -21,7 +21,7 @@ Doub goal_[2] = {0.0, 0.0}; // x, y
 VecDoub goal(2, goal_);
 
 Doub Manipulation_dist = 0.5;
-Doub obst_dist = 0.3;
+Doub obst_dist = 0.8;
 Doub obst_strength = 1.0;
 
 vector<vector<Doub>> obstacles = {{OP_pos[0], OP_pos[1]}};

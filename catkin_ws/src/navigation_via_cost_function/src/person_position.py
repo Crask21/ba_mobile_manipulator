@@ -43,8 +43,8 @@ if __name__ == '__main__':
     rate = rospy.Rate(10.0)
     
 
-    person_position = (1, -3, 0)
-    person_rotation = tf.transformations.quaternion_from_euler(0, 0, 0.1)
+    person_position = (9, -0.6, 0)
+    person_rotation = tf.transformations.quaternion_from_euler(0, 0, 3.14/4)
     person_child_frame_id = "person"
     person_parent_frame_id = "world"
 

@@ -8,13 +8,19 @@ import sys
 import tf
 import moveit_commander
 import moveit_msgs.msg
+from moveit_msgs.msg import RobotState
+from sensor_msgs.msg import JointState
+
 import geometry_msgs.msg
 from moveit_commander.conversions import pose_to_list
 from math import pi, tau, dist, fabs, cos, sin
 from navigation_via_cost_function.srv import *
 import time
-from std_msgs.msg import String
+from std_msgs.msg import String, Header
 import argparse
+import random
+import numpy as np
+import csv
 
 
 
@@ -76,6 +82,7 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## for getting, setting, and updating the robot's internal understanding of the
         ## surrounding world:
         scene = moveit_commander.PlanningSceneInterface(ns=ns)
+        # scene.acm_set_allowed()
 
         ## Instantiate a `MoveGroupCommander`_ object.  This object is an interface
         ## to a planning group (group of joints).  In this tutorial the group is the primary
@@ -85,6 +92,8 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## This interface can be used to plan and execute motions:
         group_name = "whole_body"
         move_group = moveit_commander.MoveGroupCommander(group_name, robot_description=robot_description,ns=ns)
+        # move_group.allow_looking(True)
+        move_group.allow_replanning(True)
 
         ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
         ## trajectories in Rviz:
@@ -232,43 +241,6 @@ def publish_goal(robot_name):
 
     #rospy.loginfo('Published goal position for robot: {}'.format(robot_name))
 
-def plan_cartesian_path(self, scale=1):
-        move_group = self.move_group
-
-        ## BEGIN_SUB_TUTORIAL plan_cartesian_path
-        ##
-        ## Cartesian Paths
-        ## ^^^^^^^^^^^^^^^
-        ## You can plan a Cartesian path directly by specifying a list of waypoints
-        ## for the end-effector to go through. If executing  interactively in a
-        ## Python shell, set scale = 1.0.
-        ##
-        waypoints = []
-
-        wpose = move_group.get_current_pose().pose
-        wpose.position.z -= scale * 0.1  # First move up (z)
-        wpose.position.y += scale * 0.2  # and sideways (y)
-        waypoints.append(copy.deepcopy(wpose))
-
-        wpose.position.x += scale * 0.1  # Second move forward/backwards in (x)
-        waypoints.append(copy.deepcopy(wpose))
-
-        wpose.position.y -= scale * 0.1  # Third move sideways (y)
-        waypoints.append(copy.deepcopy(wpose))
-
-        # We want the Cartesian path to be interpolated at a resolution of 1 cm
-        # which is why we will specify 0.01 as the eef_step in Cartesian
-        # translation.  We will disable the jump threshold by setting it to 0.0,
-        # ignoring the check for infeasible jumps in joint space, which is sufficient
-        # for this tutorial.
-        (plan, fraction) = move_group.compute_cartesian_path(
-            waypoints, 0.01, 0.0  # waypoints to follow  # eef_step
-        )  # jump_threshold
-
-        # Note: We are just planning, not asking move_group to actually move the robot yet:
-        return plan, fraction
-
-        ## END_SUB_TUTORIAL
 
 def realtime_follow(robot_name):
     # -------------------------- Initialize the ROS node ------------------------- #
@@ -293,6 +265,7 @@ def realtime_follow(robot_name):
         time_ = time.time()
         listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.05))
         position, quaternion = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
+        quaternion= tf.transformations.quaternion_multiply(quaternion, tf.transformations.quaternion_about_axis(pi, [1, 0, 0]))
         pose_goal.position.x = position[0]
         pose_goal.position.y = position[1]
         pose_goal.position.z = position[2]
@@ -300,6 +273,7 @@ def realtime_follow(robot_name):
         pose_goal.orientation.y = quaternion[1]
         pose_goal.orientation.z = quaternion[2]
         pose_goal.orientation.w = quaternion[3]
+        
         # moveitGroup.go_to_pose_goal(pose_goal)
         (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
         moveitGroup.move_group.execute(plan, wait=True)
@@ -385,10 +359,180 @@ def run_once(robot_name):
 
     # ------------------------------ prepare moveit ------------------------------ #
     moveitGroup = MoveGroupPythonInterfaceTutorial()
-
-    moveitGroup.go_to_joint_state(response.q_goal)
+    #moveitGroup.go_to_joint_state(response.q_goal)
+    
 
     # ----------------------------- Perform movements
+
+def run_once_go_to_pose():
+    # Initialize the ROS node
+    global demo
+    rospy.init_node('navigation')
+    print("Demo: ", demo)
+    input("Press Enter to publish goal for robot: {}".format("robot"))
+
+    # ------------------------------ prepare moveit ------------------------------ #
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+
+    # -------------------- Prepare person hand at set position ------------------- #
+    listener = tf.TransformListener()
+    listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3))
+
+    
+    position, quaternion = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
+    quaternion= tf.transformations.quaternion_multiply(quaternion, tf.transformations.quaternion_about_axis(pi, [1, 0, 0]))
+
+    pose_goal = geometry_msgs.msg.Pose()
+    pose_goal.position.x = position[0]
+    pose_goal.position.y = position[1]
+    pose_goal.position.z = position[2]
+    pose_goal.orientation.x = quaternion[0]
+    pose_goal.orientation.y = quaternion[1]
+    pose_goal.orientation.z = quaternion[2]
+    pose_goal.orientation.w = quaternion[3]
+    # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+
+    # print("Plan: ", plan)
+
+    # moveitGroup.move_group.execute(plan, wait=True)
+    moveitGroup.go_to_pose_goal(pose_goal)
+    
+
+
+def manipulability_test():
+    # -------------------------- Initialize the ROS node ------------------------- #
+    rospy.init_node('navigation')
+    # print("Demo: ", demo)
+
+    # --------------------------- run cost_opt_service --------------------------- #
+    # Create a service client
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    GetIK_client = rospy.ServiceProxy('/compute_ik', moveit_msgs.srv.GetPositionIK)
+
+    # ------------------------------ prepare moveit ------------------------------ #
+    # print("Initializing moveit-------------------------------------")
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+    listener = tf.TransformListener()
+    pose_goal = geometry_msgs.msg.Pose()
+    set_person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    set_hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+    # print("Moveit initialized-------------------------------------")
+
+    input("Press Enter to start random person position test")
+
+    Manip_index_cost_opt = []
+    Manip_index_IK = []
+    IK_cost_success = []
+    IK_success = []
+    j = 0
+    samples = 10
+
+
+    height_list = np.linspace(0.3, 1.5, 30)
+    for height in height_list:
+        Manip_index_cost_opt.append([])
+        Manip_index_IK.append([])
+        IK_cost_success.append(0)
+        IK_success.append(0)
+        for i in range(samples):
+            # print("=============================================")
+            print("Height: ", height, "\titeration: ", i)
+            set_person_position_service.wait_for_service()
+            set_person_position_service.call(random.uniform(-3,0),random.uniform(-3,-1), 0, 0.0)
+            set_hand_position_service.wait_for_service()
+            set_hand_position_service.call(0.5, -0.2, height, random.uniform(-0.2,0.2))
+            # set_person_position_service.call(-2,-2, 0.0, 0.0)
+            service_client.wait_for_service()
+            response = service_client()
+            if response.success == True:
+                # print("Failed to find a solution")
+                jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+                A = np.dot(jacobian,jacobian.transpose())
+                # eigenvalues = np.linalg.eigvals(A)
+                # print("Eigen_max: ", max(eigenvalues), "\t Eigen_min: ", min(eigenvalues))
+                # print("Eigen_ratio: ", max(eigenvalues)/min(eigenvalues))
+                # print("Eigen_index: ", np.sqrt(np.linalg.det(A)))
+                Manip_index_cost_opt[j].append(np.sqrt(np.linalg.det(A)))
+                IK_cost_success[j] += 1
+
+            # ------------------------------ Compute IK ------------------------------ #
+            listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3))
+            (trans, rot) = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
+            request = moveit_msgs.srv.GetPositionIKRequest()
+            request.ik_request.group_name = "whole_body"
+            request.ik_request.robot_state.joint_state.name = moveitGroup.move_group.get_active_joints()
+            request.ik_request.robot_state.joint_state.position = moveitGroup.move_group.get_current_joint_values()
+            request.ik_request.pose_stamped.header.frame_id = "world"
+
+            request.ik_request.pose_stamped.pose.position.x = trans[0]
+            request.ik_request.pose_stamped.pose.position.y = trans[1]
+            request.ik_request.pose_stamped.pose.position.z = trans[2]
+            rot = tf.transformations.quaternion_multiply(rot, tf.transformations.quaternion_about_axis(pi, [1, 0, 0]))
+            request.ik_request.pose_stamped.pose.orientation.x = rot[0]
+            request.ik_request.pose_stamped.pose.orientation.y = rot[1]
+            request.ik_request.pose_stamped.pose.orientation.z = rot[2]
+            request.ik_request.pose_stamped.pose.orientation.w = rot[3]
+
+            GetIK_client.wait_for_service()
+            response = GetIK_client(request)
+            if response.error_code.val == 1:
+                jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.solution.joint_state.position))
+                A = np.dot(jacobian,jacobian.transpose())
+                # eigenvalues = np.linalg.eigvals(A)
+                # print("Eigen_max: ", max(eigenvalues), "\t Eigen_min: ", min(eigenvalues))
+                # print("Eigen_ratio: ", max(eigenvalues)/min(eigenvalues))
+                # print("Eigen_index: ", np.sqrt(np.linalg.det(A)))
+                Manip_index_IK[j].append(np.sqrt(np.linalg.det(A)))
+                IK_success[j] += 1
+            else:
+                # print("Failed to find a solution for IK")
+                continue
+        if len(Manip_index_cost_opt[j]) == 0:
+            Manip_index_cost_opt[j].append(0)
+        if len(Manip_index_IK[j]) == 0:
+            Manip_index_IK[j].append(0)
+
+        j += 1
+        time.sleep(0.1)
+    # print("Manip_index_cost_opt: ", Manip_index_cost_opt)
+    # print("Manip_index_IK: ", Manip_index_IK)
+    with open('Eigen_index.csv', mode='w') as file:
+        writer = csv.writer(file)
+        writer.writerows(Manip_index_cost_opt)
+
+    import matplotlib.pyplot as plt
+
+    # Calculate the average of each list in Eigen_index
+    averages = [sum(lst) / len(lst) for lst in Manip_index_cost_opt]
+    # Plot the averages
+    plt.plot(height_list, averages, label='Manip_index_cost_opt')
+    # Calculate the average of each list in Manip_index_IK
+    averages_IK = [sum(lst) / len(lst) for lst in Manip_index_IK]
+    # Plot the averages
+    plt.plot(height_list, averages_IK, label='Manip_index_IK')
+    plt.xlabel('Height')
+    plt.ylabel('Average Manipulability Index')
+    plt.title('Manipulability Index vs Height of operator hand')
+    plt.legend()
+
+
+    IK_cost_success_percentage = [x / samples*100 for x in IK_cost_success]
+    IK_success_percentage = [x / samples*100 for x in IK_success]
+
+    plt.figure()
+    # Plot IK_cost_success
+    plt.plot(height_list, IK_cost_success_percentage, label='IK_cost_success')
+
+    # Plot IK_success
+    plt.plot(height_list, IK_success_percentage, label='IK_success')
+
+    plt.xlabel('Height')
+    plt.ylabel('Success Rate')
+    plt.title('IK Cost Success vs IK Success')
+    plt.legend()
+    plt.show()
+
+
 
 
 #TODO: Clean up the ugly ass parser code that doesn't work:
@@ -401,19 +545,23 @@ args = parser.parse_args()
 
 
 
+
 if __name__ == '__main__':
-    
+
     if len(sys.argv) < 2:
         rospy.logerr('Please specify a robot name as an argument')
     else:
-        
+
         global demo
-        demo = rospy.get_param('demo', False)
+        demo = rospy.get_param('demo', True)
         #while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
         #    publish_goal(robot_name)
         # realtime_follow(robot_name)
         if demo == True:
-            run_once(args.robot_name)
+            # run_once(args.robot_name)
+            manipulability_test()
+            # run_once_go_to_pose()
         else:
-            realtime_follow(args.robot_name)
+            # realtime_follow(args.robot_name)
+            run_once_go_to_pose()
         #log_position_error(robot_name)

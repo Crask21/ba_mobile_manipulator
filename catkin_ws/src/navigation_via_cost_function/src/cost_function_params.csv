@@ -1,2 +1,2 @@
-x_step, x_range1, x_range0, y_step, y_range1, y_range0, start_x, start_y, C_start, C_opt_x, C_opt_y, C_opt
-0.05, 1, -1, 0.05, 1, -1, 1, 1, 1.44186, 0.291921, 0.405934, 0.974757
+x_step, x_range1, x_range0, y_step, y_range1, y_range0, start_x, start_y, C_start, C_opt_x, C_opt_y, C_opt, robot_x, robot_y, robot_cost
+0.05, 1, -3, 0.05, 1, -3, 0, -2.4, 7.60434, -0.307447, -2, 0.101175, 0, 0, 7.60434

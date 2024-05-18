@@ -68,8 +68,8 @@
               <mesh filename="package://summit_xl_description/meshes/wheels/omni_wheel_2.dae" />
 					</xacro:unless>
 -->
-          <cylinder length="${omni_wheel_height}" radius="${omni_wheel_radius}" />
           <!-- sphere radius="${omni_wheel_radius}"/-->
+          <cylinder length="${omni_wheel_height}" radius="${omni_wheel_radius}" />
         </geometry>
       </collision>
 

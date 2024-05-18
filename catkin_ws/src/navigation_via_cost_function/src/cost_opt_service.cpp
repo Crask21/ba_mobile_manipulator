@@ -39,23 +39,32 @@ vector<vector<Doub>> obstacles = {};
 ros::NodeHandle *n_ptr;
 
 /* ----------------------------- Cost functions ----------------------------- */
+Doub Dist(const VecDoub &vec1, const VecDoub &vec2)
+{
+    return sqrt(pow(vec1[0] - vec2[0], 2) + pow(vec1[1] - vec2[1], 2));
+}
+
 Doub CostOperator(const VecDoub &desired)
 {
-    Doub scale = 0.25;
+    Doub scale = 4 * 0.25;
     Doub C_OP = abs(cos(OP_pos[2]) * (OP_pos[1] - desired[1]) - sin(OP_pos[2]) * (OP_pos[0] - desired[0]));
+    if (Dist(desired, goal) > Dist(OP_pos, goal) && Dist(desired, goal) > Dist(OP_pos, goal))
+    {
+        C_OP += 0.5 * (Dist(desired, goal) - Dist(OP_pos, goal));
+    }
     return scale * C_OP;
 }
 
 Doub CostMov(const VecDoub &desired)
 {
-    Doub scale = 1;
+    Doub scale = 0.1;
     Doub C_Move = sqrt(pow(desired[0] - start[0], 2) + pow(desired[1] - start[1], 2));
     return scale * C_Move;
 }
 
 Doub CostManipulation(const VecDoub &desired)
 {
-    Doub scale = 1.5;
+    Doub scale = 2 * 1.5;
     Doub arm_pos[2] = {desired[0] + arm_offset[0] * cos(desired[2]), desired[1] + arm_offset[1] * sin(desired[2])};
 
     Doub C_Manipulation = abs(sqrt(pow(arm_pos[0] - goal[0], 2) + pow(arm_pos[1] - goal[1], 2)) - Manipulation_dist);
@@ -73,7 +82,7 @@ Doub CostObst(const VecDoub &desired)
             C_Obst += 0.5 * obst_strength * pow(1 / sqrt(pow(desired[0] - obstacles[i][0], 2) + pow(desired[1] - obstacles[i][1], 2)) - 1 / obst_dist, 2);
         }
     }
-    Doub C_limit = 2;
+    Doub C_limit = 10;
     if (C_Obst > C_limit)
     {
         C_Obst = C_limit;
@@ -112,6 +121,10 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
     OP_pos[0] = transform.getOrigin().x();
     OP_pos[1] = transform.getOrigin().y();
     OP_pos[2] = tf::getYaw(transform.getRotation());
+    std::cout << "Person's position" << std::endl;
+    std::cout << OP_pos[0] << std::endl;
+    std::cout << OP_pos[1] << std::endl;
+    std::cout << OP_pos[2] << std::endl;
     /* ----------------------- Get person's hand position ----------------------- */
     try
     {
@@ -147,25 +160,26 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
         ROS_ERROR("%s", ex.what());
         ros::Duration(1.0).sleep();
     }
-    start_[0] = transform.getOrigin().x();
-    start_[1] = transform.getOrigin().y();
+    start[0] = transform.getOrigin().x();
+    start[1] = transform.getOrigin().y();
 
     std::cout << "Person's position: " << OP_pos[0] << " " << OP_pos[1] << " " << OP_pos[2] << std::endl;
     std::cout << "Person's hand position: " << goal[0] << " " << goal[1] << std::endl;
     std::cout << "Robot's position: " << start[0] << " " << start[1] << std::endl;
+    std::cout << "Check================================================================================================================000" << std::endl;
 
     obstacles.push_back({OP_pos[0], OP_pos[1]});
     /* ----------------------- Optimization function call ----------------------- */
     Doub ftoll = 1.0e-10;
-    Doub del = 1.0;
+    Doub del = 0.2;
     Doub max_manip_dist = 0.3330 + 0.3160 + 0.3840 + 0.0880;
     Doub height_difference = abs(goal[2] - arm_offset[2]);
     Manipulation_dist = sqrt(pow(max_manip_dist, 2) - pow(height_difference, 2)) * 0.5; // 0.5 describes midpoint between arm max and min distance
-    VecDoub y(2);
-    y[0] = 0.0;
-    y[1] = 0.0;
+    VecDoub initial_guess(2);
+    initial_guess[0] = 2 * goal[0] - OP_pos[0];
+    initial_guess[1] = 2 * goal[1] - OP_pos[1];
     Amoeba amoeba(ftoll);
-    VecDoub C_opt = amoeba.minimize(start, del, CostFunction);
+    VecDoub C_opt = amoeba.minimize(initial_guess, del, CostFunction);
 
     ros::ServiceClient service_client = n_ptr->serviceClient<moveit_msgs::GetPositionIK>("compute_ik");
     moveit_msgs::GetPositionIK::Request service_request;
@@ -181,6 +195,7 @@ bool optimize(navigation_via_cost_function::get_position::Request &req,
     service_request.ik_request.pose_stamped.pose.orientation.z = goal[5];
 
     /* Call the service */
+    service_client.waitForExistence();
     service_client.call(service_request, service_response);
     ROS_INFO_STREAM(
         "Result: " << ((service_response.error_code.val == service_response.error_code.SUCCESS) ? "True " : "False ")

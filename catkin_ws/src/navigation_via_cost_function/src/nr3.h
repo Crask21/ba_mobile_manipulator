@@ -90,8 +90,8 @@ inline void SWAP(T &a, T &b)
 #define throw(message)                                                          \
 	{                                                                           \
 		printf("error, but i modified the error message to not tell you shit"); \
-		throw(1);                                                               \
 	}
+// throw(1);
 // printf("ERROR: %s\n     in file %s at line %d\n", message, __FILE__, __LINE__);
 #else
 struct NRerror

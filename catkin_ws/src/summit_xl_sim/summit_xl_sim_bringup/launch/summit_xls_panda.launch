@@ -22,6 +22,9 @@
 	<arg name="xacro_robot" default="$(optenv ROBOT_XACRO moman.urdf.xacro)" />
 
 	<arg name="arm_id" default="panda" doc="Name of the robot to spawn" />
+	<arg name="x_init_pose_robot" default="0" />
+	<arg name="y_init_pose_robot" default="0" />
+	<arg name="z_init_pose_robot" default="0" />
 
 	<rosparam file="$(find franka_control)/config/moman_controllers.yaml" subst_value="true" />
 
@@ -41,6 +44,14 @@
 		<arg name="move_base_robot" value="$(arg move_base_robot)" />
 		<arg name="amcl_and_mapserver" value="$(arg amcl_and_mapserver)" />
 		<arg name="xacro_robot" value="$(arg xacro_robot)" />
+
+		<!-- base position -->
+		<arg name="x_init_pose_robot" value="$(arg x_init_pose_robot)" />
+		<arg name="y_init_pose_robot" value="$(arg y_init_pose_robot)" />
+		<arg name="z_init_pose_robot" value="$(arg z_init_pose_robot)" />
+
+
+		
 
 	</include>
 
