@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   tf
   moveit_core
+  
 )
 
 find_package(Eigen3 REQUIRED)

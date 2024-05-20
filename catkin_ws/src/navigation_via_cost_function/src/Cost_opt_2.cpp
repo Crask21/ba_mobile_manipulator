@@ -14,10 +14,10 @@ VecDoub start(3, start_);
 Doub desired_[3] = {0.0, 0.0, 0.0}; // x, y, theta
 VecDoub desired(3, desired_);
 
-Doub operator_[3] = {-1, -2, 0}; // x, y, theta
+Doub operator_[3] = {4, 0.1, -3.14}; // x, y, theta
 VecDoub OP_pos(3, operator_);
 
-Doub goal_[6] = {operator_[0] + 0.5, operator_[1] - 0.2, 1.2, 0.0, 0.0, 0.0}; // x, y, z, qx, qy, qz
+Doub goal_[6] = {operator_[0] + 0.5 * cos(operator_[2]), operator_[1] - 0.3 * sin(operator_[2]), 0.3 + 5 * (1.2 / 14), 0.0, 0.0, 0.0}; // x, y, z, qx, qy, qz
 VecDoub goal(6, goal_);
 
 Doub Manipulation_dist = 0.0;
@@ -81,7 +81,7 @@ Doub CostFunction(const VecDoub &desired)
 
 int main()
 {
-    Doub ftoll = 1.0e-10;
+    Doub ftoll = 1.0e-7;
     Doub del = 0.2;
     Doub max_manip_dist = 0.3330 + 0.3160 + 0.3840 + 0.0880;
     Doub height_difference = abs(goal[2] - arm_offset[2]);
@@ -112,13 +112,16 @@ int main()
     Doub opt_pos[3] = {amoeba.y[0], amoeba.y[1], angle};
     std::cout << "Optimal position found in {x, y, theta}: {" << C_opt[0] << ", " << C_opt[1] << ", " << C_opt[2] << "}" << std::endl;
 
+    std::cout << 0.3 + 5 * (1.2 / 14) << std::endl;
+    std::cout << "position: " << C_opt[0] << " " << C_opt[1] << " " << C_opt[2] << " " << Manipulation_dist << " " << sqrt(pow(C_opt[0] - goal[0], 2) + pow(C_opt[1] - goal[1], 2) + pow(arm_offset[2] - goal[2], 2)) << " " << sqrt(pow(C_opt[0] - goal[0], 2) + pow(C_opt[1] - goal[1], 2)) << std::endl;
+
     /* ------------------------ Save mesh params to file ------------------------ */
     std::ofstream file;
     file.open("cost_function_params.csv");
     Doub x_step = 0.05;
-    double x_range[2] = {-3.0, 1.0};
+    double x_range[2] = {1.0, 5.0};
     Doub y_step = 0.05;
-    double y_range[2] = {-3.0, 1.0};
+    double y_range[2] = {-0.5, 1};
     file << "x_step, x_range1, x_range0, y_step, y_range1, y_range0, start_x, start_y, C_start, C_opt_x, C_opt_y, C_opt, robot_x, robot_y, robot_cost" << std::endl;
     file << x_step << ", " << x_range[1] << ", " << x_range[0] << ", " << y_step << ", " << y_range[1] << ", " << y_range[0] << ", " << initial_guess[0] << ", " << initial_guess[1] << ", " << CostFunction(start) << ", " << C_opt[0] << ", " << C_opt[1] << ", " << CostFunction(C_opt) << ", " << start[0] << ", " << start[1] << ", " << CostFunction(start) << std::endl;
     file.close();

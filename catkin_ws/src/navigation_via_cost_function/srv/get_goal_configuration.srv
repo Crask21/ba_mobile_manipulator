@@ -1,3 +1,6 @@
+float64 perturbation = 0
 ---
 float64[] q_goal
 bool success
+float64 time_cost
+float64 time_IK

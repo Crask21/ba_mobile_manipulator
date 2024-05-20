@@ -424,26 +424,56 @@ def manipulability_test():
     Manip_index_IK = []
     IK_cost_success = []
     IK_success = []
+    position_success_x = []
+    position_success_y = []
+    position_success_theta = []
+    position_fail_x = []
+    position_fail_y = []
+    position_fail_theta = []
+    Cost_time = []
+    Cost_time_IK = []
+    IK_time = []
     j = 0
-    samples = 10
+    samples = 30
 
 
-    height_list = np.linspace(0.3, 1.5, 30)
+    height_list = np.linspace(0.3, 1.4, 17)
     for height in height_list:
         Manip_index_cost_opt.append([])
         Manip_index_IK.append([])
         IK_cost_success.append(0)
         IK_success.append(0)
+        position_success_x.append([])
+        position_success_y.append([])
+        position_success_theta.append([])
+        position_fail_x.append([])
+        position_fail_y.append([])
+        position_fail_theta.append([])
+
+
         for i in range(samples):
             # print("=============================================")
             print("Height: ", height, "\titeration: ", i)
             set_person_position_service.wait_for_service()
-            set_person_position_service.call(random.uniform(-3,0),random.uniform(-3,-1), 0, 0.0)
+            x_rand = random.uniform(-3,-1.5)
+            # x_rand = 4
+            y_rand = random.uniform(-3,-1.5)
+            # y_rand = 0.1
+            orientation_rand = 0
+            theta_rand = random.uniform(-0.2, 0.2)
+            # theta_rand = 0
+            set_person_position_service.call(x_rand,y_rand, 0, orientation_rand)
             set_hand_position_service.wait_for_service()
-            set_hand_position_service.call(0.5, -0.2, height, random.uniform(-0.2,0.2))
+            set_hand_position_service.call(0.5, -0.3, height, theta_rand)
             # set_person_position_service.call(-2,-2, 0.0, 0.0)
             service_client.wait_for_service()
             response = service_client()
+
+            if response.time_cost < 10000:
+                Cost_time.append((response.time_cost)/1000)
+                Cost_time_IK.append(response.time_IK/1000)
+
+
             if response.success == True:
                 # print("Failed to find a solution")
                 jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
@@ -454,8 +484,17 @@ def manipulability_test():
                 # print("Eigen_index: ", np.sqrt(np.linalg.det(A)))
                 Manip_index_cost_opt[j].append(np.sqrt(np.linalg.det(A)))
                 IK_cost_success[j] += 1
+                position_success_x[j].append(response.q_goal[0]-x_rand-0.5)
+                position_success_y[j].append(response.q_goal[1]-y_rand+0.3)
+                position_success_theta[j].append(response.q_goal[2])
+            else:
+                position_fail_x[j].append(response.q_goal[0]-x_rand-0.5*cos(theta_rand))
+                position_fail_y[j].append(response.q_goal[1]-y_rand+0.3*sin(theta_rand))
+                position_fail_theta[j].append(response.q_goal[2])
+
 
             # ------------------------------ Compute IK ------------------------------ #
+            
             listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3))
             (trans, rot) = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
             request = moveit_msgs.srv.GetPositionIKRequest()
@@ -474,7 +513,10 @@ def manipulability_test():
             request.ik_request.pose_stamped.pose.orientation.w = rot[3]
 
             GetIK_client.wait_for_service()
+            start_time = time.time()
             response = GetIK_client(request)
+            end_time = time.time()
+            IK_time.append((end_time-start_time)*1000)
             if response.error_code.val == 1:
                 jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.solution.joint_state.position))
                 A = np.dot(jacobian,jacobian.transpose())
@@ -530,6 +572,76 @@ def manipulability_test():
     plt.ylabel('Success Rate')
     plt.title('IK Cost Success vs IK Success')
     plt.legend()
+
+
+    # --------------- plot mobile base position success and failure -------------- #
+    height_index = 2
+    vector_scale = 0.2
+    # Plot position_success
+    plt.figure()
+    # Plot a vector with angle position_success_theta
+    plt.quiver(position_success_x[height_index], position_success_y[height_index], vector_scale*np.cos(position_success_theta[height_index]), vector_scale*np.sin(position_success_theta[height_index]), label='Position Success', color='green')
+    # Plot a circle with radius Manip_dist
+    max_manip_dist = 0.3330 + 0.3160 + 0.3840 + 0.0880
+    height_difference = abs(height_list[height_index] - 0.507)
+    Manip_dist = np.sqrt(pow(max_manip_dist, 2) - pow(height_difference, 2)) * 0.5
+    circle = plt.Circle((0, 0), Manip_dist, color='blue', fill=False)
+    plt.gca().add_patch(circle)
+    # Plot position_fail
+    plt.quiver(position_fail_x[height_index], position_fail_y[height_index], vector_scale*np.cos(position_fail_theta[height_index]), vector_scale*np.sin(position_fail_theta[height_index]), label='Position Fail', color='red')
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('Position Success vs Position Fail')
+    plt.legend()
+
+
+    # Calculate the average time and variance for Cost_time
+    average_time_cost = sum(Cost_time) / len(Cost_time)
+    variance_cost = sum((t - average_time_cost) ** 2 for t in Cost_time) / len(Cost_time)
+    std_cost = np.sqrt(variance_cost)
+
+    # Calculate the average time and variance for Cost_time_IK
+    average_time_cost_IK = sum(Cost_time_IK) / len(Cost_time_IK)
+    variance_cost_IK = sum((t - average_time_cost_IK) ** 2 for t in Cost_time_IK) / len(Cost_time_IK)
+    std_cost_IK = np.sqrt(variance_cost_IK)
+
+    # Calculate the average time and variance for IK_time
+    average_time_IK = sum(IK_time) / len(IK_time)
+    variance_IK = sum((t - average_time_IK) ** 2 for t in IK_time) / len(IK_time)
+    std_IK = np.sqrt(variance_IK)
+
+    merged = np.add(Cost_time, Cost_time_IK)
+    average_time_merged = sum(np.add(Cost_time, Cost_time_IK) / len(np.add(Cost_time, Cost_time_IK)))
+    variance_merged = sum((t - average_time_merged) ** 2 for t in np.add(Cost_time, Cost_time_IK)) / len(np.add(Cost_time, Cost_time_IK))
+    std_merged = np.sqrt(variance_merged)
+
+    # Print the average time and variance for Cost_time
+    print("Average Time (Cost_time): ", average_time_cost)
+    print("Variance (Cost_time): ", variance_cost)
+
+    # Print the average time and variance for Cost_time_IK
+    print("Average Time (Cost_time_IK): ", average_time_cost_IK)
+    print("Variance (Cost_time_IK): ", variance_cost_IK)
+
+    # Print the average time and variance for IK_time
+    print("Average Time (IK_time): ", average_time_IK)
+    print("Variance (IK_time): ", variance_IK)
+
+    # Print the average time and variance for Cost_time + Cost_time_IK
+    print("Average Time (Cost_time + Cost_time_IK): ", average_time_merged)
+    print("Variance (Cost_time + Cost_time_IK): ", variance_merged)
+
+    
+
+    # Create a box plot for Cost_time, Cost_time_IK, and IK_time
+    plt.figure()
+    plt.boxplot([Cost_time, Cost_time_IK, np.add(Cost_time, Cost_time_IK), IK_time[:len(Cost_time)]])
+    plt.xticks([1, 2, 3, 4], ['3-DOF Cost map', '7-DOF IK','3-DOF Cost map + 7-DOF IK', '10-DOF IK'])
+    plt.ylabel('Time (ms)')
+    plt.title('Computation time for IK methods')
+
+
+
     plt.show()
 
 
@@ -559,8 +671,9 @@ if __name__ == '__main__':
         # realtime_follow(robot_name)
         if demo == True:
             # run_once(args.robot_name)
-            manipulability_test()
+            # manipulability_test()
             # run_once_go_to_pose()
+            realtime_follow("robot")
         else:
             # realtime_follow(args.robot_name)
             run_once_go_to_pose()
