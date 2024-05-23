@@ -14,14 +14,15 @@
 
 #include <stdlib.h>
 
-// MoveIt
-#include <moveit/robot_model_loader/robot_model_loader.h>
-#include <moveit/robot_model/robot_model.h>
-#include <moveit/robot_state/robot_state.h>
-// #include <moveit/moveit_cpp/moveit_cpp.h>
-// #include <moveit/moveit_cpp/planning_component.h>
 // Kinematics
 #include <moveit_msgs/GetPositionIK.h>
+
+// MoveIt
+#include <moveit/robot_model/robot_model.h>
+#include <moveit/robot_state/robot_state.h>
+// #include <moveit/robot_model_loader/robot_model_loader.h>
+// #include <moveit/moveit_cpp/moveit_cpp.h>
+// #include <moveit/moveit_cpp/planning_component.h>
 
 /* -------------------- Global variables for CostFunction ------------------- */
 Doub start_[3] = {1.0, 1.0, 0.0}; // x, y, theta
