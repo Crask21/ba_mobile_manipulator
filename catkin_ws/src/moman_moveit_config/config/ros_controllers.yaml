@@ -50,12 +50,12 @@ robot/panda:
     constraints:
       goal_time: 0.6
       stopped_velocity_tolerance: 0.01
-      head:
-        max_velocity: 1.0
-        max_acceleration: 1.0
-        max_jerk: 1.0
+      #head:
+      #  max_velocity: 1.0
+      #  max_acceleration: 1.0
+      #  max_jerk: 1.0
     gains:
-      odom_x: { p: 100.0, i: 0.01, d: 10.0 }
+      odom_x: { p: 100.0, i: 0.01, d: 10.0 } #previous p value = 100
       odom_y: { p: 100.0, i: 0.01, d: 10.0 }
       odom_r: { p: 100.0, i: 0.01, d: 10.0 }
       panda_joint1: { p: 600.0, i: 0.01, d: 30.0 }

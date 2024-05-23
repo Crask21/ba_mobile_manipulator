@@ -257,6 +257,7 @@ def realtime_follow(robot_name):
     listener = tf.TransformListener()
     pose_goal = geometry_msgs.msg.Pose()
     print("Moveit initialized-------------------------------------")
+    input("Press Enter to start following the person")
 
     listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)) #Wait for transform to be available
     # ----------------------------- Perform movements ---------------------------- #
@@ -275,9 +276,13 @@ def realtime_follow(robot_name):
         pose_goal.orientation.w = quaternion[3]
         
         # moveitGroup.go_to_pose_goal(pose_goal)
-        (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
-        moveitGroup.move_group.execute(plan, wait=True)
-        print("Time to plan: ", time.time()-time_)
+        # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+        # print(plan)
+        # print("Time to plan: ", time.time()-time_)
+        # time__ = time.time()
+        # moveitGroup.move_group.execute(plan, wait=True)
+        # print("Time to execute: ", time.time()-time__)
+        moveitGroup.go_to_pose_goal(pose_goal)
         # rospy.sleep(0.05)
         # if(input("Press Enter to continue")==" "):
         #     moveitGroup.move_group.execute(plan, wait=True)
@@ -665,7 +670,7 @@ if __name__ == '__main__':
     else:
 
         global demo
-        demo = rospy.get_param('demo', True)
+        demo = rospy.get_param('demo', False)
         #while(input('Press Enter to publish goal for robot: {}'.format(robot_name)) == ''):
         #    publish_goal(robot_name)
         # realtime_follow(robot_name)
@@ -675,6 +680,6 @@ if __name__ == '__main__':
             # run_once_go_to_pose()
             realtime_follow("robot")
         else:
-            # realtime_follow(args.robot_name)
-            run_once_go_to_pose()
+            realtime_follow(args.robot_name)
+            # run_once_go_to_pose()
         #log_position_error(robot_name)

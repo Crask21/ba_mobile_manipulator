@@ -24,18 +24,21 @@
         <arg name="debug" value="$(arg debug)"/>
     </include> -->
 
+    <!-- spawn of obstacles -->
     <!-- <node pkg="gazebo_ros" type="spawn_model" name="spawn_box1" args="-urdf -file $(find navigation_via_cost_function)/include/box.urdf -model box1 -x -2 -y 1" /> -->
     <!-- <node pkg="gazebo_ros" type="spawn_model" name="spawn_box2" args="-urdf -file $(find navigation_via_cost_function)/include/box.urdf -model box2 -x 1 -y 1" /> -->
+    <!-- <node pkg="gazebo_ros" type="spawn_model" name="spawn_person" args="-urdf -file $(find navigation_via_cost_function)/include/person.urdf -model person -x 4 -y 0" /> -->
 
     <node pkg="laser2pc" type="laser2pc.py" name="laser2PC_node" output="screen" />
     
     <node pkg="ground_filter" type="ground_filter" name="ground_filter_node" output="screen" />
 
 
-    <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" />
-    <node pkg="gazebo_ros" type="spawn_model" name="spawn_person" args="-urdf -file $(find navigation_via_cost_function)/include/person.urdf -model person -x 4 -y 0" />
+    <!-- <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" /> -->
 
-    <!-- <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" /> -->
+    <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" />
+
+    <!-- <node pkg= "realtime_tracking" type="realtime_tracking" name="realtime_tracking" output="screen" /> -->
     
     <!-- <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" /> -->
     

@@ -16,4 +16,5 @@
         <param name="demo" value="$(arg demo)" />
         <param name="development" value="$(arg development)" />
     </node>
+    <node pkg="realtime_tracking" type="realtime_tracking.py" name="realtime_tracking" output="screen" />
 </launch>
