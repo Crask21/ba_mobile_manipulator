@@ -1,6 +1,8 @@
 # ba_mobile_manipulator
 This here is the GitHub for the bachelor project: motion planning of a mobile robot manipulator
 
+The images folder contains the images used throughout the report
+
 Here follows a short description of each package in the Catkin workspace
 
 **franka_ros**: This is a package developed by Franka Emika, the package creates an interface for the panda robot to be used with ROS and Gazebo. It includes URDF descriptions, controllers and launch files for running the panda arm separately. It should be noted that a controller has been added to this package for running the controllers for the mobile manipulator
