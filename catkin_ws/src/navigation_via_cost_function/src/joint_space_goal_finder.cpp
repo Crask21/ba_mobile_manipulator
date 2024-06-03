@@ -163,7 +163,7 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
     try
     {
         beg = std::chrono::high_resolution_clock::now();
-        listener.waitForTransform(odom_ns, "summit_xl_base_link", ros::Time(0), ros::Duration(0.05));
+        listener.waitForTransform(odom_ns, "summit_xl_base_link", ros::Time(0), ros::Duration(0.075));
         end = std::chrono::high_resolution_clock::now();
         listener.lookupTransform(odom_ns, "summit_xl_base_link", ros::Time(0), transform);
     }
@@ -186,7 +186,7 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
     Doub del = 0.2;
     Doub max_manip_dist = 0.3330 + 0.3160 + 0.3840 + 0.0880;
     Doub height_difference = abs(goal[2] - arm_offset[2]);
-    Manipulation_dist = sqrt(pow(max_manip_dist, 2) - pow(height_difference, 2)) * 0.5; // 0.5 describes midpoint between arm max and min distance
+    Manipulation_dist = sqrt(pow(max_manip_dist, 2) - pow(height_difference, 2)) * req.midpoint_percentage; // 0.5 describes midpoint between arm max and min distance
     // std::cout << "max_manip_dist: " << max_manip_dist;
     // std::cout << "\tgoal[2]: " << goal[2];
     // std::cout << "\tarm_offset[2]: " << arm_offset[2];
@@ -203,9 +203,12 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
 
     VecDoub C_opt = VecDoub(3, 0.0);
     VecDoub initial_guess(3);
-    initial_guess[0] = 2 * goal[0] - OP_pos[0];
-    initial_guess[1] = 2 * goal[1] - OP_pos[1];
-    initial_guess[2] = 0.0;
+    // initial_guess[0] = 2 * goal[0] - OP_pos[0];
+    // initial_guess[1] = 2 * goal[1] - OP_pos[1];
+    // initial_guess[2] = 0.0;
+    initial_guess[0] = OP_pos[0] + 5 * cos(OP_pos[2]) * (sqrt(pow(OP_pos[0] - goal[0], 2) + pow(OP_pos[1] - goal[1], 2)));
+    initial_guess[1] = OP_pos[1] + 5 * sin(OP_pos[2]) * (sqrt(pow(OP_pos[0] - goal[0], 2) + pow(OP_pos[1] - goal[1], 2)));
+    initial_guess[2] = -OP_pos[2];
 
     // std::cout << "Optimizing..." << std::endl;
 
@@ -230,7 +233,7 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
     // std::cout << "Optimization done..." << std::endl;
     // std::cout << "Optimal position found in {x, y, theta}: " << C_opt[0] << " " << C_opt[1] << " " << C_opt[2] << std::endl;
 
-    ros::ServiceClient service_client = n_ptr->serviceClient<moveit_msgs::GetPositionIK>("compute_ik");
+    ros::ServiceClient service_client = n_ptr->serviceClient<moveit_msgs::GetPositionIK>("/robot/compute_ik");
 
     // auto moveit_cpp_ptr = std::make_shared<moveit_cpp::MoveItCpp>(*n_ptr);
     // moveit_cpp_ptr->getPlanningSceneMonitorNonConst()->providePlanningSceneService();
@@ -276,6 +279,18 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
 
     /* ----------------------- Print optimization results ----------------------- */
     // util::print(C_opt, "Optimal position found in {x, y, theta}: ");
+    int count = 0;
+    // while (service_response.error_code.val != service_response.error_code.SUCCESS && count < 10)
+    // {
+    //     C_opt[0] = C_opt[0] - (C_opt[0] - goal[0]) * 0.1;
+    //     C_opt[1] = C_opt[1] + 0.1;
+    //     C_opt[2] = C_opt[2] + 0.1;
+    //     service_request.ik_request.pose_stamped.pose.position.x = goal[0] - C_opt[0];
+    //     service_request.ik_request.pose_stamped.pose.position.y = goal[1] - C_opt[1];
+    //     service_request.ik_request.pose_stamped.pose.position.z = goal[2] - arm_offset[2];
+    //     service_client.call(service_request, service_response);
+    //     count++;
+    // }
     if (service_response.error_code.val != service_response.error_code.SUCCESS)
     {
         std::cout << "Error in IK service call    ";
@@ -304,6 +319,7 @@ bool optimize(navigation_via_cost_function::get_goal_configuration::Request &req
     }
     res.time_cost = duration1.count();
     res.time_IK = duration2.count();
+    res.times_failed = count;
 
     /* ----------------------- Return the service response ----------------------- */
     end = std::chrono::high_resolution_clock::now();

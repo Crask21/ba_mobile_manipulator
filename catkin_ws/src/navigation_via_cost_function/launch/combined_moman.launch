@@ -9,6 +9,8 @@
 
 
     <include file="$(find moman_moveit_config)/launch/demo.launch" if="$(arg demo)"/>
+
+
     <!-- <node pkg="tf" type="static_transform_publisher" name="odom_to_world" args="0 0 0 0 0 0 world odom 100" if="$(arg demo)" /> -->
     <!-- <include file="$(find moman_moveit_config)/launch/demo_gazebo.launch" unless="$(arg demo)"/> -->
 
@@ -17,6 +19,12 @@
         <arg name="y_init_pose_robot" value="$(arg y_init_pose_robot)" />
         <arg name="z_init_pose_robot" value="$(arg z_init_pose_robot)" />
     </include>
+    <arg name="scene_file" default="$(find moman_moveit_config)/config/testing_scene.scene"/> 
+    <node name = "moveit_publish_scene_from_text" pkg= "moveit_ros_planning" type = "moveit_publish_scene_from_text" args= "$(arg scene_file)"/>
+
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_person1" args="-urdf -file $(find moman_moveit_config)/config/person.urdf -model person1 -x 3 -y 9.5 -Y 0" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_person2" args="-urdf -file $(find moman_moveit_config)/config/person.urdf -model person2 -x 0 -y -9 -Y -3.14" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_person3" args="-urdf -file $(find moman_moveit_config)/config/person_chair.urdf -model person3 -x -2.0 -y 3 -Y 1.54" />
 
     <!-- <include file="$(find moman_moveit_config)/launch/moveit_rviz.launch" if="$(arg use_rviz)">
          <arg name="rviz_config" value="$(find moman_moveit_config)/moveit2.rviz"/> 
@@ -33,14 +41,15 @@
     
     <node pkg="ground_filter" type="ground_filter" name="ground_filter_node" output="screen" />
 
+    <!-- <node pkg="navigation_via_cost_function" type="switch_to_bullet.py" name="switch_to_bullet" output="screen" /> -->
+    <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" />
 
-    <!-- <node pkg="navigation_via_cost_function" type="person_position.py" name="person_position" output="screen" /> -->
-
-    <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" />
+    <!-- <node pkg="navigation_via_cost_function" type="person_position_motion.py" name="person_position" output="screen" /> -->
 
     <!-- <node pkg= "realtime_tracking" type="realtime_tracking" name="realtime_tracking" output="screen" /> -->
     
     <!-- <node pkg="navigation_via_cost_function" type="cost_opt_service" name="cost_opt_service" output="screen" /> -->
+    <node pkg="navigation_via_cost_function" type="joint_space_goal_finder" name="joint_space_goal_finder" output="screen" />
     
     <node pkg="navigation_via_cost_function" type="moman_navigation.py" name="moman_node" output="screen">
         <param name="robot_name" value="summit_xl" />

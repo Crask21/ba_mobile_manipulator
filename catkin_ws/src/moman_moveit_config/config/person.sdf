@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <model name="man_model">
+        <static>true</static>
+        <link name="man_link">
+            <collision name="man_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://moman_moveit_config/config/man.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="man_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://moman_moveit_config/config/man.stl</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>

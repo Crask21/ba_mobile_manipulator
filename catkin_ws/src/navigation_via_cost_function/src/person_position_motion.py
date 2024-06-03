@@ -84,7 +84,7 @@ if __name__ == '__main__':
     old_speed = 0
     speed = 0.1
     speed_flag = False
-    rotation_radius = 1
+    rotation_radius = 8
     angle_speed = speed/rotation_radius
     angle_offset = 0
 
@@ -106,7 +106,7 @@ if __name__ == '__main__':
             angle_speed = speed/rotation_radius
             speed_flag = False
         # hand_position = (0.7+rotation_radius*np.cos(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), -0.2+rotation_radius*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq), 1.2+0.3*np.sin(int(time.__str__())/np.power(10,9)*np.pi*2*rotation_freq*2))
-        person_position = (1+rotation_radius*np.cos((int(time.__str__())-int(time_start.__str__()))/np.power(10,9)*angle_speed+angle_offset), 0+rotation_radius*np.sin((int(time.__str__())-int(time_start.__str__()))/np.power(10,9)*angle_speed+angle_offset), 0)
+        person_position = (0+rotation_radius*np.cos((int(time.__str__())-int(time_start.__str__()))/np.power(10,9)*angle_speed+angle_offset), 0+rotation_radius*np.sin((int(time.__str__())-int(time_start.__str__()))/np.power(10,9)*angle_speed+angle_offset), 0)
         br.sendTransform(person_position,
                          person_rotation,
                          time,

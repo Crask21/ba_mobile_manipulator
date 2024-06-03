@@ -8,7 +8,8 @@
 	<arg unless="$(arg omni_drive)" name="ros_planar_move_plugin" default="true" />
 
 	<arg name="launch_rviz" default="false" />
-	<arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/summit_xl_office.world" />
+	<!-- <arg name="gazebo_world" default="$(find summit_xl_gazebo)/worlds/demonstration.world" /> -->
+	<arg name="gazebo_world" default="$(find moman_moveit_config)/config/Testing_world.world" />
 	<arg name="gazebo_gui" default="true" />
 	<arg name="use_gpu_for_simulation" default="$(optenv USE_GPU_FOR_SIMULATION false)" />
 

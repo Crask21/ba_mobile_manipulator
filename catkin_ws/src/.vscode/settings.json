@@ -77,6 +77,10 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "variant": "cpp",
-    "bit": "cpp"
+    "bit": "cpp",
+    "*.inc": "cpp",
+    "slist": "cpp",
+    "future": "cpp",
+    "valarray": "cpp"
   }
 }

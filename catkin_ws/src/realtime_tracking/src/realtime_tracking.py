@@ -109,6 +109,7 @@ def track_once():
     plt.xlabel('Time [s]')
     plt.ylabel('Difference [m]')
     plt.title('Difference in position between panda_link8 and person_hand')
+    plt.ylim([0, 1])
     plt.show()
     plt.close()
     exit()
@@ -155,7 +156,7 @@ def track_continuously():
             
             
             rate.sleep()
-        file_path = os.path.expanduser(f'~/Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/realtime_tracking/src/difference_speed_{j}.csv')
+        file_path = os.path.expanduser(f'~/Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/realtime_tracking/src/difference_speed_{round(j,2)}.csv')
         with open(file_path, 'w', newline='') as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['Time', 'Difference'])
@@ -180,5 +181,5 @@ def track_continuously():
     exit()
 
 if __name__ == '__main__':
-    # track_once()
-    track_continuously()
+    track_once()
+    # track_continuously()

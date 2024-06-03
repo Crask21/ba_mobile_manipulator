@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="person">
+    <link name="body">
+        <visual>
+            <geometry>
+                <mesh filename="package://moman_moveit_config/config/Man_chair.stl"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://moman_moveit_config/config/Man_chair.stl"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="1.0"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <inertia ixx="10.0" ixy="0.0" ixz="0.0" iyy="10.0" iyz="0.0" izz="10.0"/>
+        </inertial>
+    </link>
+</robot>

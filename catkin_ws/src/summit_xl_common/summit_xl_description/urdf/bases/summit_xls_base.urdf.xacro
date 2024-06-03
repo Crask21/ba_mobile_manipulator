@@ -40,7 +40,7 @@
       <parent link="odom" />
       <child link="virtual_link1" />
       <axis xyz="1 0 0" />
-      <limit effort="1000000" lower="-10" upper="10" velocity="1000000" />
+      <limit effort="1000000" lower="-50" upper="50" velocity="1000000" />
     </joint>
 
     <transmission name="odom_x_trans">
@@ -59,7 +59,7 @@
       <parent link="virtual_link1" />
       <child link="virtual_link2" />
       <axis xyz="0 1 0" />
-      <limit effort="1000000" lower="-10" upper="10" velocity="1000000" />
+      <limit effort="1000000" lower="-50" upper="50" velocity="1000000" />
     </joint>
     <transmission name="odom_y_trans">
       <type>transmission_interface/SimpleTransmission</type>

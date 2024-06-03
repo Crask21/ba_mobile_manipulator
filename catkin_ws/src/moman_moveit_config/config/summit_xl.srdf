@@ -25,6 +25,7 @@
         <joint name="panda_joint8"/>
     </group>
     <group name="whole_body">
+        <collision_detector>bullet</collision_detector>
         <group name="base"/>
         <group name="arm"/>
     </group>

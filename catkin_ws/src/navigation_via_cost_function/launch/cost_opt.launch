@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <launch>
-    <arg name="demo" default="true"/>
+    <arg name="model" default="$(find moman_moveit_config)/config/person.urdf"/>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/rviz/urdf.rviz"/>
+    <!-- <arg name="demo" default="true"/>
     <arg name="development" default="true"/>
 
     <include file="$(find moman_moveit_config)/launch/demo.launch" if="$(arg demo)"/>
@@ -15,5 +19,5 @@
         <param name="robot_name" value="summit_xl" />
         <param name="demo" value="$(arg demo)" />
         <param name="development" value="$(arg development)" />
-    </node>
+    </node> -->
 </launch>

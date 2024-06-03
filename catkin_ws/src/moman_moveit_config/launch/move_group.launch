@@ -23,12 +23,11 @@
   <arg name="capabilities" default=""/>
   <arg name="disable_capabilities" default=""/>
   <!-- load these non-default MoveGroup capabilities (space seperated) -->
-  <!--
-  <arg name="capabilities" value="
-                a_package/AwsomeMotionPlanningCapability
-                another_package/GraspPlanningPipeline
-                " />
-  -->
+  
+  <!-- <arg name="capabilities" value="
+                modified_collision_detection_fcl/CollisionDetectionFCLCapability
+                " /> -->
+ 
 
   <!-- inhibit these default MoveGroup capabilities (space seperated) -->
   <!--

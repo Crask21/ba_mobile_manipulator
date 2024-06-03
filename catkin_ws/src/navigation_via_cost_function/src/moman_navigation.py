@@ -21,7 +21,9 @@ import argparse
 import random
 import numpy as np
 import csv
-
+import os
+import time
+import matplotlib.pyplot as plt
 
 
 
@@ -82,6 +84,9 @@ class MoveGroupPythonInterfaceTutorial(object):
         ## for getting, setting, and updating the robot's internal understanding of the
         ## surrounding world:
         scene = moveit_commander.PlanningSceneInterface(ns=ns)
+        # planning_scene = moveit_commander.PlanningSceneInterface(ns=ns).get_planning_scene()
+        # print("Planning scene: ", planning_scene)
+        # planning_scene.setActiveCollisionDetector("bullet")
         # scene.acm_set_allowed()
 
         ## Instantiate a `MoveGroupCommander`_ object.  This object is an interface
@@ -257,10 +262,14 @@ def realtime_follow(robot_name):
     listener = tf.TransformListener()
     pose_goal = geometry_msgs.msg.Pose()
     print("Moveit initialized-------------------------------------")
-    input("Press Enter to start following the person")
+    # input("Press Enter to start following the person")
 
     listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3)) #Wait for transform to be available
     # ----------------------------- Perform movements ---------------------------- #
+    
+    time_list = []
+    path_duration_list = []
+    execution_time_list = []
     while not rospy.is_shutdown():
         print("running --------------------------------------")
         time_ = time.time()
@@ -274,76 +283,36 @@ def realtime_follow(robot_name):
         pose_goal.orientation.y = quaternion[1]
         pose_goal.orientation.z = quaternion[2]
         pose_goal.orientation.w = quaternion[3]
-        
+        time__ = time.time()
         # moveitGroup.go_to_pose_goal(pose_goal)
-        # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+        (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
         # print(plan)
-        # print("Time to plan: ", time.time()-time_)
-        # time__ = time.time()
-        # moveitGroup.move_group.execute(plan, wait=True)
+        time___ = time.time()
+        # print("plan", type(plan))
+        # print("plan: ", plan)
+        moveitGroup.move_group.execute(plan, wait=True)
+        execution_time_list.append(time.time()-time___)
+        print("Time to plan get data: ", time__-time_)
+        print("Time to plan: ", time___-time__)
+        print("path duration: ", plan.joint_trajectory.points[-1].time_from_start.nsecs/1e9 )
+        print("Time to execute: ", execution_time_list[-1])
+
+        path_duration_list.append(plan.joint_trajectory.points[-1].time_from_start.nsecs/1e9)
+        time_list.append(time___-time_)
+        print("Average time: ", sum(time_list)/len(time_list))
+        print("Average path duration: ", sum(path_duration_list)/len(path_duration_list))
+        print("Average execution time: ", sum(execution_time_list)/len(execution_time_list))
+        print("sample size: ", len(path_duration_list))
+
+
+        # rospy.sleep(1)
+
         # print("Time to execute: ", time.time()-time__)
-        moveitGroup.go_to_pose_goal(pose_goal)
+        # moveitGroup.go_to_pose_goal(pose_goal)
         # rospy.sleep(0.05)
         # if(input("Press Enter to continue")==" "):
         #     moveitGroup.move_group.execute(plan, wait=True)
 
-def log_position_error(robot_name):
-
-
-    # -------------------- Prepare person hand at set position ------------------- #
-    req = set_positionRequest()
-    req.x = -1
-    req.y = -1
-    req.z = 0
-    req.theta = 0
-    person_position_service = rospy.ServiceProxy('update_person_position',set_position)
-    person_position_service.call(req)
-    hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
-    hand_position = (0.4, -0.2, 1.2)
-    req.x = hand_position[0]
-    req.y = hand_position[1]
-    req.z = hand_position[2]
-    req.theta = -0.2
-    hand_position_service.call(req)
-    publish_goal(robot_name)
-
-
-    input("Wait for keypress")
-
-    # ---------- prepare data logging of hand and end effector position ---------- #
-    log_duration = 10 #seconds
-    rate = rospy.Rate(20)
-    hand_position = []
-    ee_position = []
-
-
-    listener = tf.TransformListener()
-    listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-    position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
-
-    start_time = rospy.Time.now().secs
-    time = rospy.Time.secs
-    while time - start_time < 1:
-        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
-        hand_position.append(position)
-        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
-        ee_position.append(position)
-        rate.sleep()
-
-    req.x = 0.55
-    hand_position_service.call(req)
-    publish_goal(robot_name)
-
-    while time - start_time < log_duration:
-        listener.waitForTransform("/robot_map", "/person_hand", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/person_hand", rospy.Time(0))
-        hand_position.append(position)
-        listener.waitForTransform("/robot_map", "/panda_link8", rospy.Time(0), rospy.Duration(0.025))
-        position, quaternion = listener.lookupTransform("/robot_map", "/panda_link8", rospy.Time(0))
-        ee_position.append(position)
-        rate.sleep()
 
 def run_once(robot_name):
     # Initialize the ROS node
@@ -361,7 +330,7 @@ def run_once(robot_name):
     response = service_client()
 
     print("response: ", response.q_goal, "\t Type: ", type(response.q_goal))
-
+    
     # ------------------------------ prepare moveit ------------------------------ #
     moveitGroup = MoveGroupPythonInterfaceTutorial()
     #moveitGroup.go_to_joint_state(response.q_goal)
@@ -395,9 +364,24 @@ def run_once_go_to_pose():
     pose_goal.orientation.y = quaternion[1]
     pose_goal.orientation.z = quaternion[2]
     pose_goal.orientation.w = quaternion[3]
-    # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+    (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
 
     # print("Plan: ", plan)
+    joint_points = plan.joint_trajectory.points
+
+
+    # Concatenate joint_position, joint_velocity, and joint_acceleration
+    # joint_data = np.concatenate((joint_position, joint_velocity, joint_acceleration), axis=1)
+    print(joint_points[0].time_from_start)
+    print(plan)
+    # Export joint_position to .csv file
+    csv_file = '../Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/joint_position.csv'
+    with open(csv_file, 'w') as file:
+        writer = csv.writer(file)
+        for row in joint_points:
+            writer.writerow(np.concatenate(([row.time_from_start], row.positions, row.velocities, row.accelerations, row.effort), axis=0))
+
+    # print("Joint positions exported to:", csv_file)
 
     # moveitGroup.move_group.execute(plan, wait=True)
     moveitGroup.go_to_pose_goal(pose_goal)
@@ -438,11 +422,16 @@ def manipulability_test():
     Cost_time = []
     Cost_time_IK = []
     IK_time = []
+    times_failed = []
     j = 0
-    samples = 30
+    samples = 150
 
+    Manip_index_cost_opt45 = []
+    IK_cost_success45 = []
+    Manip_index_cost_opt55 = []
+    IK_cost_success55 = []
 
-    height_list = np.linspace(0.3, 1.4, 17)
+    height_list = np.linspace(0.3, 1.35, 20)
     for height in height_list:
         Manip_index_cost_opt.append([])
         Manip_index_IK.append([])
@@ -454,16 +443,24 @@ def manipulability_test():
         position_fail_x.append([])
         position_fail_y.append([])
         position_fail_theta.append([])
+        times_failed.append(0)
+        
+        Manip_index_cost_opt45.append([])
+        IK_cost_success45.append(0)
+        Manip_index_cost_opt55.append([])
+        IK_cost_success55.append(0)
+        
 
 
         for i in range(samples):
             # print("=============================================")
+
             print("Height: ", height, "\titeration: ", i)
             set_person_position_service.wait_for_service()
             x_rand = random.uniform(-3,-1.5)
-            # x_rand = 4
+            # x_rand = -0.5
             y_rand = random.uniform(-3,-1.5)
-            # y_rand = 0.1
+            # y_rand = -2
             orientation_rand = 0
             theta_rand = random.uniform(-0.2, 0.2)
             # theta_rand = 0
@@ -471,8 +468,11 @@ def manipulability_test():
             set_hand_position_service.wait_for_service()
             set_hand_position_service.call(0.5, -0.3, height, theta_rand)
             # set_person_position_service.call(-2,-2, 0.0, 0.0)
+            
+            
+            # --------------------------- run cost_opt_service 0.5midpoint --------------------------- #
             service_client.wait_for_service()
-            response = service_client()
+            response = service_client(midpoint_percentage = 0.5)
 
             if response.time_cost < 10000:
                 Cost_time.append((response.time_cost)/1000)
@@ -492,10 +492,34 @@ def manipulability_test():
                 position_success_x[j].append(response.q_goal[0]-x_rand-0.5)
                 position_success_y[j].append(response.q_goal[1]-y_rand+0.3)
                 position_success_theta[j].append(response.q_goal[2])
+                times_failed[j] += response.times_failed
             else:
                 position_fail_x[j].append(response.q_goal[0]-x_rand-0.5*cos(theta_rand))
                 position_fail_y[j].append(response.q_goal[1]-y_rand+0.3*sin(theta_rand))
                 position_fail_theta[j].append(response.q_goal[2])
+
+            # --------------------------- run cost_opt_service 0.45midpoint --------------------------- #
+            service_client.wait_for_service()
+            response = service_client(midpoint_percentage = 0.45)
+            
+
+            if response.success == True:
+                jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+                A = np.dot(jacobian,jacobian.transpose())
+                Manip_index_cost_opt45[j].append(np.sqrt(np.linalg.det(A)))
+                IK_cost_success45[j] += 1
+            
+            # --------------------------- run cost_opt_service 0.55midpoint --------------------------- #
+            service_client.wait_for_service()
+            response = service_client(midpoint_percentage = 0.55)
+            
+
+            if response.success == True:
+                jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+                A = np.dot(jacobian,jacobian.transpose())
+                Manip_index_cost_opt55[j].append(np.sqrt(np.linalg.det(A)))
+                IK_cost_success55[j] += 1
+            
 
 
             # ------------------------------ Compute IK ------------------------------ #
@@ -538,44 +562,63 @@ def manipulability_test():
             Manip_index_cost_opt[j].append(0)
         if len(Manip_index_IK[j]) == 0:
             Manip_index_IK[j].append(0)
-
+        if len(Manip_index_cost_opt45[j]) == 0:
+            Manip_index_cost_opt45[j].append(0)
+        if len(Manip_index_cost_opt55[j]) == 0:
+            Manip_index_cost_opt55[j].append(0)
         j += 1
-        time.sleep(0.1)
     # print("Manip_index_cost_opt: ", Manip_index_cost_opt)
     # print("Manip_index_IK: ", Manip_index_IK)
-    with open('Eigen_index.csv', mode='w') as file:
-        writer = csv.writer(file)
-        writer.writerows(Manip_index_cost_opt)
+    
+    file_path = os.path.expanduser('~/Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/manip_test.csv')
+    print("=====================================")
+    print(f"Expanded file path: {file_path}")
+    with open(file_path, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(['Height', '45% Manip Index', '50% Manip Index', '55% Manip Index', 'IK Manip Index', '45% Success Rate', '50% Success Rate', '55% Success Rate', 'IK Success Rate'])
+        for i in range(len(height_list)):
+            csvwriter.writerow([height_list[i], sum(Manip_index_cost_opt45[i])/len(Manip_index_cost_opt45[i]), sum(Manip_index_cost_opt[i])/len(Manip_index_cost_opt[i]), sum(Manip_index_cost_opt55[i])/len(Manip_index_cost_opt55[i]), sum(Manip_index_IK[i])/len(Manip_index_IK[i]), IK_cost_success45[i]/samples, IK_cost_success[i]/samples, IK_cost_success55[i]/samples, IK_success[i]/samples])
+    csvfile.close()
 
-    import matplotlib.pyplot as plt
+
+    
+    plt.figure()
 
     # Calculate the average of each list in Eigen_index
     averages = [sum(lst) / len(lst) for lst in Manip_index_cost_opt]
     # Plot the averages
-    plt.plot(height_list, averages, label='Manip_index_cost_opt')
+    plt.plot(height_list, averages, label='50% Maximum Reach')
     # Calculate the average of each list in Manip_index_IK
     averages_IK = [sum(lst) / len(lst) for lst in Manip_index_IK]
+
+    average45 = [sum(lst) / len(lst) for lst in Manip_index_cost_opt45]
+    average55 = [sum(lst) / len(lst) for lst in Manip_index_cost_opt55]
+    plt.plot(height_list, average45, label='45% Maximum Reach')
+    plt.plot(height_list, average55, label='55% Maximum Reach')
+
     # Plot the averages
-    plt.plot(height_list, averages_IK, label='Manip_index_IK')
-    plt.xlabel('Height')
+    plt.plot(height_list, averages_IK, label='Baseline IK')
+    plt.xlabel('Height [m]')
     plt.ylabel('Average Manipulability Index')
-    plt.title('Manipulability Index vs Height of operator hand')
+    # plt.title('Manipulability Index vs Height of operator hand')
     plt.legend()
 
 
     IK_cost_success_percentage = [x / samples*100 for x in IK_cost_success]
     IK_success_percentage = [x / samples*100 for x in IK_success]
-
+    IK_cost_success45_percentage = [x / samples*100 for x in IK_cost_success45]
+    IK_cost_success55_percentage = [x / samples*100 for x in IK_cost_success55]
     plt.figure()
     # Plot IK_cost_success
-    plt.plot(height_list, IK_cost_success_percentage, label='IK_cost_success')
+    plt.plot(height_list, IK_cost_success_percentage, label='50% Maximum Reach')
 
     # Plot IK_success
-    plt.plot(height_list, IK_success_percentage, label='IK_success')
-
-    plt.xlabel('Height')
-    plt.ylabel('Success Rate')
-    plt.title('IK Cost Success vs IK Success')
+    plt.plot(height_list, IK_success_percentage, label='10-DOF IK success rate')
+    plt.plot(height_list, IK_cost_success45_percentage, label='45% Maximum Reach')
+    plt.plot(height_list, IK_cost_success55_percentage, label='55% Maximum Reach')
+    plt.xlabel('Height [m]')
+    plt.ylabel('Success Rate [%]')
+    # plt.title('IK Cost Success vs IK Success')
     plt.legend()
 
 
@@ -643,11 +686,386 @@ def manipulability_test():
     plt.boxplot([Cost_time, Cost_time_IK, np.add(Cost_time, Cost_time_IK), IK_time[:len(Cost_time)]])
     plt.xticks([1, 2, 3, 4], ['3-DOF Cost map', '7-DOF IK','3-DOF Cost map + 7-DOF IK', '10-DOF IK'])
     plt.ylabel('Time (ms)')
-    plt.title('Computation time for IK methods')
+    # plt.title('Computation time for IK methods')
+
+    #plot times failed
+    average_times_failed = [x / samples for x in times_failed]
+    plt.figure()
+    plt.plot(height_list, average_times_failed)
+    plt.xlabel('Height [m]')
+    plt.ylabel('Average times failed')
+    # plt.title('Average times failed vs Height of operator hand')
 
 
 
     plt.show()
+
+def best_reach_test():
+    # -------------------------- Initialize the ROS node ------------------------- #
+    rospy.init_node('navigation')
+    # print("Demo: ", demo)
+
+    # --------------------------- run cost_opt_service --------------------------- #
+    # Create a service client
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    GetIK_client = rospy.ServiceProxy('/compute_ik', moveit_msgs.srv.GetPositionIK)
+
+    # ------------------------------ prepare moveit ------------------------------ #
+    # print("Initializing moveit-------------------------------------")
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+    listener = tf.TransformListener()
+    pose_goal = geometry_msgs.msg.Pose()
+    set_person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    set_hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+    # print("Moveit initialized-------------------------------------")
+
+    input("Press Enter to start random person position test")
+
+    Manip_index_cost_opt = []
+    IK_cost_success = []
+    j = 0
+    samples = 150
+
+    midpoint_percentage = np.linspace(0.3, 0.65, 30)
+    for percentage in midpoint_percentage:
+        Manip_index_cost_opt.append([])
+        IK_cost_success.append(0)
+            
+        for i in range(samples):
+
+            print("Percentage: ", percentage, "\titeration: ", i)
+            set_person_position_service.wait_for_service()
+            x_rand = random.uniform(-3,-1.5)
+            # x_rand = -0.5
+            y_rand = random.uniform(-3,-1.5)
+            # y_rand = -2
+            orientation_rand = 0
+            theta_rand = random.uniform(-0.2, 0.2)
+            # theta_rand = 0
+            set_person_position_service.call(x_rand,y_rand, 0, orientation_rand)
+            set_hand_position_service.wait_for_service()
+            set_hand_position_service.call(0.5, -0.3, 1.0, theta_rand)
+            # set_person_position_service.call(-2,-2, 0.0, 0.0)
+            
+            
+            service_client.wait_for_service()
+            response = service_client(midpoint_percentage = percentage)
+
+            if response.success == True:
+                jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+                A = np.dot(jacobian,jacobian.transpose())
+                Manip_index_cost_opt[j].append(np.sqrt(np.linalg.det(A)))
+                IK_cost_success[j] += 1
+            else:
+                continue
+        if len(Manip_index_cost_opt[j]) == 0:
+            Manip_index_cost_opt[j].append(0)
+        j += 1
+        time.sleep(0.05)
+    file_path = os.path.expanduser('~/Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/best_reach_test.csv')
+    with open(file_path, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(['Midpoint Percentage', 'Manip Index', 'Success Rate'])
+        for i in range(len(midpoint_percentage)):
+            csvwriter.writerow([midpoint_percentage[i], sum(Manip_index_cost_opt[i])/len(Manip_index_cost_opt[i]), IK_cost_success[i]/samples])
+    csvfile.close()
+
+    plt.figure()
+    list_of_averages = [sum(lst) / len(lst) for lst in Manip_index_cost_opt]
+    plt.plot(midpoint_percentage, [avg * success_rate for avg, success_rate in zip(list_of_averages, IK_cost_success)])
+    plt.xlabel('Midpoint Percentage')
+    plt.xlabel('% of Maximum Reach [%]')
+    plt.ylabel('Manipulability Index * Success Rate')
+    plt.legend()
+
+    plt.show()
+
+    
+
+def best_reach_test_sweep():
+    # -------------------------- Initialize the ROS node ------------------------- #
+    rospy.init_node('navigation')
+    # print("Demo: ", demo)
+
+    # --------------------------- run cost_opt_service --------------------------- #
+    # Create a service client
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    GetIK_client = rospy.ServiceProxy('/compute_ik', moveit_msgs.srv.GetPositionIK)
+
+    # ------------------------------ prepare moveit ------------------------------ #
+    # print("Initializing moveit-------------------------------------")
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+    listener = tf.TransformListener()
+    pose_goal = geometry_msgs.msg.Pose()
+    set_person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    set_hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+    # print("Moveit initialized-------------------------------------")
+
+    input("Press Enter to start random person position test")
+
+    Manip_index_cost_opt = []
+    IK_cost_success = []
+    j = 0
+    k = 0
+    samples = 100
+    height_samples = 10
+    percentage_samples = 20
+    height_list = np.linspace(0.3, 1.35, height_samples)
+    midpoint_percentage = np.linspace(0.4, 0.60, percentage_samples)
+
+
+
+
+    for height in height_list:
+        Manip_index_cost_opt.append([])
+        IK_cost_success.append([])
+        j = 0
+
+        set_person_position_service.wait_for_service()
+        x_rand = random.uniform(-3,-1.5)
+        x_rand = -0.5
+        y_rand = random.uniform(-3,-1.5)
+        y_rand = -2
+        orientation_rand = 0
+        theta_rand = random.uniform(-0.2, 0.2)
+        theta_rand = 0
+        set_person_position_service.call(x_rand,y_rand, 0, orientation_rand)
+        set_hand_position_service.wait_for_service()
+        set_hand_position_service.call(0.5, -0.3, height, theta_rand)
+
+        for percentage in midpoint_percentage:
+            Manip_index_cost_opt[k].append([])
+            IK_cost_success[k].append(0)
+                
+            for i in range(samples):
+                print("Height: ", height, "\tPercentage: ", percentage, "\titeration: ", i, "Progress", (i+j*samples+k*samples*percentage_samples)/(samples*height_samples*percentage_samples)*100, "%")
+                # set_person_position_service.call(-2,-2, 0.0, 0.0)
+                
+                
+                service_client.wait_for_service()
+                response = service_client(midpoint_percentage = percentage)
+
+                if response.success == True:
+                    jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+                    A = np.dot(jacobian,jacobian.transpose())
+                    Manip_index_cost_opt[k][j].append(np.sqrt(np.linalg.det(A)))
+                    IK_cost_success[k][j] += 1
+                else:
+                    continue
+            if len(Manip_index_cost_opt[k][j]) == 0:
+                Manip_index_cost_opt[k][j].append(0)
+            j += 1
+            time.sleep(0.075)
+        k += 1
+
+
+    max_indices = []
+    for i in range(len(Manip_index_cost_opt)):
+        manip_index_times_success = [np.average(Manip_index_cost_opt[i][j]) * IK_cost_success[i][j] for j in range(len(Manip_index_cost_opt[i]))]
+        print("Manip_index_times_success: ", manip_index_times_success)
+        max_index = np.argmax(np.array(manip_index_times_success))
+        print("Max index: ", max_index)
+        max_indices.append(max_index)
+
+    max_percentages = [midpoint_percentage[max_index] for max_index in max_indices]
+    print("Maximum percentages:", max_percentages)
+
+    file_path = os.path.expanduser('~/Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/best_reach_test_sweep.csv')
+    with open(file_path, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(['Height', 'Best_reach_percentage', 'Best_manip_index', 'Best_Success Rate'])
+        for i in range(len(midpoint_percentage)):
+            csvwriter.writerow([height_list[i], max_percentages[i], sum(Manip_index_cost_opt[i][max_indices[i]])/len(Manip_index_cost_opt[i][max_indices[i]]), IK_cost_success[i][max_indices[i]]/samples])
+    csvfile.close()
+
+    plt.figure()
+    plt.plot(height_list, max_percentages)
+    plt.xlabel('Index')
+    plt.ylabel('Max Percentage')
+    plt.show()
+
+
+def demonstration():
+    start_pose = [-4, -9, 1.1]
+    person_pose1 = [3, 9.5, -pi/2]
+    person_pose2 = [0,-9, pi/2]
+    person_pose3 = [-2.0, 3, 0]
+
+    hand_pose1 = [0.45, -0.3, 1.1, 0]
+    hand_pose2 = [0.5, -0.3, 1.1, 0]
+    hand_pose3 = [0.4, -0.3, 0.5, 0]
+
+    set_person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    set_hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+
+
+    rospy.init_node('navigation')
+    # input("Move to start position")
+
+    # # ------------------------------ prepare moveit ------------------------------ #
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+
+    # pose_goal = geometry_msgs.msg.Pose()
+    # pose_goal.position.x = start_pose[0]
+    # pose_goal.position.y = start_pose[1]
+    # pose_goal.position.z = start_pose[2]
+
+    # moveitGroup.go_to_pose_goal(pose_goal)
+
+
+    input("Press Enter to move to person 1")
+    person_pose1 = person_pose2
+    set_person_position_service.call(person_pose1[0], person_pose1[1], 0, person_pose1[2])
+    set_hand_position_service.call(hand_pose1[0], hand_pose1[1], hand_pose1[2], hand_pose1[3])
+    
+    listener = tf.TransformListener()
+    listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3))
+
+
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    service_client.wait_for_service()
+    response = service_client(midpoint_percentage = 0.5)
+    
+    max_count = 10
+    count = 0
+    while response.success == False and count < max_count:
+        service_client.wait_for_service()
+        response = service_client(midpoint_percentage = 0.5)
+        count += 1
+    if count == max_count:
+        print("Failed to find a solution with cost_opt")
+
+    moveitGroup.go_to_joint_state(response.q_goal)
+
+
+
+def demo_no_gazebo():
+    start_pose = [-4, -9, 1.1]
+    person_pose1 = [3, 9.5, -pi/2]
+    person_pose2 = [0,-9, pi/2]
+    person_pose3 = [-2.0, 3, 0]
+
+    hand_pose1 = [0.4, -0.3, 1.1, 0]
+    hand_pose2 = [0.4, -0.3, 1.1, 0]
+    hand_pose3 = [0.45, -0.3, 0.5, 0]
+
+    set_person_position_service = rospy.ServiceProxy('update_person_position',set_position)
+    set_hand_position_service = rospy.ServiceProxy('update_hand_position',set_position)
+
+
+    rospy.init_node('navigation')
+    # input("Move to start position")
+
+    # # ------------------------------ prepare moveit ------------------------------ #
+    moveitGroup = MoveGroupPythonInterfaceTutorial()
+
+    # pose_goal = geometry_msgs.msg.Pose()
+    # pose_goal.position.x = start_pose[0]
+    # pose_goal.position.y = start_pose[1]
+    # pose_goal.position.z = start_pose[2]
+
+    # moveitGroup.go_to_pose_goal(pose_goal)
+
+
+    input("Press Enter to move to person 1")
+    person_pose1 = person_pose1
+    set_person_position_service.call(person_pose1[0], person_pose1[1], 0, person_pose1[2])
+    set_hand_position_service.call(hand_pose1[0], hand_pose1[1], hand_pose1[2], hand_pose1[3])
+    
+    listener = tf.TransformListener()
+    listener.waitForTransform("/world", "/person_hand", rospy.Time(0), rospy.Duration(0.3))
+
+
+    service_client = rospy.ServiceProxy('/cost_opt', get_goal_configuration)
+    path_length_list = []
+    path_duration_list = []
+    plan_duration_list = []
+    IK_time_list = []
+    Manip_index  = []
+    for i in range(110):
+        service_client.wait_for_service()
+        response = service_client(midpoint_percentage = 0.5)
+        print("Iteration: ", i)
+        
+        max_count = 10
+        count = 0
+        while response.success == False and count < max_count:
+            service_client.wait_for_service()
+            response = service_client(midpoint_percentage = 0.5)
+            count += 1
+        if count == max_count:
+            print("Failed to find a solution with cost_opt")
+
+        jacobian = moveitGroup.move_group.get_jacobian_matrix(list(response.q_goal))
+        A = np.dot(jacobian,jacobian.transpose())
+        Manip_index.append(np.sqrt(np.linalg.det(A)))
+        start_time = time.time()
+        path = moveitGroup.move_group.plan(response.q_goal)
+        end_time = time.time()
+
+        while path[0] != 1:
+            start_time = time.time()
+            path = moveitGroup.move_group.plan(response.q_goal)
+            end_time = time.time()
+
+        execution_time = end_time - start_time
+        plan_duration_list.append(execution_time)
+        # print("time for IK solution Ms: ", response.time_IK, ", ",  response.time_cost)
+        # print("path: ", path[1])
+        # print("type of path: ", type(path[1]))
+        # print("length of path: ", len(path))
+        path_duration_list.append(path[1].joint_trajectory.points[-1].time_from_start.to_sec())
+        path_length = 0
+        for i in range(len(path[1].joint_trajectory.points)-1):
+            path_length += np.linalg.norm(np.array(path[1].joint_trajectory.points[i].positions) - np.array(path[1].joint_trajectory.points[i+1].positions))
+        path_length_list.append(path_length)
+        IK_time_list.append(response.time_IK+response.time_cost)
+
+    print("Average path length: ", np.mean(path_length_list))
+    print("Average path duration: ", np.mean(path_duration_list))
+    print("Average IK time: ", np.mean(IK_time_list))
+    print("Average MP time: ", np.mean(plan_duration_list))
+    print("Average Manipulability index: ", np.mean(Manip_index))
+
+    csv_file = "../Documents/6_semester/bachelor/ba_mobile_manipulator/catkin_ws/src/demo_1.csv"
+    data_list = []
+
+    with open(csv_file, 'r') as file:
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            if csv_reader.line_num == 1:
+                continue
+            data_list.append(row)
+
+    transposed_data = np.transpose(data_list)
+    transposed_data = np.array(transposed_data, dtype=float)
+    # print("Transposed data: ", transposed_data)
+    print(type(transposed_data[0][0]))
+    print("Total nodes: ", np.mean(transposed_data[0])/2)
+    print("Time spent on enviroment collision: ", np.mean(transposed_data[2]))
+    print("Time spent on self collision: ", np.mean(transposed_data[3]))
+    print("Total average time spent: ", np.mean(transposed_data[1]))
+    print("Total nodes: ", np.mean(transposed_data[0]))
+    print("Time spent on enviroment collision: ", np.mean(transposed_data[2]))
+    print("Time spent on self collision: ", np.mean(transposed_data[3]))
+    print("Total average time spent: ", np.mean(transposed_data[1]))
+    
+
+    # position, quaternion = listener.lookupTransform("/world", "/person_hand", rospy.Time(0))
+    # quaternion= tf.transformations.quaternion_multiply(quaternion, tf.transformations.quaternion_about_axis(pi, [1, 0, 0]))
+
+    # pose_goal = geometry_msgs.msg.Pose()
+    # pose_goal.position.x = position[0]
+    # pose_goal.position.y = position[1]
+    # pose_goal.position.z = position[2]
+    # pose_goal.orientation.x = quaternion[0]
+    # pose_goal.orientation.y = quaternion[1]
+    # pose_goal.orientation.z = quaternion[2]
+    # pose_goal.orientation.w = quaternion[3]
+    # (plan, fraction) = moveitGroup.move_group.compute_cartesian_path([pose_goal], 0.01, 0.0)
+    
+    # moveitGroup.move_group.execute(plan, wait=True)
+    # moveitGroup.go_to_joint_state(response.q_goal)
 
 
 
@@ -677,9 +1095,13 @@ if __name__ == '__main__':
         if demo == True:
             # run_once(args.robot_name)
             # manipulability_test()
-            # run_once_go_to_pose()
-            realtime_follow("robot")
+            # best_reach_test()
+            # best_reach_test_sweep()
+            # demo_no_gazebo()
+            run_once_go_to_pose()
+            # realtime_follow("robot")
         else:
-            realtime_follow(args.robot_name)
+            # realtime_follow(args.robot_name)
             # run_once_go_to_pose()
+            demonstration()
         #log_position_error(robot_name)
